@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Motion Pattern Visualization</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; scroll-behavior: smooth; }
+:root {
+  --bg: #111; --bg-card: #161616; --bg-header: #1a1a1a; --bg-body: #0d0d0d;
+  --border: #222; --border-hover: #444;
+  --text: #d4d4d4; --text-heading: #f0f0f0; --text-secondary: #777; --text-muted: #555;
+  --tab-active: #f0f0f0; --tab-inactive: #666;
+  --accent-motion: #ff6b35; --accent-still: #4a9eff;
+  --scrollbar-track: #1a1a1a; --scrollbar-thumb: #333;
+}
+[data-theme="light"] {
+  --bg: #f5f5f0; --bg-card: #ffffff; --bg-header: #f0efe8; --bg-body: #eeeee8;
+  --border: #ddd; --border-hover: #bbb;
+  --text: #333; --text-heading: #111; --text-secondary: #666; --text-muted: #999;
+  --tab-active: #111; --tab-inactive: #999;
+  --accent-motion: #e05520; --accent-still: #2a7adf;
+  --scrollbar-track: #e8e8e8; --scrollbar-thumb: #ccc;
+}
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  background: var(--bg); color: var(--text);
+  line-height: 1.6; -webkit-font-smoothing: antialiased;
+  transition: background 0.25s, color 0.25s;
+}
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
+
+.page { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+
+.theme-toggle {
+  background: var(--bg-card); border: 1px solid var(--border);
+  color: var(--text-secondary); border-radius: 20px;
+  padding: 6px 14px; font-size: 0.72rem; font-family: inherit;
+  cursor: pointer; transition: all 0.15s;
+}
+.theme-toggle:hover { border-color: var(--border-hover); color: var(--text); }
+
+.masthead {
+  padding: 30px 0 16px; border-bottom: 1px solid var(--border);
+  margin-bottom: 20px; display: flex; align-items: flex-start; justify-content: space-between;
+}
+.masthead-left { flex: 1; }
+.masthead h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 2rem; font-weight: 700; color: var(--text-heading); letter-spacing: -0.02em;
+}
+.masthead .subtitle { font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px; font-weight: 300; }
+
+/* Tabs */
+.tabs { display: flex; gap: 0; border-bottom: 1px solid var(--border); margin-bottom: 20px; }
+.tab {
+  padding: 10px 20px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--tab-inactive); cursor: pointer;
+  border-bottom: 2px solid transparent; transition: color 0.15s, border-color 0.15s; user-select: none;
+}
+.tab:hover { color: var(--text); }
+.tab.active { color: var(--tab-active); border-bottom-color: var(--tab-active); }
+.tab .count { font-size: 0.65rem; color: var(--text-muted); margin-left: 6px; font-weight: 400; }
+.tab.active .count { color: var(--text-secondary); }
+
+/* Controls */
+.controls {
+  display: flex; gap: 12px; align-items: center; margin-bottom: 16px; flex-wrap: wrap;
+}
+.controls label { font-size: 0.78rem; color: var(--text-secondary); }
+.controls select, .controls input[type="text"] {
+  background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
+  padding: 5px 10px; border-radius: 6px; font-size: 0.78rem; font-family: inherit;
+}
+.controls select:focus, .controls input:focus { outline: none; border-color: var(--border-hover); }
+
+.filter-toggle {
+  background: var(--bg-card); border: 1px solid var(--border); color: var(--text-secondary);
+  padding: 5px 12px; border-radius: 6px; font-size: 0.78rem; font-family: inherit; cursor: pointer;
+}
+.filter-toggle.active { background: var(--accent-motion); color: #fff; border-color: var(--accent-motion); }
+
+.sort-btn {
+  background: var(--bg-card); border: 1px solid var(--border); color: var(--text-secondary);
+  padding: 5px 12px; border-radius: 6px; font-size: 0.78rem; font-family: inherit; cursor: pointer;
+}
+.sort-btn:hover { border-color: var(--border-hover); color: var(--text); }
+
+.stats-bar {
+  font-size: 0.72rem; color: var(--text-muted); margin-left: auto;
+}
+
+/* Clip cards */
+.clip-list { display: flex; flex-direction: column; gap: 16px; padding-bottom: 40px; }
+
+.clip-card {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+  overflow: hidden; transition: border-color 0.15s;
+}
+.clip-card:hover { border-color: var(--border-hover); }
+
+.clip-header {
+  padding: 10px 14px; border-bottom: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;
+}
+.clip-header .title { font-weight: 600; font-size: 0.85rem; color: var(--text-heading); }
+.clip-header .task { font-size: 0.72rem; color: var(--text-secondary); margin-left: 8px; }
+.clip-header .desc { font-size: 0.72rem; color: var(--text-muted); width: 100%; margin-top: 2px; }
+.clip-header .meta {
+  font-size: 0.68rem; color: var(--text-muted); font-family: 'SF Mono', monospace;
+  display: flex; gap: 12px;
+}
+.clip-header .meta .seg-badge {
+  background: var(--accent-motion); color: #fff; padding: 1px 7px; border-radius: 10px;
+  font-size: 0.65rem; font-weight: 600;
+}
+.clip-header .meta .no-motion { opacity: 0.4; }
+
+/* Content: video left, chart right */
+.clip-content {
+  display: grid; grid-template-columns: 1fr 1.5fr; gap: 0;
+  min-height: 260px;
+}
+.clip-video-panel {
+  position: relative; background: #000; display: flex; align-items: center; justify-content: center;
+  border-right: 1px solid var(--border);
+}
+.clip-video-panel video {
+  width: 100%; height: 100%; object-fit: contain;
+}
+.clip-chart-panel {
+  padding: 10px 14px 6px; position: relative; min-height: 240px;
+}
+.clip-chart-panel canvas { width: 100% !important; height: 100% !important; }
+
+/* Scrubber row */
+.scrub-row {
+  display: flex; align-items: center; gap: 8px; padding: 6px 14px;
+  border-top: 1px solid var(--border);
+}
+.play-btn {
+  background: none; border: 1px solid var(--border); color: var(--text);
+  padding: 3px 10px; border-radius: 4px; cursor: pointer; font-size: 0.78rem;
+  font-family: inherit; min-width: 36px; text-align: center;
+}
+.play-btn:hover { border-color: var(--border-hover); }
+.scrub-row input[type=range] { flex: 1; }
+.frame-label { font-size: 0.68rem; color: var(--text-muted); min-width: 60px; text-align: right; font-family: monospace; }
+
+/* Segment chips under chart */
+.segment-chips { display: flex; flex-wrap: wrap; gap: 4px; padding: 4px 14px 8px; }
+.seg-chip {
+  font-size: 0.65rem; padding: 2px 8px; border-radius: 10px; cursor: pointer;
+  background: rgba(255,107,53,0.15); color: var(--accent-motion); border: 1px solid rgba(255,107,53,0.3);
+  transition: all 0.15s;
+}
+.seg-chip:hover { background: rgba(255,107,53,0.3); }
+.seg-chip.active { background: var(--accent-motion); color: #fff; }
+
+@media (max-width: 900px) {
+  .clip-content { grid-template-columns: 1fr; }
+  .clip-video-panel { border-right: none; border-bottom: 1px solid var(--border); min-height: 200px; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="masthead">
+    <div class="masthead-left">
+      <h1>Motion Pattern Visualization</h1>
+      <div class="subtitle">Per-frame 3D delta magnitudes with high-motion segment detection (threshold = 0.02)</div>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center;">
+      <button class="theme-toggle" onclick="toggleTheme()">Toggle theme</button>
+    </div>
+  </div>
+
+  <div class="tabs" id="tabs"></div>
+
+  <div class="controls">
+    <label>Task:</label>
+    <select id="taskFilter"><option value="">All</option></select>
+    <label>Sort:</label>
+    <select id="sortSelect">
+      <option value="motion_desc">Motion (high first)</option>
+      <option value="motion_asc">Motion (low first)</option>
+      <option value="segments_desc">Segments (most first)</option>
+      <option value="name_asc">Name (A-Z)</option>
+    </select>
+    <button class="filter-toggle" id="motionOnly" onclick="toggleMotionFilter()">Motion clips only</button>
+    <span class="stats-bar" id="statsBar"></span>
+  </div>
+
+  <div class="clip-list" id="clipList"></div>
+</div>
+
+<script>
+let manifest = null;
+let activeDataset = '';
+let motionDataCache = {};
+let clipCharts = {};
+let motionFilterOn = false;
+
+// ── Theme ──
+function toggleTheme() {
+  const t = document.documentElement.getAttribute('data-theme') === 'light' ? '' : 'light';
+  document.documentElement.setAttribute('data-theme', t);
+  localStorage.setItem('motion-theme', t);
+  // Redraw charts with new colors
+  Object.values(clipCharts).forEach(c => { if (c.chart) c.chart.destroy(); });
+  clipCharts = {};
+  renderClips();
+}
+(function() { const t = localStorage.getItem('motion-theme'); if (t) document.documentElement.setAttribute('data-theme', t); })();
+
+// ── Init ──
+async function init() {
+  const resp = await fetch('static/data/motion/motion_manifest.json');
+  manifest = await resp.json();
+
+  // Build tabs
+  const tabsEl = document.getElementById('tabs');
+  const datasets = Object.keys(manifest);
+  datasets.forEach(ds => {
+    const tab = document.createElement('div');
+    tab.className = 'tab';
+    tab.dataset.ds = ds;
+    const n = manifest[ds].length;
+    const withMotion = manifest[ds].filter(c => c.has_motion).length;
+    tab.innerHTML = `${ds} <span class="count">${n} clips / ${withMotion} with motion</span>`;
+    tab.onclick = () => switchDataset(ds);
+    tabsEl.appendChild(tab);
+  });
+
+  activeDataset = datasets[0] || '';
+  switchDataset(activeDataset);
+}
+
+function switchDataset(ds) {
+  activeDataset = ds;
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.ds === ds));
+
+  // Populate task filter
+  const tf = document.getElementById('taskFilter');
+  tf.innerHTML = '<option value="">All</option>';
+  const tasks = [...new Set(manifest[ds].map(c => c.task || c.participant || c.label || ''))].filter(Boolean).sort();
+  tasks.forEach(t => {
+    const o = document.createElement('option');
+    o.value = t; o.textContent = t.replace(/_/g, ' ');
+    tf.appendChild(o);
+  });
+
+  // Cleanup
+  Object.values(clipCharts).forEach(c => { if (c.chart) c.chart.destroy(); });
+  clipCharts = {};
+  renderClips();
+}
+
+function getFilteredSortedClips() {
+  let clips = manifest[activeDataset] || [];
+  const taskVal = document.getElementById('taskFilter').value;
+  if (taskVal) {
+    clips = clips.filter(c => (c.task || c.participant || c.label || '') === taskVal);
+  }
+  if (motionFilterOn) {
+    clips = clips.filter(c => c.has_motion);
+  }
+
+  const sort = document.getElementById('sortSelect').value;
+  clips = clips.slice();
+  switch(sort) {
+    case 'motion_desc': clips.sort((a,b) => (b.motion_max||0) - (a.motion_max||0)); break;
+    case 'motion_asc': clips.sort((a,b) => (a.motion_max||0) - (b.motion_max||0)); break;
+    case 'segments_desc': clips.sort((a,b) => (b.num_segments||0) - (a.num_segments||0)); break;
+    case 'name_asc': clips.sort((a,b) => a.id.localeCompare(b.id)); break;
+  }
+  return clips;
+}
+
+function toggleMotionFilter() {
+  motionFilterOn = !motionFilterOn;
+  document.getElementById('motionOnly').classList.toggle('active', motionFilterOn);
+  renderClips();
+}
+
+function renderClips() {
+  const clips = getFilteredSortedClips();
+  const container = document.getElementById('clipList');
+  container.innerHTML = '';
+
+  const totalSegs = clips.reduce((s,c) => s + (c.num_segments||0), 0);
+  const withMotion = clips.filter(c => c.has_motion).length;
+  document.getElementById('statsBar').textContent =
+    `${clips.length} clips | ${withMotion} with motion | ${totalSegs} segments`;
+
+  clips.forEach((clip, idx) => {
+    const id = 'c_' + idx;
+    const card = document.createElement('div');
+    card.className = 'clip-card';
+    card.id = id;
+
+    const taskLabel = (clip.task || clip.participant || clip.label || '').replace(/_/g, ' ');
+    const shortId = clip.id.replace(/^(part\d+_|test_)/, '').replace(/__/g, '/');
+    const segBadge = clip.num_segments > 0
+      ? `<span class="seg-badge">${clip.num_segments} seg</span>`
+      : `<span class="no-motion">no motion</span>`;
+
+    card.innerHTML = `
+      <div class="clip-header">
+        <div style="display:flex;align-items:baseline;flex-wrap:wrap;gap:4px;">
+          <span class="title">${shortId}</span>
+          <span class="task">${taskLabel}</span>
+        </div>
+        <div class="meta">
+          <span>max=${(clip.motion_max||0).toFixed(4)}</span>
+          ${segBadge}
+        </div>
+        ${clip.text ? `<div class="desc">${clip.text}</div>` : ''}
+      </div>
+      <div class="clip-content">
+        <div class="clip-video-panel">
+          <video id="${id}_vid" muted loop playsinline preload="none"></video>
+        </div>
+        <div class="clip-chart-panel">
+          <canvas id="${id}_chart"></canvas>
+        </div>
+      </div>
+      <div class="segment-chips" id="${id}_chips"></div>
+      <div class="scrub-row">
+        <button class="play-btn" id="${id}_playbtn" onclick="togglePlay('${id}')">&#9654;</button>
+        <input type="range" id="${id}_scrub" min="0" max="1000" value="0"
+               oninput="scrubTo('${id}', this.value)">
+        <span class="frame-label" id="${id}_frame">0 / 0</span>
+      </div>
+    `;
+    container.appendChild(card);
+    clipCharts[id] = { clip, loaded: false, chart: null, motionData: null };
+  });
+
+  // Lazy load
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        if (clipCharts[id] && !clipCharts[id].loaded) {
+          clipCharts[id].loaded = true;
+          loadClip(id);
+        }
+      }
+    });
+  }, { rootMargin: '300px' });
+
+  clips.forEach((_, idx) => {
+    const el = document.getElementById('c_' + idx);
+    if (el) observer.observe(el);
+  });
+}
+
+// ── Load clip data ──
+async function loadClip(id) {
+  const cc = clipCharts[id];
+  const clip = cc.clip;
+
+  // Video
+  const vid = document.getElementById(id + '_vid');
+  // Use rgb_url from manifest (static path or API)
+  vid.src = clip.rgb_url;
+  vid.load();
+
+  vid.addEventListener('loadedmetadata', () => {
+    vid.play();
+    document.getElementById(id + '_playbtn').innerHTML = '&#9646;&#9646;';
+  });
+
+  vid.addEventListener('timeupdate', () => {
+    if (!vid.duration || !cc.motionData) return;
+    const pct = vid.currentTime / vid.duration;
+    document.getElementById(id + '_scrub').value = Math.round(pct * 1000);
+    const T = cc.motionData.num_frames;
+    const fi = Math.min(Math.round(pct * (T - 1)), T - 1);
+    document.getElementById(id + '_frame').textContent = fi + ' / ' + (T-1);
+    updateChartCursor(id, fi);
+  });
+
+  // Fetch motion data
+  const motionUrl = clip.motion_url;
+  try {
+    const resp = await fetch(motionUrl);
+    cc.motionData = await resp.json();
+    buildChart(id);
+    buildSegmentChips(id);
+  } catch(e) {
+    console.warn('Failed to load motion data for', clip.id, e);
+  }
+}
+
+// ── Chart ──
+function buildChart(id) {
+  const cc = clipCharts[id];
+  const md = cc.motionData;
+  if (!md) return;
+
+  const T = md.num_frames;
+  const labels = Array.from({length: T}, (_, i) => i);
+  const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+
+  // Build segment highlight dataset
+  const segHighlight = new Array(T).fill(null);
+  const yMax = Math.max(...md.magnitudes_smooth, ...md.magnitudes_raw) * 1.15 || 0.1;
+  md.segments.forEach(seg => {
+    for (let t = seg.start; t <= seg.end; t++) {
+      segHighlight[t] = yMax;
+    }
+  });
+
+  const canvas = document.getElementById(id + '_chart');
+  const ctx = canvas.getContext('2d');
+
+  cc.chart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Segments',
+          data: segHighlight,
+          type: 'bar',
+          backgroundColor: isDark ? 'rgba(255,107,53,0.1)' : 'rgba(255,107,53,0.12)',
+          borderWidth: 0,
+          barPercentage: 1.0,
+          categoryPercentage: 1.0,
+          order: 3,
+        },
+        {
+          label: 'Raw',
+          data: md.magnitudes_raw,
+          borderColor: isDark ? 'rgba(74,158,255,0.25)' : 'rgba(42,122,223,0.2)',
+          backgroundColor: isDark ? 'rgba(74,158,255,0.05)' : 'rgba(42,122,223,0.05)',
+          fill: true,
+          borderWidth: 1,
+          pointRadius: 0,
+          tension: 0.2,
+          order: 2,
+        },
+        {
+          label: 'Smoothed',
+          data: md.magnitudes_smooth,
+          borderColor: isDark ? '#4a9eff' : '#2a7adf',
+          borderWidth: 2,
+          pointRadius: 0,
+          tension: 0.2,
+          fill: false,
+          order: 1,
+        },
+        {
+          label: 'Threshold',
+          data: new Array(T).fill(md.threshold),
+          borderColor: isDark ? 'rgba(255,107,53,0.5)' : 'rgba(224,85,32,0.5)',
+          borderWidth: 1,
+          borderDash: [6, 3],
+          pointRadius: 0,
+          fill: false,
+          order: 0,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            title: items => `Frame ${items[0].label}`,
+            label: item => {
+              if (item.datasetIndex === 0) return null;
+              return `${item.dataset.label}: ${item.parsed.y.toFixed(5)}`;
+            }
+          }
+        },
+      },
+      scales: {
+        x: {
+          title: { display: true, text: 'Frame #', color: isDark ? '#777' : '#666', font: { size: 10 } },
+          ticks: { color: isDark ? '#555' : '#999', font: { size: 9 }, maxTicksLimit: 15 },
+          grid: { color: isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.06)' },
+        },
+        y: {
+          title: { display: true, text: '|delta|', color: isDark ? '#777' : '#666', font: { size: 10 } },
+          ticks: { color: isDark ? '#555' : '#999', font: { size: 9 } },
+          grid: { color: isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.06)' },
+          min: 0,
+          max: yMax,
+        },
+      },
+    },
+    plugins: [{
+      id: 'cursorLine',
+      afterDraw(chart) {
+        const ci = chart._cursorIndex;
+        if (ci == null) return;
+        const xScale = chart.scales.x;
+        const x = xScale.getPixelForValue(ci);
+        const yScale = chart.scales.y;
+        const ctx = chart.ctx;
+        ctx.save();
+        ctx.beginPath();
+        ctx.moveTo(x, yScale.top);
+        ctx.lineTo(x, yScale.bottom);
+        ctx.strokeStyle = 'rgba(255, 60, 60, 0.7)';
+        ctx.lineWidth = 1.5;
+        ctx.setLineDash([4, 3]);
+        ctx.stroke();
+        // Dot
+        const yVal = chart.data.datasets[2].data[ci]; // smoothed
+        if (yVal != null) {
+          const y = yScale.getPixelForValue(yVal);
+          ctx.beginPath();
+          ctx.arc(x, y, 4, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(255, 60, 60, 0.9)';
+          ctx.fill();
+        }
+        ctx.restore();
+      }
+    }]
+  });
+}
+
+function updateChartCursor(id, frameIdx) {
+  const cc = clipCharts[id];
+  if (!cc || !cc.chart) return;
+  cc.chart._cursorIndex = frameIdx;
+  cc.chart.draw();
+}
+
+function buildSegmentChips(id) {
+  const cc = clipCharts[id];
+  const md = cc.motionData;
+  if (!md || !md.segments.length) return;
+
+  const container = document.getElementById(id + '_chips');
+  container.innerHTML = '';
+  md.segments.forEach((seg, i) => {
+    const chip = document.createElement('span');
+    chip.className = 'seg-chip';
+    chip.textContent = `#${i}: [${seg.start}-${seg.end}] ${seg.num_frames}f peak=${seg.peak.toFixed(4)}`;
+    chip.onclick = () => jumpToSegment(id, seg);
+    container.appendChild(chip);
+  });
+}
+
+function jumpToSegment(id, seg) {
+  const cc = clipCharts[id];
+  if (!cc || !cc.motionData) return;
+  const vid = document.getElementById(id + '_vid');
+  if (!vid.duration) return;
+  const T = cc.motionData.num_frames;
+  const targetTime = (seg.start / (T - 1)) * vid.duration;
+  vid.currentTime = targetTime;
+  if (vid.paused) vid.play();
+}
+
+// ── Playback controls ──
+function togglePlay(id) {
+  const vid = document.getElementById(id + '_vid');
+  const btn = document.getElementById(id + '_playbtn');
+  if (vid.paused) {
+    vid.play();
+    btn.innerHTML = '&#9646;&#9646;';
+  } else {
+    vid.pause();
+    btn.innerHTML = '&#9654;';
+  }
+}
+
+function scrubTo(id, val) {
+  const vid = document.getElementById(id + '_vid');
+  if (vid.duration) vid.currentTime = (val / 1000) * vid.duration;
+}
+
+// ── Event listeners ──
+document.getElementById('taskFilter').addEventListener('change', renderClips);
+document.getElementById('sortSelect').addEventListener('change', renderClips);
+
+init();
+</script>
+</body>
+</html>
