@@ -36,9 +36,9 @@
       "text": "insert white plastic piece into white plastic structure",
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_desk_4615.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_desk_4615.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.044985,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part2_assemble_disassemble_furniture_bench_desk_865",
@@ -46,9 +46,9 @@
       "text": "remove white plastic piece from white plastic base",
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_desk_865.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_desk_865.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.136908,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part2_assemble_disassemble_furniture_bench_desk_4181",
@@ -86,9 +86,9 @@
       "text": "put white puzzle piece into white puzzle box",
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_drawer_1670.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_drawer_1670.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.032713,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part2_assemble_disassemble_furniture_bench_lamp_2310",
@@ -96,9 +96,9 @@
       "text": "insert white cup into white stand",
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_lamp_2310.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_lamp_2310.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.056108,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part2_assemble_disassemble_furniture_bench_lamp_224",
@@ -106,9 +106,9 @@
       "text": "put white plastic cup on white statue",
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_lamp_224.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_lamp_224.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.06702,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part2_assemble_disassemble_furniture_bench_lamp_2313",
@@ -116,9 +116,9 @@
       "text": "remove white cup from white stand",
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_lamp_2313.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_lamp_2313.json",
-      "num_segments": 2,
+      "num_segments": 0,
       "motion_max": 0.238877,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part2_assemble_disassemble_furniture_bench_stool_3638",
@@ -156,9 +156,9 @@
       "text": "take red plastic piece from blue plastic piece",
       "rgb_url": "static/videos/egodex/part1_assemble_disassemble_legos_2765.mp4",
       "motion_url": "static/data/motion/part1_assemble_disassemble_legos_2765.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.274077,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part1_assemble_disassemble_legos_755",
@@ -216,9 +216,9 @@
       "text": "assemble wooden construction toy",
       "rgb_url": "static/videos/egodex/part1_assemble_disassemble_structures_305.mp4",
       "motion_url": "static/data/motion/part1_assemble_disassemble_structures_305.json",
-      "num_segments": 0,
+      "num_segments": 1,
       "motion_max": 0.090289,
-      "has_motion": false
+      "has_motion": true
     },
     {
       "id": "part1_assemble_disassemble_tiles_0",
@@ -446,9 +446,9 @@
       "text": "unplug white charging cable from smartphone",
       "rgb_url": "static/videos/egodex/part1_charge_uncharge_device_5098.mp4",
       "motion_url": "static/data/motion/part1_charge_uncharge_device_5098.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.069229,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part1_charge_uncharge_device_5666",
@@ -466,9 +466,9 @@
       "text": "unplug white charging cable from smartphone",
       "rgb_url": "static/videos/egodex/part1_charge_uncharge_device_563.mp4",
       "motion_url": "static/data/motion/part1_charge_uncharge_device_563.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.033084,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part1_clean_cups_930",
@@ -696,9 +696,9 @@
       "text": "take blue towel from pile",
       "rgb_url": "static/videos/egodex/part2_fold_stack_unstack_unfold_cloths_598.mp4",
       "motion_url": "static/data/motion/part2_fold_stack_unstack_unfold_cloths_598.json",
-      "num_segments": 0,
+      "num_segments": 4,
       "motion_max": 0.441831,
-      "has_motion": false
+      "has_motion": true
     },
     {
       "id": "part2_fold_stack_unstack_unfold_cloths_599",
@@ -726,9 +726,9 @@
       "text": "fold white paper in half",
       "rgb_url": "static/videos/egodex/part2_fold_unfold_paper_basic_953.mp4",
       "motion_url": "static/data/motion/part2_fold_unfold_paper_basic_953.json",
-      "num_segments": 0,
+      "num_segments": 1,
       "motion_max": 0.058216,
-      "has_motion": false
+      "has_motion": true
     },
     {
       "id": "part2_fold_unfold_paper_basic_668",
@@ -786,9 +786,9 @@
       "text": "take bread off pan",
       "rgb_url": "static/videos/egodex/part1_fry_bread_0.mp4",
       "motion_url": "static/data/motion/part1_fry_bread_0.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.110395,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part1_fry_bread_2",
@@ -916,9 +916,9 @@
       "text": "put red book into shelf, put green book into shelf",
       "rgb_url": "static/videos/egodex/part3_insert_remove_bookshelf_2848.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_bookshelf_2848.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.113481,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part3_insert_remove_bookshelf_1968",
@@ -956,9 +956,9 @@
       "text": "put down red yellow and blue cup in basket",
       "rgb_url": "static/videos/egodex/part3_insert_remove_cups_from_rack_748.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_cups_from_rack_748.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.092393,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part3_insert_remove_drawer_292",
@@ -966,9 +966,9 @@
       "text": "put white and red toy in drawer",
       "rgb_url": "static/videos/egodex/part3_insert_remove_drawer_292.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_drawer_292.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.050491,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part3_insert_remove_drawer_492",
@@ -996,9 +996,9 @@
       "text": "take out picture from box",
       "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_1013.mp4",
       "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_1013.json",
-      "num_segments": 3,
+      "num_segments": 0,
       "motion_max": 0.124397,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part2_insert_remove_furniture_bench_cabinet_2051",
@@ -1156,9 +1156,9 @@
       "text": "take out white circular object from box",
       "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_case_1654.mp4",
       "motion_url": "static/data/motion/part3_open_close_insert_remove_case_1654.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.283621,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part3_open_close_insert_remove_case_661",
@@ -1166,9 +1166,9 @@
       "text": "take out white tube from black box",
       "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_case_661.mp4",
       "motion_url": "static/data/motion/part3_open_close_insert_remove_case_661.json",
-      "num_segments": 2,
+      "num_segments": 0,
       "motion_max": 0.096817,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part3_open_close_insert_remove_tupperware_456",
@@ -1226,9 +1226,9 @@
       "text": "dip paintbrush into water, dip paintbrush into paint, paint heart on paper",
       "rgb_url": "static/videos/egodex/part3_paint_clean_brush_473.mp4",
       "motion_url": "static/data/motion/part3_paint_clean_brush_473.json",
-      "num_segments": 0,
+      "num_segments": 1,
       "motion_max": 0.218809,
-      "has_motion": false
+      "has_motion": true
     },
     {
       "id": "part3_peel_place_sticker_182",
@@ -1266,7 +1266,7 @@
       "text": "pick up red plastic strawberry",
       "rgb_url": "static/videos/egodex/part4_pick_place_food_524.mp4",
       "motion_url": "static/data/motion/part4_pick_place_food_524.json",
-      "num_segments": 3,
+      "num_segments": 1,
       "motion_max": 0.156567,
       "has_motion": true
     },
@@ -1446,9 +1446,9 @@
       "text": "pour liquid from silver water bottle into brown cup",
       "rgb_url": "static/videos/egodex/part4_pour_204.mp4",
       "motion_url": "static/data/motion/part4_pour_204.json",
-      "num_segments": 2,
+      "num_segments": 0,
       "motion_max": 0.031984,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part4_pour_2976",
@@ -1466,9 +1466,9 @@
       "text": "pour water from plastic bottle into cup",
       "rgb_url": "static/videos/egodex/part4_pour_2760.mp4",
       "motion_url": "static/data/motion/part4_pour_2760.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.029114,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part4_push_pop_toy_2319",
@@ -1566,9 +1566,9 @@
       "text": "pick up yellow plastic cup",
       "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_3517.mp4",
       "motion_url": "static/data/motion/part4_scoop_dump_ice_3517.json",
-      "num_segments": 2,
+      "num_segments": 0,
       "motion_max": 0.065208,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part4_screw_unscrew_allen_fixture_991",
@@ -1626,9 +1626,9 @@
       "text": "open clear plastic bottle with orange cap",
       "rgb_url": "static/videos/egodex/part4_screw_unscrew_bottle_cap_716.mp4",
       "motion_url": "static/data/motion/part4_screw_unscrew_bottle_cap_716.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.029781,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part4_screw_unscrew_fingers_fixture_840",
@@ -1676,9 +1676,9 @@
       "text": "insert rectangular wooden block into jenga tower",
       "rgb_url": "static/videos/egodex/part5_stack_remove_jenga_629.mp4",
       "motion_url": "static/data/motion/part5_stack_remove_jenga_629.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.056873,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part5_stack_remove_jenga_1974",
@@ -1736,9 +1736,9 @@
       "text": "stack white paper cup into another white paper cup",
       "rgb_url": "static/videos/egodex/part5_stack_unstack_cups_788.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_cups_788.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.032408,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part5_stack_unstack_cups_634",
@@ -1766,9 +1766,9 @@
       "text": "separate the stack of plates",
       "rgb_url": "static/videos/egodex/part5_stack_unstack_plates_4122.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_plates_4122.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.067789,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part5_stack_unstack_plates_4924",
@@ -1776,9 +1776,9 @@
       "text": "move blue plastic plate to the right",
       "rgb_url": "static/videos/egodex/part5_stack_unstack_plates_4924.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_plates_4924.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.038784,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part5_stack_unstack_tupperware_104",
@@ -1786,9 +1786,9 @@
       "text": "take out glass container from oven",
       "rgb_url": "static/videos/egodex/part5_stack_unstack_tupperware_104.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_tupperware_104.json",
-      "num_segments": 0,
+      "num_segments": 1,
       "motion_max": 0.063651,
-      "has_motion": false
+      "has_motion": true
     },
     {
       "id": "part5_stack_unstack_tupperware_472",
@@ -1846,9 +1846,9 @@
       "text": "use chopsticks to transfer ice cubes from pink bowl to yellow bowl",
       "rgb_url": "static/videos/egodex/part5_use_chopsticks_0.mp4",
       "motion_url": "static/data/motion/part5_use_chopsticks_0.json",
-      "num_segments": 0,
+      "num_segments": 1,
       "motion_max": 0.09534,
-      "has_motion": false
+      "has_motion": true
     },
     {
       "id": "part5_use_rubiks_cube_5648",
@@ -1886,9 +1886,9 @@
       "text": "put hand sanitizer in box",
       "rgb_url": "static/videos/egodex/part5_vertical_pick_place_12801.mp4",
       "motion_url": "static/data/motion/part5_vertical_pick_place_12801.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.066057,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part5_vertical_pick_place_11329",
@@ -1896,9 +1896,9 @@
       "text": "put gray toy mouse into clear plastic container",
       "rgb_url": "static/videos/egodex/part5_vertical_pick_place_11329.mp4",
       "motion_url": "static/data/motion/part5_vertical_pick_place_11329.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.294556,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part5_vertical_pick_place_12096",
@@ -1906,9 +1906,9 @@
       "text": "put white clay figurine into container",
       "rgb_url": "static/videos/egodex/part5_vertical_pick_place_12096.mp4",
       "motion_url": "static/data/motion/part5_vertical_pick_place_12096.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.043962,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part5_wash_fruit_3",
@@ -1976,9 +1976,9 @@
       "text": "take out green plate from oven",
       "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_112.mp4",
       "motion_url": "static/data/motion/part5_wash_put_away_dishes_112.json",
-      "num_segments": 0,
+      "num_segments": 3,
       "motion_max": 0.176882,
-      "has_motion": false
+      "has_motion": true
     },
     {
       "id": "part5_wash_put_away_dishes_1",
@@ -2056,9 +2056,9 @@
       "text": "put pink donut and brown cube into clear plastic bag",
       "rgb_url": "static/videos/egodex/part5_zip_unzip_bag_1280.mp4",
       "motion_url": "static/data/motion/part5_zip_unzip_bag_1280.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.048318,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "part5_zip_unzip_bag_1042",
@@ -2108,9 +2108,9 @@
       "text": "pick up four pieces of carrot with left hand",
       "rgb_url": "static/videos/hdepic/P01-20240203-130505-228.mp4",
       "motion_url": "static/data/motion/P01-20240203-130505-228.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.060849,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "P01-20240202-110250-210",
@@ -2138,9 +2138,9 @@
       "text": "place the scales instructions down onto the box with the left hand",
       "rgb_url": "static/videos/hdepic/P02-20240211-111822-184.mp4",
       "motion_url": "static/data/motion/P02-20240211-111822-184.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.042118,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "P02-20240211-175138-1032",
@@ -2148,9 +2148,9 @@
       "text": "open the cupboard door with the left hand",
       "rgb_url": "static/videos/hdepic/P02-20240211-175138-1032.mp4",
       "motion_url": "static/data/motion/P02-20240211-175138-1032.json",
-      "num_segments": 2,
+      "num_segments": 0,
       "motion_max": 0.274833,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "P02-20240211-120927-1058",
@@ -2158,9 +2158,9 @@
       "text": "place the rubber ring onto the jam jar lid with the right hand",
       "rgb_url": "static/videos/hdepic/P02-20240211-120927-1058.mp4",
       "motion_url": "static/data/motion/P02-20240211-120927-1058.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.042753,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "P03-20240218-202148-197",
@@ -2198,9 +2198,9 @@
       "text": "transfer the knife from the left hand to the right hand",
       "rgb_url": "static/videos/hdepic/P04-20240413-142619-86.mp4",
       "motion_url": "static/data/motion/P04-20240413-142619-86.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.02265,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "P04-20240414-072251-39",
@@ -2278,9 +2278,9 @@
       "text": "place the cup and the bowl in the sink with both hands",
       "rgb_url": "static/videos/hdepic/P06-20240510-100047-285.mp4",
       "motion_url": "static/data/motion/P06-20240510-100047-285.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.046087,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "P07-20240529-134410-120",
@@ -2298,9 +2298,9 @@
       "text": "pick up the last lettuce leaf from the colander with the right hand",
       "rgb_url": "static/videos/hdepic/P07-20240529-134410-62.mp4",
       "motion_url": "static/data/motion/P07-20240529-134410-62.json",
-      "num_segments": 1,
+      "num_segments": 0,
       "motion_max": 0.046225,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "P07-20240531-201703-247",
@@ -2338,9 +2338,9 @@
       "text": "open the bag of rocket salad with both hands",
       "rgb_url": "static/videos/hdepic/P08-20240613-123547-18.mp4",
       "motion_url": "static/data/motion/P08-20240613-123547-18.json",
-      "num_segments": 2,
+      "num_segments": 0,
       "motion_max": 0.059428,
-      "has_motion": true
+      "has_motion": false
     },
     {
       "id": "P09-20240622-150155-804",
@@ -2458,9 +2458,9 @@
       "label": "Cut cardboard",
       "rgb_url": "static/videos/xperience/ca728159-b233-44a0-8bba-265f5c7cc3a6__ep8__clip_003_cut_cardboard.mp4",
       "motion_url": "static/data/motion/ca728159-b233-44a0-8bba-265f5c7cc3a6__ep8__clip_003_cut_cardboard.json",
-      "num_segments": 0,
+      "num_segments": 1,
       "motion_max": 0.073015,
-      "has_motion": false
+      "has_motion": true
     },
     {
       "id": "b96afe0f-5ff8-4daf-becc-7fca706da6a1__ep19__clip_010_sort_small_items_into_container",
@@ -2579,9 +2579,9 @@
       "label": "Reach for pieces",
       "rgb_url": "static/videos/xperience/9f99d90e-ed8f-464e-8f2d-972d76b669c6__ep19__clip_006_reach_for_pieces.mp4",
       "motion_url": "static/data/motion/9f99d90e-ed8f-464e-8f2d-972d76b669c6__ep19__clip_006_reach_for_pieces.json",
-      "num_segments": 0,
+      "num_segments": 3,
       "motion_max": 0.09726,
-      "has_motion": false
+      "has_motion": true
     },
     {
       "id": "95c91cfb-171f-4060-bf84-d80bc4e50aaa__ep3__clip_013_cut_newspaper_with_scissors",
@@ -2678,7 +2678,7 @@
       "label": "Place star into pouch",
       "rgb_url": "static/videos/xperience/17901b9e-7d5d-475a-86f8-b4a9bc9a5709__ep47__clip_000_place_star_into_pouch.mp4",
       "motion_url": "static/data/motion/17901b9e-7d5d-475a-86f8-b4a9bc9a5709__ep47__clip_000_place_star_into_pouch.json",
-      "num_segments": 1,
+      "num_segments": 2,
       "motion_max": 0.219181,
       "has_motion": true
     },

@@ -1,1 +1,1 @@
-{"num_points": 150, "num_frames": 6, "magnitudes_raw": [0.0, 0.030376, 0.034837, 0.042118, 0.02939, 0.023509], "segments": [{"start": 1, "end": 5, "num_frames": 5, "peak": 0.04211770098206843, "avg": 0.03204600728305231}], "threshold": 0.02, "stats": {"min": 0.0, "max": 0.042118, "mean": 0.026705}}
+{"num_points": 150, "num_frames": 6, "magnitudes_raw": [0.0, 0.030376, 0.034837, 0.042118, 0.02939, 0.023509], "segments": [], "threshold": 0.02, "stats": {"min": 0.0, "max": 0.042118, "mean": 0.026705}}
