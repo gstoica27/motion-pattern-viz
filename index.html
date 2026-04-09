@@ -173,7 +173,7 @@ body {
   <div class="masthead">
     <div class="masthead-left">
       <h1>Motion Pattern Visualization</h1>
-      <div class="subtitle">Per-frame 3D delta magnitudes with high-motion segment detection (threshold = 0.02)</div>
+      <div class="subtitle">Per-frame 3D delta magnitudes (top 20% outlier points trimmed) with segment detection (threshold = 0.02, min clip = 1/10 video)</div>
     </div>
     <div style="display:flex;gap:8px;align-items:center;">
       <button class="theme-toggle" onclick="toggleTheme()">Toggle theme</button>
@@ -411,7 +411,7 @@ function buildChart(id) {
 
   // Build segment highlight dataset
   const segHighlight = new Array(T).fill(null);
-  const yMax = Math.max(...md.magnitudes_smooth, ...md.magnitudes_raw) * 1.15 || 0.1;
+  const yMax = Math.max(...md.magnitudes_raw) * 1.15 || 0.1;
   md.segments.forEach(seg => {
     for (let t = seg.start; t <= seg.end; t++) {
       segHighlight[t] = yMax;
@@ -437,24 +437,14 @@ function buildChart(id) {
           order: 3,
         },
         {
-          label: 'Raw',
+          label: '|delta| (top 20% trimmed)',
           data: md.magnitudes_raw,
-          borderColor: isDark ? 'rgba(74,158,255,0.25)' : 'rgba(42,122,223,0.2)',
-          backgroundColor: isDark ? 'rgba(74,158,255,0.05)' : 'rgba(42,122,223,0.05)',
-          fill: true,
-          borderWidth: 1,
-          pointRadius: 0,
-          tension: 0.2,
-          order: 2,
-        },
-        {
-          label: 'Smoothed',
-          data: md.magnitudes_smooth,
           borderColor: isDark ? '#4a9eff' : '#2a7adf',
-          borderWidth: 2,
+          backgroundColor: isDark ? 'rgba(74,158,255,0.08)' : 'rgba(42,122,223,0.08)',
+          fill: true,
+          borderWidth: 1.5,
           pointRadius: 0,
           tension: 0.2,
-          fill: false,
           order: 1,
         },
         {
@@ -480,7 +470,7 @@ function buildChart(id) {
           callbacks: {
             title: items => `Frame ${items[0].label}`,
             label: item => {
-              if (item.datasetIndex === 0) return null;
+              if (item.datasetIndex === 0 || item.datasetIndex === 2) return null;
               return `${item.dataset.label}: ${item.parsed.y.toFixed(5)}`;
             }
           }
@@ -519,7 +509,7 @@ function buildChart(id) {
         ctx.setLineDash([4, 3]);
         ctx.stroke();
         // Dot
-        const yVal = chart.data.datasets[2].data[ci]; // smoothed
+        const yVal = chart.data.datasets[1].data[ci]; // raw
         if (yVal != null) {
           const y = yScale.getPixelForValue(yVal);
           ctx.beginPath();

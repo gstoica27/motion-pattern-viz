@@ -7,7 +7,7 @@
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_chair_6712.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_chair_6712.json",
       "num_segments": 0,
-      "motion_max": 0.013261,
+      "motion_max": 0.025942,
       "has_motion": false
     },
     {
@@ -17,7 +17,7 @@
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_chair_4458.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_chair_4458.json",
       "num_segments": 0,
-      "motion_max": 0.002371,
+      "motion_max": 0.002564,
       "has_motion": false
     },
     {
@@ -27,7 +27,7 @@
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_chair_5849.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_chair_5849.json",
       "num_segments": 0,
-      "motion_max": 0.006075,
+      "motion_max": 0.005917,
       "has_motion": false
     },
     {
@@ -37,7 +37,7 @@
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_desk_4615.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_desk_4615.json",
       "num_segments": 1,
-      "motion_max": 0.03679,
+      "motion_max": 0.044985,
       "has_motion": true
     },
     {
@@ -47,7 +47,7 @@
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_desk_865.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_desk_865.json",
       "num_segments": 1,
-      "motion_max": 0.037369,
+      "motion_max": 0.136908,
       "has_motion": true
     },
     {
@@ -57,7 +57,7 @@
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_desk_4181.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_desk_4181.json",
       "num_segments": 0,
-      "motion_max": 0.008919,
+      "motion_max": 0.011455,
       "has_motion": false
     },
     {
@@ -67,7 +67,7 @@
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_drawer_4971.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_drawer_4971.json",
       "num_segments": 0,
-      "motion_max": 0.00476,
+      "motion_max": 0.006748,
       "has_motion": false
     },
     {
@@ -77,7 +77,7 @@
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_drawer_7130.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_drawer_7130.json",
       "num_segments": 0,
-      "motion_max": 0.00376,
+      "motion_max": 0.005337,
       "has_motion": false
     },
     {
@@ -86,9 +86,9 @@
       "text": "put white puzzle piece into white puzzle box",
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_drawer_1670.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_drawer_1670.json",
-      "num_segments": 0,
-      "motion_max": 0.021179,
-      "has_motion": false
+      "num_segments": 1,
+      "motion_max": 0.032713,
+      "has_motion": true
     },
     {
       "id": "part2_assemble_disassemble_furniture_bench_lamp_2310",
@@ -97,7 +97,7 @@
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_lamp_2310.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_lamp_2310.json",
       "num_segments": 1,
-      "motion_max": 0.040389,
+      "motion_max": 0.056108,
       "has_motion": true
     },
     {
@@ -107,7 +107,7 @@
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_lamp_224.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_lamp_224.json",
       "num_segments": 1,
-      "motion_max": 0.041473,
+      "motion_max": 0.06702,
       "has_motion": true
     },
     {
@@ -117,7 +117,7 @@
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_lamp_2313.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_lamp_2313.json",
       "num_segments": 2,
-      "motion_max": 0.06774,
+      "motion_max": 0.238877,
       "has_motion": true
     },
     {
@@ -126,9 +126,9 @@
       "text": "insert white puzzle piece into white puzzle",
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_stool_3638.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_stool_3638.json",
-      "num_segments": 1,
-      "motion_max": 0.062819,
-      "has_motion": true
+      "num_segments": 0,
+      "motion_max": 0.147602,
+      "has_motion": false
     },
     {
       "id": "part2_assemble_disassemble_furniture_bench_stool_1340",
@@ -137,7 +137,7 @@
       "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_stool_1340.mp4",
       "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_stool_1340.json",
       "num_segments": 0,
-      "motion_max": 0.020279,
+      "motion_max": 0.027588,
       "has_motion": false
     },
     {
@@ -147,7 +147,7 @@
       "rgb_url": "static/videos/egodex/part1_assemble_disassemble_legos_3105.mp4",
       "motion_url": "static/data/motion/part1_assemble_disassemble_legos_3105.json",
       "num_segments": 0,
-      "motion_max": 0.026752,
+      "motion_max": 0.036085,
       "has_motion": false
     },
     {
@@ -156,8 +156,8 @@
       "text": "take red plastic piece from blue plastic piece",
       "rgb_url": "static/videos/egodex/part1_assemble_disassemble_legos_2765.mp4",
       "motion_url": "static/data/motion/part1_assemble_disassemble_legos_2765.json",
-      "num_segments": 2,
-      "motion_max": 0.125088,
+      "num_segments": 1,
+      "motion_max": 0.274077,
       "has_motion": true
     },
     {
@@ -167,7 +167,7 @@
       "rgb_url": "static/videos/egodex/part1_assemble_disassemble_legos_755.mp4",
       "motion_url": "static/data/motion/part1_assemble_disassemble_legos_755.json",
       "num_segments": 0,
-      "motion_max": 0.030367,
+      "motion_max": 0.136487,
       "has_motion": false
     },
     {
@@ -177,7 +177,7 @@
       "rgb_url": "static/videos/egodex/part1_assemble_disassemble_soft_legos_250.mp4",
       "motion_url": "static/data/motion/part1_assemble_disassemble_soft_legos_250.json",
       "num_segments": 0,
-      "motion_max": 0.005014,
+      "motion_max": 0.009325,
       "has_motion": false
     },
     {
@@ -187,7 +187,7 @@
       "rgb_url": "static/videos/egodex/part1_assemble_disassemble_soft_legos_262.mp4",
       "motion_url": "static/data/motion/part1_assemble_disassemble_soft_legos_262.json",
       "num_segments": 0,
-      "motion_max": 0.034396,
+      "motion_max": 0.103316,
       "has_motion": false
     },
     {
@@ -197,7 +197,7 @@
       "rgb_url": "static/videos/egodex/part1_assemble_disassemble_soft_legos_316.mp4",
       "motion_url": "static/data/motion/part1_assemble_disassemble_soft_legos_316.json",
       "num_segments": 0,
-      "motion_max": 0.003202,
+      "motion_max": 0.004174,
       "has_motion": false
     },
     {
@@ -207,7 +207,7 @@
       "rgb_url": "static/videos/egodex/part1_assemble_disassemble_structures_0.mp4",
       "motion_url": "static/data/motion/part1_assemble_disassemble_structures_0.json",
       "num_segments": 0,
-      "motion_max": 0.015626,
+      "motion_max": 0.03263,
       "has_motion": false
     },
     {
@@ -216,9 +216,9 @@
       "text": "assemble wooden construction toy",
       "rgb_url": "static/videos/egodex/part1_assemble_disassemble_structures_305.mp4",
       "motion_url": "static/data/motion/part1_assemble_disassemble_structures_305.json",
-      "num_segments": 1,
-      "motion_max": 0.054511,
-      "has_motion": true
+      "num_segments": 0,
+      "motion_max": 0.090289,
+      "has_motion": false
     },
     {
       "id": "part1_assemble_disassemble_tiles_0",
@@ -227,7 +227,7 @@
       "rgb_url": "static/videos/egodex/part1_assemble_disassemble_tiles_0.mp4",
       "motion_url": "static/data/motion/part1_assemble_disassemble_tiles_0.json",
       "num_segments": 0,
-      "motion_max": 0.019973,
+      "motion_max": 0.057299,
       "has_motion": false
     },
     {
@@ -236,9 +236,9 @@
       "text": "remove wooden block from wooden block tower",
       "rgb_url": "static/videos/egodex/part1_assemble_jenga_126.mp4",
       "motion_url": "static/data/motion/part1_assemble_jenga_126.json",
-      "num_segments": 0,
-      "motion_max": 0.061835,
-      "has_motion": false
+      "num_segments": 1,
+      "motion_max": 0.105235,
+      "has_motion": true
     },
     {
       "id": "part1_assemble_jenga_431",
@@ -247,7 +247,7 @@
       "rgb_url": "static/videos/egodex/part1_assemble_jenga_431.mp4",
       "motion_url": "static/data/motion/part1_assemble_jenga_431.json",
       "num_segments": 0,
-      "motion_max": 0.031733,
+      "motion_max": 0.084912,
       "has_motion": false
     },
     {
@@ -257,7 +257,7 @@
       "rgb_url": "static/videos/egodex/part1_assemble_jenga_0.mp4",
       "motion_url": "static/data/motion/part1_assemble_jenga_0.json",
       "num_segments": 0,
-      "motion_max": 0.00964,
+      "motion_max": 0.019328,
       "has_motion": false
     },
     {
@@ -267,7 +267,7 @@
       "rgb_url": "static/videos/egodex/part2_basic_fold_7244.mp4",
       "motion_url": "static/data/motion/part2_basic_fold_7244.json",
       "num_segments": 0,
-      "motion_max": 0.134263,
+      "motion_max": 0.502273,
       "has_motion": false
     },
     {
@@ -277,7 +277,7 @@
       "rgb_url": "static/videos/egodex/part2_basic_fold_6551.mp4",
       "motion_url": "static/data/motion/part2_basic_fold_6551.json",
       "num_segments": 1,
-      "motion_max": 0.149268,
+      "motion_max": 0.346031,
       "has_motion": true
     },
     {
@@ -287,7 +287,7 @@
       "rgb_url": "static/videos/egodex/part2_basic_fold_1160.mp4",
       "motion_url": "static/data/motion/part2_basic_fold_1160.json",
       "num_segments": 0,
-      "motion_max": 0.033846,
+      "motion_max": 0.042781,
       "has_motion": false
     },
     {
@@ -297,7 +297,7 @@
       "rgb_url": "static/videos/egodex/part2_basic_pick_place_13417.mp4",
       "motion_url": "static/data/motion/part2_basic_pick_place_13417.json",
       "num_segments": 1,
-      "motion_max": 0.043591,
+      "motion_max": 0.065552,
       "has_motion": true
     },
     {
@@ -307,7 +307,7 @@
       "rgb_url": "static/videos/egodex/part2_basic_pick_place_10971.mp4",
       "motion_url": "static/data/motion/part2_basic_pick_place_10971.json",
       "num_segments": 1,
-      "motion_max": 0.043486,
+      "motion_max": 0.097986,
       "has_motion": true
     },
     {
@@ -317,7 +317,7 @@
       "rgb_url": "static/videos/egodex/part2_basic_pick_place_18177.mp4",
       "motion_url": "static/data/motion/part2_basic_pick_place_18177.json",
       "num_segments": 0,
-      "motion_max": 0.004169,
+      "motion_max": 0.006034,
       "has_motion": false
     },
     {
@@ -327,7 +327,7 @@
       "rgb_url": "static/videos/egodex/part1_boil_serve_egg_451.mp4",
       "motion_url": "static/data/motion/part1_boil_serve_egg_451.json",
       "num_segments": 2,
-      "motion_max": 0.061613,
+      "motion_max": 0.105318,
       "has_motion": true
     },
     {
@@ -337,7 +337,7 @@
       "rgb_url": "static/videos/egodex/part1_boil_serve_egg_97.mp4",
       "motion_url": "static/data/motion/part1_boil_serve_egg_97.json",
       "num_segments": 0,
-      "motion_max": 0.017089,
+      "motion_max": 0.020353,
       "has_motion": false
     },
     {
@@ -347,7 +347,7 @@
       "rgb_url": "static/videos/egodex/part1_boil_serve_egg_164.mp4",
       "motion_url": "static/data/motion/part1_boil_serve_egg_164.json",
       "num_segments": 0,
-      "motion_max": 0.00707,
+      "motion_max": 0.011466,
       "has_motion": false
     },
     {
@@ -357,7 +357,7 @@
       "rgb_url": "static/videos/egodex/part1_braid_unbraid_261.mp4",
       "motion_url": "static/data/motion/part1_braid_unbraid_261.json",
       "num_segments": 0,
-      "motion_max": 0.009526,
+      "motion_max": 0.013646,
       "has_motion": false
     },
     {
@@ -367,7 +367,7 @@
       "rgb_url": "static/videos/egodex/part1_braid_unbraid_244.mp4",
       "motion_url": "static/data/motion/part1_braid_unbraid_244.json",
       "num_segments": 0,
-      "motion_max": 0.032922,
+      "motion_max": 0.040806,
       "has_motion": false
     },
     {
@@ -377,7 +377,7 @@
       "rgb_url": "static/videos/egodex/part1_braid_unbraid_371.mp4",
       "motion_url": "static/data/motion/part1_braid_unbraid_371.json",
       "num_segments": 0,
-      "motion_max": 0.056807,
+      "motion_max": 0.107754,
       "has_motion": false
     },
     {
@@ -387,7 +387,7 @@
       "rgb_url": "static/videos/egodex/part1_build_unstack_lego_491.mp4",
       "motion_url": "static/data/motion/part1_build_unstack_lego_491.json",
       "num_segments": 0,
-      "motion_max": 0.01506,
+      "motion_max": 0.050514,
       "has_motion": false
     },
     {
@@ -397,7 +397,7 @@
       "rgb_url": "static/videos/egodex/part1_build_unstack_lego_36.mp4",
       "motion_url": "static/data/motion/part1_build_unstack_lego_36.json",
       "num_segments": 2,
-      "motion_max": 0.064296,
+      "motion_max": 0.135013,
       "has_motion": true
     },
     {
@@ -407,7 +407,7 @@
       "rgb_url": "static/videos/egodex/part1_build_unstack_lego_15.mp4",
       "motion_url": "static/data/motion/part1_build_unstack_lego_15.json",
       "num_segments": 2,
-      "motion_max": 0.118969,
+      "motion_max": 0.222339,
       "has_motion": true
     },
     {
@@ -417,7 +417,7 @@
       "rgb_url": "static/videos/egodex/part1_charge_uncharge_airpods_4455.mp4",
       "motion_url": "static/data/motion/part1_charge_uncharge_airpods_4455.json",
       "num_segments": 0,
-      "motion_max": 0.010187,
+      "motion_max": 0.019287,
       "has_motion": false
     },
     {
@@ -427,7 +427,7 @@
       "rgb_url": "static/videos/egodex/part1_charge_uncharge_airpods_4529.mp4",
       "motion_url": "static/data/motion/part1_charge_uncharge_airpods_4529.json",
       "num_segments": 0,
-      "motion_max": 0.016064,
+      "motion_max": 0.022339,
       "has_motion": false
     },
     {
@@ -437,7 +437,7 @@
       "rgb_url": "static/videos/egodex/part1_charge_uncharge_airpods_1204.mp4",
       "motion_url": "static/data/motion/part1_charge_uncharge_airpods_1204.json",
       "num_segments": 0,
-      "motion_max": 0.015873,
+      "motion_max": 0.022078,
       "has_motion": false
     },
     {
@@ -447,7 +447,7 @@
       "rgb_url": "static/videos/egodex/part1_charge_uncharge_device_5098.mp4",
       "motion_url": "static/data/motion/part1_charge_uncharge_device_5098.json",
       "num_segments": 1,
-      "motion_max": 0.035591,
+      "motion_max": 0.069229,
       "has_motion": true
     },
     {
@@ -457,7 +457,7 @@
       "rgb_url": "static/videos/egodex/part1_charge_uncharge_device_5666.mp4",
       "motion_url": "static/data/motion/part1_charge_uncharge_device_5666.json",
       "num_segments": 0,
-      "motion_max": 0.013123,
+      "motion_max": 0.047892,
       "has_motion": false
     },
     {
@@ -466,9 +466,9 @@
       "text": "unplug white charging cable from smartphone",
       "rgb_url": "static/videos/egodex/part1_charge_uncharge_device_563.mp4",
       "motion_url": "static/data/motion/part1_charge_uncharge_device_563.json",
-      "num_segments": 0,
-      "motion_max": 0.016163,
-      "has_motion": false
+      "num_segments": 1,
+      "motion_max": 0.033084,
+      "has_motion": true
     },
     {
       "id": "part1_clean_cups_930",
@@ -477,7 +477,7 @@
       "rgb_url": "static/videos/egodex/part1_clean_cups_930.mp4",
       "motion_url": "static/data/motion/part1_clean_cups_930.json",
       "num_segments": 0,
-      "motion_max": 0.032386,
+      "motion_max": 0.064603,
       "has_motion": false
     },
     {
@@ -487,7 +487,7 @@
       "rgb_url": "static/videos/egodex/part1_clean_cups_2960.mp4",
       "motion_url": "static/data/motion/part1_clean_cups_2960.json",
       "num_segments": 0,
-      "motion_max": 0.031214,
+      "motion_max": 0.062864,
       "has_motion": false
     },
     {
@@ -496,9 +496,9 @@
       "text": "wash yellow plastic cup with blue sponge",
       "rgb_url": "static/videos/egodex/part1_clean_cups_250.mp4",
       "motion_url": "static/data/motion/part1_clean_cups_250.json",
-      "num_segments": 0,
-      "motion_max": 0.027094,
-      "has_motion": false
+      "num_segments": 1,
+      "motion_max": 0.065412,
+      "has_motion": true
     },
     {
       "id": "part1_clean_surface_4146",
@@ -507,7 +507,7 @@
       "rgb_url": "static/videos/egodex/part1_clean_surface_4146.mp4",
       "motion_url": "static/data/motion/part1_clean_surface_4146.json",
       "num_segments": 0,
-      "motion_max": 0.030467,
+      "motion_max": 0.041959,
       "has_motion": false
     },
     {
@@ -517,7 +517,7 @@
       "rgb_url": "static/videos/egodex/part1_clean_surface_776.mp4",
       "motion_url": "static/data/motion/part1_clean_surface_776.json",
       "num_segments": 3,
-      "motion_max": 0.067322,
+      "motion_max": 0.138516,
       "has_motion": true
     },
     {
@@ -527,7 +527,7 @@
       "rgb_url": "static/videos/egodex/part1_clean_surface_1215.mp4",
       "motion_url": "static/data/motion/part1_clean_surface_1215.json",
       "num_segments": 1,
-      "motion_max": 0.066135,
+      "motion_max": 0.113486,
       "has_motion": true
     },
     {
@@ -537,7 +537,7 @@
       "rgb_url": "static/videos/egodex/part1_clean_tableware_1129.mp4",
       "motion_url": "static/data/motion/part1_clean_tableware_1129.json",
       "num_segments": 0,
-      "motion_max": 0.025684,
+      "motion_max": 0.053705,
       "has_motion": false
     },
     {
@@ -547,7 +547,7 @@
       "rgb_url": "static/videos/egodex/part1_crumple_flatten_paper_198.mp4",
       "motion_url": "static/data/motion/part1_crumple_flatten_paper_198.json",
       "num_segments": 0,
-      "motion_max": 0.012119,
+      "motion_max": 0.038122,
       "has_motion": false
     },
     {
@@ -557,7 +557,7 @@
       "rgb_url": "static/videos/egodex/part1_crumple_flatten_paper_251.mp4",
       "motion_url": "static/data/motion/part1_crumple_flatten_paper_251.json",
       "num_segments": 0,
-      "motion_max": 0.010701,
+      "motion_max": 0.016762,
       "has_motion": false
     },
     {
@@ -566,9 +566,9 @@
       "text": "unfold white paper on table",
       "rgb_url": "static/videos/egodex/part1_crumple_flatten_paper_12.mp4",
       "motion_url": "static/data/motion/part1_crumple_flatten_paper_12.json",
-      "num_segments": 0,
-      "motion_max": 0.054914,
-      "has_motion": false
+      "num_segments": 1,
+      "motion_max": 0.115106,
+      "has_motion": true
     },
     {
       "id": "part1_dry_hands_410",
@@ -576,8 +576,8 @@
       "text": "knead pink clay in hands",
       "rgb_url": "static/videos/egodex/part1_dry_hands_410.mp4",
       "motion_url": "static/data/motion/part1_dry_hands_410.json",
-      "num_segments": 3,
-      "motion_max": 0.035222,
+      "num_segments": 2,
+      "motion_max": 0.055619,
       "has_motion": true
     },
     {
@@ -586,8 +586,8 @@
       "text": "wipe hands with light blue towel",
       "rgb_url": "static/videos/egodex/part1_dry_hands_813.mp4",
       "motion_url": "static/data/motion/part1_dry_hands_813.json",
-      "num_segments": 3,
-      "motion_max": 0.03354,
+      "num_segments": 1,
+      "motion_max": 0.049162,
       "has_motion": true
     },
     {
@@ -597,7 +597,7 @@
       "rgb_url": "static/videos/egodex/part1_dry_hands_2404.mp4",
       "motion_url": "static/data/motion/part1_dry_hands_2404.json",
       "num_segments": 0,
-      "motion_max": 0.018135,
+      "motion_max": 0.047225,
       "has_motion": false
     },
     {
@@ -607,7 +607,7 @@
       "rgb_url": "static/videos/egodex/part1_fidget_magnetic_spinner_rings_196.mp4",
       "motion_url": "static/data/motion/part1_fidget_magnetic_spinner_rings_196.json",
       "num_segments": 0,
-      "motion_max": 0.036367,
+      "motion_max": 0.07169,
       "has_motion": false
     },
     {
@@ -617,7 +617,7 @@
       "rgb_url": "static/videos/egodex/part1_fidget_magnetic_spinner_rings_530.mp4",
       "motion_url": "static/data/motion/part1_fidget_magnetic_spinner_rings_530.json",
       "num_segments": 0,
-      "motion_max": 0.036931,
+      "motion_max": 0.10019,
       "has_motion": false
     },
     {
@@ -627,7 +627,7 @@
       "rgb_url": "static/videos/egodex/part1_fidget_magnetic_spinner_rings_1029.mp4",
       "motion_url": "static/data/motion/part1_fidget_magnetic_spinner_rings_1029.json",
       "num_segments": 0,
-      "motion_max": 0.058666,
+      "motion_max": 0.088248,
       "has_motion": false
     },
     {
@@ -636,9 +636,9 @@
       "text": "toss coin between hands",
       "rgb_url": "static/videos/egodex/part1_flip_coin_21.mp4",
       "motion_url": "static/data/motion/part1_flip_coin_21.json",
-      "num_segments": 0,
-      "motion_max": 0.020887,
-      "has_motion": false
+      "num_segments": 1,
+      "motion_max": 0.03547,
+      "has_motion": true
     },
     {
       "id": "part1_flip_coin_106",
@@ -647,7 +647,7 @@
       "rgb_url": "static/videos/egodex/part1_flip_coin_106.mp4",
       "motion_url": "static/data/motion/part1_flip_coin_106.json",
       "num_segments": 0,
-      "motion_max": 0.039351,
+      "motion_max": 0.075084,
       "has_motion": false
     },
     {
@@ -657,7 +657,7 @@
       "rgb_url": "static/videos/egodex/part1_flip_coin_116.mp4",
       "motion_url": "static/data/motion/part1_flip_coin_116.json",
       "num_segments": 1,
-      "motion_max": 0.100833,
+      "motion_max": 0.276764,
       "has_motion": true
     },
     {
@@ -667,7 +667,7 @@
       "rgb_url": "static/videos/egodex/part1_flip_pages_2.mp4",
       "motion_url": "static/data/motion/part1_flip_pages_2.json",
       "num_segments": 0,
-      "motion_max": 0.016851,
+      "motion_max": 0.027978,
       "has_motion": false
     },
     {
@@ -677,7 +677,7 @@
       "rgb_url": "static/videos/egodex/part1_flip_pages_376.mp4",
       "motion_url": "static/data/motion/part1_flip_pages_376.json",
       "num_segments": 0,
-      "motion_max": 0.003184,
+      "motion_max": 0.005379,
       "has_motion": false
     },
     {
@@ -687,7 +687,7 @@
       "rgb_url": "static/videos/egodex/part1_flip_pages_129.mp4",
       "motion_url": "static/data/motion/part1_flip_pages_129.json",
       "num_segments": 0,
-      "motion_max": 0.004624,
+      "motion_max": 0.006455,
       "has_motion": false
     },
     {
@@ -697,7 +697,7 @@
       "rgb_url": "static/videos/egodex/part2_fold_stack_unstack_unfold_cloths_598.mp4",
       "motion_url": "static/data/motion/part2_fold_stack_unstack_unfold_cloths_598.json",
       "num_segments": 0,
-      "motion_max": 0.097224,
+      "motion_max": 0.441831,
       "has_motion": false
     },
     {
@@ -706,9 +706,9 @@
       "text": "fold blue microfiber cloth",
       "rgb_url": "static/videos/egodex/part2_fold_stack_unstack_unfold_cloths_599.mp4",
       "motion_url": "static/data/motion/part2_fold_stack_unstack_unfold_cloths_599.json",
-      "num_segments": 0,
-      "motion_max": 0.0474,
-      "has_motion": false
+      "num_segments": 1,
+      "motion_max": 0.15566,
+      "has_motion": true
     },
     {
       "id": "part2_fold_stack_unstack_unfold_cloths_6",
@@ -717,7 +717,7 @@
       "rgb_url": "static/videos/egodex/part2_fold_stack_unstack_unfold_cloths_6.mp4",
       "motion_url": "static/data/motion/part2_fold_stack_unstack_unfold_cloths_6.json",
       "num_segments": 0,
-      "motion_max": 0.039307,
+      "motion_max": 0.09933,
       "has_motion": false
     },
     {
@@ -727,7 +727,7 @@
       "rgb_url": "static/videos/egodex/part2_fold_unfold_paper_basic_953.mp4",
       "motion_url": "static/data/motion/part2_fold_unfold_paper_basic_953.json",
       "num_segments": 0,
-      "motion_max": 0.029318,
+      "motion_max": 0.058216,
       "has_motion": false
     },
     {
@@ -737,7 +737,7 @@
       "rgb_url": "static/videos/egodex/part2_fold_unfold_paper_basic_668.mp4",
       "motion_url": "static/data/motion/part2_fold_unfold_paper_basic_668.json",
       "num_segments": 1,
-      "motion_max": 0.054311,
+      "motion_max": 0.132051,
       "has_motion": true
     },
     {
@@ -747,7 +747,7 @@
       "rgb_url": "static/videos/egodex/part2_fold_unfold_paper_basic_845.mp4",
       "motion_url": "static/data/motion/part2_fold_unfold_paper_basic_845.json",
       "num_segments": 0,
-      "motion_max": 0.006695,
+      "motion_max": 0.013,
       "has_motion": false
     },
     {
@@ -757,7 +757,7 @@
       "rgb_url": "static/videos/egodex/part2_fold_unfold_paper_origami_305.mp4",
       "motion_url": "static/data/motion/part2_fold_unfold_paper_origami_305.json",
       "num_segments": 0,
-      "motion_max": 0.010335,
+      "motion_max": 0.016626,
       "has_motion": false
     },
     {
@@ -767,7 +767,7 @@
       "rgb_url": "static/videos/egodex/part2_fold_unfold_paper_origami_266.mp4",
       "motion_url": "static/data/motion/part2_fold_unfold_paper_origami_266.json",
       "num_segments": 0,
-      "motion_max": 0.011391,
+      "motion_max": 0.019244,
       "has_motion": false
     },
     {
@@ -777,7 +777,7 @@
       "rgb_url": "static/videos/egodex/part2_fold_unfold_paper_origami_87.mp4",
       "motion_url": "static/data/motion/part2_fold_unfold_paper_origami_87.json",
       "num_segments": 0,
-      "motion_max": 0.015681,
+      "motion_max": 0.023471,
       "has_motion": false
     },
     {
@@ -786,8 +786,8 @@
       "text": "take bread off pan",
       "rgb_url": "static/videos/egodex/part1_fry_bread_0.mp4",
       "motion_url": "static/data/motion/part1_fry_bread_0.json",
-      "num_segments": 2,
-      "motion_max": 0.094218,
+      "num_segments": 1,
+      "motion_max": 0.110395,
       "has_motion": true
     },
     {
@@ -797,7 +797,7 @@
       "rgb_url": "static/videos/egodex/part1_fry_bread_2.mp4",
       "motion_url": "static/data/motion/part1_fry_bread_2.json",
       "num_segments": 0,
-      "motion_max": 0.033944,
+      "motion_max": 0.062123,
       "has_motion": false
     },
     {
@@ -807,7 +807,7 @@
       "rgb_url": "static/videos/egodex/part1_fry_bread_1.mp4",
       "motion_url": "static/data/motion/part1_fry_bread_1.json",
       "num_segments": 0,
-      "motion_max": 0.013054,
+      "motion_max": 0.018484,
       "has_motion": false
     },
     {
@@ -817,7 +817,7 @@
       "rgb_url": "static/videos/egodex/part1_fry_egg_11.mp4",
       "motion_url": "static/data/motion/part1_fry_egg_11.json",
       "num_segments": 1,
-      "motion_max": 0.091902,
+      "motion_max": 0.150552,
       "has_motion": true
     },
     {
@@ -826,9 +826,9 @@
       "text": "take fork from bowl",
       "rgb_url": "static/videos/egodex/part1_fry_egg_5.mp4",
       "motion_url": "static/data/motion/part1_fry_egg_5.json",
-      "num_segments": 0,
-      "motion_max": 0.030206,
-      "has_motion": false
+      "num_segments": 1,
+      "motion_max": 0.050608,
+      "has_motion": true
     },
     {
       "id": "part1_fry_egg_7",
@@ -837,7 +837,7 @@
       "rgb_url": "static/videos/egodex/part1_fry_egg_7.mp4",
       "motion_url": "static/data/motion/part1_fry_egg_7.json",
       "num_segments": 0,
-      "motion_max": 0.025485,
+      "motion_max": 0.052154,
       "has_motion": false
     },
     {
@@ -847,7 +847,7 @@
       "rgb_url": "static/videos/egodex/part3_insert_remove_airpods_974.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_airpods_974.json",
       "num_segments": 0,
-      "motion_max": 0.010156,
+      "motion_max": 0.017628,
       "has_motion": false
     },
     {
@@ -857,7 +857,7 @@
       "rgb_url": "static/videos/egodex/part3_insert_remove_airpods_684.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_airpods_684.json",
       "num_segments": 0,
-      "motion_max": 0.006384,
+      "motion_max": 0.013166,
       "has_motion": false
     },
     {
@@ -867,7 +867,7 @@
       "rgb_url": "static/videos/egodex/part3_insert_remove_airpods_803.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_airpods_803.json",
       "num_segments": 0,
-      "motion_max": 0.031147,
+      "motion_max": 0.051198,
       "has_motion": false
     },
     {
@@ -877,7 +877,7 @@
       "rgb_url": "static/videos/egodex/part3_insert_remove_bagging_997.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_bagging_997.json",
       "num_segments": 0,
-      "motion_max": 0.02309,
+      "motion_max": 0.042202,
       "has_motion": false
     },
     {
@@ -887,7 +887,7 @@
       "rgb_url": "static/videos/egodex/part3_insert_remove_bagging_978.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_bagging_978.json",
       "num_segments": 1,
-      "motion_max": 0.030274,
+      "motion_max": 0.039803,
       "has_motion": true
     },
     {
@@ -897,7 +897,7 @@
       "rgb_url": "static/videos/egodex/part3_insert_remove_bagging_147.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_bagging_147.json",
       "num_segments": 0,
-      "motion_max": 0.070829,
+      "motion_max": 0.203044,
       "has_motion": false
     },
     {
@@ -906,9 +906,9 @@
       "text": "take out book from box",
       "rgb_url": "static/videos/egodex/part3_insert_remove_bookshelf_2266.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_bookshelf_2266.json",
-      "num_segments": 1,
-      "motion_max": 0.042722,
-      "has_motion": true
+      "num_segments": 0,
+      "motion_max": 0.074237,
+      "has_motion": false
     },
     {
       "id": "part3_insert_remove_bookshelf_2848",
@@ -916,8 +916,8 @@
       "text": "put red book into shelf, put green book into shelf",
       "rgb_url": "static/videos/egodex/part3_insert_remove_bookshelf_2848.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_bookshelf_2848.json",
-      "num_segments": 2,
-      "motion_max": 0.049998,
+      "num_segments": 1,
+      "motion_max": 0.113481,
       "has_motion": true
     },
     {
@@ -926,9 +926,9 @@
       "text": "put green book into shelf, put red book into shelf, put blue book into shelf",
       "rgb_url": "static/videos/egodex/part3_insert_remove_bookshelf_1968.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_bookshelf_1968.json",
-      "num_segments": 1,
-      "motion_max": 0.055887,
-      "has_motion": true
+      "num_segments": 0,
+      "motion_max": 0.185872,
+      "has_motion": false
     },
     {
       "id": "part3_insert_remove_cups_from_rack_415",
@@ -936,9 +936,9 @@
       "text": "put cups in basket",
       "rgb_url": "static/videos/egodex/part3_insert_remove_cups_from_rack_415.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_cups_from_rack_415.json",
-      "num_segments": 1,
-      "motion_max": 0.051477,
-      "has_motion": true
+      "num_segments": 0,
+      "motion_max": 0.087985,
+      "has_motion": false
     },
     {
       "id": "part3_insert_remove_cups_from_rack_663",
@@ -947,7 +947,7 @@
       "rgb_url": "static/videos/egodex/part3_insert_remove_cups_from_rack_663.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_cups_from_rack_663.json",
       "num_segments": 0,
-      "motion_max": 0.008277,
+      "motion_max": 0.013999,
       "has_motion": false
     },
     {
@@ -957,7 +957,7 @@
       "rgb_url": "static/videos/egodex/part3_insert_remove_cups_from_rack_748.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_cups_from_rack_748.json",
       "num_segments": 1,
-      "motion_max": 0.054347,
+      "motion_max": 0.092393,
       "has_motion": true
     },
     {
@@ -967,7 +967,7 @@
       "rgb_url": "static/videos/egodex/part3_insert_remove_drawer_292.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_drawer_292.json",
       "num_segments": 1,
-      "motion_max": 0.033796,
+      "motion_max": 0.050491,
       "has_motion": true
     },
     {
@@ -977,7 +977,7 @@
       "rgb_url": "static/videos/egodex/part3_insert_remove_drawer_492.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_drawer_492.json",
       "num_segments": 0,
-      "motion_max": 0.006061,
+      "motion_max": 0.009957,
       "has_motion": false
     },
     {
@@ -987,7 +987,7 @@
       "rgb_url": "static/videos/egodex/part3_insert_remove_drawer_107.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_drawer_107.json",
       "num_segments": 0,
-      "motion_max": 0.014782,
+      "motion_max": 0.025485,
       "has_motion": false
     },
     {
@@ -996,8 +996,8 @@
       "text": "take out picture from box",
       "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_1013.mp4",
       "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_1013.json",
-      "num_segments": 2,
-      "motion_max": 0.088123,
+      "num_segments": 3,
+      "motion_max": 0.124397,
       "has_motion": true
     },
     {
@@ -1007,7 +1007,7 @@
       "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_2051.mp4",
       "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_2051.json",
       "num_segments": 0,
-      "motion_max": 0.006467,
+      "motion_max": 0.020361,
       "has_motion": false
     },
     {
@@ -1017,7 +1017,7 @@
       "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_3909.mp4",
       "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_3909.json",
       "num_segments": 0,
-      "motion_max": 0.012426,
+      "motion_max": 0.020982,
       "has_motion": false
     },
     {
@@ -1027,7 +1027,7 @@
       "rgb_url": "static/videos/egodex/part3_insert_remove_plug_socket_2980.mp4",
       "motion_url": "static/data/motion/part3_insert_remove_plug_socket_2980.json",
       "num_segments": 0,
-      "motion_max": 0.014814,
+      "motion_max": 0.032677,
       "has_motion": false
     },
     {
@@ -1037,7 +1037,7 @@
       "rgb_url": "static/videos/egodex/part3_load_dispense_ice_0.mp4",
       "motion_url": "static/data/motion/part3_load_dispense_ice_0.json",
       "num_segments": 1,
-      "motion_max": 0.080935,
+      "motion_max": 0.133534,
       "has_motion": true
     },
     {
@@ -1047,7 +1047,7 @@
       "rgb_url": "static/videos/egodex/part3_lock_unlock_key_1480.mp4",
       "motion_url": "static/data/motion/part3_lock_unlock_key_1480.json",
       "num_segments": 0,
-      "motion_max": 0.003368,
+      "motion_max": 0.005239,
       "has_motion": false
     },
     {
@@ -1057,7 +1057,7 @@
       "rgb_url": "static/videos/egodex/part3_lock_unlock_key_1478.mp4",
       "motion_url": "static/data/motion/part3_lock_unlock_key_1478.json",
       "num_segments": 0,
-      "motion_max": 0.011753,
+      "motion_max": 0.017182,
       "has_motion": false
     },
     {
@@ -1067,7 +1067,7 @@
       "rgb_url": "static/videos/egodex/part3_lock_unlock_key_1482.mp4",
       "motion_url": "static/data/motion/part3_lock_unlock_key_1482.json",
       "num_segments": 0,
-      "motion_max": 0.024306,
+      "motion_max": 0.031186,
       "has_motion": false
     },
     {
@@ -1077,7 +1077,7 @@
       "rgb_url": "static/videos/egodex/part3_make_sandwich_0.mp4",
       "motion_url": "static/data/motion/part3_make_sandwich_0.json",
       "num_segments": 0,
-      "motion_max": 0.015649,
+      "motion_max": 0.026956,
       "has_motion": false
     },
     {
@@ -1087,7 +1087,7 @@
       "rgb_url": "static/videos/egodex/part3_measure_objects_797.mp4",
       "motion_url": "static/data/motion/part3_measure_objects_797.json",
       "num_segments": 0,
-      "motion_max": 0.021029,
+      "motion_max": 0.047115,
       "has_motion": false
     },
     {
@@ -1097,7 +1097,7 @@
       "rgb_url": "static/videos/egodex/part3_measure_objects_790.mp4",
       "motion_url": "static/data/motion/part3_measure_objects_790.json",
       "num_segments": 0,
-      "motion_max": 0.06844,
+      "motion_max": 0.265344,
       "has_motion": false
     },
     {
@@ -1107,7 +1107,7 @@
       "rgb_url": "static/videos/egodex/part3_measure_objects_832.mp4",
       "motion_url": "static/data/motion/part3_measure_objects_832.json",
       "num_segments": 0,
-      "motion_max": 0.006969,
+      "motion_max": 0.012676,
       "has_motion": false
     },
     {
@@ -1116,8 +1116,8 @@
       "text": "take out white oval-shaped object from box",
       "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_box_962.mp4",
       "motion_url": "static/data/motion/part3_open_close_insert_remove_box_962.json",
-      "num_segments": 3,
-      "motion_max": 0.069966,
+      "num_segments": 1,
+      "motion_max": 0.131319,
       "has_motion": true
     },
     {
@@ -1127,7 +1127,7 @@
       "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_box_663.mp4",
       "motion_url": "static/data/motion/part3_open_close_insert_remove_box_663.json",
       "num_segments": 0,
-      "motion_max": 0.019814,
+      "motion_max": 0.089195,
       "has_motion": false
     },
     {
@@ -1136,9 +1136,9 @@
       "text": "put white eyeglass case into brown cardboard box",
       "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_box_164.mp4",
       "motion_url": "static/data/motion/part3_open_close_insert_remove_box_164.json",
-      "num_segments": 1,
-      "motion_max": 0.048546,
-      "has_motion": true
+      "num_segments": 0,
+      "motion_max": 0.126091,
+      "has_motion": false
     },
     {
       "id": "part3_open_close_insert_remove_case_1484",
@@ -1147,7 +1147,7 @@
       "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_case_1484.mp4",
       "motion_url": "static/data/motion/part3_open_close_insert_remove_case_1484.json",
       "num_segments": 0,
-      "motion_max": 0.03863,
+      "motion_max": 0.055057,
       "has_motion": false
     },
     {
@@ -1156,8 +1156,8 @@
       "text": "take out white circular object from box",
       "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_case_1654.mp4",
       "motion_url": "static/data/motion/part3_open_close_insert_remove_case_1654.json",
-      "num_segments": 2,
-      "motion_max": 0.086795,
+      "num_segments": 1,
+      "motion_max": 0.283621,
       "has_motion": true
     },
     {
@@ -1167,7 +1167,7 @@
       "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_case_661.mp4",
       "motion_url": "static/data/motion/part3_open_close_insert_remove_case_661.json",
       "num_segments": 2,
-      "motion_max": 0.064183,
+      "motion_max": 0.096817,
       "has_motion": true
     },
     {
@@ -1177,7 +1177,7 @@
       "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_tupperware_456.mp4",
       "motion_url": "static/data/motion/part3_open_close_insert_remove_tupperware_456.json",
       "num_segments": 0,
-      "motion_max": 0.015363,
+      "motion_max": 0.035042,
       "has_motion": false
     },
     {
@@ -1186,8 +1186,8 @@
       "text": "remove lid from glass container",
       "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_tupperware_3955.mp4",
       "motion_url": "static/data/motion/part3_open_close_insert_remove_tupperware_3955.json",
-      "num_segments": 2,
-      "motion_max": 0.048295,
+      "num_segments": 1,
+      "motion_max": 0.090072,
       "has_motion": true
     },
     {
@@ -1197,7 +1197,7 @@
       "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_tupperware_3359.mp4",
       "motion_url": "static/data/motion/part3_open_close_insert_remove_tupperware_3359.json",
       "num_segments": 0,
-      "motion_max": 0.017692,
+      "motion_max": 0.031549,
       "has_motion": false
     },
     {
@@ -1207,7 +1207,7 @@
       "rgb_url": "static/videos/egodex/part3_paint_clean_brush_953.mp4",
       "motion_url": "static/data/motion/part3_paint_clean_brush_953.json",
       "num_segments": 0,
-      "motion_max": 0.036803,
+      "motion_max": 0.05172,
       "has_motion": false
     },
     {
@@ -1217,7 +1217,7 @@
       "rgb_url": "static/videos/egodex/part3_paint_clean_brush_170.mp4",
       "motion_url": "static/data/motion/part3_paint_clean_brush_170.json",
       "num_segments": 0,
-      "motion_max": 0.054205,
+      "motion_max": 0.088002,
       "has_motion": false
     },
     {
@@ -1227,7 +1227,7 @@
       "rgb_url": "static/videos/egodex/part3_paint_clean_brush_473.mp4",
       "motion_url": "static/data/motion/part3_paint_clean_brush_473.json",
       "num_segments": 0,
-      "motion_max": 0.086548,
+      "motion_max": 0.218809,
       "has_motion": false
     },
     {
@@ -1237,7 +1237,7 @@
       "rgb_url": "static/videos/egodex/part3_peel_place_sticker_182.mp4",
       "motion_url": "static/data/motion/part3_peel_place_sticker_182.json",
       "num_segments": 0,
-      "motion_max": 0.006573,
+      "motion_max": 0.010398,
       "has_motion": false
     },
     {
@@ -1247,7 +1247,7 @@
       "rgb_url": "static/videos/egodex/part3_peel_place_sticker_82.mp4",
       "motion_url": "static/data/motion/part3_peel_place_sticker_82.json",
       "num_segments": 0,
-      "motion_max": 0.013233,
+      "motion_max": 0.024382,
       "has_motion": false
     },
     {
@@ -1257,7 +1257,7 @@
       "rgb_url": "static/videos/egodex/part3_peel_place_sticker_549.mp4",
       "motion_url": "static/data/motion/part3_peel_place_sticker_549.json",
       "num_segments": 0,
-      "motion_max": 0.020272,
+      "motion_max": 0.066548,
       "has_motion": false
     },
     {
@@ -1267,7 +1267,7 @@
       "rgb_url": "static/videos/egodex/part4_pick_place_food_524.mp4",
       "motion_url": "static/data/motion/part4_pick_place_food_524.json",
       "num_segments": 3,
-      "motion_max": 0.063309,
+      "motion_max": 0.156567,
       "has_motion": true
     },
     {
@@ -1277,7 +1277,7 @@
       "rgb_url": "static/videos/egodex/part4_pick_place_food_3387.mp4",
       "motion_url": "static/data/motion/part4_pick_place_food_3387.json",
       "num_segments": 0,
-      "motion_max": 0.004801,
+      "motion_max": 0.006774,
       "has_motion": false
     },
     {
@@ -1287,7 +1287,7 @@
       "rgb_url": "static/videos/egodex/part4_pick_place_food_992.mp4",
       "motion_url": "static/data/motion/part4_pick_place_food_992.json",
       "num_segments": 0,
-      "motion_max": 0.019262,
+      "motion_max": 0.024231,
       "has_motion": false
     },
     {
@@ -1297,7 +1297,7 @@
       "rgb_url": "static/videos/egodex/part3_pick_up_and_put_down_case_or_bag_474.mp4",
       "motion_url": "static/data/motion/part3_pick_up_and_put_down_case_or_bag_474.json",
       "num_segments": 0,
-      "motion_max": 0.051966,
+      "motion_max": 0.082841,
       "has_motion": false
     },
     {
@@ -1307,7 +1307,7 @@
       "rgb_url": "static/videos/egodex/part3_pick_up_and_put_down_case_or_bag_335.mp4",
       "motion_url": "static/data/motion/part3_pick_up_and_put_down_case_or_bag_335.json",
       "num_segments": 0,
-      "motion_max": 0.051755,
+      "motion_max": 0.182562,
       "has_motion": false
     },
     {
@@ -1317,7 +1317,7 @@
       "rgb_url": "static/videos/egodex/part3_pick_up_and_put_down_case_or_bag_900.mp4",
       "motion_url": "static/data/motion/part3_pick_up_and_put_down_case_or_bag_900.json",
       "num_segments": 0,
-      "motion_max": 0.059482,
+      "motion_max": 0.105132,
       "has_motion": false
     },
     {
@@ -1327,7 +1327,7 @@
       "rgb_url": "static/videos/egodex/part4_play_mancala_147.mp4",
       "motion_url": "static/data/motion/part4_play_mancala_147.json",
       "num_segments": 0,
-      "motion_max": 0.00849,
+      "motion_max": 0.023627,
       "has_motion": false
     },
     {
@@ -1337,7 +1337,7 @@
       "rgb_url": "static/videos/egodex/part4_play_mancala_942.mp4",
       "motion_url": "static/data/motion/part4_play_mancala_942.json",
       "num_segments": 0,
-      "motion_max": 0.007015,
+      "motion_max": 0.014051,
       "has_motion": false
     },
     {
@@ -1347,7 +1347,7 @@
       "rgb_url": "static/videos/egodex/part4_play_mancala_314.mp4",
       "motion_url": "static/data/motion/part4_play_mancala_314.json",
       "num_segments": 0,
-      "motion_max": 0.007527,
+      "motion_max": 0.009744,
       "has_motion": false
     },
     {
@@ -1357,7 +1357,7 @@
       "rgb_url": "static/videos/egodex/part3_play_piano_1250.mp4",
       "motion_url": "static/data/motion/part3_play_piano_1250.json",
       "num_segments": 0,
-      "motion_max": 0.002009,
+      "motion_max": 0.002926,
       "has_motion": false
     },
     {
@@ -1367,7 +1367,7 @@
       "rgb_url": "static/videos/egodex/part3_play_piano_334.mp4",
       "motion_url": "static/data/motion/part3_play_piano_334.json",
       "num_segments": 0,
-      "motion_max": 0.003408,
+      "motion_max": 0.006249,
       "has_motion": false
     },
     {
@@ -1377,7 +1377,7 @@
       "rgb_url": "static/videos/egodex/part3_play_piano_870.mp4",
       "motion_url": "static/data/motion/part3_play_piano_870.json",
       "num_segments": 0,
-      "motion_max": 0.002094,
+      "motion_max": 0.002466,
       "has_motion": false
     },
     {
@@ -1387,7 +1387,7 @@
       "rgb_url": "static/videos/egodex/part4_play_reset_connect_four_594.mp4",
       "motion_url": "static/data/motion/part4_play_reset_connect_four_594.json",
       "num_segments": 0,
-      "motion_max": 0.028901,
+      "motion_max": 0.098091,
       "has_motion": false
     },
     {
@@ -1396,9 +1396,9 @@
       "text": "remove red and yellow plastic pieces from blue plastic board",
       "rgb_url": "static/videos/egodex/part4_play_reset_connect_four_582.mp4",
       "motion_url": "static/data/motion/part4_play_reset_connect_four_582.json",
-      "num_segments": 1,
-      "motion_max": 0.030806,
-      "has_motion": true
+      "num_segments": 0,
+      "motion_max": 0.067561,
+      "has_motion": false
     },
     {
       "id": "part4_play_reset_connect_four_702",
@@ -1406,9 +1406,9 @@
       "text": "remove red circular game piece from blue plastic game board",
       "rgb_url": "static/videos/egodex/part4_play_reset_connect_four_702.mp4",
       "motion_url": "static/data/motion/part4_play_reset_connect_four_702.json",
-      "num_segments": 2,
-      "motion_max": 0.030998,
-      "has_motion": true
+      "num_segments": 0,
+      "motion_max": 0.141439,
+      "has_motion": false
     },
     {
       "id": "part4_point_and_click_remote_2123",
@@ -1417,7 +1417,7 @@
       "rgb_url": "static/videos/egodex/part4_point_and_click_remote_2123.mp4",
       "motion_url": "static/data/motion/part4_point_and_click_remote_2123.json",
       "num_segments": 0,
-      "motion_max": 0.053316,
+      "motion_max": 0.084588,
       "has_motion": false
     },
     {
@@ -1427,7 +1427,7 @@
       "rgb_url": "static/videos/egodex/part4_point_and_click_remote_1092.mp4",
       "motion_url": "static/data/motion/part4_point_and_click_remote_1092.json",
       "num_segments": 0,
-      "motion_max": 0.003797,
+      "motion_max": 0.004945,
       "has_motion": false
     },
     {
@@ -1437,7 +1437,7 @@
       "rgb_url": "static/videos/egodex/part4_point_and_click_remote_1415.mp4",
       "motion_url": "static/data/motion/part4_point_and_click_remote_1415.json",
       "num_segments": 0,
-      "motion_max": 0.016288,
+      "motion_max": 0.036673,
       "has_motion": false
     },
     {
@@ -1446,8 +1446,8 @@
       "text": "pour liquid from silver water bottle into brown cup",
       "rgb_url": "static/videos/egodex/part4_pour_204.mp4",
       "motion_url": "static/data/motion/part4_pour_204.json",
-      "num_segments": 1,
-      "motion_max": 0.024749,
+      "num_segments": 2,
+      "motion_max": 0.031984,
       "has_motion": true
     },
     {
@@ -1457,7 +1457,7 @@
       "rgb_url": "static/videos/egodex/part4_pour_2976.mp4",
       "motion_url": "static/data/motion/part4_pour_2976.json",
       "num_segments": 0,
-      "motion_max": 0.016573,
+      "motion_max": 0.023147,
       "has_motion": false
     },
     {
@@ -1467,7 +1467,7 @@
       "rgb_url": "static/videos/egodex/part4_pour_2760.mp4",
       "motion_url": "static/data/motion/part4_pour_2760.json",
       "num_segments": 1,
-      "motion_max": 0.023083,
+      "motion_max": 0.029114,
       "has_motion": true
     },
     {
@@ -1477,7 +1477,7 @@
       "rgb_url": "static/videos/egodex/part4_push_pop_toy_2319.mp4",
       "motion_url": "static/data/motion/part4_push_pop_toy_2319.json",
       "num_segments": 0,
-      "motion_max": 0.019255,
+      "motion_max": 0.043886,
       "has_motion": false
     },
     {
@@ -1487,7 +1487,7 @@
       "rgb_url": "static/videos/egodex/part4_push_pop_toy_1184.mp4",
       "motion_url": "static/data/motion/part4_push_pop_toy_1184.json",
       "num_segments": 0,
-      "motion_max": 0.016658,
+      "motion_max": 0.031321,
       "has_motion": false
     },
     {
@@ -1497,7 +1497,7 @@
       "rgb_url": "static/videos/egodex/part4_push_pop_toy_1731.mp4",
       "motion_url": "static/data/motion/part4_push_pop_toy_1731.json",
       "num_segments": 0,
-      "motion_max": 0.017398,
+      "motion_max": 0.027082,
       "has_motion": false
     },
     {
@@ -1507,7 +1507,7 @@
       "rgb_url": "static/videos/egodex/part4_rake_smooth_zen_garden_0.mp4",
       "motion_url": "static/data/motion/part4_rake_smooth_zen_garden_0.json",
       "num_segments": 0,
-      "motion_max": 0.023102,
+      "motion_max": 0.034358,
       "has_motion": false
     },
     {
@@ -1517,7 +1517,7 @@
       "rgb_url": "static/videos/egodex/part4_roll_ball_341.mp4",
       "motion_url": "static/data/motion/part4_roll_ball_341.json",
       "num_segments": 1,
-      "motion_max": 0.091323,
+      "motion_max": 0.199378,
       "has_motion": true
     },
     {
@@ -1526,8 +1526,8 @@
       "text": "roll orange ball on table",
       "rgb_url": "static/videos/egodex/part4_roll_ball_34.mp4",
       "motion_url": "static/data/motion/part4_roll_ball_34.json",
-      "num_segments": 1,
-      "motion_max": 0.106587,
+      "num_segments": 4,
+      "motion_max": 0.326577,
       "has_motion": true
     },
     {
@@ -1536,9 +1536,9 @@
       "text": "roll yellow tennis ball on green surface",
       "rgb_url": "static/videos/egodex/part4_roll_ball_339.mp4",
       "motion_url": "static/data/motion/part4_roll_ball_339.json",
-      "num_segments": 0,
-      "motion_max": 0.038247,
-      "has_motion": false
+      "num_segments": 2,
+      "motion_max": 0.07387,
+      "has_motion": true
     },
     {
       "id": "part4_scoop_dump_ice_3040",
@@ -1547,7 +1547,7 @@
       "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_3040.mp4",
       "motion_url": "static/data/motion/part4_scoop_dump_ice_3040.json",
       "num_segments": 0,
-      "motion_max": 0.015658,
+      "motion_max": 0.022011,
       "has_motion": false
     },
     {
@@ -1557,7 +1557,7 @@
       "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_3227.mp4",
       "motion_url": "static/data/motion/part4_scoop_dump_ice_3227.json",
       "num_segments": 0,
-      "motion_max": 0.006474,
+      "motion_max": 0.009408,
       "has_motion": false
     },
     {
@@ -1567,7 +1567,7 @@
       "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_3517.mp4",
       "motion_url": "static/data/motion/part4_scoop_dump_ice_3517.json",
       "num_segments": 2,
-      "motion_max": 0.035869,
+      "motion_max": 0.065208,
       "has_motion": true
     },
     {
@@ -1577,7 +1577,7 @@
       "rgb_url": "static/videos/egodex/part4_screw_unscrew_allen_fixture_991.mp4",
       "motion_url": "static/data/motion/part4_screw_unscrew_allen_fixture_991.json",
       "num_segments": 0,
-      "motion_max": 0.005898,
+      "motion_max": 0.008857,
       "has_motion": false
     },
     {
@@ -1587,7 +1587,7 @@
       "rgb_url": "static/videos/egodex/part4_screw_unscrew_allen_fixture_16.mp4",
       "motion_url": "static/data/motion/part4_screw_unscrew_allen_fixture_16.json",
       "num_segments": 0,
-      "motion_max": 0.032453,
+      "motion_max": 0.039955,
       "has_motion": false
     },
     {
@@ -1597,7 +1597,7 @@
       "rgb_url": "static/videos/egodex/part4_screw_unscrew_allen_fixture_154.mp4",
       "motion_url": "static/data/motion/part4_screw_unscrew_allen_fixture_154.json",
       "num_segments": 0,
-      "motion_max": 0.065826,
+      "motion_max": 0.0998,
       "has_motion": false
     },
     {
@@ -1607,7 +1607,7 @@
       "rgb_url": "static/videos/egodex/part4_screw_unscrew_bottle_cap_2122.mp4",
       "motion_url": "static/data/motion/part4_screw_unscrew_bottle_cap_2122.json",
       "num_segments": 1,
-      "motion_max": 26.045843,
+      "motion_max": 45.703362,
       "has_motion": true
     },
     {
@@ -1617,7 +1617,7 @@
       "rgb_url": "static/videos/egodex/part4_screw_unscrew_bottle_cap_2675.mp4",
       "motion_url": "static/data/motion/part4_screw_unscrew_bottle_cap_2675.json",
       "num_segments": 0,
-      "motion_max": 0.035439,
+      "motion_max": 0.056566,
       "has_motion": false
     },
     {
@@ -1626,9 +1626,9 @@
       "text": "open clear plastic bottle with orange cap",
       "rgb_url": "static/videos/egodex/part4_screw_unscrew_bottle_cap_716.mp4",
       "motion_url": "static/data/motion/part4_screw_unscrew_bottle_cap_716.json",
-      "num_segments": 0,
-      "motion_max": 0.015354,
-      "has_motion": false
+      "num_segments": 1,
+      "motion_max": 0.029781,
+      "has_motion": true
     },
     {
       "id": "part4_screw_unscrew_fingers_fixture_840",
@@ -1637,7 +1637,7 @@
       "rgb_url": "static/videos/egodex/part4_screw_unscrew_fingers_fixture_840.mp4",
       "motion_url": "static/data/motion/part4_screw_unscrew_fingers_fixture_840.json",
       "num_segments": 0,
-      "motion_max": 0.035386,
+      "motion_max": 0.070291,
       "has_motion": false
     },
     {
@@ -1647,7 +1647,7 @@
       "rgb_url": "static/videos/egodex/part4_screw_unscrew_fingers_fixture_1150.mp4",
       "motion_url": "static/data/motion/part4_screw_unscrew_fingers_fixture_1150.json",
       "num_segments": 0,
-      "motion_max": 0.003603,
+      "motion_max": 0.005347,
       "has_motion": false
     },
     {
@@ -1657,7 +1657,7 @@
       "rgb_url": "static/videos/egodex/part4_screw_unscrew_fingers_fixture_804.mp4",
       "motion_url": "static/data/motion/part4_screw_unscrew_fingers_fixture_804.json",
       "num_segments": 0,
-      "motion_max": 0.041391,
+      "motion_max": 0.073862,
       "has_motion": false
     },
     {
@@ -1667,7 +1667,7 @@
       "rgb_url": "static/videos/egodex/part5_stack_remove_jenga_1617.mp4",
       "motion_url": "static/data/motion/part5_stack_remove_jenga_1617.json",
       "num_segments": 0,
-      "motion_max": 0.006603,
+      "motion_max": 0.011313,
       "has_motion": false
     },
     {
@@ -1677,7 +1677,7 @@
       "rgb_url": "static/videos/egodex/part5_stack_remove_jenga_629.mp4",
       "motion_url": "static/data/motion/part5_stack_remove_jenga_629.json",
       "num_segments": 1,
-      "motion_max": 0.038318,
+      "motion_max": 0.056873,
       "has_motion": true
     },
     {
@@ -1687,7 +1687,7 @@
       "rgb_url": "static/videos/egodex/part5_stack_remove_jenga_1974.mp4",
       "motion_url": "static/data/motion/part5_stack_remove_jenga_1974.json",
       "num_segments": 0,
-      "motion_max": 0.013289,
+      "motion_max": 0.020205,
       "has_motion": false
     },
     {
@@ -1697,7 +1697,7 @@
       "rgb_url": "static/videos/egodex/part5_stack_unstack_bowls_2167.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_bowls_2167.json",
       "num_segments": 0,
-      "motion_max": 0.020202,
+      "motion_max": 0.049467,
       "has_motion": false
     },
     {
@@ -1706,9 +1706,9 @@
       "text": "nest bowls inside each other",
       "rgb_url": "static/videos/egodex/part5_stack_unstack_bowls_1171.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_bowls_1171.json",
-      "num_segments": 2,
-      "motion_max": 0.078275,
-      "has_motion": true
+      "num_segments": 0,
+      "motion_max": 0.204292,
+      "has_motion": false
     },
     {
       "id": "part5_stack_unstack_bowls_1808",
@@ -1717,7 +1717,7 @@
       "rgb_url": "static/videos/egodex/part5_stack_unstack_bowls_1808.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_bowls_1808.json",
       "num_segments": 1,
-      "motion_max": 0.063113,
+      "motion_max": 0.112766,
       "has_motion": true
     },
     {
@@ -1726,8 +1726,8 @@
       "text": "stack red plastic cup into another red plastic cup",
       "rgb_url": "static/videos/egodex/part5_stack_unstack_cups_802.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_cups_802.json",
-      "num_segments": 1,
-      "motion_max": 0.110854,
+      "num_segments": 2,
+      "motion_max": 0.231404,
       "has_motion": true
     },
     {
@@ -1737,7 +1737,7 @@
       "rgb_url": "static/videos/egodex/part5_stack_unstack_cups_788.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_cups_788.json",
       "num_segments": 1,
-      "motion_max": 0.026057,
+      "motion_max": 0.032408,
       "has_motion": true
     },
     {
@@ -1747,7 +1747,7 @@
       "rgb_url": "static/videos/egodex/part5_stack_unstack_cups_634.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_cups_634.json",
       "num_segments": 1,
-      "motion_max": 0.068278,
+      "motion_max": 0.174672,
       "has_motion": true
     },
     {
@@ -1757,7 +1757,7 @@
       "rgb_url": "static/videos/egodex/part5_stack_unstack_plates_5437.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_plates_5437.json",
       "num_segments": 0,
-      "motion_max": 0.012787,
+      "motion_max": 0.030107,
       "has_motion": false
     },
     {
@@ -1767,7 +1767,7 @@
       "rgb_url": "static/videos/egodex/part5_stack_unstack_plates_4122.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_plates_4122.json",
       "num_segments": 1,
-      "motion_max": 0.038408,
+      "motion_max": 0.067789,
       "has_motion": true
     },
     {
@@ -1777,7 +1777,7 @@
       "rgb_url": "static/videos/egodex/part5_stack_unstack_plates_4924.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_plates_4924.json",
       "num_segments": 1,
-      "motion_max": 0.025245,
+      "motion_max": 0.038784,
       "has_motion": true
     },
     {
@@ -1787,7 +1787,7 @@
       "rgb_url": "static/videos/egodex/part5_stack_unstack_tupperware_104.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_tupperware_104.json",
       "num_segments": 0,
-      "motion_max": 0.048783,
+      "motion_max": 0.063651,
       "has_motion": false
     },
     {
@@ -1797,7 +1797,7 @@
       "rgb_url": "static/videos/egodex/part5_stack_unstack_tupperware_472.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_tupperware_472.json",
       "num_segments": 0,
-      "motion_max": 0.022651,
+      "motion_max": 0.032259,
       "has_motion": false
     },
     {
@@ -1807,7 +1807,7 @@
       "rgb_url": "static/videos/egodex/part5_stack_unstack_tupperware_1004.mp4",
       "motion_url": "static/data/motion/part5_stack_unstack_tupperware_1004.json",
       "num_segments": 0,
-      "motion_max": 0.055136,
+      "motion_max": 0.132921,
       "has_motion": false
     },
     {
@@ -1817,7 +1817,7 @@
       "rgb_url": "static/videos/egodex/part5_type_keyboard_139.mp4",
       "motion_url": "static/data/motion/part5_type_keyboard_139.json",
       "num_segments": 0,
-      "motion_max": 0.002763,
+      "motion_max": 0.003641,
       "has_motion": false
     },
     {
@@ -1827,7 +1827,7 @@
       "rgb_url": "static/videos/egodex/part5_type_keyboard_1029.mp4",
       "motion_url": "static/data/motion/part5_type_keyboard_1029.json",
       "num_segments": 0,
-      "motion_max": 0.004736,
+      "motion_max": 0.005135,
       "has_motion": false
     },
     {
@@ -1837,7 +1837,7 @@
       "rgb_url": "static/videos/egodex/part5_type_keyboard_1020.mp4",
       "motion_url": "static/data/motion/part5_type_keyboard_1020.json",
       "num_segments": 0,
-      "motion_max": 0.004857,
+      "motion_max": 0.013746,
       "has_motion": false
     },
     {
@@ -1847,7 +1847,7 @@
       "rgb_url": "static/videos/egodex/part5_use_chopsticks_0.mp4",
       "motion_url": "static/data/motion/part5_use_chopsticks_0.json",
       "num_segments": 0,
-      "motion_max": 0.045176,
+      "motion_max": 0.09534,
       "has_motion": false
     },
     {
@@ -1857,7 +1857,7 @@
       "rgb_url": "static/videos/egodex/part5_use_rubiks_cube_5648.mp4",
       "motion_url": "static/data/motion/part5_use_rubiks_cube_5648.json",
       "num_segments": 0,
-      "motion_max": 0.011555,
+      "motion_max": 0.02814,
       "has_motion": false
     },
     {
@@ -1867,7 +1867,7 @@
       "rgb_url": "static/videos/egodex/part5_use_rubiks_cube_5521.mp4",
       "motion_url": "static/data/motion/part5_use_rubiks_cube_5521.json",
       "num_segments": 0,
-      "motion_max": 0.007108,
+      "motion_max": 0.015633,
       "has_motion": false
     },
     {
@@ -1877,7 +1877,7 @@
       "rgb_url": "static/videos/egodex/part5_use_rubiks_cube_5625.mp4",
       "motion_url": "static/data/motion/part5_use_rubiks_cube_5625.json",
       "num_segments": 0,
-      "motion_max": 0.010552,
+      "motion_max": 0.015506,
       "has_motion": false
     },
     {
@@ -1887,7 +1887,7 @@
       "rgb_url": "static/videos/egodex/part5_vertical_pick_place_12801.mp4",
       "motion_url": "static/data/motion/part5_vertical_pick_place_12801.json",
       "num_segments": 1,
-      "motion_max": 0.042396,
+      "motion_max": 0.066057,
       "has_motion": true
     },
     {
@@ -1897,7 +1897,7 @@
       "rgb_url": "static/videos/egodex/part5_vertical_pick_place_11329.mp4",
       "motion_url": "static/data/motion/part5_vertical_pick_place_11329.json",
       "num_segments": 1,
-      "motion_max": 0.055982,
+      "motion_max": 0.294556,
       "has_motion": true
     },
     {
@@ -1907,7 +1907,7 @@
       "rgb_url": "static/videos/egodex/part5_vertical_pick_place_12096.mp4",
       "motion_url": "static/data/motion/part5_vertical_pick_place_12096.json",
       "num_segments": 1,
-      "motion_max": 0.027232,
+      "motion_max": 0.043962,
       "has_motion": true
     },
     {
@@ -1917,7 +1917,7 @@
       "rgb_url": "static/videos/egodex/part5_wash_fruit_3.mp4",
       "motion_url": "static/data/motion/part5_wash_fruit_3.json",
       "num_segments": 0,
-      "motion_max": 0.00953,
+      "motion_max": 0.01478,
       "has_motion": false
     },
     {
@@ -1927,7 +1927,7 @@
       "rgb_url": "static/videos/egodex/part5_wash_fruit_9.mp4",
       "motion_url": "static/data/motion/part5_wash_fruit_9.json",
       "num_segments": 1,
-      "motion_max": 0.071009,
+      "motion_max": 0.094778,
       "has_motion": true
     },
     {
@@ -1937,7 +1937,7 @@
       "rgb_url": "static/videos/egodex/part5_wash_fruit_6.mp4",
       "motion_url": "static/data/motion/part5_wash_fruit_6.json",
       "num_segments": 0,
-      "motion_max": 0.040582,
+      "motion_max": 0.059432,
       "has_motion": false
     },
     {
@@ -1947,7 +1947,7 @@
       "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_34.mp4",
       "motion_url": "static/data/motion/part5_wash_kitchen_dishes_34.json",
       "num_segments": 3,
-      "motion_max": 0.174895,
+      "motion_max": 0.291304,
       "has_motion": true
     },
     {
@@ -1956,8 +1956,8 @@
       "text": "wash plastic cutlery with sponge",
       "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_11.mp4",
       "motion_url": "static/data/motion/part5_wash_kitchen_dishes_11.json",
-      "num_segments": 1,
-      "motion_max": 0.081102,
+      "num_segments": 2,
+      "motion_max": 0.1042,
       "has_motion": true
     },
     {
@@ -1967,7 +1967,7 @@
       "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_16.mp4",
       "motion_url": "static/data/motion/part5_wash_kitchen_dishes_16.json",
       "num_segments": 1,
-      "motion_max": 0.11653,
+      "motion_max": 0.136107,
       "has_motion": true
     },
     {
@@ -1977,7 +1977,7 @@
       "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_112.mp4",
       "motion_url": "static/data/motion/part5_wash_put_away_dishes_112.json",
       "num_segments": 0,
-      "motion_max": 0.083801,
+      "motion_max": 0.176882,
       "has_motion": false
     },
     {
@@ -1986,8 +1986,8 @@
       "text": "take dish from sink",
       "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_1.mp4",
       "motion_url": "static/data/motion/part5_wash_put_away_dishes_1.json",
-      "num_segments": 2,
-      "motion_max": 0.082238,
+      "num_segments": 1,
+      "motion_max": 0.279946,
       "has_motion": true
     },
     {
@@ -1997,7 +1997,7 @@
       "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_121.mp4",
       "motion_url": "static/data/motion/part5_wash_put_away_dishes_121.json",
       "num_segments": 1,
-      "motion_max": 0.100904,
+      "motion_max": 0.17494,
       "has_motion": true
     },
     {
@@ -2007,7 +2007,7 @@
       "rgb_url": "static/videos/egodex/part5_wipe_kitchen_surfaces_0.mp4",
       "motion_url": "static/data/motion/part5_wipe_kitchen_surfaces_0.json",
       "num_segments": 2,
-      "motion_max": 0.033865,
+      "motion_max": 0.04386,
       "has_motion": true
     },
     {
@@ -2017,7 +2017,7 @@
       "rgb_url": "static/videos/egodex/part5_wipe_screen_0.mp4",
       "motion_url": "static/data/motion/part5_wipe_screen_0.json",
       "num_segments": 1,
-      "motion_max": 0.036119,
+      "motion_max": 0.045142,
       "has_motion": true
     },
     {
@@ -2027,7 +2027,7 @@
       "rgb_url": "static/videos/egodex/part5_wrap_1499.mp4",
       "motion_url": "static/data/motion/part5_wrap_1499.json",
       "num_segments": 0,
-      "motion_max": 0.00906,
+      "motion_max": 0.012401,
       "has_motion": false
     },
     {
@@ -2037,7 +2037,7 @@
       "rgb_url": "static/videos/egodex/part5_wrap_1476.mp4",
       "motion_url": "static/data/motion/part5_wrap_1476.json",
       "num_segments": 0,
-      "motion_max": 0.00357,
+      "motion_max": 0.004805,
       "has_motion": false
     },
     {
@@ -2047,7 +2047,7 @@
       "rgb_url": "static/videos/egodex/part5_wrap_0.mp4",
       "motion_url": "static/data/motion/part5_wrap_0.json",
       "num_segments": 0,
-      "motion_max": 0.005688,
+      "motion_max": 0.0117,
       "has_motion": false
     },
     {
@@ -2056,9 +2056,9 @@
       "text": "put pink donut and brown cube into clear plastic bag",
       "rgb_url": "static/videos/egodex/part5_zip_unzip_bag_1280.mp4",
       "motion_url": "static/data/motion/part5_zip_unzip_bag_1280.json",
-      "num_segments": 0,
-      "motion_max": 0.021939,
-      "has_motion": false
+      "num_segments": 1,
+      "motion_max": 0.048318,
+      "has_motion": true
     },
     {
       "id": "part5_zip_unzip_bag_1042",
@@ -2067,7 +2067,7 @@
       "rgb_url": "static/videos/egodex/part5_zip_unzip_bag_1042.mp4",
       "motion_url": "static/data/motion/part5_zip_unzip_bag_1042.json",
       "num_segments": 0,
-      "motion_max": 0.004494,
+      "motion_max": 0.006911,
       "has_motion": false
     },
     {
@@ -2077,7 +2077,7 @@
       "rgb_url": "static/videos/egodex/part5_zip_unzip_bag_1230.mp4",
       "motion_url": "static/data/motion/part5_zip_unzip_bag_1230.json",
       "num_segments": 0,
-      "motion_max": 0.021941,
+      "motion_max": 0.087685,
       "has_motion": false
     },
     {
@@ -2087,7 +2087,7 @@
       "rgb_url": "static/videos/egodex/part5_zip_unzip_case_740.mp4",
       "motion_url": "static/data/motion/part5_zip_unzip_case_740.json",
       "num_segments": 0,
-      "motion_max": 0.028097,
+      "motion_max": 0.050894,
       "has_motion": false
     },
     {
@@ -2097,7 +2097,7 @@
       "rgb_url": "static/videos/egodex/part5_zip_unzip_case_0.mp4",
       "motion_url": "static/data/motion/part5_zip_unzip_case_0.json",
       "num_segments": 0,
-      "motion_max": 0.027838,
+      "motion_max": 0.047618,
       "has_motion": false
     }
   ],
@@ -2109,7 +2109,7 @@
       "rgb_url": "static/videos/hdepic/P01-20240203-130505-228.mp4",
       "motion_url": "static/data/motion/P01-20240203-130505-228.json",
       "num_segments": 1,
-      "motion_max": 0.061347,
+      "motion_max": 0.060849,
       "has_motion": true
     },
     {
@@ -2119,7 +2119,7 @@
       "rgb_url": "static/videos/hdepic/P01-20240202-110250-210.mp4",
       "motion_url": "static/data/motion/P01-20240202-110250-210.json",
       "num_segments": 0,
-      "motion_max": 0.017397,
+      "motion_max": 0.022369,
       "has_motion": false
     },
     {
@@ -2129,7 +2129,7 @@
       "rgb_url": "static/videos/hdepic/P01-20240202-161354-49.mp4",
       "motion_url": "static/data/motion/P01-20240202-161354-49.json",
       "num_segments": 0,
-      "motion_max": 0.015436,
+      "motion_max": 0.019171,
       "has_motion": false
     },
     {
@@ -2139,7 +2139,7 @@
       "rgb_url": "static/videos/hdepic/P02-20240211-111822-184.mp4",
       "motion_url": "static/data/motion/P02-20240211-111822-184.json",
       "num_segments": 1,
-      "motion_max": 0.039257,
+      "motion_max": 0.042118,
       "has_motion": true
     },
     {
@@ -2148,8 +2148,8 @@
       "text": "open the cupboard door with the left hand",
       "rgb_url": "static/videos/hdepic/P02-20240211-175138-1032.mp4",
       "motion_url": "static/data/motion/P02-20240211-175138-1032.json",
-      "num_segments": 1,
-      "motion_max": 0.170883,
+      "num_segments": 2,
+      "motion_max": 0.274833,
       "has_motion": true
     },
     {
@@ -2159,7 +2159,7 @@
       "rgb_url": "static/videos/hdepic/P02-20240211-120927-1058.mp4",
       "motion_url": "static/data/motion/P02-20240211-120927-1058.json",
       "num_segments": 1,
-      "motion_max": 0.030522,
+      "motion_max": 0.042753,
       "has_motion": true
     },
     {
@@ -2169,7 +2169,7 @@
       "rgb_url": "static/videos/hdepic/P03-20240218-202148-197.mp4",
       "motion_url": "static/data/motion/P03-20240218-202148-197.json",
       "num_segments": 0,
-      "motion_max": 0.007256,
+      "motion_max": 0.014077,
       "has_motion": false
     },
     {
@@ -2179,7 +2179,7 @@
       "rgb_url": "static/videos/hdepic/P03-20240216-185832-1314.mp4",
       "motion_url": "static/data/motion/P03-20240216-185832-1314.json",
       "num_segments": 0,
-      "motion_max": 0.005611,
+      "motion_max": 0.006619,
       "has_motion": false
     },
     {
@@ -2188,8 +2188,8 @@
       "text": "dry hands using the cloth",
       "rgb_url": "static/videos/hdepic/P03-20240218-144430-233.mp4",
       "motion_url": "static/data/motion/P03-20240218-144430-233.json",
-      "num_segments": 3,
-      "motion_max": 0.040885,
+      "num_segments": 2,
+      "motion_max": 0.060106,
       "has_motion": true
     },
     {
@@ -2198,9 +2198,9 @@
       "text": "transfer the knife from the left hand to the right hand",
       "rgb_url": "static/videos/hdepic/P04-20240413-142619-86.mp4",
       "motion_url": "static/data/motion/P04-20240413-142619-86.json",
-      "num_segments": 0,
-      "motion_max": 0.016805,
-      "has_motion": false
+      "num_segments": 1,
+      "motion_max": 0.02265,
+      "has_motion": true
     },
     {
       "id": "P04-20240414-072251-39",
@@ -2209,7 +2209,7 @@
       "rgb_url": "static/videos/hdepic/P04-20240414-072251-39.mp4",
       "motion_url": "static/data/motion/P04-20240414-072251-39.json",
       "num_segments": 0,
-      "motion_max": 0.012253,
+      "motion_max": 0.01675,
       "has_motion": false
     },
     {
@@ -2219,7 +2219,7 @@
       "rgb_url": "static/videos/hdepic/P04-20240413-142619-159.mp4",
       "motion_url": "static/data/motion/P04-20240413-142619-159.json",
       "num_segments": 1,
-      "motion_max": 0.121293,
+      "motion_max": 0.20601,
       "has_motion": true
     },
     {
@@ -2239,7 +2239,7 @@
       "rgb_url": "static/videos/hdepic/P05-20240427-145526-105.mp4",
       "motion_url": "static/data/motion/P05-20240427-145526-105.json",
       "num_segments": 0,
-      "motion_max": 0.01306,
+      "motion_max": 0.018557,
       "has_motion": false
     },
     {
@@ -2249,7 +2249,7 @@
       "rgb_url": "static/videos/hdepic/P05-20240425-180658-75.mp4",
       "motion_url": "static/data/motion/P05-20240425-180658-75.json",
       "num_segments": 0,
-      "motion_max": 0.025932,
+      "motion_max": 0.028595,
       "has_motion": false
     },
     {
@@ -2259,7 +2259,7 @@
       "rgb_url": "static/videos/hdepic/P06-20240510-100047-320.mp4",
       "motion_url": "static/data/motion/P06-20240510-100047-320.json",
       "num_segments": 0,
-      "motion_max": 0.004376,
+      "motion_max": 0.005789,
       "has_motion": false
     },
     {
@@ -2269,7 +2269,7 @@
       "rgb_url": "static/videos/hdepic/P06-20240510-104642-1036.mp4",
       "motion_url": "static/data/motion/P06-20240510-104642-1036.json",
       "num_segments": 0,
-      "motion_max": 0.007999,
+      "motion_max": 0.00999,
       "has_motion": false
     },
     {
@@ -2279,7 +2279,7 @@
       "rgb_url": "static/videos/hdepic/P06-20240510-100047-285.mp4",
       "motion_url": "static/data/motion/P06-20240510-100047-285.json",
       "num_segments": 1,
-      "motion_max": 0.040557,
+      "motion_max": 0.046087,
       "has_motion": true
     },
     {
@@ -2289,7 +2289,7 @@
       "rgb_url": "static/videos/hdepic/P07-20240529-134410-120.mp4",
       "motion_url": "static/data/motion/P07-20240529-134410-120.json",
       "num_segments": 0,
-      "motion_max": 0.016475,
+      "motion_max": 0.024944,
       "has_motion": false
     },
     {
@@ -2299,7 +2299,7 @@
       "rgb_url": "static/videos/hdepic/P07-20240529-134410-62.mp4",
       "motion_url": "static/data/motion/P07-20240529-134410-62.json",
       "num_segments": 1,
-      "motion_max": 0.04073,
+      "motion_max": 0.046225,
       "has_motion": true
     },
     {
@@ -2309,7 +2309,7 @@
       "rgb_url": "static/videos/hdepic/P07-20240531-201703-247.mp4",
       "motion_url": "static/data/motion/P07-20240531-201703-247.json",
       "num_segments": 0,
-      "motion_max": 0.014522,
+      "motion_max": 0.02311,
       "has_motion": false
     },
     {
@@ -2338,8 +2338,8 @@
       "text": "open the bag of rocket salad with both hands",
       "rgb_url": "static/videos/hdepic/P08-20240613-123547-18.mp4",
       "motion_url": "static/data/motion/P08-20240613-123547-18.json",
-      "num_segments": 1,
-      "motion_max": 0.027888,
+      "num_segments": 2,
+      "motion_max": 0.059428,
       "has_motion": true
     },
     {
@@ -2349,7 +2349,7 @@
       "rgb_url": "static/videos/hdepic/P09-20240622-150155-804.mp4",
       "motion_url": "static/data/motion/P09-20240622-150155-804.json",
       "num_segments": 0,
-      "motion_max": 0.023162,
+      "motion_max": 0.029927,
       "has_motion": false
     },
     {
@@ -2359,7 +2359,7 @@
       "rgb_url": "static/videos/hdepic/P09-20240622-150155-795.mp4",
       "motion_url": "static/data/motion/P09-20240622-150155-795.json",
       "num_segments": 0,
-      "motion_max": 0.010261,
+      "motion_max": 0.017611,
       "has_motion": false
     },
     {
@@ -2369,7 +2369,7 @@
       "rgb_url": "static/videos/hdepic/P09-20240621-153208-106.mp4",
       "motion_url": "static/data/motion/P09-20240621-153208-106.json",
       "num_segments": 0,
-      "motion_max": 0.0164,
+      "motion_max": 0.016251,
       "has_motion": false
     }
   ],
@@ -2382,7 +2382,7 @@
       "rgb_url": "static/videos/xperience/8fe68e5c-be4c-4b20-8ded-ef27fae4074b__ep2__clip_003_place_pill_into_box.mp4",
       "motion_url": "static/data/motion/8fe68e5c-be4c-4b20-8ded-ef27fae4074b__ep2__clip_003_place_pill_into_box.json",
       "num_segments": 0,
-      "motion_max": 0.010939,
+      "motion_max": 0.046538,
       "has_motion": false
     },
     {
@@ -2393,7 +2393,7 @@
       "rgb_url": "static/videos/xperience/cada1e39-503a-4262-97d0-d5a825ee0677__ep2__clip_000_pick_up_snack_packet.mp4",
       "motion_url": "static/data/motion/cada1e39-503a-4262-97d0-d5a825ee0677__ep2__clip_000_pick_up_snack_packet.json",
       "num_segments": 3,
-      "motion_max": 0.151488,
+      "motion_max": 0.388022,
       "has_motion": true
     },
     {
@@ -2404,7 +2404,7 @@
       "rgb_url": "static/videos/xperience/3e4a1fe6-0495-4f08-b946-36401ad43210__ep1__clip_011_cut_cardboard.mp4",
       "motion_url": "static/data/motion/3e4a1fe6-0495-4f08-b946-36401ad43210__ep1__clip_011_cut_cardboard.json",
       "num_segments": 0,
-      "motion_max": 0.03845,
+      "motion_max": 0.11298,
       "has_motion": false
     },
     {
@@ -2415,7 +2415,7 @@
       "rgb_url": "static/videos/xperience/bb37ad4e-5737-41da-8abc-d26fc3538a2c__ep31__clip_024_examine_puzzle_piece.mp4",
       "motion_url": "static/data/motion/bb37ad4e-5737-41da-8abc-d26fc3538a2c__ep31__clip_024_examine_puzzle_piece.json",
       "num_segments": 0,
-      "motion_max": 0.046306,
+      "motion_max": 0.120845,
       "has_motion": false
     },
     {
@@ -2426,7 +2426,7 @@
       "rgb_url": "static/videos/xperience/7610d23b-5c25-4548-ba90-559773443c76__ep2__clip_006_remove_ruler_and_pen.mp4",
       "motion_url": "static/data/motion/7610d23b-5c25-4548-ba90-559773443c76__ep2__clip_006_remove_ruler_and_pen.json",
       "num_segments": 0,
-      "motion_max": 0.002817,
+      "motion_max": 0.004127,
       "has_motion": false
     },
     {
@@ -2437,7 +2437,7 @@
       "rgb_url": "static/videos/xperience/75a9d58c-b716-4ee4-8385-8340b638bc03__ep4__clip_025_sort_star-shaped_items.mp4",
       "motion_url": "static/data/motion/75a9d58c-b716-4ee4-8385-8340b638bc03__ep4__clip_025_sort_star-shaped_items.json",
       "num_segments": 0,
-      "motion_max": 0.268651,
+      "motion_max": 1.681785,
       "has_motion": false
     },
     {
@@ -2448,7 +2448,7 @@
       "rgb_url": "static/videos/xperience/0ec8fd93-0f5a-474a-8922-64be6388b3c5__ep4__clip_018_loading_labeler.mp4",
       "motion_url": "static/data/motion/0ec8fd93-0f5a-474a-8922-64be6388b3c5__ep4__clip_018_loading_labeler.json",
       "num_segments": 1,
-      "motion_max": 0.198622,
+      "motion_max": 0.457603,
       "has_motion": true
     },
     {
@@ -2459,7 +2459,7 @@
       "rgb_url": "static/videos/xperience/ca728159-b233-44a0-8bba-265f5c7cc3a6__ep8__clip_003_cut_cardboard.mp4",
       "motion_url": "static/data/motion/ca728159-b233-44a0-8bba-265f5c7cc3a6__ep8__clip_003_cut_cardboard.json",
       "num_segments": 0,
-      "motion_max": 0.046082,
+      "motion_max": 0.073015,
       "has_motion": false
     },
     {
@@ -2470,7 +2470,7 @@
       "rgb_url": "static/videos/xperience/b96afe0f-5ff8-4daf-becc-7fca706da6a1__ep19__clip_010_sort_small_items_into_container.mp4",
       "motion_url": "static/data/motion/b96afe0f-5ff8-4daf-becc-7fca706da6a1__ep19__clip_010_sort_small_items_into_container.json",
       "num_segments": 0,
-      "motion_max": 0.009246,
+      "motion_max": 0.024641,
       "has_motion": false
     },
     {
@@ -2481,7 +2481,7 @@
       "rgb_url": "static/videos/xperience/147b3d65-65d6-421b-8944-7d13317f0c3d__ep5__clip_002_separate_paper_strip.mp4",
       "motion_url": "static/data/motion/147b3d65-65d6-421b-8944-7d13317f0c3d__ep5__clip_002_separate_paper_strip.json",
       "num_segments": 1,
-      "motion_max": 0.083476,
+      "motion_max": 0.242357,
       "has_motion": true
     },
     {
@@ -2492,7 +2492,7 @@
       "rgb_url": "static/videos/xperience/dfb266d2-0653-43dd-bf22-d402340f7cb6__ep7__clip_003_organize_cardboard_pieces.mp4",
       "motion_url": "static/data/motion/dfb266d2-0653-43dd-bf22-d402340f7cb6__ep7__clip_003_organize_cardboard_pieces.json",
       "num_segments": 0,
-      "motion_max": 0.014755,
+      "motion_max": 0.076614,
       "has_motion": false
     },
     {
@@ -2503,7 +2503,7 @@
       "rgb_url": "static/videos/xperience/5c6418f9-f8d5-4ae3-b486-3b8b6b125fbc__ep36__clip_009_cut_newspaper_with_scissors.mp4",
       "motion_url": "static/data/motion/5c6418f9-f8d5-4ae3-b486-3b8b6b125fbc__ep36__clip_009_cut_newspaper_with_scissors.json",
       "num_segments": 0,
-      "motion_max": 0.021726,
+      "motion_max": 0.03652,
       "has_motion": false
     },
     {
@@ -2514,7 +2514,7 @@
       "rgb_url": "static/videos/xperience/836436e6-8bb0-49ea-919a-42ec2ce7023d__ep16__clip_004_sort_puzzle_pieces.mp4",
       "motion_url": "static/data/motion/836436e6-8bb0-49ea-919a-42ec2ce7023d__ep16__clip_004_sort_puzzle_pieces.json",
       "num_segments": 0,
-      "motion_max": 0.013619,
+      "motion_max": 0.027301,
       "has_motion": false
     },
     {
@@ -2525,7 +2525,7 @@
       "rgb_url": "static/videos/xperience/1221bd5a-af5b-4bfe-b4ff-6278a9be7960__ep1__clip_016_place_smartphone_on_table.mp4",
       "motion_url": "static/data/motion/1221bd5a-af5b-4bfe-b4ff-6278a9be7960__ep1__clip_016_place_smartphone_on_table.json",
       "num_segments": 1,
-      "motion_max": 0.075652,
+      "motion_max": 0.158826,
       "has_motion": true
     },
     {
@@ -2536,7 +2536,7 @@
       "rgb_url": "static/videos/xperience/d8a4afd2-0f8f-455a-b6a1-d5e3041d9ec7__ep2__clip_024_hold_product.mp4",
       "motion_url": "static/data/motion/d8a4afd2-0f8f-455a-b6a1-d5e3041d9ec7__ep2__clip_024_hold_product.json",
       "num_segments": 0,
-      "motion_max": 0.017855,
+      "motion_max": 0.022956,
       "has_motion": false
     },
     {
@@ -2547,7 +2547,7 @@
       "rgb_url": "static/videos/xperience/a014bac3-6a7d-4ab8-bb50-b9ff32b3d9ce__ep22__clip_002_cut_tape.mp4",
       "motion_url": "static/data/motion/a014bac3-6a7d-4ab8-bb50-b9ff32b3d9ce__ep22__clip_002_cut_tape.json",
       "num_segments": 0,
-      "motion_max": 0.14919,
+      "motion_max": 0.399058,
       "has_motion": false
     },
     {
@@ -2558,7 +2558,7 @@
       "rgb_url": "static/videos/xperience/3efd6a52-1457-4437-a3bf-9d5894614fe6__ep26__clip_018_place_finished_star_and_reach_for_paper_.mp4",
       "motion_url": "static/data/motion/3efd6a52-1457-4437-a3bf-9d5894614fe6__ep26__clip_018_place_finished_star_and_reach_for_paper_.json",
       "num_segments": 0,
-      "motion_max": 0.005494,
+      "motion_max": 0.008417,
       "has_motion": false
     },
     {
@@ -2569,7 +2569,7 @@
       "rgb_url": "static/videos/xperience/a6d5e242-2b18-435a-b8c9-b77590dd5c0d__ep1__clip_001_scroll_on_smartphone.mp4",
       "motion_url": "static/data/motion/a6d5e242-2b18-435a-b8c9-b77590dd5c0d__ep1__clip_001_scroll_on_smartphone.json",
       "num_segments": 0,
-      "motion_max": 0.026223,
+      "motion_max": 0.054237,
       "has_motion": false
     },
     {
@@ -2579,9 +2579,9 @@
       "label": "Reach for pieces",
       "rgb_url": "static/videos/xperience/9f99d90e-ed8f-464e-8f2d-972d76b669c6__ep19__clip_006_reach_for_pieces.mp4",
       "motion_url": "static/data/motion/9f99d90e-ed8f-464e-8f2d-972d76b669c6__ep19__clip_006_reach_for_pieces.json",
-      "num_segments": 1,
-      "motion_max": 0.056819,
-      "has_motion": true
+      "num_segments": 0,
+      "motion_max": 0.09726,
+      "has_motion": false
     },
     {
       "id": "95c91cfb-171f-4060-bf84-d80bc4e50aaa__ep3__clip_013_cut_newspaper_with_scissors",
@@ -2591,7 +2591,7 @@
       "rgb_url": "static/videos/xperience/95c91cfb-171f-4060-bf84-d80bc4e50aaa__ep3__clip_013_cut_newspaper_with_scissors.mp4",
       "motion_url": "static/data/motion/95c91cfb-171f-4060-bf84-d80bc4e50aaa__ep3__clip_013_cut_newspaper_with_scissors.json",
       "num_segments": 0,
-      "motion_max": 0.004699,
+      "motion_max": 0.008171,
       "has_motion": false
     },
     {
@@ -2602,7 +2602,7 @@
       "rgb_url": "static/videos/xperience/3efd6a52-1457-4437-a3bf-9d5894614fe6__ep45__clip_002_sort_beads.mp4",
       "motion_url": "static/data/motion/3efd6a52-1457-4437-a3bf-9d5894614fe6__ep45__clip_002_sort_beads.json",
       "num_segments": 0,
-      "motion_max": 0.027989,
+      "motion_max": 0.104339,
       "has_motion": false
     },
     {
@@ -2613,7 +2613,7 @@
       "rgb_url": "static/videos/xperience/64f7bf9f-d66d-4205-ac2d-dca4525a351f__ep36__clip_009_manipulate_origami_star.mp4",
       "motion_url": "static/data/motion/64f7bf9f-d66d-4205-ac2d-dca4525a351f__ep36__clip_009_manipulate_origami_star.json",
       "num_segments": 0,
-      "motion_max": 0.006352,
+      "motion_max": 0.010124,
       "has_motion": false
     },
     {
@@ -2623,9 +2623,9 @@
       "label": "Pick up earbud case",
       "rgb_url": "static/videos/xperience/d6ee04f1-bf31-42da-b785-ebd8ecafef5d__ep1__clip_022_pick_up_earbud_case.mp4",
       "motion_url": "static/data/motion/d6ee04f1-bf31-42da-b785-ebd8ecafef5d__ep1__clip_022_pick_up_earbud_case.json",
-      "num_segments": 3,
-      "motion_max": 0.060071,
-      "has_motion": true
+      "num_segments": 0,
+      "motion_max": 0.155489,
+      "has_motion": false
     },
     {
       "id": "cd752e39-4f8c-4614-9e16-9b062cbd8247__ep10__clip_013_move_smartphone",
@@ -2635,7 +2635,7 @@
       "rgb_url": "static/videos/xperience/cd752e39-4f8c-4614-9e16-9b062cbd8247__ep10__clip_013_move_smartphone.mp4",
       "motion_url": "static/data/motion/cd752e39-4f8c-4614-9e16-9b062cbd8247__ep10__clip_013_move_smartphone.json",
       "num_segments": 0,
-      "motion_max": 0.030369,
+      "motion_max": 0.058744,
       "has_motion": false
     },
     {
@@ -2646,7 +2646,7 @@
       "rgb_url": "static/videos/xperience/e97a733f-5216-4921-beff-36ce4de3f247__ep37__clip_012_sort_puzzle_pieces.mp4",
       "motion_url": "static/data/motion/e97a733f-5216-4921-beff-36ce4de3f247__ep37__clip_012_sort_puzzle_pieces.json",
       "num_segments": 0,
-      "motion_max": 0.031285,
+      "motion_max": 0.083525,
       "has_motion": false
     },
     {
@@ -2657,7 +2657,7 @@
       "rgb_url": "static/videos/xperience/34e4d6f3-f2b4-4de1-b837-15a372512a90__ep3__clip_013_position_cardboard.mp4",
       "motion_url": "static/data/motion/34e4d6f3-f2b4-4de1-b837-15a372512a90__ep3__clip_013_position_cardboard.json",
       "num_segments": 1,
-      "motion_max": 0.04259,
+      "motion_max": 0.070647,
       "has_motion": true
     },
     {
@@ -2668,7 +2668,7 @@
       "rgb_url": "static/videos/xperience/7977efbb-1a29-4da3-aeb7-8d73a3555d13__ep7__clip_021_reach_for_pieces.mp4",
       "motion_url": "static/data/motion/7977efbb-1a29-4da3-aeb7-8d73a3555d13__ep7__clip_021_reach_for_pieces.json",
       "num_segments": 0,
-      "motion_max": 0.025526,
+      "motion_max": 0.037939,
       "has_motion": false
     },
     {
@@ -2679,7 +2679,7 @@
       "rgb_url": "static/videos/xperience/17901b9e-7d5d-475a-86f8-b4a9bc9a5709__ep47__clip_000_place_star_into_pouch.mp4",
       "motion_url": "static/data/motion/17901b9e-7d5d-475a-86f8-b4a9bc9a5709__ep47__clip_000_place_star_into_pouch.json",
       "num_segments": 1,
-      "motion_max": 0.110087,
+      "motion_max": 0.219181,
       "has_motion": true
     },
     {
@@ -2690,7 +2690,7 @@
       "rgb_url": "static/videos/xperience/642fd1e7-f4b0-4a64-acfd-5c23858431d7__ep7__clip_001_pick_up_another_item.mp4",
       "motion_url": "static/data/motion/642fd1e7-f4b0-4a64-acfd-5c23858431d7__ep7__clip_001_pick_up_another_item.json",
       "num_segments": 1,
-      "motion_max": 0.05658,
+      "motion_max": 0.19756,
       "has_motion": true
     },
     {
@@ -2701,7 +2701,7 @@
       "rgb_url": "static/videos/xperience/b193ec94-f89a-4666-8143-719db1703caa__ep10__clip_017_place_toy_spider_in_bucket.mp4",
       "motion_url": "static/data/motion/b193ec94-f89a-4666-8143-719db1703caa__ep10__clip_017_place_toy_spider_in_bucket.json",
       "num_segments": 1,
-      "motion_max": 0.17772,
+      "motion_max": 0.394108,
       "has_motion": true
     }
   ]
