@@ -123,8 +123,13 @@ body {
   position: relative; background: #000; display: flex; align-items: center; justify-content: center;
   border-right: 1px solid var(--border);
 }
-.clip-video-panel video {
-  width: 100%; height: 100%; object-fit: contain;
+.video-wrap { position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+.video-wrap video {
+  width: 100%; height: 100%; object-fit: contain; display: block;
+}
+.video-wrap canvas {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  pointer-events: none;
 }
 .clip-timelines-panel {
   padding: 12px 16px; display: flex; flex-direction: column; gap: 8px;
@@ -134,7 +139,12 @@ body {
 /* Timeline rows */
 .timeline-row {
   display: flex; flex-direction: column; gap: 4px;
+  padding: 6px 8px; border-radius: 6px; cursor: pointer;
+  transition: background 0.15s;
 }
+.timeline-row:hover { background: var(--bg-header); }
+.timeline-row.selected { background: var(--bg-header); outline: 1px solid var(--border-hover); }
+.timeline-row.dimmed { opacity: 0.45; }
 .timeline-label {
   font-size: 0.72rem; font-weight: 500; color: var(--text-heading);
   display: flex; justify-content: space-between; align-items: center;
@@ -222,6 +232,8 @@ body {
 <script>
 let manifest = null;
 let activeDataset = '';
+const clipState = {};  // {id: {motionData, selectedObject, rafHandle}}
+const TRAIL_LEN = 16;
 
 // ── Object color palette (stable hash → hue) ──
 function colorForObject(name) {
@@ -330,7 +342,10 @@ function renderClips() {
       </div>
       <div class="clip-content">
         <div class="clip-video-panel">
-          <video id="${id}_vid" muted loop playsinline preload="none"></video>
+          <div class="video-wrap">
+            <video id="${id}_vid" muted loop playsinline preload="none"></video>
+            <canvas id="${id}_canvas"></canvas>
+          </div>
         </div>
         <div class="clip-timelines-panel" id="${id}_timelines">
           <div style="color:var(--text-muted);font-size:0.75rem;text-align:center;padding:60px 0;">Scroll to load</div>
@@ -381,9 +396,10 @@ async function loadClip(id, clip) {
     return;
   }
 
+  clipState[id] = { motionData, selectedObject: null, rafHandle: null };
   renderTimelines(id, motionData);
 
-  // Sync on timeupdate
+  // Sync cursor + frame label on timeupdate
   vid.addEventListener('timeupdate', () => {
     if (!vid.duration) return;
     const pct = vid.currentTime / vid.duration;
@@ -393,9 +409,116 @@ async function loadClip(id, clip) {
     document.getElementById(id + '_frame').textContent = fi + ' / ' + (T - 1);
     updateCursor(id, pct);
   });
-
-  // Initial cursor position
   updateCursor(id, 0);
+
+  // Start canvas rAF loop once video metadata is ready
+  vid.addEventListener('loadedmetadata', () => {
+    startTrackLoop(id);
+  });
+  // In case metadata is already loaded (cached video)
+  if (vid.readyState >= 1) startTrackLoop(id);
+}
+
+function startTrackLoop(id) {
+  const st = clipState[id];
+  if (!st || !st.motionData) return;
+  if (st.rafHandle) return;  // already running
+  const md = st.motionData;
+  if (!md.tracks_by_object || Object.keys(md.tracks_by_object).length === 0) {
+    return;  // no 2D tracks (hepic) — no overlay
+  }
+  const vid = document.getElementById(id + '_vid');
+  const canvas = document.getElementById(id + '_canvas');
+  const ctx = canvas.getContext('2d');
+
+  function draw() {
+    if (!document.body.contains(vid)) { st.rafHandle = null; return; }
+    if (!vid.duration || !md.img_dim) {
+      st.rafHandle = requestAnimationFrame(draw);
+      return;
+    }
+    // Size canvas to match displayed video area
+    const rect = vid.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    const cssW = Math.max(1, Math.floor(rect.width));
+    const cssH = Math.max(1, Math.floor(rect.height));
+    if (canvas.width !== cssW * dpr || canvas.height !== cssH * dpr) {
+      canvas.width = cssW * dpr;
+      canvas.height = cssH * dpr;
+      canvas.style.width = cssW + 'px';
+      canvas.style.height = cssH + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    // Compute "letterboxed" fit rectangle of video inside its container
+    // video uses object-fit: contain → match that
+    const [imgH, imgW] = md.img_dim;
+    const containerAspect = cssW / cssH;
+    const videoAspect = imgW / imgH;
+    let vidW, vidH, vidX, vidY;
+    if (containerAspect > videoAspect) {
+      vidH = cssH;
+      vidW = cssH * videoAspect;
+    } else {
+      vidW = cssW;
+      vidH = cssW / videoAspect;
+    }
+    vidX = (cssW - vidW) / 2;
+    vidY = (cssH - vidH) / 2;
+
+    ctx.clearRect(0, 0, cssW, cssH);
+
+    const T = md.num_frames;
+    const fi = Math.min(Math.round((vid.currentTime / vid.duration) * (T - 1)), T - 1);
+    const trailStart = Math.max(0, fi - TRAIL_LEN);
+
+    const objNames = Object.keys(md.tracks_by_object);
+    const selectedObj = st.selectedObject;  // null = show all
+    const anySelected = selectedObj != null;
+
+    objNames.forEach(name => {
+      if (anySelected && name !== selectedObj) return;
+      const color = colorForObject(name);
+      const tdata = md.tracks_by_object[name];
+      const tracks = tdata.tracks;        // [P][T][2]
+      const vis = tdata.visibility;       // [P][T]
+      const P = tracks.length;
+
+      for (let p = 0; p < P; p++) {
+        // Draw trail (pt[0]=x in pixels, pt[1]=y in pixels; img_dim is [H,W])
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        let started = false;
+        for (let t = trailStart; t <= fi; t++) {
+          if (!vis[p][t]) { started = false; continue; }
+          const pt = tracks[p][t];
+          if (pt[0] == null) { started = false; continue; }
+          const x = vidX + (pt[0] / imgW) * vidW;
+          const y = vidY + (pt[1] / imgH) * vidH;
+          if (!started) { ctx.moveTo(x, y); started = true; }
+          else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+
+        // Draw current dot
+        if (vis[p][fi]) {
+          const pt = tracks[p][fi];
+          if (pt[0] != null) {
+            const x = vidX + (pt[0] / imgW) * vidW;
+            const y = vidY + (pt[1] / imgH) * vidH;
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.arc(x, y, 3, 0, Math.PI * 2);
+            ctx.fill();
+          }
+        }
+      }
+    });
+
+    st.rafHandle = requestAnimationFrame(draw);
+  }
+  st.rafHandle = requestAnimationFrame(draw);
 }
 
 function renderTimelines(id, motionData) {
@@ -416,6 +539,12 @@ function renderTimelines(id, motionData) {
 
     const row = document.createElement('div');
     row.className = 'timeline-row';
+    row.dataset.object = name;
+    row.onclick = (e) => {
+      // Don't let clicks on clip ranges trigger row selection
+      if (e.target.classList.contains('clip-range')) return;
+      toggleObjectSelect(id, name);
+    };
 
     // Label
     const label = document.createElement('div');
@@ -468,6 +597,21 @@ function updateCursor(id, pct) {
   if (!card) return;
   const cursors = card.querySelectorAll('.cursor-line');
   cursors.forEach(c => { c.style.left = (pct * 100) + '%'; });
+}
+
+function toggleObjectSelect(id, name) {
+  const st = clipState[id];
+  if (!st) return;
+  st.selectedObject = (st.selectedObject === name) ? null : name;
+  const card = document.getElementById(id);
+  if (!card) return;
+  card.querySelectorAll('.timeline-row').forEach(row => {
+    const rowName = row.dataset.object;
+    row.classList.remove('selected', 'dimmed');
+    if (st.selectedObject == null) return;
+    if (rowName === st.selectedObject) row.classList.add('selected');
+    else row.classList.add('dimmed');
+  });
 }
 
 function escapeHtml(s) {

@@ -1,1 +1,1 @@
-{"num_frames": 40, "fps": 15, "clips_by_object": {"obj0": [[9, 19], [27, 35]], "obj1": [[8, 23]]}}
+{"num_frames": 40, "fps": 15, "img_dim": [512, 512], "clips_by_object": {"obj0": [[9, 19], [27, 35]], "obj1": [[8, 23]]}, "tracks_by_object": {}}

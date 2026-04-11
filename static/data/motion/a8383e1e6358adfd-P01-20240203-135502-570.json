@@ -1,1 +1,1 @@
-{"num_frames": 32, "fps": 15, "clips_by_object": {"right_hand": [[15, 31]], "object": [[14, 29]]}}
+{"num_frames": 32, "fps": 15, "img_dim": [512, 512], "clips_by_object": {"right_hand": [[15, 31]], "object": [[14, 29]]}, "tracks_by_object": {}}
