@@ -2,53 +2,13 @@
   "categories": {
     "Arrange/Sort": [
       {
-        "uuid": "WEIRD+e604eeed+2023-12-08-17h-10m-12s",
-        "caption": "rearrange object positions",
-        "cam1": {
-          "vid_id": "WEIRD+e604eeed+2023-12-08-17h-10m-12s__23804457",
-          "cam": "23804457",
-          "num_frames": 205,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/WEIRD+e604eeed+2023-12-08-17h-10m-12s__23804457.mp4",
-          "motion_url": "static/data/motion/droid/WEIRD+e604eeed+2023-12-08-17h-10m-12s__23804457.json"
-        },
-        "cam2": {
-          "vid_id": "WEIRD+e604eeed+2023-12-08-17h-10m-12s__28834630",
-          "cam": "28834630",
-          "num_frames": 205,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/WEIRD+e604eeed+2023-12-08-17h-10m-12s__28834630.mp4",
-          "motion_url": "static/data/motion/droid/WEIRD+e604eeed+2023-12-08-17h-10m-12s__28834630.json"
-        }
-      },
-      {
-        "uuid": "AUTOLab+9aed6d7a+2023-11-16-14h-27m-45s",
-        "caption": "Sort disks into cups by color.",
-        "cam1": {
-          "vid_id": "AUTOLab+9aed6d7a+2023-11-16-14h-27m-45s__22008760",
-          "cam": "22008760",
-          "num_frames": 167,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/AUTOLab+9aed6d7a+2023-11-16-14h-27m-45s__22008760.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+9aed6d7a+2023-11-16-14h-27m-45s__22008760.json"
-        },
-        "cam2": {
-          "vid_id": "AUTOLab+9aed6d7a+2023-11-16-14h-27m-45s__24400334",
-          "cam": "24400334",
-          "num_frames": 167,
-          "num_segments": 4,
-          "rgb_url": "static/videos/droid/AUTOLab+9aed6d7a+2023-11-16-14h-27m-45s__24400334.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+9aed6d7a+2023-11-16-14h-27m-45s__24400334.json"
-        }
-      },
-      {
         "uuid": "WEIRD+e604eeed+2023-12-13-20h-49m-26s",
         "caption": "rearrange objects in the shelf",
         "cam1": {
           "vid_id": "WEIRD+e604eeed+2023-12-13-20h-49m-26s__23804457",
           "cam": "23804457",
           "num_frames": 280,
-          "num_segments": 4,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/WEIRD+e604eeed+2023-12-13-20h-49m-26s__23804457.mp4",
           "motion_url": "static/data/motion/droid/WEIRD+e604eeed+2023-12-13-20h-49m-26s__23804457.json"
         },
@@ -56,49 +16,89 @@
           "vid_id": "WEIRD+e604eeed+2023-12-13-20h-49m-26s__28834630",
           "cam": "28834630",
           "num_frames": 280,
-          "num_segments": 6,
+          "num_segments": 5,
           "rgb_url": "static/videos/droid/WEIRD+e604eeed+2023-12-13-20h-49m-26s__28834630.mp4",
           "motion_url": "static/data/motion/droid/WEIRD+e604eeed+2023-12-13-20h-49m-26s__28834630.json"
         }
       },
       {
-        "uuid": "AUTOLab+9aed6d7a+2023-11-16-13h-55m-05s",
-        "caption": "Sort disks into cups by color.",
+        "uuid": "IPRL+5085c3ce+2023-10-14-21h-53m-17s",
+        "caption": "Arrange objects in a line",
         "cam1": {
-          "vid_id": "AUTOLab+9aed6d7a+2023-11-16-13h-55m-05s__22008760",
-          "cam": "22008760",
-          "num_frames": 127,
-          "num_segments": 3,
-          "rgb_url": "static/videos/droid/AUTOLab+9aed6d7a+2023-11-16-13h-55m-05s__22008760.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+9aed6d7a+2023-11-16-13h-55m-05s__22008760.json"
+          "vid_id": "IPRL+5085c3ce+2023-10-14-21h-53m-17s__27432424",
+          "cam": "27432424",
+          "num_frames": 197,
+          "num_segments": 6,
+          "rgb_url": "static/videos/droid/IPRL+5085c3ce+2023-10-14-21h-53m-17s__27432424.mp4",
+          "motion_url": "static/data/motion/droid/IPRL+5085c3ce+2023-10-14-21h-53m-17s__27432424.json"
         },
         "cam2": {
-          "vid_id": "AUTOLab+9aed6d7a+2023-11-16-13h-55m-05s__24400334",
-          "cam": "24400334",
-          "num_frames": 127,
-          "num_segments": 3,
-          "rgb_url": "static/videos/droid/AUTOLab+9aed6d7a+2023-11-16-13h-55m-05s__24400334.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+9aed6d7a+2023-11-16-13h-55m-05s__24400334.json"
+          "vid_id": "IPRL+5085c3ce+2023-10-14-21h-53m-17s__28221883",
+          "cam": "28221883",
+          "num_frames": 197,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/IPRL+5085c3ce+2023-10-14-21h-53m-17s__28221883.mp4",
+          "motion_url": "static/data/motion/droid/IPRL+5085c3ce+2023-10-14-21h-53m-17s__28221883.json"
         }
       },
       {
-        "uuid": "AUTOLab+9aed6d7a+2023-11-16-14h-15m-39s",
-        "caption": "Sort disks into cups by color.",
+        "uuid": "WEIRD+e604eeed+2023-12-13-20h-51m-04s",
+        "caption": "rearrange objects in the shelf",
         "cam1": {
-          "vid_id": "AUTOLab+9aed6d7a+2023-11-16-14h-15m-39s__22008760",
-          "cam": "22008760",
-          "num_frames": 167,
+          "vid_id": "WEIRD+e604eeed+2023-12-13-20h-51m-04s__23804457",
+          "cam": "23804457",
+          "num_frames": 178,
           "num_segments": 1,
-          "rgb_url": "static/videos/droid/AUTOLab+9aed6d7a+2023-11-16-14h-15m-39s__22008760.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+9aed6d7a+2023-11-16-14h-15m-39s__22008760.json"
+          "rgb_url": "static/videos/droid/WEIRD+e604eeed+2023-12-13-20h-51m-04s__23804457.mp4",
+          "motion_url": "static/data/motion/droid/WEIRD+e604eeed+2023-12-13-20h-51m-04s__23804457.json"
         },
         "cam2": {
-          "vid_id": "AUTOLab+9aed6d7a+2023-11-16-14h-15m-39s__24400334",
+          "vid_id": "WEIRD+e604eeed+2023-12-13-20h-51m-04s__28834630",
+          "cam": "28834630",
+          "num_frames": 178,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/WEIRD+e604eeed+2023-12-13-20h-51m-04s__28834630.mp4",
+          "motion_url": "static/data/motion/droid/WEIRD+e604eeed+2023-12-13-20h-51m-04s__28834630.json"
+        }
+      },
+      {
+        "uuid": "AUTOLab+9aed6d7a+2023-11-16-14h-20m-20s",
+        "caption": "Sort disks into cups by color.",
+        "cam1": {
+          "vid_id": "AUTOLab+9aed6d7a+2023-11-16-14h-20m-20s__22008760",
+          "cam": "22008760",
+          "num_frames": 177,
+          "num_segments": 5,
+          "rgb_url": "static/videos/droid/AUTOLab+9aed6d7a+2023-11-16-14h-20m-20s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+9aed6d7a+2023-11-16-14h-20m-20s__22008760.json"
+        },
+        "cam2": {
+          "vid_id": "AUTOLab+9aed6d7a+2023-11-16-14h-20m-20s__24400334",
           "cam": "24400334",
-          "num_frames": 167,
+          "num_frames": 177,
           "num_segments": 3,
-          "rgb_url": "static/videos/droid/AUTOLab+9aed6d7a+2023-11-16-14h-15m-39s__24400334.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+9aed6d7a+2023-11-16-14h-15m-39s__24400334.json"
+          "rgb_url": "static/videos/droid/AUTOLab+9aed6d7a+2023-11-16-14h-20m-20s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+9aed6d7a+2023-11-16-14h-20m-20s__24400334.json"
+        }
+      },
+      {
+        "uuid": "WEIRD+e604eeed+2023-12-13-20h-07m-39s",
+        "caption": "rearrange objects in the shelf",
+        "cam1": {
+          "vid_id": "WEIRD+e604eeed+2023-12-13-20h-07m-39s__23804457",
+          "cam": "23804457",
+          "num_frames": 215,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/WEIRD+e604eeed+2023-12-13-20h-07m-39s__23804457.mp4",
+          "motion_url": "static/data/motion/droid/WEIRD+e604eeed+2023-12-13-20h-07m-39s__23804457.json"
+        },
+        "cam2": {
+          "vid_id": "WEIRD+e604eeed+2023-12-13-20h-07m-39s__28834630",
+          "cam": "28834630",
+          "num_frames": 216,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/WEIRD+e604eeed+2023-12-13-20h-07m-39s__28834630.mp4",
+          "motion_url": "static/data/motion/droid/WEIRD+e604eeed+2023-12-13-20h-07m-39s__28834630.json"
         }
       }
     ],
@@ -121,46 +121,6 @@
           "num_segments": 1,
           "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-10-16-14h-18m-04s__29513368.mp4",
           "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-10-16-14h-18m-04s__29513368.json"
-        }
-      },
-      {
-        "uuid": "TRI+52ca9b6a+2024-02-06-13h-30m-23s",
-        "caption": "Use cloth to clean something",
-        "cam1": {
-          "vid_id": "TRI+52ca9b6a+2024-02-06-13h-30m-23s__20252535",
-          "cam": "20252535",
-          "num_frames": 55,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-06-13h-30m-23s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-06-13h-30m-23s__20252535.json"
-        },
-        "cam2": {
-          "vid_id": "TRI+52ca9b6a+2024-02-06-13h-30m-23s__25947356",
-          "cam": "25947356",
-          "num_frames": 55,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-06-13h-30m-23s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-06-13h-30m-23s__25947356.json"
-        }
-      },
-      {
-        "uuid": "TRI+52ca9b6a+2024-02-06-12h-00m-30s",
-        "caption": "Use cloth to clean something",
-        "cam1": {
-          "vid_id": "TRI+52ca9b6a+2024-02-06-12h-00m-30s__20252535",
-          "cam": "20252535",
-          "num_frames": 89,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-06-12h-00m-30s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-06-12h-00m-30s__20252535.json"
-        },
-        "cam2": {
-          "vid_id": "TRI+52ca9b6a+2024-02-06-12h-00m-30s__25947356",
-          "cam": "25947356",
-          "num_frames": 89,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-06-12h-00m-30s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-06-12h-00m-30s__25947356.json"
         }
       },
       {
@@ -202,29 +162,49 @@
           "rgb_url": "static/videos/droid/ILIAD+5e938e3b+2023-07-19-17h-51m-37s__27904255.mp4",
           "motion_url": "static/data/motion/droid/ILIAD+5e938e3b+2023-07-19-17h-51m-37s__27904255.json"
         }
+      },
+      {
+        "uuid": "AUTOLab+44bb9c36+2023-11-23-20h-07m-28s",
+        "caption": "Take cloth pieces out of container.",
+        "cam1": {
+          "vid_id": "AUTOLab+44bb9c36+2023-11-23-20h-07m-28s__22008760",
+          "cam": "22008760",
+          "num_frames": 72,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+44bb9c36+2023-11-23-20h-07m-28s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+44bb9c36+2023-11-23-20h-07m-28s__22008760.json"
+        },
+        "cam2": {
+          "vid_id": "AUTOLab+44bb9c36+2023-11-23-20h-07m-28s__24400334",
+          "cam": "24400334",
+          "num_frames": 71,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+44bb9c36+2023-11-23-20h-07m-28s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+44bb9c36+2023-11-23-20h-07m-28s__24400334.json"
+        }
+      },
+      {
+        "uuid": "AUTOLab+44bb9c36+2023-11-23-19h-49m-19s",
+        "caption": "Take cloth pieces out of container.",
+        "cam1": {
+          "vid_id": "AUTOLab+44bb9c36+2023-11-23-19h-49m-19s__22008760",
+          "cam": "22008760",
+          "num_frames": 98,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/AUTOLab+44bb9c36+2023-11-23-19h-49m-19s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+44bb9c36+2023-11-23-19h-49m-19s__22008760.json"
+        },
+        "cam2": {
+          "vid_id": "AUTOLab+44bb9c36+2023-11-23-19h-49m-19s__24400334",
+          "cam": "24400334",
+          "num_frames": 98,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+44bb9c36+2023-11-23-19h-49m-19s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+44bb9c36+2023-11-23-19h-49m-19s__24400334.json"
+        }
       }
     ],
     "Cover/Lid": [
-      {
-        "uuid": "TRI+52ca9b6a+2024-02-05-14h-10m-32s",
-        "caption": "Move lid on or off of container",
-        "cam1": {
-          "vid_id": "TRI+52ca9b6a+2024-02-05-14h-10m-32s__20252535",
-          "cam": "20252535",
-          "num_frames": 127,
-          "num_segments": 3,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-05-14h-10m-32s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-05-14h-10m-32s__20252535.json"
-        },
-        "cam2": {
-          "vid_id": "TRI+52ca9b6a+2024-02-05-14h-10m-32s__25947356",
-          "cam": "25947356",
-          "num_frames": 127,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-05-14h-10m-32s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-05-14h-10m-32s__25947356.json"
-        }
-      },
       {
         "uuid": "IRIS+7dfa2da3+2023-06-12-15h-52m-44s",
         "caption": "Move lid on or off of container",
@@ -246,63 +226,83 @@
         }
       },
       {
-        "uuid": "AUTOLab+5d05c5aa+2023-07-23-21h-47m-48s",
-        "caption": "Do any task, and then reset the scene.\n\nSuggested task:\n* put the lid on the kettle",
+        "uuid": "AUTOLab+0d4edc83+2023-12-02-14h-53m-07s",
+        "caption": "Move lid on or off of container",
         "cam1": {
-          "vid_id": "AUTOLab+5d05c5aa+2023-07-23-21h-47m-48s__22008760",
+          "vid_id": "AUTOLab+0d4edc83+2023-12-02-14h-53m-07s__22008760",
           "cam": "22008760",
-          "num_frames": 75,
+          "num_frames": 32,
           "num_segments": 1,
-          "rgb_url": "static/videos/droid/AUTOLab+5d05c5aa+2023-07-23-21h-47m-48s__22008760.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+5d05c5aa+2023-07-23-21h-47m-48s__22008760.json"
+          "rgb_url": "static/videos/droid/AUTOLab+0d4edc83+2023-12-02-14h-53m-07s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+0d4edc83+2023-12-02-14h-53m-07s__22008760.json"
         },
         "cam2": {
-          "vid_id": "AUTOLab+5d05c5aa+2023-07-23-21h-47m-48s__24400334",
+          "vid_id": "AUTOLab+0d4edc83+2023-12-02-14h-53m-07s__24400334",
           "cam": "24400334",
-          "num_frames": 75,
+          "num_frames": 32,
           "num_segments": 2,
-          "rgb_url": "static/videos/droid/AUTOLab+5d05c5aa+2023-07-23-21h-47m-48s__24400334.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+5d05c5aa+2023-07-23-21h-47m-48s__24400334.json"
+          "rgb_url": "static/videos/droid/AUTOLab+0d4edc83+2023-12-02-14h-53m-07s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+0d4edc83+2023-12-02-14h-53m-07s__24400334.json"
         }
       },
       {
-        "uuid": "TRI+52ca9b6a+2023-11-09-11h-57m-27s",
+        "uuid": "IRIS+938130c4+2023-07-14-14h-45m-54s",
         "caption": "Move lid on or off of container",
         "cam1": {
-          "vid_id": "TRI+52ca9b6a+2023-11-09-11h-57m-27s__20252535",
-          "cam": "20252535",
-          "num_frames": 77,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-09-11h-57m-27s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-09-11h-57m-27s__20252535.json"
+          "vid_id": "IRIS+938130c4+2023-07-14-14h-45m-54s__23404442",
+          "cam": "23404442",
+          "num_frames": 57,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/IRIS+938130c4+2023-07-14-14h-45m-54s__23404442.mp4",
+          "motion_url": "static/data/motion/droid/IRIS+938130c4+2023-07-14-14h-45m-54s__23404442.json"
         },
         "cam2": {
-          "vid_id": "TRI+52ca9b6a+2023-11-09-11h-57m-27s__25947356",
-          "cam": "25947356",
-          "num_frames": 78,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-09-11h-57m-27s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-09-11h-57m-27s__25947356.json"
+          "vid_id": "IRIS+938130c4+2023-07-14-14h-45m-54s__29838012",
+          "cam": "29838012",
+          "num_frames": 57,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/IRIS+938130c4+2023-07-14-14h-45m-54s__29838012.mp4",
+          "motion_url": "static/data/motion/droid/IRIS+938130c4+2023-07-14-14h-45m-54s__29838012.json"
         }
       },
       {
-        "uuid": "CLVR+236539bc+2023-08-06-20h-08m-37s",
+        "uuid": "ILIAD+50aee79f+2023-08-15-23h-35m-52s",
         "caption": "Move lid on or off of container",
         "cam1": {
-          "vid_id": "CLVR+236539bc+2023-08-06-20h-08m-37s__20103212",
-          "cam": "20103212",
-          "num_frames": 51,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/CLVR+236539bc+2023-08-06-20h-08m-37s__20103212.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+236539bc+2023-08-06-20h-08m-37s__20103212.json"
+          "vid_id": "ILIAD+50aee79f+2023-08-15-23h-35m-52s__23897859",
+          "cam": "23897859",
+          "num_frames": 59,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/ILIAD+50aee79f+2023-08-15-23h-35m-52s__23897859.mp4",
+          "motion_url": "static/data/motion/droid/ILIAD+50aee79f+2023-08-15-23h-35m-52s__23897859.json"
         },
         "cam2": {
-          "vid_id": "CLVR+236539bc+2023-08-06-20h-08m-37s__20655732",
-          "cam": "20655732",
-          "num_frames": 51,
+          "vid_id": "ILIAD+50aee79f+2023-08-15-23h-35m-52s__27904255",
+          "cam": "27904255",
+          "num_frames": 59,
           "num_segments": 1,
-          "rgb_url": "static/videos/droid/CLVR+236539bc+2023-08-06-20h-08m-37s__20655732.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+236539bc+2023-08-06-20h-08m-37s__20655732.json"
+          "rgb_url": "static/videos/droid/ILIAD+50aee79f+2023-08-15-23h-35m-52s__27904255.mp4",
+          "motion_url": "static/data/motion/droid/ILIAD+50aee79f+2023-08-15-23h-35m-52s__27904255.json"
+        }
+      },
+      {
+        "uuid": "AUTOLab+5d05c5aa+2023-07-23-21h-45m-18s",
+        "caption": "put the lid on the kettle",
+        "cam1": {
+          "vid_id": "AUTOLab+5d05c5aa+2023-07-23-21h-45m-18s__22008760",
+          "cam": "22008760",
+          "num_frames": 61,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/AUTOLab+5d05c5aa+2023-07-23-21h-45m-18s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+5d05c5aa+2023-07-23-21h-45m-18s__22008760.json"
+        },
+        "cam2": {
+          "vid_id": "AUTOLab+5d05c5aa+2023-07-23-21h-45m-18s__24400334",
+          "cam": "24400334",
+          "num_frames": 61,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+5d05c5aa+2023-07-23-21h-45m-18s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+5d05c5aa+2023-07-23-21h-45m-18s__24400334.json"
         }
       }
     ],
@@ -328,107 +328,87 @@
         }
       },
       {
-        "uuid": "TRI+52ca9b6a+2023-11-13-17h-14m-22s",
+        "uuid": "TRI+52ca9b6a+2024-01-23-16h-06m-40s",
         "caption": "Fold, spread out, or clump object",
         "cam1": {
-          "vid_id": "TRI+52ca9b6a+2023-11-13-17h-14m-22s__20252535",
+          "vid_id": "TRI+52ca9b6a+2024-01-23-16h-06m-40s__20252535",
           "cam": "20252535",
-          "num_frames": 86,
-          "num_segments": 3,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-13-17h-14m-22s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-13-17h-14m-22s__20252535.json"
+          "num_frames": 23,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-01-23-16h-06m-40s__20252535.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-01-23-16h-06m-40s__20252535.json"
         },
         "cam2": {
-          "vid_id": "TRI+52ca9b6a+2023-11-13-17h-14m-22s__25947356",
+          "vid_id": "TRI+52ca9b6a+2024-01-23-16h-06m-40s__25947356",
           "cam": "25947356",
-          "num_frames": 86,
-          "num_segments": 3,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-13-17h-14m-22s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-13-17h-14m-22s__25947356.json"
+          "num_frames": 23,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-01-23-16h-06m-40s__25947356.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-01-23-16h-06m-40s__25947356.json"
         }
       },
       {
-        "uuid": "TRI+52ca9b6a+2023-11-07-13h-50m-26s",
+        "uuid": "TRI+52ca9b6a+2023-12-12-11h-05m-45s",
         "caption": "Fold, spread out, or clump object",
         "cam1": {
-          "vid_id": "TRI+52ca9b6a+2023-11-07-13h-50m-26s__20252535",
-          "cam": "20252535",
-          "num_frames": 166,
-          "num_segments": 3,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-07-13h-50m-26s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-07-13h-50m-26s__20252535.json"
-        },
-        "cam2": {
-          "vid_id": "TRI+52ca9b6a+2023-11-07-13h-50m-26s__25947356",
-          "cam": "25947356",
-          "num_frames": 166,
-          "num_segments": 4,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-07-13h-50m-26s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-07-13h-50m-26s__25947356.json"
-        }
-      },
-      {
-        "uuid": "TRI+52ca9b6a+2023-12-04-16h-06m-06s",
-        "caption": "Fold, spread out, or clump object",
-        "cam1": {
-          "vid_id": "TRI+52ca9b6a+2023-12-04-16h-06m-06s__28451778",
+          "vid_id": "TRI+52ca9b6a+2023-12-12-11h-05m-45s__28451778",
           "cam": "28451778",
-          "num_frames": 44,
+          "num_frames": 94,
           "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-12-04-16h-06m-06s__28451778.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-12-04-16h-06m-06s__28451778.json"
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-12-12-11h-05m-45s__28451778.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-12-12-11h-05m-45s__28451778.json"
         },
         "cam2": {
-          "vid_id": "TRI+52ca9b6a+2023-12-04-16h-06m-06s__28813166",
+          "vid_id": "TRI+52ca9b6a+2023-12-12-11h-05m-45s__28813166",
           "cam": "28813166",
-          "num_frames": 44,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-12-04-16h-06m-06s__28813166.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-12-04-16h-06m-06s__28813166.json"
+          "num_frames": 94,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-12-12-11h-05m-45s__28813166.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-12-12-11h-05m-45s__28813166.json"
         }
       },
       {
-        "uuid": "TRI+52ca9b6a+2023-11-28-12h-08m-43s",
-        "caption": "Fold, spread out, or clump object",
+        "uuid": "AUTOLab+44bb9c36+2023-11-25-10h-38m-26s",
+        "caption": "Clump objects (cloth, rope, stuffed toy)",
         "cam1": {
-          "vid_id": "TRI+52ca9b6a+2023-11-28-12h-08m-43s__20252535",
-          "cam": "20252535",
-          "num_frames": 133,
+          "vid_id": "AUTOLab+44bb9c36+2023-11-25-10h-38m-26s__22008760",
+          "cam": "22008760",
+          "num_frames": 249,
           "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-28-12h-08m-43s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-28-12h-08m-43s__20252535.json"
+          "rgb_url": "static/videos/droid/AUTOLab+44bb9c36+2023-11-25-10h-38m-26s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+44bb9c36+2023-11-25-10h-38m-26s__22008760.json"
         },
         "cam2": {
-          "vid_id": "TRI+52ca9b6a+2023-11-28-12h-08m-43s__25947356",
-          "cam": "25947356",
-          "num_frames": 133,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-28-12h-08m-43s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-28-12h-08m-43s__25947356.json"
+          "vid_id": "AUTOLab+44bb9c36+2023-11-25-10h-38m-26s__24400334",
+          "cam": "24400334",
+          "num_frames": 249,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+44bb9c36+2023-11-25-10h-38m-26s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+44bb9c36+2023-11-25-10h-38m-26s__24400334.json"
+        }
+      },
+      {
+        "uuid": "AUTOLab+44bb9c36+2023-11-25-10h-46m-52s",
+        "caption": "Clump objects (cloth, rope, stuffed toy)",
+        "cam1": {
+          "vid_id": "AUTOLab+44bb9c36+2023-11-25-10h-46m-52s__22008760",
+          "cam": "22008760",
+          "num_frames": 193,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+44bb9c36+2023-11-25-10h-46m-52s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+44bb9c36+2023-11-25-10h-46m-52s__22008760.json"
+        },
+        "cam2": {
+          "vid_id": "AUTOLab+44bb9c36+2023-11-25-10h-46m-52s__24400334",
+          "cam": "24400334",
+          "num_frames": 193,
+          "num_segments": 5,
+          "rgb_url": "static/videos/droid/AUTOLab+44bb9c36+2023-11-25-10h-46m-52s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+44bb9c36+2023-11-25-10h-46m-52s__24400334.json"
         }
       }
     ],
     "Hang/Unhang": [
-      {
-        "uuid": "TRI+52ca9b6a+2024-02-06-14h-32m-24s",
-        "caption": "Do any task, and then reset the scene.\n\nSuggested task:\n* Hang or unhang object",
-        "cam1": {
-          "vid_id": "TRI+52ca9b6a+2024-02-06-14h-32m-24s__28451778",
-          "cam": "28451778",
-          "num_frames": 37,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-06-14h-32m-24s__28451778.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-06-14h-32m-24s__28451778.json"
-        },
-        "cam2": {
-          "vid_id": "TRI+52ca9b6a+2024-02-06-14h-32m-24s__28813166",
-          "cam": "28813166",
-          "num_frames": 37,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-06-14h-32m-24s__28813166.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-06-14h-32m-24s__28813166.json"
-        }
-      },
       {
         "uuid": "TRI+52ca9b6a+2023-11-02-15h-36m-29s",
         "caption": "Hang or unhang object",
@@ -436,7 +416,7 @@
           "vid_id": "TRI+52ca9b6a+2023-11-02-15h-36m-29s__20252535",
           "cam": "20252535",
           "num_frames": 133,
-          "num_segments": 2,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-02-15h-36m-29s__20252535.mp4",
           "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-02-15h-36m-29s__20252535.json"
         },
@@ -444,113 +424,93 @@
           "vid_id": "TRI+52ca9b6a+2023-11-02-15h-36m-29s__25947356",
           "cam": "25947356",
           "num_frames": 133,
-          "num_segments": 3,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-02-15h-36m-29s__25947356.mp4",
           "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-02-15h-36m-29s__25947356.json"
         }
       },
       {
-        "uuid": "TRI+52ca9b6a+2023-10-31-17h-45m-10s",
-        "caption": "Do any two tasks consecutively.\n\nSuggested tasks:\n* Hang or unhang object\n* Hang or unhang object",
+        "uuid": "TRI+52ca9b6a+2023-11-08-17h-35m-07s",
+        "caption": "Hang or unhang object",
         "cam1": {
-          "vid_id": "TRI+52ca9b6a+2023-10-31-17h-45m-10s__20252535",
+          "vid_id": "TRI+52ca9b6a+2023-11-08-17h-35m-07s__20252535",
           "cam": "20252535",
-          "num_frames": 95,
+          "num_frames": 53,
           "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-10-31-17h-45m-10s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-10-31-17h-45m-10s__20252535.json"
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-08-17h-35m-07s__20252535.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-08-17h-35m-07s__20252535.json"
         },
         "cam2": {
-          "vid_id": "TRI+52ca9b6a+2023-10-31-17h-45m-10s__25947356",
+          "vid_id": "TRI+52ca9b6a+2023-11-08-17h-35m-07s__25947356",
           "cam": "25947356",
-          "num_frames": 95,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-10-31-17h-45m-10s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-10-31-17h-45m-10s__25947356.json"
+          "num_frames": 53,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-08-17h-35m-07s__25947356.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-08-17h-35m-07s__25947356.json"
         }
       },
       {
-        "uuid": "TRI+52ca9b6a+2023-11-29-14h-16m-21s",
+        "uuid": "TRI+52ca9b6a+2024-01-23-13h-49m-00s",
         "caption": "Hang or unhang object",
         "cam1": {
-          "vid_id": "TRI+52ca9b6a+2023-11-29-14h-16m-21s__20252535",
-          "cam": "20252535",
-          "num_frames": 47,
+          "vid_id": "TRI+52ca9b6a+2024-01-23-13h-49m-00s__28451778",
+          "cam": "28451778",
+          "num_frames": 35,
           "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-29-14h-16m-21s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-29-14h-16m-21s__20252535.json"
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-01-23-13h-49m-00s__28451778.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-01-23-13h-49m-00s__28451778.json"
         },
         "cam2": {
-          "vid_id": "TRI+52ca9b6a+2023-11-29-14h-16m-21s__25947356",
-          "cam": "25947356",
-          "num_frames": 47,
+          "vid_id": "TRI+52ca9b6a+2024-01-23-13h-49m-00s__28813166",
+          "cam": "28813166",
+          "num_frames": 35,
           "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-29-14h-16m-21s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-29-14h-16m-21s__25947356.json"
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-01-23-13h-49m-00s__28813166.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-01-23-13h-49m-00s__28813166.json"
         }
       },
       {
-        "uuid": "TRI+52ca9b6a+2024-02-07-14h-17m-01s",
+        "uuid": "CLVR+236539bc+2023-05-30-01h-39m-15s",
         "caption": "Hang or unhang object",
         "cam1": {
-          "vid_id": "TRI+52ca9b6a+2024-02-07-14h-17m-01s__20252535",
-          "cam": "20252535",
-          "num_frames": 36,
+          "vid_id": "CLVR+236539bc+2023-05-30-01h-39m-15s__20103212",
+          "cam": "20103212",
+          "num_frames": 32,
           "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-07-14h-17m-01s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-07-14h-17m-01s__20252535.json"
+          "rgb_url": "static/videos/droid/CLVR+236539bc+2023-05-30-01h-39m-15s__20103212.mp4",
+          "motion_url": "static/data/motion/droid/CLVR+236539bc+2023-05-30-01h-39m-15s__20103212.json"
         },
         "cam2": {
-          "vid_id": "TRI+52ca9b6a+2024-02-07-14h-17m-01s__25947356",
-          "cam": "25947356",
-          "num_frames": 36,
+          "vid_id": "CLVR+236539bc+2023-05-30-01h-39m-15s__20655732",
+          "cam": "20655732",
+          "num_frames": 32,
           "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-07-14h-17m-01s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-07-14h-17m-01s__25947356.json"
+          "rgb_url": "static/videos/droid/CLVR+236539bc+2023-05-30-01h-39m-15s__20655732.mp4",
+          "motion_url": "static/data/motion/droid/CLVR+236539bc+2023-05-30-01h-39m-15s__20655732.json"
+        }
+      },
+      {
+        "uuid": "TRI+52ca9b6a+2024-01-10-14h-44m-36s",
+        "caption": "Hang or unhang object",
+        "cam1": {
+          "vid_id": "TRI+52ca9b6a+2024-01-10-14h-44m-36s__20252535",
+          "cam": "20252535",
+          "num_frames": 77,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-01-10-14h-44m-36s__20252535.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-01-10-14h-44m-36s__20252535.json"
+        },
+        "cam2": {
+          "vid_id": "TRI+52ca9b6a+2024-01-10-14h-44m-36s__25947356",
+          "cam": "25947356",
+          "num_frames": 77,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-01-10-14h-44m-36s__25947356.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-01-10-14h-44m-36s__25947356.json"
         }
       }
     ],
     "Insert": [
-      {
-        "uuid": "AUTOLab+84bd5053+2023-10-07-18h-54m-13s",
-        "caption": "insert socket into plug",
-        "cam1": {
-          "vid_id": "AUTOLab+84bd5053+2023-10-07-18h-54m-13s__22008760",
-          "cam": "22008760",
-          "num_frames": 111,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-10-07-18h-54m-13s__22008760.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-10-07-18h-54m-13s__22008760.json"
-        },
-        "cam2": {
-          "vid_id": "AUTOLab+84bd5053+2023-10-07-18h-54m-13s__24400334",
-          "cam": "24400334",
-          "num_frames": 111,
-          "num_segments": 3,
-          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-10-07-18h-54m-13s__24400334.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-10-07-18h-54m-13s__24400334.json"
-        }
-      },
-      {
-        "uuid": "AUTOLab+84bd5053+2023-10-07-18h-51m-47s",
-        "caption": "insert socket into plug",
-        "cam1": {
-          "vid_id": "AUTOLab+84bd5053+2023-10-07-18h-51m-47s__22008760",
-          "cam": "22008760",
-          "num_frames": 195,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-10-07-18h-51m-47s__22008760.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-10-07-18h-51m-47s__22008760.json"
-        },
-        "cam2": {
-          "vid_id": "AUTOLab+84bd5053+2023-10-07-18h-51m-47s__24400334",
-          "cam": "24400334",
-          "num_frames": 195,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-10-07-18h-51m-47s__24400334.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-10-07-18h-51m-47s__24400334.json"
-        }
-      },
       {
         "uuid": "AUTOLab+84bd5053+2023-10-07-18h-57m-46s",
         "caption": "insert plug into socket",
@@ -586,53 +546,73 @@
           "vid_id": "AUTOLab+84bd5053+2023-07-08-11h-05m-26s__24400334",
           "cam": "24400334",
           "num_frames": 65,
-          "num_segments": 2,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-07-08-11h-05m-26s__24400334.mp4",
           "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-07-08-11h-05m-26s__24400334.json"
         }
       },
       {
-        "uuid": "AUTOLab+84bd5053+2023-10-07-19h-02m-23s",
+        "uuid": "AUTOLab+84bd5053+2023-10-07-17h-42m-04s",
         "caption": "insert plug into socket",
         "cam1": {
-          "vid_id": "AUTOLab+84bd5053+2023-10-07-19h-02m-23s__22008760",
+          "vid_id": "AUTOLab+84bd5053+2023-10-07-17h-42m-04s__22008760",
           "cam": "22008760",
-          "num_frames": 141,
-          "num_segments": 4,
-          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-10-07-19h-02m-23s__22008760.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-10-07-19h-02m-23s__22008760.json"
+          "num_frames": 122,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-10-07-17h-42m-04s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-10-07-17h-42m-04s__22008760.json"
         },
         "cam2": {
-          "vid_id": "AUTOLab+84bd5053+2023-10-07-19h-02m-23s__24400334",
+          "vid_id": "AUTOLab+84bd5053+2023-10-07-17h-42m-04s__24400334",
           "cam": "24400334",
-          "num_frames": 141,
+          "num_frames": 122,
+          "num_segments": 3,
+          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-10-07-17h-42m-04s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-10-07-17h-42m-04s__24400334.json"
+        }
+      },
+      {
+        "uuid": "AUTOLab+84bd5053+2023-08-21-14h-15m-31s",
+        "caption": "insert red and green block into black bowl",
+        "cam1": {
+          "vid_id": "AUTOLab+84bd5053+2023-08-21-14h-15m-31s__22008760",
+          "cam": "22008760",
+          "num_frames": 49,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-08-21-14h-15m-31s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-08-21-14h-15m-31s__22008760.json"
+        },
+        "cam2": {
+          "vid_id": "AUTOLab+84bd5053+2023-08-21-14h-15m-31s__24400334",
+          "cam": "24400334",
+          "num_frames": 49,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-08-21-14h-15m-31s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-08-21-14h-15m-31s__24400334.json"
+        }
+      },
+      {
+        "uuid": "AUTOLab+84bd5053+2023-10-07-19h-18m-21s",
+        "caption": "insert socket into plug",
+        "cam1": {
+          "vid_id": "AUTOLab+84bd5053+2023-10-07-19h-18m-21s__22008760",
+          "cam": "22008760",
+          "num_frames": 163,
           "num_segments": 2,
-          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-10-07-19h-02m-23s__24400334.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-10-07-19h-02m-23s__24400334.json"
+          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-10-07-19h-18m-21s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-10-07-19h-18m-21s__22008760.json"
+        },
+        "cam2": {
+          "vid_id": "AUTOLab+84bd5053+2023-10-07-19h-18m-21s__24400334",
+          "cam": "24400334",
+          "num_frames": 163,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-10-07-19h-18m-21s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-10-07-19h-18m-21s__24400334.json"
         }
       }
     ],
     "Move object": [
-      {
-        "uuid": "WEIRD+5a211037+2023-12-12-22h-54m-26s",
-        "caption": "Move object to a new position and orientation",
-        "cam1": {
-          "vid_id": "WEIRD+5a211037+2023-12-12-22h-54m-26s__23804457",
-          "cam": "23804457",
-          "num_frames": 81,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/WEIRD+5a211037+2023-12-12-22h-54m-26s__23804457.mp4",
-          "motion_url": "static/data/motion/droid/WEIRD+5a211037+2023-12-12-22h-54m-26s__23804457.json"
-        },
-        "cam2": {
-          "vid_id": "WEIRD+5a211037+2023-12-12-22h-54m-26s__28834630",
-          "cam": "28834630",
-          "num_frames": 81,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/WEIRD+5a211037+2023-12-12-22h-54m-26s__28834630.mp4",
-          "motion_url": "static/data/motion/droid/WEIRD+5a211037+2023-12-12-22h-54m-26s__28834630.json"
-        }
-      },
       {
         "uuid": "IPRL+5085c3ce+2023-10-21-14h-47m-37s",
         "caption": "Move object into or out of container",
@@ -640,7 +620,7 @@
           "vid_id": "IPRL+5085c3ce+2023-10-21-14h-47m-37s__27432424",
           "cam": "27432424",
           "num_frames": 188,
-          "num_segments": 3,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/IPRL+5085c3ce+2023-10-21-14h-47m-37s__27432424.mp4",
           "motion_url": "static/data/motion/droid/IPRL+5085c3ce+2023-10-21-14h-47m-37s__27432424.json"
         },
@@ -648,49 +628,9 @@
           "vid_id": "IPRL+5085c3ce+2023-10-21-14h-47m-37s__28221883",
           "cam": "28221883",
           "num_frames": 188,
-          "num_segments": 5,
+          "num_segments": 3,
           "rgb_url": "static/videos/droid/IPRL+5085c3ce+2023-10-21-14h-47m-37s__28221883.mp4",
           "motion_url": "static/data/motion/droid/IPRL+5085c3ce+2023-10-21-14h-47m-37s__28221883.json"
-        }
-      },
-      {
-        "uuid": "TRI+52ca9b6a+2023-11-30-17h-03m-40s",
-        "caption": "Move object into or out of container",
-        "cam1": {
-          "vid_id": "TRI+52ca9b6a+2023-11-30-17h-03m-40s__20252535",
-          "cam": "20252535",
-          "num_frames": 89,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-30-17h-03m-40s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-30-17h-03m-40s__20252535.json"
-        },
-        "cam2": {
-          "vid_id": "TRI+52ca9b6a+2023-11-30-17h-03m-40s__25947356",
-          "cam": "25947356",
-          "num_frames": 89,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-30-17h-03m-40s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-30-17h-03m-40s__25947356.json"
-        }
-      },
-      {
-        "uuid": "CLVR+13759f6e+2023-05-16-17h-29m-22s",
-        "caption": "Move object into or out of container",
-        "cam1": {
-          "vid_id": "CLVR+13759f6e+2023-05-16-17h-29m-22s__20103212",
-          "cam": "20103212",
-          "num_frames": 60,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/CLVR+13759f6e+2023-05-16-17h-29m-22s__20103212.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+13759f6e+2023-05-16-17h-29m-22s__20103212.json"
-        },
-        "cam2": {
-          "vid_id": "CLVR+13759f6e+2023-05-16-17h-29m-22s__20655732",
-          "cam": "20655732",
-          "num_frames": 60,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/CLVR+13759f6e+2023-05-16-17h-29m-22s__20655732.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+13759f6e+2023-05-16-17h-29m-22s__20655732.json"
         }
       },
       {
@@ -712,6 +652,66 @@
           "rgb_url": "static/videos/droid/ILIAD+j807b3f8+2023-06-11-17h-29m-25s__27904255.mp4",
           "motion_url": "static/data/motion/droid/ILIAD+j807b3f8+2023-06-11-17h-29m-25s__27904255.json"
         }
+      },
+      {
+        "uuid": "TRI+52ca9b6a+2023-11-06-17h-33m-43s",
+        "caption": "Move object into or out of container",
+        "cam1": {
+          "vid_id": "TRI+52ca9b6a+2023-11-06-17h-33m-43s__20252535",
+          "cam": "20252535",
+          "num_frames": 66,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-06-17h-33m-43s__20252535.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-06-17h-33m-43s__20252535.json"
+        },
+        "cam2": {
+          "vid_id": "TRI+52ca9b6a+2023-11-06-17h-33m-43s__25947356",
+          "cam": "25947356",
+          "num_frames": 66,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-06-17h-33m-43s__25947356.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-06-17h-33m-43s__25947356.json"
+        }
+      },
+      {
+        "uuid": "AUTOLab+7cb094d5+2023-12-13-23h-21m-14s",
+        "caption": "Move object into or out of container",
+        "cam1": {
+          "vid_id": "AUTOLab+7cb094d5+2023-12-13-23h-21m-14s__22008760",
+          "cam": "22008760",
+          "num_frames": 84,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+7cb094d5+2023-12-13-23h-21m-14s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+7cb094d5+2023-12-13-23h-21m-14s__22008760.json"
+        },
+        "cam2": {
+          "vid_id": "AUTOLab+7cb094d5+2023-12-13-23h-21m-14s__24400334",
+          "cam": "24400334",
+          "num_frames": 84,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+7cb094d5+2023-12-13-23h-21m-14s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+7cb094d5+2023-12-13-23h-21m-14s__24400334.json"
+        }
+      },
+      {
+        "uuid": "IRIS+7dfa2da3+2023-05-05-10h-25m-47s",
+        "caption": "Move object into or out of container",
+        "cam1": {
+          "vid_id": "IRIS+7dfa2da3+2023-05-05-10h-25m-47s__23404442",
+          "cam": "23404442",
+          "num_frames": 29,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/IRIS+7dfa2da3+2023-05-05-10h-25m-47s__23404442.mp4",
+          "motion_url": "static/data/motion/droid/IRIS+7dfa2da3+2023-05-05-10h-25m-47s__23404442.json"
+        },
+        "cam2": {
+          "vid_id": "IRIS+7dfa2da3+2023-05-05-10h-25m-47s__29838012",
+          "cam": "29838012",
+          "num_frames": 29,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/IRIS+7dfa2da3+2023-05-05-10h-25m-47s__29838012.mp4",
+          "motion_url": "static/data/motion/droid/IRIS+7dfa2da3+2023-05-05-10h-25m-47s__29838012.json"
+        }
       }
     ],
     "Open/Close": [
@@ -730,7 +730,7 @@
           "vid_id": "TRI+52ca9b6a+2023-10-23-18h-02m-59s__25947356",
           "cam": "25947356",
           "num_frames": 123,
-          "num_segments": 2,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-10-23-18h-02m-59s__25947356.mp4",
           "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-10-23-18h-02m-59s__25947356.json"
         }
@@ -762,7 +762,7 @@
           "vid_id": "AUTOLab+84bd5053+2023-09-05-08h-54m-48s__22008760",
           "cam": "22008760",
           "num_frames": 59,
-          "num_segments": 2,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-09-05-08h-54m-48s__22008760.mp4",
           "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-09-05-08h-54m-48s__22008760.json"
         },
@@ -818,167 +818,107 @@
     ],
     "Pick up": [
       {
-        "uuid": "REAL+4f8ca688+2023-07-15-12h-34m-58s",
+        "uuid": "REAL+4f8ca688+2023-07-15-12h-54m-46s",
         "caption": "Use object to pick up something",
         "cam1": {
-          "vid_id": "REAL+4f8ca688+2023-07-15-12h-34m-58s__20540549",
+          "vid_id": "REAL+4f8ca688+2023-07-15-12h-54m-46s__20540549",
           "cam": "20540549",
           "num_frames": 97,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-07-15-12h-34m-58s__20540549.mp4",
-          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-07-15-12h-34m-58s__20540549.json"
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-07-15-12h-54m-46s__20540549.mp4",
+          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-07-15-12h-54m-46s__20540549.json"
         },
         "cam2": {
-          "vid_id": "REAL+4f8ca688+2023-07-15-12h-34m-58s__23960472",
+          "vid_id": "REAL+4f8ca688+2023-07-15-12h-54m-46s__23960472",
           "cam": "23960472",
           "num_frames": 97,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-07-15-12h-34m-58s__23960472.mp4",
-          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-07-15-12h-34m-58s__23960472.json"
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-07-15-12h-54m-46s__23960472.mp4",
+          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-07-15-12h-54m-46s__23960472.json"
         }
       },
       {
-        "uuid": "TRI+52ca9b6a+2024-02-07-13h-51m-41s",
+        "uuid": "TRI+52ca9b6a+2024-02-06-10h-24m-30s",
         "caption": "Use object to pick up something",
         "cam1": {
-          "vid_id": "TRI+52ca9b6a+2024-02-07-13h-51m-41s__28451778",
+          "vid_id": "TRI+52ca9b6a+2024-02-06-10h-24m-30s__28451778",
           "cam": "28451778",
-          "num_frames": 89,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-07-13h-51m-41s__28451778.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-07-13h-51m-41s__28451778.json"
-        },
-        "cam2": {
-          "vid_id": "TRI+52ca9b6a+2024-02-07-13h-51m-41s__28813166",
-          "cam": "28813166",
-          "num_frames": 89,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-07-13h-51m-41s__28813166.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-07-13h-51m-41s__28813166.json"
-        }
-      },
-      {
-        "uuid": "REAL+4f8ca688+2023-07-13-14h-11m-15s",
-        "caption": "Use object to pick up something",
-        "cam1": {
-          "vid_id": "REAL+4f8ca688+2023-07-13-14h-11m-15s__20540549",
-          "cam": "20540549",
-          "num_frames": 125,
-          "num_segments": 3,
-          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-07-13-14h-11m-15s__20540549.mp4",
-          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-07-13-14h-11m-15s__20540549.json"
-        },
-        "cam2": {
-          "vid_id": "REAL+4f8ca688+2023-07-13-14h-11m-15s__23960472",
-          "cam": "23960472",
-          "num_frames": 125,
-          "num_segments": 3,
-          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-07-13-14h-11m-15s__23960472.mp4",
-          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-07-13-14h-11m-15s__23960472.json"
-        }
-      },
-      {
-        "uuid": "REAL+4f8ca688+2023-06-08-14h-19m-50s",
-        "caption": "Use object to pick up something",
-        "cam1": {
-          "vid_id": "REAL+4f8ca688+2023-06-08-14h-19m-50s__20540549",
-          "cam": "20540549",
-          "num_frames": 157,
-          "num_segments": 3,
-          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-06-08-14h-19m-50s__20540549.mp4",
-          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-06-08-14h-19m-50s__20540549.json"
-        },
-        "cam2": {
-          "vid_id": "REAL+4f8ca688+2023-06-08-14h-19m-50s__23960472",
-          "cam": "23960472",
-          "num_frames": 157,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-06-08-14h-19m-50s__23960472.mp4",
-          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-06-08-14h-19m-50s__23960472.json"
-        }
-      },
-      {
-        "uuid": "TRI+52ca9b6a+2023-10-25-15h-57m-10s",
-        "caption": "Use object to pick up something",
-        "cam1": {
-          "vid_id": "TRI+52ca9b6a+2023-10-25-15h-57m-10s__20252535",
-          "cam": "20252535",
-          "num_frames": 54,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-10-25-15h-57m-10s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-10-25-15h-57m-10s__20252535.json"
-        },
-        "cam2": {
-          "vid_id": "TRI+52ca9b6a+2023-10-25-15h-57m-10s__25947356",
-          "cam": "25947356",
-          "num_frames": 54,
+          "num_frames": 124,
           "num_segments": 2,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-10-25-15h-57m-10s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-10-25-15h-57m-10s__25947356.json"
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-06-10h-24m-30s__28451778.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-06-10h-24m-30s__28451778.json"
+        },
+        "cam2": {
+          "vid_id": "TRI+52ca9b6a+2024-02-06-10h-24m-30s__28813166",
+          "cam": "28813166",
+          "num_frames": 124,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-06-10h-24m-30s__28813166.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-06-10h-24m-30s__28813166.json"
+        }
+      },
+      {
+        "uuid": "TRI+52ca9b6a+2024-01-23-12h-18m-45s",
+        "caption": "Use object to pick up something",
+        "cam1": {
+          "vid_id": "TRI+52ca9b6a+2024-01-23-12h-18m-45s__28451778",
+          "cam": "28451778",
+          "num_frames": 44,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-01-23-12h-18m-45s__28451778.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-01-23-12h-18m-45s__28451778.json"
+        },
+        "cam2": {
+          "vid_id": "TRI+52ca9b6a+2024-01-23-12h-18m-45s__28813166",
+          "cam": "28813166",
+          "num_frames": 44,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-01-23-12h-18m-45s__28813166.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-01-23-12h-18m-45s__28813166.json"
+        }
+      },
+      {
+        "uuid": "REAL+4f8ca688+2023-07-15-12h-23m-44s",
+        "caption": "Use object to pick up something",
+        "cam1": {
+          "vid_id": "REAL+4f8ca688+2023-07-15-12h-23m-44s__20540549",
+          "cam": "20540549",
+          "num_frames": 124,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-07-15-12h-23m-44s__20540549.mp4",
+          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-07-15-12h-23m-44s__20540549.json"
+        },
+        "cam2": {
+          "vid_id": "REAL+4f8ca688+2023-07-15-12h-23m-44s__23960472",
+          "cam": "23960472",
+          "num_frames": 124,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-07-15-12h-23m-44s__23960472.mp4",
+          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-07-15-12h-23m-44s__23960472.json"
+        }
+      },
+      {
+        "uuid": "TRI+52ca9b6a+2024-01-18-11h-12m-16s",
+        "caption": "Use object to pick up something",
+        "cam1": {
+          "vid_id": "TRI+52ca9b6a+2024-01-18-11h-12m-16s__20252535",
+          "cam": "20252535",
+          "num_frames": 81,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-01-18-11h-12m-16s__20252535.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-01-18-11h-12m-16s__20252535.json"
+        },
+        "cam2": {
+          "vid_id": "TRI+52ca9b6a+2024-01-18-11h-12m-16s__25947356",
+          "cam": "25947356",
+          "num_frames": 81,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-01-18-11h-12m-16s__25947356.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-01-18-11h-12m-16s__25947356.json"
         }
       }
     ],
     "Pour/Scoop": [
-      {
-        "uuid": "REAL+4f8ca688+2023-07-13-14h-12m-29s",
-        "caption": "Use cup to pour something granular",
-        "cam1": {
-          "vid_id": "REAL+4f8ca688+2023-07-13-14h-12m-29s__20540549",
-          "cam": "20540549",
-          "num_frames": 99,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-07-13-14h-12m-29s__20540549.mp4",
-          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-07-13-14h-12m-29s__20540549.json"
-        },
-        "cam2": {
-          "vid_id": "REAL+4f8ca688+2023-07-13-14h-12m-29s__23960472",
-          "cam": "23960472",
-          "num_frames": 99,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-07-13-14h-12m-29s__23960472.mp4",
-          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-07-13-14h-12m-29s__23960472.json"
-        }
-      },
-      {
-        "uuid": "WEIRD+e604eeed+2023-11-30-21h-02m-03s",
-        "caption": "Use cup to pour something granular",
-        "cam1": {
-          "vid_id": "WEIRD+e604eeed+2023-11-30-21h-02m-03s__23804457",
-          "cam": "23804457",
-          "num_frames": 132,
-          "num_segments": 3,
-          "rgb_url": "static/videos/droid/WEIRD+e604eeed+2023-11-30-21h-02m-03s__23804457.mp4",
-          "motion_url": "static/data/motion/droid/WEIRD+e604eeed+2023-11-30-21h-02m-03s__23804457.json"
-        },
-        "cam2": {
-          "vid_id": "WEIRD+e604eeed+2023-11-30-21h-02m-03s__28834630",
-          "cam": "28834630",
-          "num_frames": 132,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/WEIRD+e604eeed+2023-11-30-21h-02m-03s__28834630.mp4",
-          "motion_url": "static/data/motion/droid/WEIRD+e604eeed+2023-11-30-21h-02m-03s__28834630.json"
-        }
-      },
-      {
-        "uuid": "WEIRD+5a211037+2023-12-22-21h-35m-28s",
-        "caption": "Use cup to pour something granular",
-        "cam1": {
-          "vid_id": "WEIRD+5a211037+2023-12-22-21h-35m-28s__23804457",
-          "cam": "23804457",
-          "num_frames": 81,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/WEIRD+5a211037+2023-12-22-21h-35m-28s__23804457.mp4",
-          "motion_url": "static/data/motion/droid/WEIRD+5a211037+2023-12-22-21h-35m-28s__23804457.json"
-        },
-        "cam2": {
-          "vid_id": "WEIRD+5a211037+2023-12-22-21h-35m-28s__28834630",
-          "cam": "28834630",
-          "num_frames": 81,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/WEIRD+5a211037+2023-12-22-21h-35m-28s__28834630.mp4",
-          "motion_url": "static/data/motion/droid/WEIRD+5a211037+2023-12-22-21h-35m-28s__28834630.json"
-        }
-      },
       {
         "uuid": "REAL+4f8ca688+2023-06-08-15h-24m-26s",
         "caption": "Use cup to pour something granular",
@@ -986,7 +926,7 @@
           "vid_id": "REAL+4f8ca688+2023-06-08-15h-24m-26s__20540549",
           "cam": "20540549",
           "num_frames": 97,
-          "num_segments": 3,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-06-08-15h-24m-26s__20540549.mp4",
           "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-06-08-15h-24m-26s__20540549.json"
         },
@@ -1014,33 +954,73 @@
           "vid_id": "ILIAD+7ae1bcff+2023-06-04-20h-22m-27s__27904255",
           "cam": "27904255",
           "num_frames": 179,
-          "num_segments": 3,
+          "num_segments": 2,
           "rgb_url": "static/videos/droid/ILIAD+7ae1bcff+2023-06-04-20h-22m-27s__27904255.mp4",
           "motion_url": "static/data/motion/droid/ILIAD+7ae1bcff+2023-06-04-20h-22m-27s__27904255.json"
+        }
+      },
+      {
+        "uuid": "PennPAL+acda9df3+2023-07-10-21h-36m-23s",
+        "caption": "Use cup to pour something granular",
+        "cam1": {
+          "vid_id": "PennPAL+acda9df3+2023-07-10-21h-36m-23s__25455306",
+          "cam": "25455306",
+          "num_frames": 97,
+          "num_segments": 3,
+          "rgb_url": "static/videos/droid/PennPAL+acda9df3+2023-07-10-21h-36m-23s__25455306.mp4",
+          "motion_url": "static/data/motion/droid/PennPAL+acda9df3+2023-07-10-21h-36m-23s__25455306.json"
+        },
+        "cam2": {
+          "vid_id": "PennPAL+acda9df3+2023-07-10-21h-36m-23s__27085680",
+          "cam": "27085680",
+          "num_frames": 97,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/PennPAL+acda9df3+2023-07-10-21h-36m-23s__27085680.mp4",
+          "motion_url": "static/data/motion/droid/PennPAL+acda9df3+2023-07-10-21h-36m-23s__27085680.json"
+        }
+      },
+      {
+        "uuid": "REAL+4f8ca688+2023-05-21-09h-40m-23s",
+        "caption": "Do any task, and then reset the scene.\n\nSuggested task:\n* Use cup to pour something granular",
+        "cam1": {
+          "vid_id": "REAL+4f8ca688+2023-05-21-09h-40m-23s__20540549",
+          "cam": "20540549",
+          "num_frames": 71,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-05-21-09h-40m-23s__20540549.mp4",
+          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-05-21-09h-40m-23s__20540549.json"
+        },
+        "cam2": {
+          "vid_id": "REAL+4f8ca688+2023-05-21-09h-40m-23s__23960472",
+          "cam": "23960472",
+          "num_frames": 71,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/REAL+4f8ca688+2023-05-21-09h-40m-23s__23960472.mp4",
+          "motion_url": "static/data/motion/droid/REAL+4f8ca688+2023-05-21-09h-40m-23s__23960472.json"
+        }
+      },
+      {
+        "uuid": "PennPAL+acda9df3+2023-06-20-17h-21m-06s",
+        "caption": "Use cup to pour something granular",
+        "cam1": {
+          "vid_id": "PennPAL+acda9df3+2023-06-20-17h-21m-06s__25455306",
+          "cam": "25455306",
+          "num_frames": 114,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/PennPAL+acda9df3+2023-06-20-17h-21m-06s__25455306.mp4",
+          "motion_url": "static/data/motion/droid/PennPAL+acda9df3+2023-06-20-17h-21m-06s__25455306.json"
+        },
+        "cam2": {
+          "vid_id": "PennPAL+acda9df3+2023-06-20-17h-21m-06s__27085680",
+          "cam": "27085680",
+          "num_frames": 114,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/PennPAL+acda9df3+2023-06-20-17h-21m-06s__27085680.mp4",
+          "motion_url": "static/data/motion/droid/PennPAL+acda9df3+2023-06-20-17h-21m-06s__27085680.json"
         }
       }
     ],
     "Press/Turn/Twist": [
-      {
-        "uuid": "CLVR+236539bc+2023-06-20-04h-10m-58s",
-        "caption": "Press button",
-        "cam1": {
-          "vid_id": "CLVR+236539bc+2023-06-20-04h-10m-58s__20103212",
-          "cam": "20103212",
-          "num_frames": 25,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/CLVR+236539bc+2023-06-20-04h-10m-58s__20103212.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+236539bc+2023-06-20-04h-10m-58s__20103212.json"
-        },
-        "cam2": {
-          "vid_id": "CLVR+236539bc+2023-06-20-04h-10m-58s__20655732",
-          "cam": "20655732",
-          "num_frames": 25,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/CLVR+236539bc+2023-06-20-04h-10m-58s__20655732.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+236539bc+2023-06-20-04h-10m-58s__20655732.json"
-        }
-      },
       {
         "uuid": "TRI+52ca9b6a+2024-01-22-13h-46m-22s",
         "caption": "Press button",
@@ -1056,7 +1036,7 @@
           "vid_id": "TRI+52ca9b6a+2024-01-22-13h-46m-22s__25947356",
           "cam": "25947356",
           "num_frames": 53,
-          "num_segments": 2,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-01-22-13h-46m-22s__25947356.mp4",
           "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-01-22-13h-46m-22s__25947356.json"
         }
@@ -1102,87 +1082,47 @@
         }
       },
       {
-        "uuid": "PennPAL+acda9df3+2023-07-15-22h-19m-26s",
-        "caption": "Turn twistable object",
+        "uuid": "IPRL+5085c3ce+2023-10-16-20h-40m-06s",
+        "caption": "Press button",
         "cam1": {
-          "vid_id": "PennPAL+acda9df3+2023-07-15-22h-19m-26s__25455306",
-          "cam": "25455306",
-          "num_frames": 82,
+          "vid_id": "IPRL+5085c3ce+2023-10-16-20h-40m-06s__27432424",
+          "cam": "27432424",
+          "num_frames": 70,
           "num_segments": 2,
-          "rgb_url": "static/videos/droid/PennPAL+acda9df3+2023-07-15-22h-19m-26s__25455306.mp4",
-          "motion_url": "static/data/motion/droid/PennPAL+acda9df3+2023-07-15-22h-19m-26s__25455306.json"
+          "rgb_url": "static/videos/droid/IPRL+5085c3ce+2023-10-16-20h-40m-06s__27432424.mp4",
+          "motion_url": "static/data/motion/droid/IPRL+5085c3ce+2023-10-16-20h-40m-06s__27432424.json"
         },
         "cam2": {
-          "vid_id": "PennPAL+acda9df3+2023-07-15-22h-19m-26s__27085680",
-          "cam": "27085680",
-          "num_frames": 82,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/PennPAL+acda9df3+2023-07-15-22h-19m-26s__27085680.mp4",
-          "motion_url": "static/data/motion/droid/PennPAL+acda9df3+2023-07-15-22h-19m-26s__27085680.json"
+          "vid_id": "IPRL+5085c3ce+2023-10-16-20h-40m-06s__28221883",
+          "cam": "28221883",
+          "num_frames": 70,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/IPRL+5085c3ce+2023-10-16-20h-40m-06s__28221883.mp4",
+          "motion_url": "static/data/motion/droid/IPRL+5085c3ce+2023-10-16-20h-40m-06s__28221883.json"
+        }
+      },
+      {
+        "uuid": "GuptaLab+553d1bd5+2023-04-30-15h-12m-03s",
+        "caption": "Turn twistable object",
+        "cam1": {
+          "vid_id": "GuptaLab+553d1bd5+2023-04-30-15h-12m-03s__22246076",
+          "cam": "22246076",
+          "num_frames": 35,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/GuptaLab+553d1bd5+2023-04-30-15h-12m-03s__22246076.mp4",
+          "motion_url": "static/data/motion/droid/GuptaLab+553d1bd5+2023-04-30-15h-12m-03s__22246076.json"
+        },
+        "cam2": {
+          "vid_id": "GuptaLab+553d1bd5+2023-04-30-15h-12m-03s__26638268",
+          "cam": "26638268",
+          "num_frames": 35,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/GuptaLab+553d1bd5+2023-04-30-15h-12m-03s__26638268.mp4",
+          "motion_url": "static/data/motion/droid/GuptaLab+553d1bd5+2023-04-30-15h-12m-03s__26638268.json"
         }
       }
     ],
     "Push/Pull": [
-      {
-        "uuid": "CLVR+13759f6e+2023-06-04-15h-22m-31s",
-        "caption": "Do any three tasks consecutively.\n\nSuggested tasks:\t\t\n* pull a tissue from a box\n* pull a tissue from a box\n* pull a tissue from a box",
-        "cam1": {
-          "vid_id": "CLVR+13759f6e+2023-06-04-15h-22m-31s__20103212",
-          "cam": "20103212",
-          "num_frames": 171,
-          "num_segments": 3,
-          "rgb_url": "static/videos/droid/CLVR+13759f6e+2023-06-04-15h-22m-31s__20103212.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+13759f6e+2023-06-04-15h-22m-31s__20103212.json"
-        },
-        "cam2": {
-          "vid_id": "CLVR+13759f6e+2023-06-04-15h-22m-31s__20655732",
-          "cam": "20655732",
-          "num_frames": 171,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/CLVR+13759f6e+2023-06-04-15h-22m-31s__20655732.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+13759f6e+2023-06-04-15h-22m-31s__20655732.json"
-        }
-      },
-      {
-        "uuid": "CLVR+13759f6e+2023-06-04-15h-37m-56s",
-        "caption": "Do any two tasks consecutively.\n\nSuggested tasks:\n* pull a tissue from the box\n* pull a tissue from the box",
-        "cam1": {
-          "vid_id": "CLVR+13759f6e+2023-06-04-15h-37m-56s__20103212",
-          "cam": "20103212",
-          "num_frames": 88,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/CLVR+13759f6e+2023-06-04-15h-37m-56s__20103212.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+13759f6e+2023-06-04-15h-37m-56s__20103212.json"
-        },
-        "cam2": {
-          "vid_id": "CLVR+13759f6e+2023-06-04-15h-37m-56s__20655732",
-          "cam": "20655732",
-          "num_frames": 88,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/CLVR+13759f6e+2023-06-04-15h-37m-56s__20655732.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+13759f6e+2023-06-04-15h-37m-56s__20655732.json"
-        }
-      },
-      {
-        "uuid": "CLVR+13759f6e+2023-06-04-16h-30m-35s",
-        "caption": "pull a tissue from the box",
-        "cam1": {
-          "vid_id": "CLVR+13759f6e+2023-06-04-16h-30m-35s__20103212",
-          "cam": "20103212",
-          "num_frames": 52,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/CLVR+13759f6e+2023-06-04-16h-30m-35s__20103212.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+13759f6e+2023-06-04-16h-30m-35s__20103212.json"
-        },
-        "cam2": {
-          "vid_id": "CLVR+13759f6e+2023-06-04-16h-30m-35s__20655732",
-          "cam": "20655732",
-          "num_frames": 52,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/CLVR+13759f6e+2023-06-04-16h-30m-35s__20655732.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+13759f6e+2023-06-04-16h-30m-35s__20655732.json"
-        }
-      },
       {
         "uuid": "TRI+52ca9b6a+2023-10-16-15h-22m-13s",
         "caption": "Push a toy car",
@@ -1204,23 +1144,83 @@
         }
       },
       {
-        "uuid": "CLVR+13759f6e+2023-06-04-15h-27m-59s",
-        "caption": "pull a tissue from a box",
+        "uuid": "IPRL+edf28ef3+2024-01-02-21h-31m-20s",
+        "caption": "pull light/fan cord",
         "cam1": {
-          "vid_id": "CLVR+13759f6e+2023-06-04-15h-27m-59s__20103212",
-          "cam": "20103212",
-          "num_frames": 60,
+          "vid_id": "IPRL+edf28ef3+2024-01-02-21h-31m-20s__27432424",
+          "cam": "27432424",
+          "num_frames": 52,
           "num_segments": 1,
-          "rgb_url": "static/videos/droid/CLVR+13759f6e+2023-06-04-15h-27m-59s__20103212.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+13759f6e+2023-06-04-15h-27m-59s__20103212.json"
+          "rgb_url": "static/videos/droid/IPRL+edf28ef3+2024-01-02-21h-31m-20s__27432424.mp4",
+          "motion_url": "static/data/motion/droid/IPRL+edf28ef3+2024-01-02-21h-31m-20s__27432424.json"
         },
         "cam2": {
-          "vid_id": "CLVR+13759f6e+2023-06-04-15h-27m-59s__20655732",
-          "cam": "20655732",
-          "num_frames": 60,
+          "vid_id": "IPRL+edf28ef3+2024-01-02-21h-31m-20s__28221883",
+          "cam": "28221883",
+          "num_frames": 52,
           "num_segments": 1,
-          "rgb_url": "static/videos/droid/CLVR+13759f6e+2023-06-04-15h-27m-59s__20655732.mp4",
-          "motion_url": "static/data/motion/droid/CLVR+13759f6e+2023-06-04-15h-27m-59s__20655732.json"
+          "rgb_url": "static/videos/droid/IPRL+edf28ef3+2024-01-02-21h-31m-20s__28221883.mp4",
+          "motion_url": "static/data/motion/droid/IPRL+edf28ef3+2024-01-02-21h-31m-20s__28221883.json"
+        }
+      },
+      {
+        "uuid": "WEIRD+e604eeed+2024-01-04-03h-19m-29s",
+        "caption": "push toys to form a circle",
+        "cam1": {
+          "vid_id": "WEIRD+e604eeed+2024-01-04-03h-19m-29s__23804457",
+          "cam": "23804457",
+          "num_frames": 163,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/WEIRD+e604eeed+2024-01-04-03h-19m-29s__23804457.mp4",
+          "motion_url": "static/data/motion/droid/WEIRD+e604eeed+2024-01-04-03h-19m-29s__23804457.json"
+        },
+        "cam2": {
+          "vid_id": "WEIRD+e604eeed+2024-01-04-03h-19m-29s__28834630",
+          "cam": "28834630",
+          "num_frames": 163,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/WEIRD+e604eeed+2024-01-04-03h-19m-29s__28834630.mp4",
+          "motion_url": "static/data/motion/droid/WEIRD+e604eeed+2024-01-04-03h-19m-29s__28834630.json"
+        }
+      },
+      {
+        "uuid": "IRIS+f94b8622+2023-12-08-14h-26m-11s",
+        "caption": "push chair in",
+        "cam1": {
+          "vid_id": "IRIS+f94b8622+2023-12-08-14h-26m-11s__23404442",
+          "cam": "23404442",
+          "num_frames": 57,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/IRIS+f94b8622+2023-12-08-14h-26m-11s__23404442.mp4",
+          "motion_url": "static/data/motion/droid/IRIS+f94b8622+2023-12-08-14h-26m-11s__23404442.json"
+        },
+        "cam2": {
+          "vid_id": "IRIS+f94b8622+2023-12-08-14h-26m-11s__29838012",
+          "cam": "29838012",
+          "num_frames": 57,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/IRIS+f94b8622+2023-12-08-14h-26m-11s__29838012.mp4",
+          "motion_url": "static/data/motion/droid/IRIS+f94b8622+2023-12-08-14h-26m-11s__29838012.json"
+        }
+      },
+      {
+        "uuid": "CLVR+13759f6e+2023-06-04-15h-55m-48s",
+        "caption": "pull a tissue from the box",
+        "cam1": {
+          "vid_id": "CLVR+13759f6e+2023-06-04-15h-55m-48s__20103212",
+          "cam": "20103212",
+          "num_frames": 53,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/CLVR+13759f6e+2023-06-04-15h-55m-48s__20103212.mp4",
+          "motion_url": "static/data/motion/droid/CLVR+13759f6e+2023-06-04-15h-55m-48s__20103212.json"
+        },
+        "cam2": {
+          "vid_id": "CLVR+13759f6e+2023-06-04-15h-55m-48s__20655732",
+          "cam": "20655732",
+          "num_frames": 53,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/CLVR+13759f6e+2023-06-04-15h-55m-48s__20655732.mp4",
+          "motion_url": "static/data/motion/droid/CLVR+13759f6e+2023-06-04-15h-55m-48s__20655732.json"
         }
       }
     ],
@@ -1246,26 +1246,6 @@
         }
       },
       {
-        "uuid": "IPRL+edf28ef3+2023-05-12-16h-24m-33s",
-        "caption": "put utensil in drawer",
-        "cam1": {
-          "vid_id": "IPRL+edf28ef3+2023-05-12-16h-24m-33s__21582473",
-          "cam": "21582473",
-          "num_frames": 62,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/IPRL+edf28ef3+2023-05-12-16h-24m-33s__21582473.mp4",
-          "motion_url": "static/data/motion/droid/IPRL+edf28ef3+2023-05-12-16h-24m-33s__21582473.json"
-        },
-        "cam2": {
-          "vid_id": "IPRL+edf28ef3+2023-05-12-16h-24m-33s__28221883",
-          "cam": "28221883",
-          "num_frames": 62,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/IPRL+edf28ef3+2023-05-12-16h-24m-33s__28221883.mp4",
-          "motion_url": "static/data/motion/droid/IPRL+edf28ef3+2023-05-12-16h-24m-33s__28221883.json"
-        }
-      },
-      {
         "uuid": "AUTOLab+5d05c5aa+2023-07-13-10h-51m-00s",
         "caption": "put a toy into a boal",
         "cam1": {
@@ -1283,26 +1263,6 @@
           "num_segments": 1,
           "rgb_url": "static/videos/droid/AUTOLab+5d05c5aa+2023-07-13-10h-51m-00s__24400334.mp4",
           "motion_url": "static/data/motion/droid/AUTOLab+5d05c5aa+2023-07-13-10h-51m-00s__24400334.json"
-        }
-      },
-      {
-        "uuid": "AUTOLab+84bd5053+2023-07-14-16h-51m-47s",
-        "caption": "put duck in pot",
-        "cam1": {
-          "vid_id": "AUTOLab+84bd5053+2023-07-14-16h-51m-47s__22008760",
-          "cam": "22008760",
-          "num_frames": 27,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-07-14-16h-51m-47s__22008760.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-07-14-16h-51m-47s__22008760.json"
-        },
-        "cam2": {
-          "vid_id": "AUTOLab+84bd5053+2023-07-14-16h-51m-47s__24400334",
-          "cam": "24400334",
-          "num_frames": 27,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-07-14-16h-51m-47s__24400334.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-07-14-16h-51m-47s__24400334.json"
         }
       },
       {
@@ -1324,49 +1284,49 @@
           "rgb_url": "static/videos/droid/AUTOLab+5d05c5aa+2023-10-15-18h-01m-08s__24400334.mp4",
           "motion_url": "static/data/motion/droid/AUTOLab+5d05c5aa+2023-10-15-18h-01m-08s__24400334.json"
         }
+      },
+      {
+        "uuid": "AUTOLab+9aed6d7a+2023-11-07-17h-14m-41s",
+        "caption": "Place disk on peg",
+        "cam1": {
+          "vid_id": "AUTOLab+9aed6d7a+2023-11-07-17h-14m-41s__22008760",
+          "cam": "22008760",
+          "num_frames": 56,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/AUTOLab+9aed6d7a+2023-11-07-17h-14m-41s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+9aed6d7a+2023-11-07-17h-14m-41s__22008760.json"
+        },
+        "cam2": {
+          "vid_id": "AUTOLab+9aed6d7a+2023-11-07-17h-14m-41s__24400334",
+          "cam": "24400334",
+          "num_frames": 56,
+          "num_segments": 2,
+          "rgb_url": "static/videos/droid/AUTOLab+9aed6d7a+2023-11-07-17h-14m-41s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+9aed6d7a+2023-11-07-17h-14m-41s__24400334.json"
+        }
+      },
+      {
+        "uuid": "AUTOLab+9aed6d7a+2023-11-07-17h-06m-48s",
+        "caption": "Place disk on peg",
+        "cam1": {
+          "vid_id": "AUTOLab+9aed6d7a+2023-11-07-17h-06m-48s__22008760",
+          "cam": "22008760",
+          "num_frames": 66,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+9aed6d7a+2023-11-07-17h-06m-48s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+9aed6d7a+2023-11-07-17h-06m-48s__22008760.json"
+        },
+        "cam2": {
+          "vid_id": "AUTOLab+9aed6d7a+2023-11-07-17h-06m-48s__24400334",
+          "cam": "24400334",
+          "num_frames": 66,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+9aed6d7a+2023-11-07-17h-06m-48s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+9aed6d7a+2023-11-07-17h-06m-48s__24400334.json"
+        }
       }
     ],
     "Stack": [
-      {
-        "uuid": "AUTOLab+84bd5053+2023-07-14-15h-58m-23s",
-        "caption": "stack two bowls on top of each other",
-        "cam1": {
-          "vid_id": "AUTOLab+84bd5053+2023-07-14-15h-58m-23s__22008760",
-          "cam": "22008760",
-          "num_frames": 48,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-07-14-15h-58m-23s__22008760.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-07-14-15h-58m-23s__22008760.json"
-        },
-        "cam2": {
-          "vid_id": "AUTOLab+84bd5053+2023-07-14-15h-58m-23s__24400334",
-          "cam": "24400334",
-          "num_frames": 48,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-07-14-15h-58m-23s__24400334.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-07-14-15h-58m-23s__24400334.json"
-        }
-      },
-      {
-        "uuid": "AUTOLab+84bd5053+2023-07-27-09h-45m-18s",
-        "caption": "stack cup on bowl",
-        "cam1": {
-          "vid_id": "AUTOLab+84bd5053+2023-07-27-09h-45m-18s__22008760",
-          "cam": "22008760",
-          "num_frames": 25,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-07-27-09h-45m-18s__22008760.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-07-27-09h-45m-18s__22008760.json"
-        },
-        "cam2": {
-          "vid_id": "AUTOLab+84bd5053+2023-07-27-09h-45m-18s__24400334",
-          "cam": "24400334",
-          "num_frames": 25,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-07-27-09h-45m-18s__24400334.mp4",
-          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-07-27-09h-45m-18s__24400334.json"
-        }
-      },
       {
         "uuid": "AUTOLab+84bd5053+2023-07-27-08h-57m-24s",
         "caption": "stack cup into bowl",
@@ -1426,107 +1386,147 @@
           "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-07-27-09h-05m-54s__24400334.mp4",
           "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-07-27-09h-05m-54s__24400334.json"
         }
+      },
+      {
+        "uuid": "AUTOLab+84bd5053+2023-07-27-08h-47m-39s",
+        "caption": "stack cup into bowl",
+        "cam1": {
+          "vid_id": "AUTOLab+84bd5053+2023-07-27-08h-47m-39s__22008760",
+          "cam": "22008760",
+          "num_frames": 29,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-07-27-08h-47m-39s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-07-27-08h-47m-39s__22008760.json"
+        },
+        "cam2": {
+          "vid_id": "AUTOLab+84bd5053+2023-07-27-08h-47m-39s__24400334",
+          "cam": "24400334",
+          "num_frames": 29,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-07-27-08h-47m-39s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-07-27-08h-47m-39s__24400334.json"
+        }
+      },
+      {
+        "uuid": "AUTOLab+84bd5053+2023-07-27-09h-23m-26s",
+        "caption": "stack cup on bowl",
+        "cam1": {
+          "vid_id": "AUTOLab+84bd5053+2023-07-27-09h-23m-26s__22008760",
+          "cam": "22008760",
+          "num_frames": 26,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-07-27-09h-23m-26s__22008760.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-07-27-09h-23m-26s__22008760.json"
+        },
+        "cam2": {
+          "vid_id": "AUTOLab+84bd5053+2023-07-27-09h-23m-26s__24400334",
+          "cam": "24400334",
+          "num_frames": 26,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/AUTOLab+84bd5053+2023-07-27-09h-23m-26s__24400334.mp4",
+          "motion_url": "static/data/motion/droid/AUTOLab+84bd5053+2023-07-27-09h-23m-26s__24400334.json"
+        }
       }
     ],
     "Stir": [
       {
-        "uuid": "IPRL+edf28ef3+2023-12-20-15h-27m-51s",
+        "uuid": "TRI+52ca9b6a+2023-10-24-11h-56m-00s",
         "caption": "Use object to stir something",
         "cam1": {
-          "vid_id": "IPRL+edf28ef3+2023-12-20-15h-27m-51s__27432424",
-          "cam": "27432424",
-          "num_frames": 143,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/IPRL+edf28ef3+2023-12-20-15h-27m-51s__27432424.mp4",
-          "motion_url": "static/data/motion/droid/IPRL+edf28ef3+2023-12-20-15h-27m-51s__27432424.json"
-        },
-        "cam2": {
-          "vid_id": "IPRL+edf28ef3+2023-12-20-15h-27m-51s__28221883",
-          "cam": "28221883",
-          "num_frames": 143,
-          "num_segments": 2,
-          "rgb_url": "static/videos/droid/IPRL+edf28ef3+2023-12-20-15h-27m-51s__28221883.mp4",
-          "motion_url": "static/data/motion/droid/IPRL+edf28ef3+2023-12-20-15h-27m-51s__28221883.json"
-        }
-      },
-      {
-        "uuid": "PennPAL+acda9df3+2023-07-19-17h-28m-37s",
-        "caption": "Use object to stir something",
-        "cam1": {
-          "vid_id": "PennPAL+acda9df3+2023-07-19-17h-28m-37s__25455306",
-          "cam": "25455306",
-          "num_frames": 149,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/PennPAL+acda9df3+2023-07-19-17h-28m-37s__25455306.mp4",
-          "motion_url": "static/data/motion/droid/PennPAL+acda9df3+2023-07-19-17h-28m-37s__25455306.json"
-        },
-        "cam2": {
-          "vid_id": "PennPAL+acda9df3+2023-07-19-17h-28m-37s__27085680",
-          "cam": "27085680",
-          "num_frames": 149,
-          "num_segments": 3,
-          "rgb_url": "static/videos/droid/PennPAL+acda9df3+2023-07-19-17h-28m-37s__27085680.mp4",
-          "motion_url": "static/data/motion/droid/PennPAL+acda9df3+2023-07-19-17h-28m-37s__27085680.json"
-        }
-      },
-      {
-        "uuid": "TRI+52ca9b6a+2023-11-06-14h-49m-21s",
-        "caption": "Use object to stir something",
-        "cam1": {
-          "vid_id": "TRI+52ca9b6a+2023-11-06-14h-49m-21s__20252535",
-          "cam": "20252535",
-          "num_frames": 75,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-06-14h-49m-21s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-06-14h-49m-21s__20252535.json"
-        },
-        "cam2": {
-          "vid_id": "TRI+52ca9b6a+2023-11-06-14h-49m-21s__25947356",
-          "cam": "25947356",
-          "num_frames": 75,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-06-14h-49m-21s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-06-14h-49m-21s__25947356.json"
-        }
-      },
-      {
-        "uuid": "TRI+52ca9b6a+2023-11-06-14h-53m-59s",
-        "caption": "Use object to stir something",
-        "cam1": {
-          "vid_id": "TRI+52ca9b6a+2023-11-06-14h-53m-59s__20252535",
-          "cam": "20252535",
-          "num_frames": 98,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-06-14h-53m-59s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-06-14h-53m-59s__20252535.json"
-        },
-        "cam2": {
-          "vid_id": "TRI+52ca9b6a+2023-11-06-14h-53m-59s__25947356",
-          "cam": "25947356",
-          "num_frames": 98,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-06-14h-53m-59s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-06-14h-53m-59s__25947356.json"
-        }
-      },
-      {
-        "uuid": "TRI+938130c4+2023-08-10-16h-06m-57s",
-        "caption": "Use object to stir something",
-        "cam1": {
-          "vid_id": "TRI+938130c4+2023-08-10-16h-06m-57s__20252535",
-          "cam": "20252535",
-          "num_frames": 81,
-          "num_segments": 1,
-          "rgb_url": "static/videos/droid/TRI+938130c4+2023-08-10-16h-06m-57s__20252535.mp4",
-          "motion_url": "static/data/motion/droid/TRI+938130c4+2023-08-10-16h-06m-57s__20252535.json"
-        },
-        "cam2": {
-          "vid_id": "TRI+938130c4+2023-08-10-16h-06m-57s__25947356",
-          "cam": "25947356",
-          "num_frames": 81,
+          "vid_id": "TRI+52ca9b6a+2023-10-24-11h-56m-00s__28451778",
+          "cam": "28451778",
+          "num_frames": 140,
           "num_segments": 4,
-          "rgb_url": "static/videos/droid/TRI+938130c4+2023-08-10-16h-06m-57s__25947356.mp4",
-          "motion_url": "static/data/motion/droid/TRI+938130c4+2023-08-10-16h-06m-57s__25947356.json"
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-10-24-11h-56m-00s__28451778.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-10-24-11h-56m-00s__28451778.json"
+        },
+        "cam2": {
+          "vid_id": "TRI+52ca9b6a+2023-10-24-11h-56m-00s__28813166",
+          "cam": "28813166",
+          "num_frames": 140,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-10-24-11h-56m-00s__28813166.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-10-24-11h-56m-00s__28813166.json"
+        }
+      },
+      {
+        "uuid": "TRI+52ca9b6a+2024-02-13-16h-47m-19s",
+        "caption": "Use object to stir something",
+        "cam1": {
+          "vid_id": "TRI+52ca9b6a+2024-02-13-16h-47m-19s__20252535",
+          "cam": "20252535",
+          "num_frames": 32,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-13-16h-47m-19s__20252535.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-13-16h-47m-19s__20252535.json"
+        },
+        "cam2": {
+          "vid_id": "TRI+52ca9b6a+2024-02-13-16h-47m-19s__25947356",
+          "cam": "25947356",
+          "num_frames": 32,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-02-13-16h-47m-19s__25947356.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-02-13-16h-47m-19s__25947356.json"
+        }
+      },
+      {
+        "uuid": "TRI+52ca9b6a+2024-01-09-15h-02m-42s",
+        "caption": "Use object to stir something",
+        "cam1": {
+          "vid_id": "TRI+52ca9b6a+2024-01-09-15h-02m-42s__28451778",
+          "cam": "28451778",
+          "num_frames": 71,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-01-09-15h-02m-42s__28451778.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-01-09-15h-02m-42s__28451778.json"
+        },
+        "cam2": {
+          "vid_id": "TRI+52ca9b6a+2024-01-09-15h-02m-42s__28813166",
+          "cam": "28813166",
+          "num_frames": 71,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2024-01-09-15h-02m-42s__28813166.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2024-01-09-15h-02m-42s__28813166.json"
+        }
+      },
+      {
+        "uuid": "IRIS+85a5958f+2023-07-05-11h-13m-42s",
+        "caption": "Do any three tasks consecutively.\n\nSuggested tasks:\t\t\n* Use object to stir something\n* Move object into or out of container\n* Move lid on or off of container",
+        "cam1": {
+          "vid_id": "IRIS+85a5958f+2023-07-05-11h-13m-42s__23404442",
+          "cam": "23404442",
+          "num_frames": 274,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/IRIS+85a5958f+2023-07-05-11h-13m-42s__23404442.mp4",
+          "motion_url": "static/data/motion/droid/IRIS+85a5958f+2023-07-05-11h-13m-42s__23404442.json"
+        },
+        "cam2": {
+          "vid_id": "IRIS+85a5958f+2023-07-05-11h-13m-42s__29838012",
+          "cam": "29838012",
+          "num_frames": 274,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/IRIS+85a5958f+2023-07-05-11h-13m-42s__29838012.mp4",
+          "motion_url": "static/data/motion/droid/IRIS+85a5958f+2023-07-05-11h-13m-42s__29838012.json"
+        }
+      },
+      {
+        "uuid": "TRI+52ca9b6a+2023-11-01-10h-56m-41s",
+        "caption": "Use object to stir something",
+        "cam1": {
+          "vid_id": "TRI+52ca9b6a+2023-11-01-10h-56m-41s__28451778",
+          "cam": "28451778",
+          "num_frames": 62,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-01-10h-56m-41s__28451778.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-01-10h-56m-41s__28451778.json"
+        },
+        "cam2": {
+          "vid_id": "TRI+52ca9b6a+2023-11-01-10h-56m-41s__28813166",
+          "cam": "28813166",
+          "num_frames": 62,
+          "num_segments": 1,
+          "rgb_url": "static/videos/droid/TRI+52ca9b6a+2023-11-01-10h-56m-41s__28813166.mp4",
+          "motion_url": "static/data/motion/droid/TRI+52ca9b6a+2023-11-01-10h-56m-41s__28813166.json"
         }
       }
     ],
@@ -1538,7 +1538,7 @@
           "vid_id": "AUTOLab+7cb094d5+2023-12-14-11h-27m-32s__22008760",
           "cam": "22008760",
           "num_frames": 170,
-          "num_segments": 2,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/AUTOLab+7cb094d5+2023-12-14-11h-27m-32s__22008760.mp4",
           "motion_url": "static/data/motion/droid/AUTOLab+7cb094d5+2023-12-14-11h-27m-32s__22008760.json"
         },
@@ -1546,7 +1546,7 @@
           "vid_id": "AUTOLab+7cb094d5+2023-12-14-11h-27m-32s__24400334",
           "cam": "24400334",
           "num_frames": 170,
-          "num_segments": 3,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/AUTOLab+7cb094d5+2023-12-14-11h-27m-32s__24400334.mp4",
           "motion_url": "static/data/motion/droid/AUTOLab+7cb094d5+2023-12-14-11h-27m-32s__24400334.json"
         }
@@ -1566,7 +1566,7 @@
           "vid_id": "AUTOLab+44bb9c36+2023-11-29-17h-22m-57s__24400334",
           "cam": "24400334",
           "num_frames": 144,
-          "num_segments": 5,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/AUTOLab+44bb9c36+2023-11-29-17h-22m-57s__24400334.mp4",
           "motion_url": "static/data/motion/droid/AUTOLab+44bb9c36+2023-11-29-17h-22m-57s__24400334.json"
         }
@@ -1578,7 +1578,7 @@
           "vid_id": "AUTOLab+7cb094d5+2023-12-14-11h-28m-29s__22008760",
           "cam": "22008760",
           "num_frames": 109,
-          "num_segments": 2,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/AUTOLab+7cb094d5+2023-12-14-11h-28m-29s__22008760.mp4",
           "motion_url": "static/data/motion/droid/AUTOLab+7cb094d5+2023-12-14-11h-28m-29s__22008760.json"
         },
@@ -1598,7 +1598,7 @@
           "vid_id": "AUTOLab+cf2a60c6+2023-11-27-09h-53m-06s__22008760",
           "cam": "22008760",
           "num_frames": 231,
-          "num_segments": 4,
+          "num_segments": 2,
           "rgb_url": "static/videos/droid/AUTOLab+cf2a60c6+2023-11-27-09h-53m-06s__22008760.mp4",
           "motion_url": "static/data/motion/droid/AUTOLab+cf2a60c6+2023-11-27-09h-53m-06s__22008760.json"
         },
@@ -1626,7 +1626,7 @@
           "vid_id": "AUTOLab+7cb094d5+2023-12-13-17h-45m-17s__24400334",
           "cam": "24400334",
           "num_frames": 133,
-          "num_segments": 3,
+          "num_segments": 1,
           "rgb_url": "static/videos/droid/AUTOLab+7cb094d5+2023-12-13-17h-45m-17s__24400334.mp4",
           "motion_url": "static/data/motion/droid/AUTOLab+7cb094d5+2023-12-13-17h-45m-17s__24400334.json"
         }
