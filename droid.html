@@ -312,30 +312,49 @@ async function loadCam(camId, camInfo) {
 }
 
 function buildMotionChart(camId, md) {
-  const mags = md.magnitudes_by_object;
-  if (!mags || Object.keys(mags).length === 0) return;
+  const mags3d = md.magnitudes_by_object;
+  const mags2d = md.magnitudes_2d_by_object || {};
+  if (!mags3d || Object.keys(mags3d).length === 0) return;
 
   const T = md.num_frames;
   const labels = Array.from({length: T}, (_, i) => i);
   const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
 
   const datasets = [];
-  let yMax = 0;
-  for (const [name, vals] of Object.entries(mags)) {
+  let yMax3d = 0, yMax2d = 0;
+
+  for (const [name, vals] of Object.entries(mags3d)) {
     const color = colorForObject(name);
-    yMax = Math.max(yMax, ...vals);
+    yMax3d = Math.max(yMax3d, ...vals);
     datasets.push({
-      label: name,
+      label: '3D Δ (m) ' + name,
       data: vals,
       borderColor: color,
       backgroundColor: color,
-      borderWidth: 1.6,
+      borderWidth: 1.8,
       pointRadius: 0,
       tension: 0.25,
       fill: false,
+      yAxisID: 'y3d',
     });
   }
-  yMax = Math.max(yMax * 1.15, md.threshold * 1.5, 0.05);
+  for (const [name, vals] of Object.entries(mags2d)) {
+    const color = colorForObject(name);
+    yMax2d = Math.max(yMax2d, ...vals);
+    datasets.push({
+      label: '2D Δ (px) ' + name,
+      data: vals,
+      borderColor: color,
+      borderWidth: 1.2,
+      borderDash: [4, 3],
+      pointRadius: 0,
+      tension: 0.25,
+      fill: false,
+      yAxisID: 'y2d',
+    });
+  }
+  yMax3d = Math.max(yMax3d * 1.15, md.threshold * 1.5, 0.05);
+  yMax2d = Math.max(yMax2d * 1.15, 5);
 
   const canvas = document.getElementById(camId + '_chart');
   const chart = new Chart(canvas.getContext('2d'), {
@@ -361,11 +380,21 @@ function buildMotionChart(camId, md) {
           ticks: { display: false },
           grid: { display: false },
         },
-        y: {
-          title: { display: true, text: '|Δ|', color: isDark ? '#777' : '#666', font: { size: 9 } },
+        y3d: {
+          type: 'linear',
+          position: 'left',
+          title: { display: true, text: '3D |Δ| (m)', color: isDark ? '#777' : '#666', font: { size: 9 } },
           ticks: { color: isDark ? '#555' : '#999', font: { size: 8 }, maxTicksLimit: 4 },
           grid: { color: isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.05)' },
-          min: 0, max: yMax,
+          min: 0, max: yMax3d,
+        },
+        y2d: {
+          type: 'linear',
+          position: 'right',
+          title: { display: true, text: '2D |Δ| (px)', color: isDark ? '#777' : '#666', font: { size: 9 } },
+          ticks: { color: isDark ? '#555' : '#999', font: { size: 8 }, maxTicksLimit: 4 },
+          grid: { drawOnChartArea: false },
+          min: 0, max: yMax2d,
         },
       },
     },
@@ -373,8 +402,9 @@ function buildMotionChart(camId, md) {
       id: 'clipShading',
       beforeDatasetsDraw(ch) {
         const ctx = ch.ctx;
-        const yTop = ch.scales.y.top;
-        const yBot = ch.scales.y.bottom;
+        const yScale = ch.scales.y3d;
+        const yTop = yScale.top;
+        const yBot = yScale.bottom;
         const clips = md.clips_by_object || {};
         for (const [name, ranges] of Object.entries(clips)) {
           const color = colorForObject(name).replace('hsl', 'hsla').replace(')', ',0.18)');
@@ -387,10 +417,10 @@ function buildMotionChart(camId, md) {
           });
           ctx.restore();
         }
-        // Threshold line
+        // Threshold line on 3D y-axis
         const thresh = md.threshold;
         if (thresh != null) {
-          const yT = ch.scales.y.getPixelForValue(thresh);
+          const yT = yScale.getPixelForValue(thresh);
           ctx.save();
           ctx.strokeStyle = 'rgba(255,107,53,0.6)';
           ctx.setLineDash([6, 4]);
@@ -406,11 +436,12 @@ function buildMotionChart(camId, md) {
         const ci = ch._cursorIndex;
         if (ci == null) return;
         const x = ch.scales.x.getPixelForValue(ci);
+        const yScale = ch.scales.y3d;
         const ctx = ch.ctx;
         ctx.save();
         ctx.beginPath();
-        ctx.moveTo(x, ch.scales.y.top);
-        ctx.lineTo(x, ch.scales.y.bottom);
+        ctx.moveTo(x, yScale.top);
+        ctx.lineTo(x, yScale.bottom);
         ctx.strokeStyle = 'rgba(255, 60, 60, 0.75)';
         ctx.lineWidth = 1.5;
         ctx.setLineDash([4, 3]);
