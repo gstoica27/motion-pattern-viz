@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DROID — Motion Clips by Task</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -85,6 +86,11 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 .video-wrap video { width: 100%; display: block; }
 .video-wrap canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
 
+.chart-panel {
+  padding: 8px 10px 4px; background: var(--bg-card);
+  height: 150px; position: relative; border-top: 1px solid var(--border);
+}
+.chart-panel canvas { width: 100% !important; height: 100% !important; }
 .timeline-panel {
   padding: 10px 14px; background: var(--bg-card);
 }
@@ -246,6 +252,9 @@ function renderCamCol(camId, camInfo, label) {
         <video id="${camId}_vid" muted loop playsinline preload="none"></video>
         <canvas id="${camId}_canvas"></canvas>
       </div>
+      <div class="chart-panel">
+        <canvas id="${camId}_chart"></canvas>
+      </div>
       <div class="timeline-panel" id="${camId}_timelines"></div>
       <div class="scrub-row">
         <button class="play-btn" id="${camId}_playbtn" onclick="togglePlay('${camId}')">▶</button>
@@ -281,8 +290,9 @@ async function loadCam(camId, camInfo) {
     return;
   }
 
-  cardState[camId] = { motionData, selectedObject: null, rafHandle: null };
+  cardState[camId] = { motionData, selectedObject: null, rafHandle: null, chart: null };
   renderTimelines(camId, motionData);
+  buildMotionChart(camId, motionData);
 
   vid.addEventListener('timeupdate', () => {
     if (!vid.duration) return;
@@ -292,8 +302,124 @@ async function loadCam(camId, camInfo) {
     const fi = Math.min(Math.round(pct * (T - 1)), T - 1);
     document.getElementById(camId + '_frame').textContent = fi + ' / ' + (T - 1);
     updateCursor(camId, pct);
+    const st = cardState[camId];
+    if (st && st.chart) {
+      st.chart._cursorIndex = fi;
+      st.chart.draw();
+    }
   });
   updateCursor(camId, 0);
+}
+
+function buildMotionChart(camId, md) {
+  const mags = md.magnitudes_by_object;
+  if (!mags || Object.keys(mags).length === 0) return;
+
+  const T = md.num_frames;
+  const labels = Array.from({length: T}, (_, i) => i);
+  const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+
+  const datasets = [];
+  let yMax = 0;
+  for (const [name, vals] of Object.entries(mags)) {
+    const color = colorForObject(name);
+    yMax = Math.max(yMax, ...vals);
+    datasets.push({
+      label: name,
+      data: vals,
+      borderColor: color,
+      backgroundColor: color,
+      borderWidth: 1.6,
+      pointRadius: 0,
+      tension: 0.25,
+      fill: false,
+    });
+  }
+  yMax = Math.max(yMax * 1.15, md.threshold * 1.5, 0.05);
+
+  const canvas = document.getElementById(camId + '_chart');
+  const chart = new Chart(canvas.getContext('2d'), {
+    type: 'line',
+    data: { labels, datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      animation: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            title: items => `Frame ${items[0].label}`,
+            label: item => `${item.dataset.label}: ${item.parsed.y.toFixed(5)}`,
+          }
+        },
+      },
+      scales: {
+        x: {
+          display: false,
+          ticks: { display: false },
+          grid: { display: false },
+        },
+        y: {
+          title: { display: true, text: '|Δ|', color: isDark ? '#777' : '#666', font: { size: 9 } },
+          ticks: { color: isDark ? '#555' : '#999', font: { size: 8 }, maxTicksLimit: 4 },
+          grid: { color: isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.05)' },
+          min: 0, max: yMax,
+        },
+      },
+    },
+    plugins: [{
+      id: 'clipShading',
+      beforeDatasetsDraw(ch) {
+        const ctx = ch.ctx;
+        const yTop = ch.scales.y.top;
+        const yBot = ch.scales.y.bottom;
+        const clips = md.clips_by_object || {};
+        for (const [name, ranges] of Object.entries(clips)) {
+          const color = colorForObject(name).replace('hsl', 'hsla').replace(')', ',0.18)');
+          ctx.save();
+          ctx.fillStyle = color;
+          ranges.forEach(([s, e]) => {
+            const xs = ch.scales.x.getPixelForValue(s);
+            const xe = ch.scales.x.getPixelForValue(e);
+            ctx.fillRect(xs, yTop, xe - xs, yBot - yTop);
+          });
+          ctx.restore();
+        }
+        // Threshold line
+        const thresh = md.threshold;
+        if (thresh != null) {
+          const yT = ch.scales.y.getPixelForValue(thresh);
+          ctx.save();
+          ctx.strokeStyle = 'rgba(255,107,53,0.6)';
+          ctx.setLineDash([6, 4]);
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(ch.scales.x.left, yT);
+          ctx.lineTo(ch.scales.x.right, yT);
+          ctx.stroke();
+          ctx.restore();
+        }
+      },
+      afterDraw(ch) {
+        const ci = ch._cursorIndex;
+        if (ci == null) return;
+        const x = ch.scales.x.getPixelForValue(ci);
+        const ctx = ch.ctx;
+        ctx.save();
+        ctx.beginPath();
+        ctx.moveTo(x, ch.scales.y.top);
+        ctx.lineTo(x, ch.scales.y.bottom);
+        ctx.strokeStyle = 'rgba(255, 60, 60, 0.75)';
+        ctx.lineWidth = 1.5;
+        ctx.setLineDash([4, 3]);
+        ctx.stroke();
+        ctx.restore();
+      }
+    }]
+  });
+  cardState[camId].chart = chart;
 }
 
 function renderTimelines(camId, md) {
