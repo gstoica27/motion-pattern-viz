@@ -8,7 +8,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place_color__house_615__episode_00000009_droid_shoulder_light_randomization.json",
       "num_frames": 246,
       "num_objects": 1,
-      "num_segments": 1,
+      "num_segments": 2,
       "peak_magnitude": 0.0154,
       "object_names": [
         "body_277"
@@ -36,7 +36,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place_color__house_5603__episode_00000011_droid_shoulder_light_randomization.json",
       "num_frames": 297,
       "num_objects": 1,
-      "num_segments": 1,
+      "num_segments": 2,
       "peak_magnitude": 0.02853,
       "object_names": [
         "body_212"
@@ -64,7 +64,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place__house_65__episode_00000010_droid_shoulder_light_randomization.json",
       "num_frames": 255,
       "num_objects": 1,
-      "num_segments": 1,
+      "num_segments": 2,
       "peak_magnitude": 0.03213,
       "object_names": [
         "body_160"
@@ -78,7 +78,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place_color__house_15__episode_00000003_droid_shoulder_light_randomization.json",
       "num_frames": 269,
       "num_objects": 1,
-      "num_segments": 1,
+      "num_segments": 2,
       "peak_magnitude": 0.01897,
       "object_names": [
         "body_204"
@@ -92,7 +92,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place__house_5080__episode_00000002_droid_shoulder_light_randomization.json",
       "num_frames": 236,
       "num_objects": 1,
-      "num_segments": 2,
+      "num_segments": 7,
       "peak_magnitude": 0.04293,
       "object_names": [
         "body_173"
@@ -106,7 +106,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place__house_2149__episode_00000005_droid_shoulder_light_randomization.json",
       "num_frames": 272,
       "num_objects": 2,
-      "num_segments": 5,
+      "num_segments": 18,
       "peak_magnitude": 0.02497,
       "object_names": [
         "body_39",
@@ -121,7 +121,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place__house_675__episode_00000011_droid_shoulder_light_randomization.json",
       "num_frames": 245,
       "num_objects": 1,
-      "num_segments": 1,
+      "num_segments": 2,
       "peak_magnitude": 0.02579,
       "object_names": [
         "body_156"
@@ -135,7 +135,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place__house_9045__episode_00000002_droid_shoulder_light_randomization.json",
       "num_frames": 261,
       "num_objects": 2,
-      "num_segments": 2,
+      "num_segments": 4,
       "peak_magnitude": 0.01561,
       "object_names": [
         "body_72",
@@ -150,7 +150,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place_color__house_8072__episode_00000001_droid_shoulder_light_randomization.json",
       "num_frames": 287,
       "num_objects": 1,
-      "num_segments": 1,
+      "num_segments": 3,
       "peak_magnitude": 0.04013,
       "object_names": [
         "body_258"
@@ -178,7 +178,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place__house_2663__episode_00000011_droid_shoulder_light_randomization.json",
       "num_frames": 252,
       "num_objects": 1,
-      "num_segments": 2,
+      "num_segments": 3,
       "peak_magnitude": 0.06194,
       "object_names": [
         "body_107"
@@ -207,7 +207,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place__house_9014__episode_00000006_droid_shoulder_light_randomization.json",
       "num_frames": 255,
       "num_objects": 1,
-      "num_segments": 1,
+      "num_segments": 2,
       "peak_magnitude": 0.03458,
       "object_names": [
         "body_433"
@@ -221,7 +221,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place__house_5550__episode_00000011_droid_shoulder_light_randomization.json",
       "num_frames": 259,
       "num_objects": 1,
-      "num_segments": 2,
+      "num_segments": 3,
       "peak_magnitude": 0.04108,
       "object_names": [
         "body_156"
@@ -235,7 +235,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place__house_1130__episode_00000003_droid_shoulder_light_randomization.json",
       "num_frames": 251,
       "num_objects": 1,
-      "num_segments": 1,
+      "num_segments": 3,
       "peak_magnitude": 0.05929,
       "object_names": [
         "body_25"
@@ -263,7 +263,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place__house_3224__episode_00000003_droid_shoulder_light_randomization.json",
       "num_frames": 232,
       "num_objects": 1,
-      "num_segments": 1,
+      "num_segments": 2,
       "peak_magnitude": 0.03254,
       "object_names": [
         "body_43"
@@ -277,7 +277,7 @@
       "motion_url": "static/data/motion/molmospaces/pick_place__house_7024__episode_00000000_droid_shoulder_light_randomization.json",
       "num_frames": 260,
       "num_objects": 1,
-      "num_segments": 2,
+      "num_segments": 5,
       "peak_magnitude": 0.02847,
       "object_names": [
         "body_172"
