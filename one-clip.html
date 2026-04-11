@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Motion Pattern Filter — Clip Review</title>
+<title>One-Clip Rule — Test Samples</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -198,17 +198,19 @@ body {
 <div class="page">
   <div class="masthead">
     <div class="masthead-left">
-      <h1>Motion Pattern Filter — Clip Review</h1>
+      <h1>One-Clip Rule — Test Samples</h1>
       <div class="subtitle">
-        Per-object high-motion clip ranges from the full-dataset filter run
-        (threshold=0.02, top-20% trim, min clip=0.5s, min gap=5 frames).
-        EgoDex here shows the <strong>previously-unvisualized tasks</strong> (60 of 100
-        tasks in the v2 filter). Tasks under specific decision rules live on the
-        linked subpages below.
+        Fresh EgoDex test samples for the 9 tasks where we collapse every video
+        to a single clip. 6 tasks take the temporally-first clip
+        (boil_serve_egg, fry_bread, scoop_dump_ice, screw_unscrew_allen_fixture,
+        load_dispense_ice, wash_put_away_dishes); 3 tasks take the clip with the
+        highest mean 3D-motion (insert_remove_bagging,
+        insert_remove_furniture_bench_cabinet, wash_kitchen_dishes). Videos here
+        are all unseen — they were NOT in the old website sample.
       </div>
     </div>
     <div class="masthead-right">
-      <a href="one-clip.html">One-clip rule</a>
+      <a href="index.html">← Main</a>
       <a href="pending.html">Pending tasks</a>
       <a href="droid.html">DROID</a>
       <a href="molmospaces.html">MolmoSpaces</a>
@@ -260,7 +262,7 @@ function toggleTheme() {
 
 // ── Init ──
 async function init() {
-  const resp = await fetch('static/data/motion/motion_manifest.json');
+  const resp = await fetch('static/data/motion/one_clip_manifest.json');
   manifest = await resp.json();
 
   const tabsEl = document.getElementById('tabs');

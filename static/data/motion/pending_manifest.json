@@ -1,0 +1,396 @@
+{
+  "egodex": [
+    {
+      "id": "part1_fidget_magnetic_spinner_rings_929",
+      "rgb_url": "static/videos/egodex/part1_fidget_magnetic_spinner_rings_929.mp4",
+      "motion_url": "static/data/motion/part1_fidget_magnetic_spinner_rings_929.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fidget_magnetic_spinner_rings",
+      "text": "stack bottle caps together"
+    },
+    {
+      "id": "part1_fidget_magnetic_spinner_rings_577",
+      "rgb_url": "static/videos/egodex/part1_fidget_magnetic_spinner_rings_577.mp4",
+      "motion_url": "static/data/motion/part1_fidget_magnetic_spinner_rings_577.json",
+      "num_segments": 5,
+      "num_objects": 1,
+      "object_names": [
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "fidget_magnetic_spinner_rings",
+      "text": "rotate black fidget spinner with yellow dots"
+    },
+    {
+      "id": "part1_fidget_magnetic_spinner_rings_609",
+      "rgb_url": "static/videos/egodex/part1_fidget_magnetic_spinner_rings_609.mp4",
+      "motion_url": "static/data/motion/part1_fidget_magnetic_spinner_rings_609.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fidget_magnetic_spinner_rings",
+      "text": "rotate silver fidget spinner with hand"
+    },
+    {
+      "id": "part1_fidget_magnetic_spinner_rings_1012",
+      "rgb_url": "static/videos/egodex/part1_fidget_magnetic_spinner_rings_1012.mp4",
+      "motion_url": "static/data/motion/part1_fidget_magnetic_spinner_rings_1012.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fidget_magnetic_spinner_rings",
+      "text": "spin fidget spinner with right hand"
+    },
+    {
+      "id": "part1_fidget_magnetic_spinner_rings_223",
+      "rgb_url": "static/videos/egodex/part1_fidget_magnetic_spinner_rings_223.mp4",
+      "motion_url": "static/data/motion/part1_fidget_magnetic_spinner_rings_223.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fidget_magnetic_spinner_rings",
+      "text": "rotate silver fidget spinner with hand"
+    },
+    {
+      "id": "part2_fold_stack_unstack_unfold_cloths_632",
+      "rgb_url": "static/videos/egodex/part2_fold_stack_unstack_unfold_cloths_632.mp4",
+      "motion_url": "static/data/motion/part2_fold_stack_unstack_unfold_cloths_632.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fold_stack_unstack_unfold_cloths",
+      "text": "fold yellow towel on bed"
+    },
+    {
+      "id": "part2_fold_stack_unstack_unfold_cloths_409",
+      "rgb_url": "static/videos/egodex/part2_fold_stack_unstack_unfold_cloths_409.mp4",
+      "motion_url": "static/data/motion/part2_fold_stack_unstack_unfold_cloths_409.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fold_stack_unstack_unfold_cloths",
+      "text": "fold yellow cloth"
+    },
+    {
+      "id": "part2_fold_stack_unstack_unfold_cloths_552",
+      "rgb_url": "static/videos/egodex/part2_fold_stack_unstack_unfold_cloths_552.mp4",
+      "motion_url": "static/data/motion/part2_fold_stack_unstack_unfold_cloths_552.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fold_stack_unstack_unfold_cloths",
+      "text": "fold pink towel, then yellow towel, then blue towel, then yellow towel"
+    },
+    {
+      "id": "part2_fold_stack_unstack_unfold_cloths_1417",
+      "rgb_url": "static/videos/egodex/part2_fold_stack_unstack_unfold_cloths_1417.mp4",
+      "motion_url": "static/data/motion/part2_fold_stack_unstack_unfold_cloths_1417.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fold_stack_unstack_unfold_cloths",
+      "text": "take yellow microfiber cloth"
+    },
+    {
+      "id": "part2_fold_stack_unstack_unfold_cloths_749",
+      "rgb_url": "static/videos/egodex/part2_fold_stack_unstack_unfold_cloths_749.mp4",
+      "motion_url": "static/data/motion/part2_fold_stack_unstack_unfold_cloths_749.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fold_stack_unstack_unfold_cloths",
+      "text": "unfold pink cloth"
+    },
+    {
+      "id": "part3_insert_remove_airpods_3120",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_airpods_3120.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_airpods_3120.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_airpods",
+      "text": "insert screwdriver into green plastic bottle"
+    },
+    {
+      "id": "part3_insert_remove_airpods_1592",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_airpods_1592.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_airpods_1592.json",
+      "num_segments": 2,
+      "num_objects": 2,
+      "object_names": [
+        "obj0",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_airpods",
+      "text": "use hammer to open bottle cap"
+    },
+    {
+      "id": "part3_insert_remove_airpods_482",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_airpods_482.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_airpods_482.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_airpods",
+      "text": "cut red lighter cap with blue-handled saw"
+    },
+    {
+      "id": "part3_insert_remove_airpods_3931",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_airpods_3931.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_airpods_3931.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_airpods",
+      "text": "use hammer to open bottle cap"
+    },
+    {
+      "id": "part3_insert_remove_airpods_815",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_airpods_815.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_airpods_815.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_airpods",
+      "text": "take out earbud from case"
+    },
+    {
+      "id": "part3_open_close_insert_remove_box_945",
+      "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_box_945.mp4",
+      "motion_url": "static/data/motion/part3_open_close_insert_remove_box_945.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "open_close_insert_remove_box",
+      "text": "pack rubber ducks into box"
+    },
+    {
+      "id": "part3_open_close_insert_remove_box_836",
+      "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_box_836.mp4",
+      "motion_url": "static/data/motion/part3_open_close_insert_remove_box_836.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "open_close_insert_remove_box",
+      "text": "move pink toy pig into box"
+    },
+    {
+      "id": "part3_open_close_insert_remove_box_866",
+      "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_box_866.mp4",
+      "motion_url": "static/data/motion/part3_open_close_insert_remove_box_866.json",
+      "num_segments": 5,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "open_close_insert_remove_box",
+      "text": "take out stuffed toys from box"
+    },
+    {
+      "id": "part3_open_close_insert_remove_box_41",
+      "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_box_41.mp4",
+      "motion_url": "static/data/motion/part3_open_close_insert_remove_box_41.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "open_close_insert_remove_box",
+      "text": "put black wireless earbud into brown box"
+    },
+    {
+      "id": "part3_open_close_insert_remove_box_637",
+      "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_box_637.mp4",
+      "motion_url": "static/data/motion/part3_open_close_insert_remove_box_637.json",
+      "num_segments": 5,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "open_close_insert_remove_box",
+      "text": "pack rubber ducks into box"
+    },
+    {
+      "id": "part3_pick_up_and_put_down_case_or_bag_588",
+      "rgb_url": "static/videos/egodex/part3_pick_up_and_put_down_case_or_bag_588.mp4",
+      "motion_url": "static/data/motion/part3_pick_up_and_put_down_case_or_bag_588.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "pick_up_and_put_down_case_or_bag",
+      "text": "lift black briefcase"
+    },
+    {
+      "id": "part3_pick_up_and_put_down_case_or_bag_308",
+      "rgb_url": "static/videos/egodex/part3_pick_up_and_put_down_case_or_bag_308.mp4",
+      "motion_url": "static/data/motion/part3_pick_up_and_put_down_case_or_bag_308.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "pick_up_and_put_down_case_or_bag",
+      "text": "lift black briefcase"
+    },
+    {
+      "id": "part3_pick_up_and_put_down_case_or_bag_539",
+      "rgb_url": "static/videos/egodex/part3_pick_up_and_put_down_case_or_bag_539.mp4",
+      "motion_url": "static/data/motion/part3_pick_up_and_put_down_case_or_bag_539.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "pick_up_and_put_down_case_or_bag",
+      "text": "lift black briefcase"
+    },
+    {
+      "id": "part3_pick_up_and_put_down_case_or_bag_576",
+      "rgb_url": "static/videos/egodex/part3_pick_up_and_put_down_case_or_bag_576.mp4",
+      "motion_url": "static/data/motion/part3_pick_up_and_put_down_case_or_bag_576.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "pick_up_and_put_down_case_or_bag",
+      "text": "take brown paper bag from table"
+    },
+    {
+      "id": "part3_pick_up_and_put_down_case_or_bag_481",
+      "rgb_url": "static/videos/egodex/part3_pick_up_and_put_down_case_or_bag_481.mp4",
+      "motion_url": "static/data/motion/part3_pick_up_and_put_down_case_or_bag_481.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "pick_up_and_put_down_case_or_bag",
+      "text": "lift black briefcase"
+    },
+    {
+      "id": "part4_pour_1215",
+      "rgb_url": "static/videos/egodex/part4_pour_1215.mp4",
+      "motion_url": "static/data/motion/part4_pour_1215.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "pour",
+      "text": "pour water from bottle into cup"
+    },
+    {
+      "id": "part4_pour_1339",
+      "rgb_url": "static/videos/egodex/part4_pour_1339.mp4",
+      "motion_url": "static/data/motion/part4_pour_1339.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj2"
+      ],
+      "has_tracks": true,
+      "task": "pour",
+      "text": "pour water from water bottle into cup"
+    },
+    {
+      "id": "part4_pour_2519",
+      "rgb_url": "static/videos/egodex/part4_pour_2519.mp4",
+      "motion_url": "static/data/motion/part4_pour_2519.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "pour",
+      "text": "pour water from bottle into cup"
+    },
+    {
+      "id": "part4_pour_1229",
+      "rgb_url": "static/videos/egodex/part4_pour_1229.mp4",
+      "motion_url": "static/data/motion/part4_pour_1229.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "pour",
+      "text": "pour water from plastic bottle into cup"
+    },
+    {
+      "id": "part4_pour_4",
+      "rgb_url": "static/videos/egodex/part4_pour_4.mp4",
+      "motion_url": "static/data/motion/part4_pour_4.json",
+      "num_segments": 2,
+      "num_objects": 2,
+      "object_names": [
+        "obj1",
+        "obj2"
+      ],
+      "has_tracks": true,
+      "task": "pour",
+      "text": "pour water from plastic bottle into cup"
+    }
+  ]
+}
