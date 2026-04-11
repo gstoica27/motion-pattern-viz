@@ -1261,7 +1261,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "assemble_disassemble_furniture_bench_desk"
+      "task": "assemble_disassemble_furniture_bench_desk",
+      "text": "insert white plastic cylinder into white plastic frame"
     },
     {
       "id": "part1_assemble_disassemble_legos_2015",
@@ -1273,7 +1274,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "assemble_disassemble_legos"
+      "task": "assemble_disassemble_legos",
+      "text": "stack lego blocks together"
     },
     {
       "id": "part1_assemble_disassemble_legos_2228",
@@ -1285,7 +1287,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "assemble_disassemble_legos"
+      "task": "assemble_disassemble_legos",
+      "text": "stack yellow and white lego pieces"
     },
     {
       "id": "part1_assemble_disassemble_soft_legos_393",
@@ -1297,7 +1300,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "assemble_disassemble_soft_legos"
+      "task": "assemble_disassemble_soft_legos",
+      "text": "play with lego blocks"
     },
     {
       "id": "part1_assemble_disassemble_soft_legos_129",
@@ -1309,7 +1313,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "assemble_disassemble_soft_legos"
+      "task": "assemble_disassemble_soft_legos",
+      "text": "stack colorful lego blocks together"
     },
     {
       "id": "part1_assemble_disassemble_structures_347",
@@ -1335,7 +1340,8 @@
         "obj2"
       ],
       "has_tracks": true,
-      "task": "assemble_disassemble_structures"
+      "task": "assemble_disassemble_structures",
+      "text": "insert yellow plastic rod into yellow plastic frame"
     },
     {
       "id": "test_assemble_jenga_0",
@@ -1347,7 +1353,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "assemble_jenga"
+      "task": "assemble_jenga",
+      "text": "put wooden block on wooden block"
     },
     {
       "id": "part2_basic_pick_place_26474",
@@ -1359,7 +1366,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "basic_pick_place"
+      "task": "basic_pick_place",
+      "text": "pick up yellow banana toy from clear plastic container"
     },
     {
       "id": "part1_boil_serve_egg_228",
@@ -1371,7 +1379,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "boil_serve_egg"
+      "task": "boil_serve_egg",
+      "text": "take out pot, fill with water, put on stove, heat, take out egg, place in bowl"
     },
     {
       "id": "part1_boil_serve_egg_324",
@@ -1383,7 +1392,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "boil_serve_egg"
+      "task": "boil_serve_egg",
+      "text": "take silver pot from shelf"
     },
     {
       "id": "part1_braid_unbraid_306",
@@ -1395,7 +1405,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "braid_unbraid"
+      "task": "braid_unbraid",
+      "text": "tie red shoelace into knot"
     },
     {
       "id": "part1_braid_unbraid_255",
@@ -1407,7 +1418,8 @@
         "obj1"
       ],
       "has_tracks": true,
-      "task": "braid_unbraid"
+      "task": "braid_unbraid",
+      "text": "knot red shoelace together"
     },
     {
       "id": "part1_build_unstack_lego_683",
@@ -1419,7 +1431,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "build_unstack_lego"
+      "task": "build_unstack_lego",
+      "text": "take apart lego blocks"
     },
     {
       "id": "part1_charge_uncharge_device_5320",
@@ -1432,7 +1445,8 @@
         "obj1"
       ],
       "has_tracks": true,
-      "task": "charge_uncharge_device"
+      "task": "charge_uncharge_device",
+      "text": "take smartphone with left hand"
     },
     {
       "id": "part1_charge_uncharge_device_958",
@@ -1444,7 +1458,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "charge_uncharge_device"
+      "task": "charge_uncharge_device",
+      "text": "charge white smartphone with white charger"
     },
     {
       "id": "part1_crumple_flatten_paper_232",
@@ -1456,7 +1471,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "crumple_flatten_paper"
+      "task": "crumple_flatten_paper",
+      "text": "unfold white tissue paper"
     },
     {
       "id": "part1_crumple_flatten_paper_145",
@@ -1468,7 +1484,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "crumple_flatten_paper"
+      "task": "crumple_flatten_paper",
+      "text": "crumple white paper in hand"
     },
     {
       "id": "part1_dry_hands_1368",
@@ -1480,7 +1497,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "dry_hands"
+      "task": "dry_hands",
+      "text": "fold yellow towel"
     },
     {
       "id": "part1_fidget_magnetic_spinner_rings_486",
@@ -1493,7 +1511,8 @@
         "obj2"
       ],
       "has_tracks": true,
-      "task": "fidget_magnetic_spinner_rings"
+      "task": "fidget_magnetic_spinner_rings",
+      "text": "spin fidget spinner with right hand"
     },
     {
       "id": "part2_fold_stack_unstack_unfold_cloths_783",
@@ -1505,7 +1524,8 @@
         "obj1"
       ],
       "has_tracks": true,
-      "task": "fold_stack_unstack_unfold_cloths"
+      "task": "fold_stack_unstack_unfold_cloths",
+      "text": "fold blue microfiber cloth"
     },
     {
       "id": "part2_fold_stack_unstack_unfold_cloths_1413",
@@ -1517,7 +1537,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "fold_stack_unstack_unfold_cloths"
+      "task": "fold_stack_unstack_unfold_cloths",
+      "text": "fold yellow towel"
     },
     {
       "id": "part2_fold_unfold_paper_basic_585",
@@ -1529,7 +1550,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "fold_unfold_paper_basic"
+      "task": "fold_unfold_paper_basic",
+      "text": "fold white paper repeatedly"
     },
     {
       "id": "part2_fold_unfold_paper_origami_922",
@@ -1541,7 +1563,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "fold_unfold_paper_origami"
+      "task": "fold_unfold_paper_origami",
+      "text": "fold white paper on table"
     },
     {
       "id": "part2_fold_unfold_paper_origami_504",
@@ -1553,7 +1576,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "fold_unfold_paper_origami"
+      "task": "fold_unfold_paper_origami",
+      "text": "fold white paper on table"
     },
     {
       "id": "test_fry_bread_0",
@@ -1565,7 +1589,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "fry_bread"
+      "task": "fry_bread",
+      "text": "take out silver frying pan"
     },
     {
       "id": "part1_fry_egg_13",
@@ -1577,7 +1602,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "fry_egg"
+      "task": "fry_egg",
+      "text": "take frying pan from hanging rack"
     },
     {
       "id": "part3_insert_remove_airpods_748",
@@ -1589,7 +1615,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "insert_remove_airpods"
+      "task": "insert_remove_airpods",
+      "text": "cut green plastic bottle with blue plastic scissors"
     },
     {
       "id": "part3_insert_remove_airpods_1147",
@@ -1601,7 +1628,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "insert_remove_airpods"
+      "task": "insert_remove_airpods",
+      "text": "use hammer to strike lighter"
     },
     {
       "id": "part3_insert_remove_bookshelf_1399",
@@ -1613,7 +1641,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "insert_remove_bookshelf"
+      "task": "insert_remove_bookshelf",
+      "text": "place gray book into box"
     },
     {
       "id": "part3_insert_remove_cups_from_rack_17",
@@ -1625,7 +1654,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "insert_remove_cups_from_rack"
+      "task": "insert_remove_cups_from_rack",
+      "text": "stack red yellow and green cups in drying rack"
     },
     {
       "id": "part2_insert_remove_furniture_bench_cabinet_5992",
@@ -1637,7 +1667,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "insert_remove_furniture_bench_cabinet"
+      "task": "insert_remove_furniture_bench_cabinet",
+      "text": "insert key into lock"
     },
     {
       "id": "part2_insert_remove_furniture_bench_cabinet_1220",
@@ -1649,7 +1680,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "insert_remove_furniture_bench_cabinet"
+      "task": "insert_remove_furniture_bench_cabinet",
+      "text": "pick up white dice with hand"
     },
     {
       "id": "part3_open_close_insert_remove_box_1092",
@@ -1661,7 +1693,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "open_close_insert_remove_box"
+      "task": "open_close_insert_remove_box",
+      "text": "open brown cardboard box"
     },
     {
       "id": "part3_open_close_insert_remove_tupperware_2595",
@@ -1673,7 +1706,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "open_close_insert_remove_tupperware"
+      "task": "open_close_insert_remove_tupperware",
+      "text": "remove lid from glass container"
     },
     {
       "id": "part3_paint_clean_brush_1156",
@@ -1687,7 +1721,8 @@
         "obj2"
       ],
       "has_tracks": true,
-      "task": "paint_clean_brush"
+      "task": "paint_clean_brush",
+      "text": "dip paintbrush into water"
     },
     {
       "id": "part4_pick_place_food_466",
@@ -1699,7 +1734,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "pick_place_food"
+      "task": "pick_place_food",
+      "text": "put strawberry on plate"
     },
     {
       "id": "part4_pick_place_food_3585",
@@ -1711,7 +1747,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "pick_place_food"
+      "task": "pick_place_food",
+      "text": "put burger in basket"
     },
     {
       "id": "part4_point_and_click_remote_549",
@@ -1723,7 +1760,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "point_and_click_remote"
+      "task": "point_and_click_remote",
+      "text": "shake white remote control"
     },
     {
       "id": "part4_point_and_click_remote_1868",
@@ -1735,7 +1773,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "point_and_click_remote"
+      "task": "point_and_click_remote",
+      "text": "take white remote control"
     },
     {
       "id": "part4_pour_421",
@@ -1748,7 +1787,8 @@
         "obj2"
       ],
       "has_tracks": true,
-      "task": "pour"
+      "task": "pour",
+      "text": "pour water from water bottle into cup"
     },
     {
       "id": "part4_push_pop_toy_1720",
@@ -1760,7 +1800,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "push_pop_toy"
+      "task": "push_pop_toy",
+      "text": "press the buttons on the circular fidget toy"
     },
     {
       "id": "part4_push_pop_toy_430",
@@ -1772,7 +1813,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "push_pop_toy"
+      "task": "push_pop_toy",
+      "text": "press down on the water beads puzzle"
     },
     {
       "id": "part4_scoop_dump_ice_2326",
@@ -1784,7 +1826,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "scoop_dump_ice"
+      "task": "scoop_dump_ice",
+      "text": "pour liquid from yellow cup into clear container"
     },
     {
       "id": "part4_scoop_dump_ice_355",
@@ -1796,7 +1839,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "scoop_dump_ice"
+      "task": "scoop_dump_ice",
+      "text": "pour water into yellow cup"
     },
     {
       "id": "part4_screw_unscrew_allen_fixture_547",
@@ -1809,7 +1853,8 @@
         "obj1"
       ],
       "has_tracks": true,
-      "task": "screw_unscrew_allen_fixture"
+      "task": "screw_unscrew_allen_fixture",
+      "text": "install black plastic bracket on black metal base"
     },
     {
       "id": "part4_screw_unscrew_bottle_cap_1673",
@@ -1822,7 +1867,8 @@
         "obj1"
       ],
       "has_tracks": true,
-      "task": "screw_unscrew_bottle_cap"
+      "task": "screw_unscrew_bottle_cap",
+      "text": "close clear plastic bottle with orange cap"
     },
     {
       "id": "part4_screw_unscrew_bottle_cap_723",
@@ -1834,7 +1880,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "screw_unscrew_bottle_cap"
+      "task": "screw_unscrew_bottle_cap",
+      "text": "open clear plastic bottle with orange cap"
     },
     {
       "id": "part4_screw_unscrew_fingers_fixture_1263",
@@ -1846,7 +1893,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "screw_unscrew_fingers_fixture"
+      "task": "screw_unscrew_fingers_fixture",
+      "text": "screw black metal bracket to black metal plate"
     },
     {
       "id": "part4_screw_unscrew_fingers_fixture_187",
@@ -1858,7 +1906,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "screw_unscrew_fingers_fixture"
+      "task": "screw_unscrew_fingers_fixture",
+      "text": "fix black metal bracket on black metal plate with screw"
     },
     {
       "id": "part5_stack_unstack_bowls_465",
@@ -1871,7 +1920,8 @@
         "obj2"
       ],
       "has_tracks": true,
-      "task": "stack_unstack_bowls"
+      "task": "stack_unstack_bowls",
+      "text": "nest bowls together"
     },
     {
       "id": "part5_stack_unstack_cups_922",
@@ -1883,7 +1933,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "stack_unstack_cups"
+      "task": "stack_unstack_cups",
+      "text": "stack white paper cup into white paper cup"
     },
     {
       "id": "part5_stack_unstack_plates_1418",
@@ -1895,7 +1946,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "stack_unstack_plates"
+      "task": "stack_unstack_plates",
+      "text": "stack green plate on yellow plate"
     },
     {
       "id": "part5_stack_unstack_tupperware_1038",
@@ -1907,7 +1959,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "stack_unstack_tupperware"
+      "task": "stack_unstack_tupperware",
+      "text": "take out plastic container from shelf"
     },
     {
       "id": "part5_vertical_pick_place_5573",
@@ -1919,7 +1972,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "vertical_pick_place"
+      "task": "vertical_pick_place",
+      "text": "put white earplugs into container"
     },
     {
       "id": "part5_wash_fruit_35",
@@ -1931,7 +1985,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "wash_fruit"
+      "task": "wash_fruit",
+      "text": "put orange plastic fruit into white ceramic bowl"
     },
     {
       "id": "part5_wipe_kitchen_surfaces_139",
@@ -1943,7 +1998,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "wipe_kitchen_surfaces"
+      "task": "wipe_kitchen_surfaces",
+      "text": "wipe toy kitchen appliance with blue cloth"
     },
     {
       "id": "part5_wipe_kitchen_surfaces_286",
@@ -1955,7 +2011,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "wipe_kitchen_surfaces"
+      "task": "wipe_kitchen_surfaces",
+      "text": "wipe black plastic toy kitchen stove with blue cloth"
     },
     {
       "id": "part5_wipe_screen_1007",
@@ -1968,7 +2025,8 @@
         "obj1"
       ],
       "has_tracks": true,
-      "task": "wipe_screen"
+      "task": "wipe_screen",
+      "text": "wipe smartphone with white cloth"
     },
     {
       "id": "part5_wipe_screen_134",
@@ -1981,7 +2039,8 @@
         "obj1"
       ],
       "has_tracks": true,
-      "task": "wipe_screen"
+      "task": "wipe_screen",
+      "text": "wipe smartphone screen with white cloth"
     },
     {
       "id": "test_zip_unzip_case_9",
@@ -1993,7 +2052,8 @@
         "obj0"
       ],
       "has_tracks": true,
-      "task": "zip_unzip_case"
+      "task": "zip_unzip_case",
+      "text": "open black case"
     }
   ],
   "hdepic": [
