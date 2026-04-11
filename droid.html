@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DROID — Motion Clips by Task</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; scroll-behavior: smooth; }
+:root {
+  --bg: #111; --bg-card: #161616; --bg-header: #1a1a1a; --bg-body: #0d0d0d;
+  --border: #222; --border-hover: #444;
+  --text: #d4d4d4; --text-heading: #f0f0f0; --text-secondary: #777; --text-muted: #555;
+  --track-bg: #1a1a1a; --cursor: #ff3c3c;
+}
+[data-theme="light"] {
+  --bg: #f5f5f0; --bg-card: #ffffff; --bg-header: #f0efe8; --bg-body: #eeeee8;
+  --border: #ddd; --border-hover: #bbb;
+  --text: #333; --text-heading: #111; --text-secondary: #666; --text-muted: #999;
+  --track-bg: #efefe8; --cursor: #c23030;
+}
+body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; transition: background 0.25s; }
+.page { max-width: 1600px; margin: 0 auto; padding: 0 24px; }
+
+.masthead {
+  padding: 30px 0 16px; border-bottom: 1px solid var(--border); margin-bottom: 20px;
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 20px;
+}
+.masthead h1 { font-family: 'Playfair Display', serif; font-size: 2rem; color: var(--text-heading); }
+.masthead .subtitle { font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px; max-width: 1000px; }
+.masthead-right { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.masthead-right a, .theme-toggle {
+  color: var(--text-secondary); font-size: 0.78rem; text-decoration: none;
+  border: 1px solid var(--border); padding: 5px 12px; border-radius: 20px;
+  background: var(--bg-card); cursor: pointer; font-family: inherit;
+}
+.masthead-right a:hover, .theme-toggle:hover { color: var(--text); border-color: var(--border-hover); }
+
+/* Category nav */
+.cat-nav {
+  display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+.cat-chip {
+  font-size: 0.72rem; font-weight: 500; color: var(--text-secondary);
+  padding: 5px 12px; border: 1px solid var(--border); border-radius: 16px;
+  cursor: pointer; background: var(--bg-card); font-family: inherit;
+  text-decoration: none;
+}
+.cat-chip:hover { color: var(--text); border-color: var(--border-hover); }
+
+/* Category section */
+.cat-section { margin-bottom: 40px; }
+.cat-title {
+  font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--text-heading);
+  margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
+}
+.cat-title .count { font-size: 0.7rem; color: var(--text-muted); margin-left: 10px; font-family: monospace; font-weight: 400; }
+
+/* Scene card */
+.scene-card {
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
+  margin-bottom: 14px; overflow: hidden;
+}
+.scene-header {
+  padding: 10px 14px; border-bottom: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 10px;
+}
+.scene-header .caption { font-size: 0.85rem; font-weight: 600; color: var(--text-heading); }
+.scene-header .uuid { font-size: 0.68rem; color: var(--text-muted); font-family: monospace; }
+
+/* Two cameras side by side */
+.two-cams { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.cam-col { border-right: 1px solid var(--border); }
+.cam-col:last-child { border-right: none; }
+.cam-header {
+  padding: 6px 12px; font-size: 0.68rem; color: var(--text-muted);
+  font-family: monospace; background: var(--bg-header); border-bottom: 1px solid var(--border);
+  display: flex; justify-content: space-between;
+}
+.cam-header .badge { background: #4a9eff; color: #fff; padding: 1px 7px; border-radius: 10px; font-size: 0.6rem; font-weight: 600; }
+
+.video-wrap { position: relative; width: 100%; background: #000; }
+.video-wrap video { width: 100%; display: block; }
+.video-wrap canvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; }
+
+.timeline-panel {
+  padding: 10px 14px; background: var(--bg-card);
+}
+.timeline-row { display: flex; flex-direction: column; gap: 4px; }
+.timeline-label {
+  font-size: 0.7rem; font-weight: 500; color: var(--text-heading);
+  display: flex; justify-content: space-between; align-items: center;
+}
+.timeline-label .obj-name { font-family: 'SF Mono', monospace; }
+.timeline-label .obj-clips { font-size: 0.62rem; color: var(--text-muted); font-family: monospace; }
+.timeline-bar {
+  position: relative; height: 22px;
+  background: var(--track-bg); border-radius: 3px; border: 1px solid var(--border); overflow: hidden;
+}
+.clip-range {
+  position: absolute; top: 0; bottom: 0; border-radius: 1px; opacity: 0.85; cursor: pointer;
+}
+.clip-range:hover { opacity: 1; }
+.cursor-line { position: absolute; top: -2px; bottom: -2px; width: 2px; background: var(--cursor); z-index: 10; pointer-events: none; }
+
+.scrub-row { display: flex; align-items: center; gap: 8px; padding: 6px 12px; border-top: 1px solid var(--border); }
+.play-btn { background: none; border: 1px solid var(--border); color: var(--text); padding: 2px 9px; border-radius: 4px; cursor: pointer; font-size: 0.75rem; font-family: inherit; min-width: 34px; text-align: center; }
+.play-btn:hover { border-color: var(--border-hover); }
+.scrub-row input[type=range] { flex: 1; }
+.frame-label { font-size: 0.66rem; color: var(--text-muted); min-width: 66px; text-align: right; font-family: monospace; }
+
+@media (max-width: 1100px) {
+  .two-cams { grid-template-columns: 1fr; }
+  .cam-col { border-right: none; border-bottom: 1px solid var(--border); }
+  .cam-col:last-child { border-bottom: none; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="masthead">
+    <div>
+      <h1>DROID — Motion Clips by Task</h1>
+      <div class="subtitle">
+        5 random DROID scenes per task category. Each scene shows <strong>both exterior cameras</strong>
+        independently, each with its own 2D track overlay (16 subsampled points from the smoothed
+        consensus-gated tracks) and per-object motion-clip timeline. The filter (threshold=0.02,
+        top-20% trimmed, min clip=0.5s) is run separately per camera because each camera file lives
+        in its own OpenCV optical frame (ext1 and ext2 are <em>not</em> in a shared coord system).
+      </div>
+    </div>
+    <div class="masthead-right">
+      <a href="index.html">← Main</a>
+      <a href="molmospaces.html">MolmoSpaces</a>
+      <button class="theme-toggle" onclick="toggleTheme()">Toggle theme</button>
+    </div>
+  </div>
+
+  <div class="cat-nav" id="catNav"></div>
+
+  <div id="catList"></div>
+</div>
+
+<script>
+const TRAIL_LEN = 16;
+let manifest = null;
+const cardState = {};  // id → {motionData, selectedObject, rafHandle, vid, canvas}
+
+function toggleTheme() {
+  const t = document.documentElement.getAttribute('data-theme') === 'light' ? '' : 'light';
+  document.documentElement.setAttribute('data-theme', t);
+  localStorage.setItem('motion-theme', t);
+}
+(function(){ const t = localStorage.getItem('motion-theme'); if (t) document.documentElement.setAttribute('data-theme', t); })();
+
+function colorForObject(name) {
+  let h = 0;
+  for (let i = 0; i < name.length; i++) h = (h * 31 + name.charCodeAt(i)) & 0xffffffff;
+  const hue = ((h % 360) + 360) % 360;
+  return `hsl(${hue}, 65%, 58%)`;
+}
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function slug(s) { return s.replace(/[^a-zA-Z0-9]/g, '_'); }
+
+async function init() {
+  const resp = await fetch('static/data/motion/droid/manifest.json');
+  manifest = await resp.json();
+  const cats = manifest.categories;
+
+  // Nav chips
+  const nav = document.getElementById('catNav');
+  for (const cat of Object.keys(cats)) {
+    const a = document.createElement('a');
+    a.className = 'cat-chip';
+    a.href = '#cat_' + slug(cat);
+    a.textContent = cat;
+    nav.appendChild(a);
+  }
+
+  const container = document.getElementById('catList');
+  for (const [cat, scenes] of Object.entries(cats)) {
+    const section = document.createElement('div');
+    section.className = 'cat-section';
+    section.id = 'cat_' + slug(cat);
+    const totalClips = scenes.reduce((s, sc) => s + (sc.cam1.num_segments || 0) + (sc.cam2.num_segments || 0), 0);
+    section.innerHTML = `<div class="cat-title">${escapeHtml(cat)}<span class="count">${scenes.length} scenes · ${totalClips} total clips</span></div>`;
+
+    scenes.forEach((scene, i) => {
+      const card = document.createElement('div');
+      card.className = 'scene-card';
+      card.id = `${slug(cat)}_s${i}`;
+      card.innerHTML = renderSceneCard(card.id, scene);
+      section.appendChild(card);
+    });
+    container.appendChild(section);
+  }
+
+  // Lazy load
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const cardId = e.target.id;
+        if (!cardState[cardId + '_cam1']) {
+          // Find matching scene and start loading
+          for (const [cat, scenes] of Object.entries(manifest.categories)) {
+            scenes.forEach((scene, i) => {
+              const sid = `${slug(cat)}_s${i}`;
+              if (sid === cardId) loadScene(sid, scene);
+            });
+          }
+          observer.unobserve(e.target);
+        }
+      }
+    });
+  }, { rootMargin: '300px' });
+
+  document.querySelectorAll('.scene-card').forEach(c => observer.observe(c));
+}
+
+function renderSceneCard(id, scene) {
+  return `
+    <div class="scene-header">
+      <span class="caption">${escapeHtml(scene.caption)}</span>
+      <span class="uuid">${escapeHtml(scene.uuid)}</span>
+    </div>
+    <div class="two-cams">
+      ${renderCamCol(id + '_cam1', scene.cam1, 'cam1')}
+      ${renderCamCol(id + '_cam2', scene.cam2, 'cam2')}
+    </div>
+  `;
+}
+
+function renderCamCol(camId, camInfo, label) {
+  return `
+    <div class="cam-col">
+      <div class="cam-header">
+        <span>${label} · ${camInfo.cam}</span>
+        <span class="badge">${camInfo.num_segments} clip${camInfo.num_segments === 1 ? '' : 's'}</span>
+      </div>
+      <div class="video-wrap">
+        <video id="${camId}_vid" muted loop playsinline preload="none"></video>
+        <canvas id="${camId}_canvas"></canvas>
+      </div>
+      <div class="timeline-panel" id="${camId}_timelines"></div>
+      <div class="scrub-row">
+        <button class="play-btn" id="${camId}_playbtn" onclick="togglePlay('${camId}')">▶</button>
+        <input type="range" id="${camId}_scrub" min="0" max="1000" value="0" oninput="scrubTo('${camId}', this.value)">
+        <span class="frame-label" id="${camId}_frame">0 / 0</span>
+      </div>
+    </div>
+  `;
+}
+
+async function loadScene(sceneId, scene) {
+  await loadCam(sceneId + '_cam1', scene.cam1);
+  await loadCam(sceneId + '_cam2', scene.cam2);
+}
+
+async function loadCam(camId, camInfo) {
+  const vid = document.getElementById(camId + '_vid');
+  vid.src = camInfo.rgb_url;
+  vid.load();
+  vid.addEventListener('loadedmetadata', () => {
+    vid.play();
+    document.getElementById(camId + '_playbtn').innerHTML = '&#9646;&#9646;';
+    startCanvasLoop(camId);
+  });
+
+  let motionData = null;
+  try {
+    const resp = await fetch(camInfo.motion_url);
+    motionData = await resp.json();
+  } catch(e) {
+    document.getElementById(camId + '_timelines').innerHTML =
+      '<div style="color:#c55;font-size:0.72rem;">motion load failed</div>';
+    return;
+  }
+
+  cardState[camId] = { motionData, selectedObject: null, rafHandle: null };
+  renderTimelines(camId, motionData);
+
+  vid.addEventListener('timeupdate', () => {
+    if (!vid.duration) return;
+    const pct = vid.currentTime / vid.duration;
+    document.getElementById(camId + '_scrub').value = Math.round(pct * 1000);
+    const T = motionData.num_frames;
+    const fi = Math.min(Math.round(pct * (T - 1)), T - 1);
+    document.getElementById(camId + '_frame').textContent = fi + ' / ' + (T - 1);
+    updateCursor(camId, pct);
+  });
+  updateCursor(camId, 0);
+}
+
+function renderTimelines(camId, md) {
+  const panel = document.getElementById(camId + '_timelines');
+  panel.innerHTML = '';
+  const T = md.num_frames;
+  const objs = md.clips_by_object || {};
+  const objNames = Object.keys(objs);
+  if (objNames.length === 0) {
+    panel.innerHTML = '<div style="color:var(--text-muted);font-size:0.72rem;">No clips</div>';
+    return;
+  }
+  objNames.forEach(name => {
+    const clips = objs[name] || [];
+    const color = colorForObject(name);
+    const totalFrames = clips.reduce((s, [a, b]) => s + (b - a + 1), 0);
+    const row = document.createElement('div');
+    row.className = 'timeline-row';
+    row.innerHTML = `
+      <div class="timeline-label">
+        <span class="obj-name" style="color:${color};">■ ${escapeHtml(name)}</span>
+        <span class="obj-clips">${clips.length} clip${clips.length === 1 ? '' : 's'} · ${totalFrames} frames</span>
+      </div>
+      <div class="timeline-bar">
+        ${clips.map(([s, e]) => {
+          const left = (s / Math.max(T - 1, 1)) * 100;
+          const width = ((e - s + 1) / Math.max(T, 1)) * 100;
+          return `<div class="clip-range" style="left:${left}%;width:${width}%;background:${color};" onclick="jumpTo('${camId}', ${s}, ${T})"></div>`;
+        }).join('')}
+        <div class="cursor-line" id="${camId}_cursor"></div>
+      </div>
+    `;
+    panel.appendChild(row);
+  });
+}
+
+function updateCursor(camId, pct) {
+  const c = document.getElementById(camId + '_cursor');
+  if (c) c.style.left = (pct * 100) + '%';
+}
+
+function jumpTo(camId, frame, T) {
+  const vid = document.getElementById(camId + '_vid');
+  if (vid.duration) vid.currentTime = (frame / Math.max(T - 1, 1)) * vid.duration;
+}
+
+function startCanvasLoop(camId) {
+  const st = cardState[camId];
+  if (!st) return;
+  if (st.rafHandle) return;
+  const md = st.motionData;
+  if (!md || !md.tracks_by_object || Object.keys(md.tracks_by_object).length === 0) return;
+
+  const vid = document.getElementById(camId + '_vid');
+  const canvas = document.getElementById(camId + '_canvas');
+  const ctx = canvas.getContext('2d');
+
+  function draw() {
+    if (!document.body.contains(vid)) { st.rafHandle = null; return; }
+    if (!vid.duration || !md.img_dim) {
+      st.rafHandle = requestAnimationFrame(draw);
+      return;
+    }
+    const rect = vid.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    const cssW = Math.max(1, Math.floor(rect.width));
+    const cssH = Math.max(1, Math.floor(rect.height));
+    if (canvas.width !== cssW * dpr || canvas.height !== cssH * dpr) {
+      canvas.width = cssW * dpr;
+      canvas.height = cssH * dpr;
+      canvas.style.width = cssW + 'px';
+      canvas.style.height = cssH + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+    const [imgH, imgW] = md.img_dim;
+    const containerAspect = cssW / cssH;
+    const videoAspect = imgW / imgH;
+    let vidW, vidH, vidX, vidY;
+    if (containerAspect > videoAspect) { vidH = cssH; vidW = cssH * videoAspect; }
+    else { vidW = cssW; vidH = cssW / videoAspect; }
+    vidX = (cssW - vidW) / 2;
+    vidY = (cssH - vidH) / 2;
+
+    ctx.clearRect(0, 0, cssW, cssH);
+
+    const T = md.num_frames;
+    const fi = Math.min(Math.round((vid.currentTime / vid.duration) * (T - 1)), T - 1);
+    const trailStart = Math.max(0, fi - TRAIL_LEN);
+
+    for (const [name, tdata] of Object.entries(md.tracks_by_object)) {
+      const color = colorForObject(name);
+      const tracks = tdata.tracks;
+      const vis = tdata.visibility;
+      const P = tracks.length;
+
+      for (let p = 0; p < P; p++) {
+        ctx.strokeStyle = color;
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        let started = false;
+        for (let t = trailStart; t <= fi; t++) {
+          if (!vis[p][t]) { started = false; continue; }
+          const pt = tracks[p][t];
+          if (pt[0] == null) { started = false; continue; }
+          const x = vidX + (pt[0] / imgW) * vidW;
+          const y = vidY + (pt[1] / imgH) * vidH;
+          if (!started) { ctx.moveTo(x, y); started = true; }
+          else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+
+        if (vis[p][fi]) {
+          const pt = tracks[p][fi];
+          if (pt[0] != null) {
+            const x = vidX + (pt[0] / imgW) * vidW;
+            const y = vidY + (pt[1] / imgH) * vidH;
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.arc(x, y, 3, 0, Math.PI * 2);
+            ctx.fill();
+          }
+        }
+      }
+    }
+
+    st.rafHandle = requestAnimationFrame(draw);
+  }
+  st.rafHandle = requestAnimationFrame(draw);
+}
+
+function togglePlay(camId) {
+  const vid = document.getElementById(camId + '_vid');
+  const btn = document.getElementById(camId + '_playbtn');
+  if (vid.paused) { vid.play(); btn.innerHTML = '&#9646;&#9646;'; }
+  else { vid.pause(); btn.innerHTML = '&#9654;'; }
+}
+function scrubTo(camId, val) {
+  const vid = document.getElementById(camId + '_vid');
+  if (vid.duration) vid.currentTime = (val / 1000) * vid.duration;
+}
+
+init();
+</script>
+</body>
+</html>
