@@ -67,10 +67,10 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
       <div class="subtitle">
         20 random MolmoSpaces samples (sim ground-truth tracks). Each chart shows the
         per-frame average 3D delta magnitude (top-20% trimmed) per body, with
-        kept clip ranges highlighted. Threshold = 0.001, no minimum clip
-        length (sim motion is much quieter than tracked data; 0.02 captures
-        almost nothing on molmo and 0.01 barely any, so this subpage uses a
-        looser threshold to surface the bulk of the activity).
+        kept clip ranges highlighted. Threshold = 0.001, short clips
+        (< 8 frames) must also have peak ≥ 0.015 to be kept. Sim motion is
+        much quieter than tracked data; 0.02 captures almost nothing on
+        molmo and 0.01 barely any.
       </div>
     </div>
     <div class="masthead-right">
