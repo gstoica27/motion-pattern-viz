@@ -1,0 +1,287 @@
+{
+  "molmospaces": [
+    {
+      "id": "pick_place_color__house_5633__episode_00000010_droid_shoulder_light_randomization",
+      "scenario": "pick_place_color",
+      "house": "house_5633",
+      "rgb_url": "static/videos/molmospaces/pick_place_color__house_5633__episode_00000010_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place_color__house_5633__episode_00000010_droid_shoulder_light_randomization.json",
+      "num_frames": 239,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.0307,
+      "object_names": [
+        "body_128"
+      ]
+    },
+    {
+      "id": "pick_place__house_7536__episode_00000006_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_7536",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_7536__episode_00000006_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_7536__episode_00000006_droid_shoulder_light_randomization.json",
+      "num_frames": 233,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.02465,
+      "object_names": [
+        "body_230"
+      ]
+    },
+    {
+      "id": "pick_place__house_98__episode_00000002_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_98",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_98__episode_00000002_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_98__episode_00000002_droid_shoulder_light_randomization.json",
+      "num_frames": 247,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.02422,
+      "object_names": [
+        "body_152"
+      ]
+    },
+    {
+      "id": "pick_place__house_5150__episode_00000006_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_5150",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_5150__episode_00000006_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_5150__episode_00000006_droid_shoulder_light_randomization.json",
+      "num_frames": 236,
+      "num_objects": 1,
+      "num_segments": 2,
+      "peak_magnitude": 0.02498,
+      "object_names": [
+        "body_66"
+      ]
+    },
+    {
+      "id": "pick_place_color__house_8569__episode_00000004_droid_shoulder_light_randomization",
+      "scenario": "pick_place_color",
+      "house": "house_8569",
+      "rgb_url": "static/videos/molmospaces/pick_place_color__house_8569__episode_00000004_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place_color__house_8569__episode_00000004_droid_shoulder_light_randomization.json",
+      "num_frames": 271,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.01756,
+      "object_names": [
+        "body_97"
+      ]
+    },
+    {
+      "id": "pick_place__house_6404__episode_00000000_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_6404",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_6404__episode_00000000_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_6404__episode_00000000_droid_shoulder_light_randomization.json",
+      "num_frames": 253,
+      "num_objects": 2,
+      "num_segments": 2,
+      "peak_magnitude": 0.01564,
+      "object_names": [
+        "body_83",
+        "body_84"
+      ]
+    },
+    {
+      "id": "pick_place__house_9109__episode_00000001_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_9109",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_9109__episode_00000001_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_9109__episode_00000001_droid_shoulder_light_randomization.json",
+      "num_frames": 245,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.01639,
+      "object_names": [
+        "body_99"
+      ]
+    },
+    {
+      "id": "pick_place__house_2591__episode_00000001_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_2591",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_2591__episode_00000001_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_2591__episode_00000001_droid_shoulder_light_randomization.json",
+      "num_frames": 259,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.02193,
+      "object_names": [
+        "body_37"
+      ]
+    },
+    {
+      "id": "pick_place__house_9562__episode_00000002_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_9562",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_9562__episode_00000002_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_9562__episode_00000002_droid_shoulder_light_randomization.json",
+      "num_frames": 256,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.05351,
+      "object_names": [
+        "body_69"
+      ]
+    },
+    {
+      "id": "pick_place__house_9578__episode_00000001_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_9578",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_9578__episode_00000001_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_9578__episode_00000001_droid_shoulder_light_randomization.json",
+      "num_frames": 316,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.01575,
+      "object_names": [
+        "body_47"
+      ]
+    },
+    {
+      "id": "pick_place__house_5606__episode_00000002_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_5606",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_5606__episode_00000002_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_5606__episode_00000002_droid_shoulder_light_randomization.json",
+      "num_frames": 247,
+      "num_objects": 1,
+      "num_segments": 2,
+      "peak_magnitude": 0.03106,
+      "object_names": [
+        "body_185"
+      ]
+    },
+    {
+      "id": "pick_place__house_151__episode_00000010_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_151",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_151__episode_00000010_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_151__episode_00000010_droid_shoulder_light_randomization.json",
+      "num_frames": 259,
+      "num_objects": 1,
+      "num_segments": 2,
+      "peak_magnitude": 0.0387,
+      "object_names": [
+        "body_117"
+      ]
+    },
+    {
+      "id": "pick_place__house_562__episode_00000000_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_562",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_562__episode_00000000_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_562__episode_00000000_droid_shoulder_light_randomization.json",
+      "num_frames": 466,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.06855,
+      "object_names": [
+        "body_73"
+      ]
+    },
+    {
+      "id": "pick_place__house_4040__episode_00000007_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_4040",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_4040__episode_00000007_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_4040__episode_00000007_droid_shoulder_light_randomization.json",
+      "num_frames": 261,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.01914,
+      "object_names": [
+        "body_159"
+      ]
+    },
+    {
+      "id": "pick_place__house_3087__episode_00000008_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_3087",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_3087__episode_00000008_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_3087__episode_00000008_droid_shoulder_light_randomization.json",
+      "num_frames": 247,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.05549,
+      "object_names": [
+        "body_224"
+      ]
+    },
+    {
+      "id": "pick_place__house_3019__episode_00000000_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_3019",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_3019__episode_00000000_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_3019__episode_00000000_droid_shoulder_light_randomization.json",
+      "num_frames": 292,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.01632,
+      "object_names": [
+        "body_84"
+      ]
+    },
+    {
+      "id": "pick_place_color__house_5544__episode_00000006_droid_shoulder_light_randomization",
+      "scenario": "pick_place_color",
+      "house": "house_5544",
+      "rgb_url": "static/videos/molmospaces/pick_place_color__house_5544__episode_00000006_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place_color__house_5544__episode_00000006_droid_shoulder_light_randomization.json",
+      "num_frames": 240,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.01912,
+      "object_names": [
+        "body_65"
+      ]
+    },
+    {
+      "id": "pick_place__house_6616__episode_00000004_droid_shoulder_light_randomization",
+      "scenario": "pick_place",
+      "house": "house_6616",
+      "rgb_url": "static/videos/molmospaces/pick_place__house_6616__episode_00000004_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place__house_6616__episode_00000004_droid_shoulder_light_randomization.json",
+      "num_frames": 273,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.01744,
+      "object_names": [
+        "body_79"
+      ]
+    },
+    {
+      "id": "pick_place_color__house_172__episode_00000008_droid_shoulder_light_randomization",
+      "scenario": "pick_place_color",
+      "house": "house_172",
+      "rgb_url": "static/videos/molmospaces/pick_place_color__house_172__episode_00000008_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place_color__house_172__episode_00000008_droid_shoulder_light_randomization.json",
+      "num_frames": 245,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.0583,
+      "object_names": [
+        "body_215"
+      ]
+    },
+    {
+      "id": "pick_place_color__house_6171__episode_00000001_droid_shoulder_light_randomization",
+      "scenario": "pick_place_color",
+      "house": "house_6171",
+      "rgb_url": "static/videos/molmospaces/pick_place_color__house_6171__episode_00000001_droid_shoulder_light_randomization.mp4",
+      "motion_url": "static/data/motion/molmospaces/pick_place_color__house_6171__episode_00000001_droid_shoulder_light_randomization.json",
+      "num_frames": 266,
+      "num_objects": 1,
+      "num_segments": 1,
+      "peak_magnitude": 0.01571,
+      "object_names": [
+        "body_89"
+      ]
+    }
+  ],
+  "fps": 15,
+  "threshold": 0.01
+}

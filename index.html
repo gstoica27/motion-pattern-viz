@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Motion Pattern Visualization</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<title>Motion Pattern Filter — Clip Review</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -14,7 +13,7 @@ html { font-size: 16px; scroll-behavior: smooth; }
   --border: #222; --border-hover: #444;
   --text: #d4d4d4; --text-heading: #f0f0f0; --text-secondary: #777; --text-muted: #555;
   --tab-active: #f0f0f0; --tab-inactive: #666;
-  --accent-motion: #ff6b35; --accent-still: #4a9eff;
+  --track-bg: #1a1a1a; --cursor: #ff3c3c;
   --scrollbar-track: #1a1a1a; --scrollbar-thumb: #333;
 }
 [data-theme="light"] {
@@ -22,7 +21,7 @@ html { font-size: 16px; scroll-behavior: smooth; }
   --border: #ddd; --border-hover: #bbb;
   --text: #333; --text-heading: #111; --text-secondary: #666; --text-muted: #999;
   --tab-active: #111; --tab-inactive: #999;
-  --accent-motion: #e05520; --accent-still: #2a7adf;
+  --track-bg: #efefe8; --cursor: #c23030;
   --scrollbar-track: #e8e8e8; --scrollbar-thumb: #ccc;
 }
 body {
@@ -47,14 +46,21 @@ body {
 
 .masthead {
   padding: 30px 0 16px; border-bottom: 1px solid var(--border);
-  margin-bottom: 20px; display: flex; align-items: flex-start; justify-content: space-between;
+  margin-bottom: 20px; display: flex; align-items: flex-start; justify-content: space-between; gap: 20px;
 }
 .masthead-left { flex: 1; }
 .masthead h1 {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 2rem; font-weight: 700; color: var(--text-heading); letter-spacing: -0.02em;
 }
-.masthead .subtitle { font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px; font-weight: 300; }
+.masthead .subtitle { font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px; font-weight: 300; max-width: 900px; }
+.masthead-right { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.masthead-right a {
+  color: var(--text-secondary); font-size: 0.78rem; text-decoration: none;
+  border: 1px solid var(--border); padding: 5px 12px; border-radius: 20px;
+  transition: all 0.15s;
+}
+.masthead-right a:hover { color: var(--text); border-color: var(--border-hover); }
 
 /* Tabs */
 .tabs { display: flex; gap: 0; border-bottom: 1px solid var(--border); margin-bottom: 20px; }
@@ -73,23 +79,11 @@ body {
   display: flex; gap: 12px; align-items: center; margin-bottom: 16px; flex-wrap: wrap;
 }
 .controls label { font-size: 0.78rem; color: var(--text-secondary); }
-.controls select, .controls input[type="text"] {
+.controls select {
   background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
   padding: 5px 10px; border-radius: 6px; font-size: 0.78rem; font-family: inherit;
 }
-.controls select:focus, .controls input:focus { outline: none; border-color: var(--border-hover); }
-
-.filter-toggle {
-  background: var(--bg-card); border: 1px solid var(--border); color: var(--text-secondary);
-  padding: 5px 12px; border-radius: 6px; font-size: 0.78rem; font-family: inherit; cursor: pointer;
-}
-.filter-toggle.active { background: var(--accent-motion); color: #fff; border-color: var(--accent-motion); }
-
-.sort-btn {
-  background: var(--bg-card); border: 1px solid var(--border); color: var(--text-secondary);
-  padding: 5px 12px; border-radius: 6px; font-size: 0.78rem; font-family: inherit; cursor: pointer;
-}
-.sort-btn:hover { border-color: var(--border-hover); color: var(--text); }
+.controls select:focus { outline: none; border-color: var(--border-hover); }
 
 .stats-bar {
   font-size: 0.72rem; color: var(--text-muted); margin-left: auto;
@@ -116,15 +110,14 @@ body {
   display: flex; gap: 12px;
 }
 .clip-header .meta .seg-badge {
-  background: var(--accent-motion); color: #fff; padding: 1px 7px; border-radius: 10px;
+  background: #4a9eff; color: #fff; padding: 1px 7px; border-radius: 10px;
   font-size: 0.65rem; font-weight: 600;
 }
-.clip-header .meta .no-motion { opacity: 0.4; }
 
-/* Content: video left, chart right */
+/* Content: video left, timelines right */
 .clip-content {
-  display: grid; grid-template-columns: 1fr 1.5fr; gap: 0;
-  min-height: 260px;
+  display: grid; grid-template-columns: minmax(280px, 1fr) 1.6fr; gap: 0;
+  min-height: 240px;
 }
 .clip-video-panel {
   position: relative; background: #000; display: flex; align-items: center; justify-content: center;
@@ -133,14 +126,47 @@ body {
 .clip-video-panel video {
   width: 100%; height: 100%; object-fit: contain;
 }
-.clip-chart-panel {
-  padding: 10px 14px 6px; position: relative; min-height: 240px;
+.clip-timelines-panel {
+  padding: 12px 16px; display: flex; flex-direction: column; gap: 8px;
+  min-height: 240px; overflow-y: auto;
 }
-.clip-chart-panel canvas { width: 100% !important; height: 100% !important; }
+
+/* Timeline rows */
+.timeline-row {
+  display: flex; flex-direction: column; gap: 4px;
+}
+.timeline-label {
+  font-size: 0.72rem; font-weight: 500; color: var(--text-heading);
+  display: flex; justify-content: space-between; align-items: center;
+}
+.timeline-label .obj-name { font-family: 'SF Mono', monospace; }
+.timeline-label .obj-clips {
+  font-size: 0.65rem; color: var(--text-muted); font-family: monospace;
+}
+.timeline-bar {
+  position: relative; height: 22px;
+  background: var(--track-bg); border-radius: 3px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.clip-range {
+  position: absolute; top: 0; bottom: 0;
+  border-radius: 1px; opacity: 0.85;
+  transition: opacity 0.15s;
+}
+.clip-range:hover { opacity: 1; cursor: pointer; }
+.cursor-line {
+  position: absolute; top: -2px; bottom: -2px; width: 2px;
+  background: var(--cursor); z-index: 10; pointer-events: none;
+}
+.frame-ticks {
+  font-size: 0.6rem; color: var(--text-muted); font-family: monospace;
+  display: flex; justify-content: space-between; padding: 0 2px;
+}
 
 /* Scrubber row */
 .scrub-row {
-  display: flex; align-items: center; gap: 8px; padding: 6px 14px;
+  display: flex; align-items: center; gap: 8px; padding: 8px 14px;
   border-top: 1px solid var(--border);
 }
 .play-btn {
@@ -150,17 +176,7 @@ body {
 }
 .play-btn:hover { border-color: var(--border-hover); }
 .scrub-row input[type=range] { flex: 1; }
-.frame-label { font-size: 0.68rem; color: var(--text-muted); min-width: 60px; text-align: right; font-family: monospace; }
-
-/* Segment chips under chart */
-.segment-chips { display: flex; flex-wrap: wrap; gap: 4px; padding: 4px 14px 8px; }
-.seg-chip {
-  font-size: 0.65rem; padding: 2px 8px; border-radius: 10px; cursor: pointer;
-  background: rgba(255,107,53,0.15); color: var(--accent-motion); border: 1px solid rgba(255,107,53,0.3);
-  transition: all 0.15s;
-}
-.seg-chip:hover { background: rgba(255,107,53,0.3); }
-.seg-chip.active { background: var(--accent-motion); color: #fff; }
+.frame-label { font-size: 0.68rem; color: var(--text-muted); min-width: 70px; text-align: right; font-family: monospace; }
 
 @media (max-width: 900px) {
   .clip-content { grid-template-columns: 1fr; }
@@ -172,10 +188,16 @@ body {
 <div class="page">
   <div class="masthead">
     <div class="masthead-left">
-      <h1>Motion Pattern Visualization</h1>
-      <div class="subtitle">Per-frame 3D delta magnitudes (top 20% outlier points trimmed) with segment detection (threshold = 0.02, min clip = 0.5s)</div>
+      <h1>Motion Pattern Filter — Clip Review</h1>
+      <div class="subtitle">
+        Per-object high-motion clip ranges from the full-dataset filter run
+        (threshold=0.02, top-20% trim, min clip=0.5s, min gap=5 frames).
+        Each row is one tracked object; highlighted bars show where the filter kept clips.
+        Scrub or play the video and the red cursor tracks the current frame.
+      </div>
     </div>
-    <div style="display:flex;gap:8px;align-items:center;">
+    <div class="masthead-right">
+      <a href="molmospaces.html">MolmoSpaces (threshold=0.1) →</a>
       <button class="theme-toggle" onclick="toggleTheme()">Toggle theme</button>
     </div>
   </div>
@@ -183,16 +205,14 @@ body {
   <div class="tabs" id="tabs"></div>
 
   <div class="controls">
-    <label>Task:</label>
+    <label>Group / task:</label>
     <select id="taskFilter"><option value="">All</option></select>
     <label>Sort:</label>
     <select id="sortSelect">
-      <option value="motion_desc">Motion (high first)</option>
-      <option value="motion_asc">Motion (low first)</option>
-      <option value="segments_desc">Segments (most first)</option>
+      <option value="segs_desc">Clips (most first)</option>
+      <option value="objs_desc">Objects (most first)</option>
       <option value="name_asc">Name (A-Z)</option>
     </select>
-    <button class="filter-toggle" id="motionOnly" onclick="toggleMotionFilter()">Motion clips only</button>
     <span class="stats-bar" id="statsBar"></span>
   </div>
 
@@ -202,19 +222,22 @@ body {
 <script>
 let manifest = null;
 let activeDataset = '';
-let motionDataCache = {};
-let clipCharts = {};
-let motionFilterOn = false;
+
+// ── Object color palette (stable hash → hue) ──
+function colorForObject(name) {
+  let h = 0;
+  for (let i = 0; i < name.length; i++) {
+    h = (h * 31 + name.charCodeAt(i)) & 0xffffffff;
+  }
+  const hue = ((h % 360) + 360) % 360;
+  return `hsl(${hue}, 65%, 58%)`;
+}
 
 // ── Theme ──
 function toggleTheme() {
   const t = document.documentElement.getAttribute('data-theme') === 'light' ? '' : 'light';
   document.documentElement.setAttribute('data-theme', t);
   localStorage.setItem('motion-theme', t);
-  // Redraw charts with new colors
-  Object.values(clipCharts).forEach(c => { if (c.chart) c.chart.destroy(); });
-  clipCharts = {};
-  renderClips();
 }
 (function() { const t = localStorage.getItem('motion-theme'); if (t) document.documentElement.setAttribute('data-theme', t); })();
 
@@ -223,7 +246,6 @@ async function init() {
   const resp = await fetch('static/data/motion/motion_manifest.json');
   manifest = await resp.json();
 
-  // Build tabs
   const tabsEl = document.getElementById('tabs');
   const datasets = Object.keys(manifest);
   datasets.forEach(ds => {
@@ -231,8 +253,8 @@ async function init() {
     tab.className = 'tab';
     tab.dataset.ds = ds;
     const n = manifest[ds].length;
-    const withMotion = manifest[ds].filter(c => c.has_motion).length;
-    tab.innerHTML = `${ds} <span class="count">${n} clips / ${withMotion} with motion</span>`;
+    const totalClips = manifest[ds].reduce((s, c) => s + (c.num_segments || 0), 0);
+    tab.innerHTML = `${ds} <span class="count">${n} videos / ${totalClips} clips</span>`;
     tab.onclick = () => switchDataset(ds);
     tabsEl.appendChild(tab);
   });
@@ -245,19 +267,16 @@ function switchDataset(ds) {
   activeDataset = ds;
   document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.ds === ds));
 
-  // Populate task filter
   const tf = document.getElementById('taskFilter');
   tf.innerHTML = '<option value="">All</option>';
-  const tasks = [...new Set(manifest[ds].map(c => c.task || c.participant || c.label || ''))].filter(Boolean).sort();
+  const tasks = [...new Set(manifest[ds].map(c => c.task || c.participant || c.label || ''))]
+    .filter(Boolean).sort();
   tasks.forEach(t => {
     const o = document.createElement('option');
     o.value = t; o.textContent = t.replace(/_/g, ' ');
     tf.appendChild(o);
   });
 
-  // Cleanup
-  Object.values(clipCharts).forEach(c => { if (c.chart) c.chart.destroy(); });
-  clipCharts = {};
   renderClips();
 }
 
@@ -267,25 +286,15 @@ function getFilteredSortedClips() {
   if (taskVal) {
     clips = clips.filter(c => (c.task || c.participant || c.label || '') === taskVal);
   }
-  if (motionFilterOn) {
-    clips = clips.filter(c => c.has_motion);
-  }
 
   const sort = document.getElementById('sortSelect').value;
   clips = clips.slice();
   switch(sort) {
-    case 'motion_desc': clips.sort((a,b) => (b.motion_max||0) - (a.motion_max||0)); break;
-    case 'motion_asc': clips.sort((a,b) => (a.motion_max||0) - (b.motion_max||0)); break;
-    case 'segments_desc': clips.sort((a,b) => (b.num_segments||0) - (a.num_segments||0)); break;
+    case 'segs_desc': clips.sort((a,b) => (b.num_segments||0) - (a.num_segments||0)); break;
+    case 'objs_desc': clips.sort((a,b) => (b.num_objects||0) - (a.num_objects||0)); break;
     case 'name_asc': clips.sort((a,b) => a.id.localeCompare(b.id)); break;
   }
   return clips;
-}
-
-function toggleMotionFilter() {
-  motionFilterOn = !motionFilterOn;
-  document.getElementById('motionOnly').classList.toggle('active', motionFilterOn);
-  renderClips();
 }
 
 function renderClips() {
@@ -294,9 +303,9 @@ function renderClips() {
   container.innerHTML = '';
 
   const totalSegs = clips.reduce((s,c) => s + (c.num_segments||0), 0);
-  const withMotion = clips.filter(c => c.has_motion).length;
+  const totalObjs = clips.reduce((s,c) => s + (c.num_objects||0), 0);
   document.getElementById('statsBar').textContent =
-    `${clips.length} clips | ${withMotion} with motion | ${totalSegs} segments`;
+    `${clips.length} videos | ${totalSegs} clips | ${totalObjs} total objects`;
 
   clips.forEach((clip, idx) => {
     const id = 'c_' + idx;
@@ -305,10 +314,7 @@ function renderClips() {
     card.id = id;
 
     const taskLabel = (clip.task || clip.participant || clip.label || '').replace(/_/g, ' ');
-    const shortId = clip.id.replace(/^(part\d+_|test_)/, '').replace(/__/g, '/');
-    const segBadge = clip.num_segments > 0
-      ? `<span class="seg-badge">${clip.num_segments} seg</span>`
-      : `<span class="no-motion">no motion</span>`;
+    const shortId = clip.id.replace(/^(part\d+_|test_)/, '').replace(/__/g, '/').slice(-60);
 
     card.innerHTML = `
       <div class="clip-header">
@@ -317,8 +323,8 @@ function renderClips() {
           <span class="task">${taskLabel}</span>
         </div>
         <div class="meta">
-          <span>max=${(clip.motion_max||0).toFixed(4)}</span>
-          ${segBadge}
+          <span class="seg-badge">${clip.num_segments} clips</span>
+          <span>${clip.num_objects} object${clip.num_objects===1?'':'s'}</span>
         </div>
         ${clip.text ? `<div class="desc">${clip.text}</div>` : ''}
       </div>
@@ -326,11 +332,10 @@ function renderClips() {
         <div class="clip-video-panel">
           <video id="${id}_vid" muted loop playsinline preload="none"></video>
         </div>
-        <div class="clip-chart-panel">
-          <canvas id="${id}_chart"></canvas>
+        <div class="clip-timelines-panel" id="${id}_timelines">
+          <div style="color:var(--text-muted);font-size:0.75rem;text-align:center;padding:60px 0;">Scroll to load</div>
         </div>
       </div>
-      <div class="segment-chips" id="${id}_chips"></div>
       <div class="scrub-row">
         <button class="play-btn" id="${id}_playbtn" onclick="togglePlay('${id}')">&#9654;</button>
         <input type="range" id="${id}_scrub" min="0" max="1000" value="0"
@@ -339,18 +344,14 @@ function renderClips() {
       </div>
     `;
     container.appendChild(card);
-    clipCharts[id] = { clip, loaded: false, chart: null, motionData: null };
   });
 
   // Lazy load
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        const id = entry.target.id;
-        if (clipCharts[id] && !clipCharts[id].loaded) {
-          clipCharts[id].loaded = true;
-          loadClip(id);
-        }
+        loadClip(entry.target.id, clips[parseInt(entry.target.id.split('_')[1])]);
+        observer.unobserve(entry.target);
       }
     });
   }, { rootMargin: '300px' });
@@ -361,203 +362,122 @@ function renderClips() {
   });
 }
 
-// ── Load clip data ──
-async function loadClip(id) {
-  const cc = clipCharts[id];
-  const clip = cc.clip;
-
-  // Video
+async function loadClip(id, clip) {
   const vid = document.getElementById(id + '_vid');
-  // Use rgb_url from manifest (static path or API)
   vid.src = clip.rgb_url;
   vid.load();
-
   vid.addEventListener('loadedmetadata', () => {
     vid.play();
     document.getElementById(id + '_playbtn').innerHTML = '&#9646;&#9646;';
   });
 
+  let motionData = null;
+  try {
+    const resp = await fetch(clip.motion_url);
+    motionData = await resp.json();
+  } catch(e) {
+    document.getElementById(id + '_timelines').innerHTML =
+      `<div style="color:#c55;font-size:0.75rem;">Failed to load motion data</div>`;
+    return;
+  }
+
+  renderTimelines(id, motionData);
+
+  // Sync on timeupdate
   vid.addEventListener('timeupdate', () => {
-    if (!vid.duration || !cc.motionData) return;
+    if (!vid.duration) return;
     const pct = vid.currentTime / vid.duration;
     document.getElementById(id + '_scrub').value = Math.round(pct * 1000);
-    const T = cc.motionData.num_frames;
+    const T = motionData.num_frames;
     const fi = Math.min(Math.round(pct * (T - 1)), T - 1);
-    document.getElementById(id + '_frame').textContent = fi + ' / ' + (T-1);
-    updateChartCursor(id, fi);
+    document.getElementById(id + '_frame').textContent = fi + ' / ' + (T - 1);
+    updateCursor(id, pct);
   });
 
-  // Fetch motion data
-  const motionUrl = clip.motion_url;
-  try {
-    const resp = await fetch(motionUrl);
-    cc.motionData = await resp.json();
-    buildChart(id);
-    buildSegmentChips(id);
-  } catch(e) {
-    console.warn('Failed to load motion data for', clip.id, e);
+  // Initial cursor position
+  updateCursor(id, 0);
+}
+
+function renderTimelines(id, motionData) {
+  const panel = document.getElementById(id + '_timelines');
+  panel.innerHTML = '';
+  const T = motionData.num_frames;
+  const objs = motionData.clips_by_object || {};
+
+  const objNames = Object.keys(objs);
+  if (objNames.length === 0) {
+    panel.innerHTML = '<div style="color:var(--text-muted);font-size:0.75rem;">No motion clips</div>';
+    return;
   }
-}
 
-// ── Chart ──
-function buildChart(id) {
-  const cc = clipCharts[id];
-  const md = cc.motionData;
-  if (!md) return;
+  objNames.forEach(name => {
+    const clips = objs[name] || [];
+    const color = colorForObject(name);
 
-  const T = md.num_frames;
-  const labels = Array.from({length: T}, (_, i) => i);
-  const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+    const row = document.createElement('div');
+    row.className = 'timeline-row';
 
-  // Build segment highlight dataset
-  const segHighlight = new Array(T).fill(null);
-  const yMax = Math.max(...md.magnitudes_raw) * 1.15 || 0.1;
-  md.segments.forEach(seg => {
-    for (let t = seg.start; t <= seg.end; t++) {
-      segHighlight[t] = yMax;
-    }
+    // Label
+    const label = document.createElement('div');
+    label.className = 'timeline-label';
+    const totalFrames = clips.reduce((s, [a, b]) => s + (b - a + 1), 0);
+    label.innerHTML = `
+      <span class="obj-name" style="color:${color};">■ ${escapeHtml(name)}</span>
+      <span class="obj-clips">${clips.length} clip${clips.length===1?'':'s'} · ${totalFrames} frames</span>
+    `;
+    row.appendChild(label);
+
+    // Bar
+    const bar = document.createElement('div');
+    bar.className = 'timeline-bar';
+    clips.forEach(([s, e]) => {
+      const range = document.createElement('div');
+      range.className = 'clip-range';
+      const left = (s / Math.max(T - 1, 1)) * 100;
+      const width = ((e - s + 1) / Math.max(T, 1)) * 100;
+      range.style.left = left + '%';
+      range.style.width = width + '%';
+      range.style.background = color;
+      range.title = `Frames ${s}–${e} (${e - s + 1} frames)`;
+      range.onclick = () => {
+        const vid = document.getElementById(id + '_vid');
+        if (vid.duration) vid.currentTime = (s / Math.max(T - 1, 1)) * vid.duration;
+      };
+      bar.appendChild(range);
+    });
+    const cursor = document.createElement('div');
+    cursor.className = 'cursor-line';
+    cursor.id = id + '_cursor_' + escapeCssId(name);
+    cursor.style.left = '0%';
+    bar.appendChild(cursor);
+    row.appendChild(bar);
+
+    panel.appendChild(row);
   });
 
-  const canvas = document.getElementById(id + '_chart');
-  const ctx = canvas.getContext('2d');
-
-  cc.chart = new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels,
-      datasets: [
-        {
-          label: 'Segments',
-          data: segHighlight,
-          type: 'bar',
-          backgroundColor: isDark ? 'rgba(255,107,53,0.1)' : 'rgba(255,107,53,0.12)',
-          borderWidth: 0,
-          barPercentage: 1.0,
-          categoryPercentage: 1.0,
-          order: 3,
-        },
-        {
-          label: '|delta| (top 20% trimmed)',
-          data: md.magnitudes_raw,
-          borderColor: isDark ? '#4a9eff' : '#2a7adf',
-          backgroundColor: isDark ? 'rgba(74,158,255,0.08)' : 'rgba(42,122,223,0.08)',
-          fill: true,
-          borderWidth: 1.5,
-          pointRadius: 0,
-          tension: 0.2,
-          order: 1,
-        },
-        {
-          label: 'Threshold',
-          data: new Array(T).fill(md.threshold),
-          borderColor: isDark ? 'rgba(255,107,53,0.5)' : 'rgba(224,85,32,0.5)',
-          borderWidth: 1,
-          borderDash: [6, 3],
-          pointRadius: 0,
-          fill: false,
-          order: 0,
-        },
-      ],
-    },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      animation: false,
-      interaction: { mode: 'index', intersect: false },
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          callbacks: {
-            title: items => `Frame ${items[0].label}`,
-            label: item => {
-              if (item.datasetIndex === 0 || item.datasetIndex === 2) return null;
-              return `${item.dataset.label}: ${item.parsed.y.toFixed(5)}`;
-            }
-          }
-        },
-      },
-      scales: {
-        x: {
-          title: { display: true, text: 'Frame #', color: isDark ? '#777' : '#666', font: { size: 10 } },
-          ticks: { color: isDark ? '#555' : '#999', font: { size: 9 }, maxTicksLimit: 15 },
-          grid: { color: isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.06)' },
-        },
-        y: {
-          title: { display: true, text: '|delta|', color: isDark ? '#777' : '#666', font: { size: 10 } },
-          ticks: { color: isDark ? '#555' : '#999', font: { size: 9 } },
-          grid: { color: isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.06)' },
-          min: 0,
-          max: yMax,
-        },
-      },
-    },
-    plugins: [{
-      id: 'cursorLine',
-      afterDraw(chart) {
-        const ci = chart._cursorIndex;
-        if (ci == null) return;
-        const xScale = chart.scales.x;
-        const x = xScale.getPixelForValue(ci);
-        const yScale = chart.scales.y;
-        const ctx = chart.ctx;
-        ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(x, yScale.top);
-        ctx.lineTo(x, yScale.bottom);
-        ctx.strokeStyle = 'rgba(255, 60, 60, 0.7)';
-        ctx.lineWidth = 1.5;
-        ctx.setLineDash([4, 3]);
-        ctx.stroke();
-        // Dot
-        const yVal = chart.data.datasets[1].data[ci]; // raw
-        if (yVal != null) {
-          const y = yScale.getPixelForValue(yVal);
-          ctx.beginPath();
-          ctx.arc(x, y, 4, 0, Math.PI * 2);
-          ctx.fillStyle = 'rgba(255, 60, 60, 0.9)';
-          ctx.fill();
-        }
-        ctx.restore();
-      }
-    }]
-  });
+  // Frame-range legend (shared)
+  const ticks = document.createElement('div');
+  ticks.className = 'frame-ticks';
+  ticks.innerHTML = `<span>0</span><span>${Math.floor(T/2)}</span><span>${T-1}</span>`;
+  panel.appendChild(ticks);
 }
 
-function updateChartCursor(id, frameIdx) {
-  const cc = clipCharts[id];
-  if (!cc || !cc.chart) return;
-  cc.chart._cursorIndex = frameIdx;
-  cc.chart.draw();
+function updateCursor(id, pct) {
+  // Update all cursor-lines inside this card
+  const card = document.getElementById(id);
+  if (!card) return;
+  const cursors = card.querySelectorAll('.cursor-line');
+  cursors.forEach(c => { c.style.left = (pct * 100) + '%'; });
 }
 
-function buildSegmentChips(id) {
-  const cc = clipCharts[id];
-  const md = cc.motionData;
-  if (!md || !md.segments.length) return;
-
-  const container = document.getElementById(id + '_chips');
-  container.innerHTML = '';
-  md.segments.forEach((seg, i) => {
-    const chip = document.createElement('span');
-    chip.className = 'seg-chip';
-    chip.textContent = `#${i}: [${seg.start}-${seg.end}] ${seg.num_frames}f peak=${seg.peak.toFixed(4)}`;
-    chip.onclick = () => jumpToSegment(id, seg);
-    container.appendChild(chip);
-  });
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+function escapeCssId(s) {
+  return s.replace(/[^a-zA-Z0-9_-]/g, '_');
 }
 
-function jumpToSegment(id, seg) {
-  const cc = clipCharts[id];
-  if (!cc || !cc.motionData) return;
-  const vid = document.getElementById(id + '_vid');
-  if (!vid.duration) return;
-  const T = cc.motionData.num_frames;
-  const targetTime = (seg.start / (T - 1)) * vid.duration;
-  vid.currentTime = targetTime;
-  if (vid.paused) vid.play();
-}
-
-// ── Playback controls ──
+// ── Playback ──
 function togglePlay(id) {
   const vid = document.getElementById(id + '_vid');
   const btn = document.getElementById(id + '_playbtn');
@@ -569,13 +489,11 @@ function togglePlay(id) {
     btn.innerHTML = '&#9654;';
   }
 }
-
 function scrubTo(id, val) {
   const vid = document.getElementById(id + '_vid');
   if (vid.duration) vid.currentTime = (val / 1000) * vid.duration;
 }
 
-// ── Event listeners ──
 document.getElementById('taskFilter').addEventListener('change', renderClips);
 document.getElementById('sortSelect').addEventListener('change', renderClips);
 
