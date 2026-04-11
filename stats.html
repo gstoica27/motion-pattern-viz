@@ -4,23 +4,23 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clip-Length Stats</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { font-size: 16px; }
 :root {
-  --bg: #111; --bg-card: #161616; --bg-header: #1a1a1a;
+  --bg: #111; --bg-card: #161616;
   --border: #222; --border-hover: #444;
   --text: #d4d4d4; --text-heading: #f0f0f0; --text-secondary: #777; --text-muted: #555;
 }
 [data-theme="light"] {
-  --bg: #f5f5f0; --bg-card: #ffffff; --bg-header: #f0efe8;
+  --bg: #f5f5f0; --bg-card: #ffffff;
   --border: #ddd; --border-hover: #bbb;
   --text: #333; --text-heading: #111; --text-secondary: #666; --text-muted: #999;
 }
 body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; transition: background 0.25s; }
 .page { max-width: 1500px; margin: 0 auto; padding: 0 24px; }
+
 .masthead {
   padding: 30px 0 16px; border-bottom: 1px solid var(--border); margin-bottom: 24px;
   display: flex; align-items: flex-start; justify-content: space-between; gap: 20px;
@@ -35,23 +35,23 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
 }
 .masthead-right a:hover, .theme-toggle:hover { color: var(--text); border-color: var(--border-hover); }
 
+.combined { margin-bottom: 28px; }
+.combined img {
+  width: 100%; height: auto; display: block;
+  border: 1px solid var(--border); border-radius: 8px; background: #111;
+}
+
 .grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); gap: 18px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(440px, 1fr)); gap: 16px;
   padding-bottom: 40px;
 }
 .card {
-  background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px;
+  background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px;
+  padding: 10px;
 }
-.card h2 {
-  font-family: 'Playfair Display', serif; font-size: 1.2rem; color: var(--text-heading);
-  margin-bottom: 4px;
+.card img {
+  width: 100%; height: auto; display: block;
 }
-.card .stats {
-  font-size: 0.72rem; color: var(--text-muted); font-family: monospace; margin-bottom: 10px;
-  display: flex; flex-wrap: wrap; gap: 14px;
-}
-.card .chart-wrap { height: 240px; position: relative; }
-.card .chart-wrap canvas { width: 100% !important; height: 100% !important; }
 </style>
 </head>
 <body>
@@ -60,10 +60,10 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
     <div>
       <h1>Clip-Length Distribution</h1>
       <div class="subtitle">
-        Histogram of clip frame counts after the full motion-pattern filter run on each dataset.
-        Bin width = 2 frames; the rightmost bin (≥98) folds in everything ≥98 including the long tail.
-        Compare datasets — molmospaces has much longer clips because its threshold is 0.001 (vs 0.02
-        for tracked datasets), so most clips span the entire video.
+        Histogram of motion-clip frame counts after the full filter run on each
+        dataset. Bin width = 2 frames; the rightmost bin (98+) folds in everything
+        ≥98 including the long tail. Vertical lines: dashed white = median,
+        dashed orange = p95.
       </div>
     </div>
     <div class="masthead-right">
@@ -74,7 +74,17 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
     </div>
   </div>
 
-  <div class="grid" id="grid"></div>
+  <div class="combined">
+    <img src="static/img/clip_length_all.png" alt="All datasets — clip length histograms">
+  </div>
+
+  <div class="grid">
+    <div class="card"><img src="static/img/clip_length_egodex.png" alt="EgoDex"></div>
+    <div class="card"><img src="static/img/clip_length_hepic.png" alt="HD-EPIC"></div>
+    <div class="card"><img src="static/img/clip_length_xperience.png" alt="Xperience"></div>
+    <div class="card"><img src="static/img/clip_length_droid.png" alt="DROID"></div>
+    <div class="card"><img src="static/img/clip_length_molmospaces.png" alt="MolmoSpaces"></div>
+  </div>
 </div>
 
 <script>
@@ -82,104 +92,8 @@ function toggleTheme() {
   const t = document.documentElement.getAttribute('data-theme') === 'light' ? '' : 'light';
   document.documentElement.setAttribute('data-theme', t);
   localStorage.setItem('motion-theme', t);
-  // Recreate charts with new colors
-  document.getElementById('grid').innerHTML = '';
-  build();
 }
 (function(){ const t = localStorage.getItem('motion-theme'); if (t) document.documentElement.setAttribute('data-theme', t); })();
-
-const DS_INFO = {
-  egodex:      { color: '#4a9eff', label: 'EgoDex' },
-  hepic:       { color: '#ff6b35', label: 'HD-EPIC' },
-  xperience:   { color: '#9c5fff', label: 'Xperience' },
-  droid:       { color: '#1abc9c', label: 'DROID' },
-  molmospaces: { color: '#f1c40f', label: 'MolmoSpaces' },
-};
-
-let stats = null;
-
-async function init() {
-  const resp = await fetch('static/data/motion/clip_length_stats.json');
-  stats = await resp.json();
-  build();
-}
-
-function build() {
-  const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
-  const grid = document.getElementById('grid');
-  grid.innerHTML = '';
-
-  for (const [ds, info] of Object.entries(stats.datasets)) {
-    const meta = DS_INFO[ds] || { color: '#888', label: ds };
-    const card = document.createElement('div');
-    card.className = 'card';
-
-    // Build histogram x labels: [0-2), [2-4), ... [98-100+)
-    const edges = info.edges;
-    const labels = [];
-    for (let i = 0; i < edges.length - 1; i++) {
-      const lo = edges[i], hi = edges[i+1];
-      labels.push(i === edges.length - 2 ? `${lo}+` : `${lo}`);
-    }
-    const fps = info.fps;
-    card.innerHTML = `
-      <h2>${meta.label}</h2>
-      <div class="stats">
-        <span>${info.n_clips.toLocaleString()} clips</span>
-        <span>${(info.n_videos || 0).toLocaleString()} videos</span>
-        <span>fps=${fps}</span>
-        <span>median=${info.median} (${(info.median/fps).toFixed(1)}s)</span>
-        <span>mean=${info.mean.toFixed(1)}</span>
-        <span>p95=${info.p95}</span>
-        <span>max=${info.max}</span>
-      </div>
-      <div class="chart-wrap"><canvas id="chart_${ds}"></canvas></div>
-    `;
-    grid.appendChild(card);
-
-    new Chart(document.getElementById('chart_' + ds).getContext('2d'), {
-      type: 'bar',
-      data: {
-        labels: labels,
-        datasets: [{
-          data: info.bins,
-          backgroundColor: meta.color,
-          borderWidth: 0,
-          barPercentage: 0.95,
-          categoryPercentage: 0.95,
-        }],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        animation: false,
-        plugins: {
-          legend: { display: false },
-          tooltip: {
-            callbacks: {
-              title: items => `${items[0].label}-${parseInt(items[0].label)+2} frames (${(parseInt(items[0].label)/fps).toFixed(2)}-${((parseInt(items[0].label)+2)/fps).toFixed(2)}s)`,
-              label: item => `${item.parsed.y.toLocaleString()} clips`,
-            }
-          }
-        },
-        scales: {
-          x: {
-            title: { display: true, text: 'clip length (frames)', color: isDark ? '#777' : '#666', font: { size: 10 } },
-            ticks: { color: isDark ? '#555' : '#999', font: { size: 9 }, maxRotation: 0, autoSkip: true, maxTicksLimit: 12 },
-            grid: { display: false },
-          },
-          y: {
-            title: { display: true, text: '# clips', color: isDark ? '#777' : '#666', font: { size: 10 } },
-            ticks: { color: isDark ? '#555' : '#999', font: { size: 9 } },
-            grid: { color: isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.05)' },
-          },
-        },
-      },
-    });
-  }
-}
-
-init();
 </script>
 </body>
 </html>
