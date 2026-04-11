@@ -1,10 +1,10 @@
 {
   "egodex": [
     {
-      "id": "part1_boil_serve_egg_242",
-      "rgb_url": "static/videos/egodex/part1_boil_serve_egg_242.mp4",
-      "motion_url": "static/data/motion/part1_boil_serve_egg_242.json",
-      "num_segments": 2,
+      "id": "part1_boil_serve_egg_91",
+      "rgb_url": "static/videos/egodex/part1_boil_serve_egg_91.mp4",
+      "motion_url": "static/data/motion/part1_boil_serve_egg_91.json",
+      "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
@@ -14,35 +14,9 @@
       "text": "take out silver pot from shelf"
     },
     {
-      "id": "part1_boil_serve_egg_165",
-      "rgb_url": "static/videos/egodex/part1_boil_serve_egg_165.mp4",
-      "motion_url": "static/data/motion/part1_boil_serve_egg_165.json",
-      "num_segments": 2,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "boil_serve_egg",
-      "text": "pick up white bowl"
-    },
-    {
-      "id": "part1_boil_serve_egg_411",
-      "rgb_url": "static/videos/egodex/part1_boil_serve_egg_411.mp4",
-      "motion_url": "static/data/motion/part1_boil_serve_egg_411.json",
-      "num_segments": 5,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "boil_serve_egg",
-      "text": "take out silver pot, put silver pot on induction cooker, turn on induction cooker, take out egg, put egg in silver pot, turn on induction cooker, take out white bowl, put white bowl on induction cooker, take out egg, put egg in white bowl, take out silver pot, put white bowl on table"
-    },
-    {
-      "id": "part1_boil_serve_egg_342",
-      "rgb_url": "static/videos/egodex/part1_boil_serve_egg_342.mp4",
-      "motion_url": "static/data/motion/part1_boil_serve_egg_342.json",
+      "id": "part1_boil_serve_egg_120",
+      "rgb_url": "static/videos/egodex/part1_boil_serve_egg_120.mp4",
+      "motion_url": "static/data/motion/part1_boil_serve_egg_120.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -50,52 +24,52 @@
       ],
       "has_tracks": true,
       "task": "boil_serve_egg",
-      "text": "take silver pot from wall"
+      "text": "take out silver pot"
     },
     {
-      "id": "part1_boil_serve_egg_214",
-      "rgb_url": "static/videos/egodex/part1_boil_serve_egg_214.mp4",
-      "motion_url": "static/data/motion/part1_boil_serve_egg_214.json",
-      "num_segments": 3,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "boil_serve_egg",
-      "text": "take out pot, put on stove, turn on heat, take out egg, put in pot, turn off heat, take out bowl, put in pot, take out egg, put in bowl, take out bowl"
-    },
-    {
-      "id": "part1_fry_bread_6",
-      "rgb_url": "static/videos/egodex/part1_fry_bread_6.mp4",
-      "motion_url": "static/data/motion/part1_fry_bread_6.json",
-      "num_segments": 6,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "fry_bread",
-      "text": "pick up yellow bread with metal pan"
-    },
-    {
-      "id": "part1_fry_bread_0",
-      "rgb_url": "static/videos/egodex/part1_fry_bread_0.mp4",
-      "motion_url": "static/data/motion/part1_fry_bread_0.json",
+      "id": "part1_boil_serve_egg_424",
+      "rgb_url": "static/videos/egodex/part1_boil_serve_egg_424.mp4",
+      "motion_url": "static/data/motion/part1_boil_serve_egg_424.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "fry_bread",
-      "text": "take bread off pan"
+      "task": "boil_serve_egg",
+      "text": "put yellow egg into white egg carton"
+    },
+    {
+      "id": "part1_boil_serve_egg_465",
+      "rgb_url": "static/videos/egodex/part1_boil_serve_egg_465.mp4",
+      "motion_url": "static/data/motion/part1_boil_serve_egg_465.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "boil_serve_egg",
+      "text": "take ladle"
+    },
+    {
+      "id": "part1_boil_serve_egg_375",
+      "rgb_url": "static/videos/egodex/part1_boil_serve_egg_375.mp4",
+      "motion_url": "static/data/motion/part1_boil_serve_egg_375.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "boil_serve_egg",
+      "text": "put egg in bowl"
     },
     {
       "id": "test_fry_bread_0",
       "rgb_url": "static/videos/egodex/test_fry_bread_0.mp4",
       "motion_url": "static/data/motion/test_fry_bread_0.json",
-      "num_segments": 2,
+      "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
@@ -105,63 +79,22 @@
       "text": "take out silver frying pan"
     },
     {
-      "id": "part3_insert_remove_bagging_435",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_bagging_435.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_bagging_435.json",
-      "num_segments": 2,
+      "id": "part1_fry_bread_6",
+      "rgb_url": "static/videos/egodex/part1_fry_bread_6.mp4",
+      "motion_url": "static/data/motion/part1_fry_bread_6.json",
+      "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "insert_remove_bagging",
-      "text": "put black cloth into tote bag"
+      "task": "fry_bread",
+      "text": "pick up yellow bread with metal pan"
     },
     {
-      "id": "part3_insert_remove_bagging_440",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_bagging_440.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_bagging_440.json",
-      "num_segments": 2,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "insert_remove_bagging",
-      "text": "take out pink toy rabbit from bag"
-    },
-    {
-      "id": "part3_insert_remove_bagging_784",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_bagging_784.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_bagging_784.json",
-      "num_segments": 6,
-      "num_objects": 3,
-      "object_names": [
-        "obj0",
-        "obj1",
-        "obj2"
-      ],
-      "has_tracks": true,
-      "task": "insert_remove_bagging",
-      "text": "take pink donut from white plastic bag"
-    },
-    {
-      "id": "part3_insert_remove_bagging_146",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_bagging_146.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_bagging_146.json",
-      "num_segments": 4,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "insert_remove_bagging",
-      "text": "pick up pink toy from bed"
-    },
-    {
-      "id": "part3_insert_remove_bagging_1058",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_bagging_1058.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_bagging_1058.json",
+      "id": "part3_insert_remove_bagging_696",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_bagging_696.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_bagging_696.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -169,12 +102,77 @@
       ],
       "has_tracks": true,
       "task": "insert_remove_bagging",
-      "text": "put pink toy rabbit into bag"
+      "text": "take pink toy from white plastic bag"
     },
     {
-      "id": "part2_insert_remove_furniture_bench_cabinet_5657",
-      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_5657.mp4",
-      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_5657.json",
+      "id": "part3_insert_remove_bagging_413",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_bagging_413.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_bagging_413.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_bagging",
+      "text": "put pink toy into bag"
+    },
+    {
+      "id": "part3_insert_remove_bagging_786",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_bagging_786.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_bagging_786.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_bagging",
+      "text": "open beige canvas bag with black handle"
+    },
+    {
+      "id": "part3_insert_remove_bagging_210",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_bagging_210.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_bagging_210.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_bagging",
+      "text": "take toy donut out of paper bag"
+    },
+    {
+      "id": "part3_insert_remove_bagging_414",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_bagging_414.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_bagging_414.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_bagging",
+      "text": "take out pink toy from bag"
+    },
+    {
+      "id": "part2_insert_remove_furniture_bench_cabinet_2179",
+      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_2179.mp4",
+      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_2179.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj18"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_furniture_bench_cabinet",
+      "text": "open white box"
+    },
+    {
+      "id": "part2_insert_remove_furniture_bench_cabinet_2709",
+      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_2709.mp4",
+      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_2709.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -182,12 +180,12 @@
       ],
       "has_tracks": true,
       "task": "insert_remove_furniture_bench_cabinet",
-      "text": "roll dice with hand on bed"
+      "text": "throw white dice on bed"
     },
     {
-      "id": "part2_insert_remove_furniture_bench_cabinet_5585",
-      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_5585.mp4",
-      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_5585.json",
+      "id": "part2_insert_remove_furniture_bench_cabinet_6591",
+      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_6591.mp4",
+      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_6591.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -195,12 +193,12 @@
       ],
       "has_tracks": true,
       "task": "insert_remove_furniture_bench_cabinet",
-      "text": "insert key into lock of white box"
+      "text": "open white box with right hand"
     },
     {
-      "id": "part2_insert_remove_furniture_bench_cabinet_189",
-      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_189.mp4",
-      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_189.json",
+      "id": "part2_insert_remove_furniture_bench_cabinet_4393",
+      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_4393.mp4",
+      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_4393.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -208,12 +206,12 @@
       ],
       "has_tracks": true,
       "task": "insert_remove_furniture_bench_cabinet",
-      "text": "put black picture frame into white cabinet"
+      "text": "roll white dice on blue surface"
     },
     {
-      "id": "part2_insert_remove_furniture_bench_cabinet_6542",
-      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_6542.mp4",
-      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_6542.json",
+      "id": "part2_insert_remove_furniture_bench_cabinet_2641",
+      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_2641.mp4",
+      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_2641.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -221,51 +219,12 @@
       ],
       "has_tracks": true,
       "task": "insert_remove_furniture_bench_cabinet",
-      "text": "pick up white dice with hand"
+      "text": "roll dice on bed"
     },
     {
-      "id": "part2_insert_remove_furniture_bench_cabinet_7288",
-      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_cabinet_7288.mp4",
-      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_cabinet_7288.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "insert_remove_furniture_bench_cabinet",
-      "text": "pick up white dice with hand"
-    },
-    {
-      "id": "part4_scoop_dump_ice_6110",
-      "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_6110.mp4",
-      "motion_url": "static/data/motion/part4_scoop_dump_ice_6110.json",
-      "num_segments": 2,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "scoop_dump_ice",
-      "text": "pour water into yellow cup"
-    },
-    {
-      "id": "part4_scoop_dump_ice_2165",
-      "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_2165.mp4",
-      "motion_url": "static/data/motion/part4_scoop_dump_ice_2165.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "scoop_dump_ice",
-      "text": "pick up yellow plastic cup"
-    },
-    {
-      "id": "part4_scoop_dump_ice_2673",
-      "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_2673.mp4",
-      "motion_url": "static/data/motion/part4_scoop_dump_ice_2673.json",
+      "id": "part4_scoop_dump_ice_520",
+      "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_520.mp4",
+      "motion_url": "static/data/motion/part4_scoop_dump_ice_520.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -276,9 +235,9 @@
       "text": "pour water from yellow cup into gray container"
     },
     {
-      "id": "part4_scoop_dump_ice_4808",
-      "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_4808.mp4",
-      "motion_url": "static/data/motion/part4_scoop_dump_ice_4808.json",
+      "id": "part4_scoop_dump_ice_2160",
+      "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_2160.mp4",
+      "motion_url": "static/data/motion/part4_scoop_dump_ice_2160.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -286,39 +245,51 @@
       ],
       "has_tracks": true,
       "task": "scoop_dump_ice",
-      "text": "pour liquid into glass"
+      "text": "scoop ice cubes with purple plastic scoop"
     },
     {
-      "id": "part4_scoop_dump_ice_3508",
-      "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_3508.mp4",
-      "motion_url": "static/data/motion/part4_scoop_dump_ice_3508.json",
-      "num_segments": 4,
-      "num_objects": 2,
+      "id": "part4_scoop_dump_ice_3821",
+      "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_3821.mp4",
+      "motion_url": "static/data/motion/part4_scoop_dump_ice_3821.json",
+      "num_segments": 1,
+      "num_objects": 1,
       "object_names": [
-        "obj1",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "scoop_dump_ice",
+      "text": "pour water from purple scoop into yellow cup"
+    },
+    {
+      "id": "part4_scoop_dump_ice_3540",
+      "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_3540.mp4",
+      "motion_url": "static/data/motion/part4_scoop_dump_ice_3540.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "scoop_dump_ice",
+      "text": "pick up purple scoop"
+    },
+    {
+      "id": "part4_scoop_dump_ice_3682",
+      "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_3682.mp4",
+      "motion_url": "static/data/motion/part4_scoop_dump_ice_3682.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
         "obj2"
       ],
       "has_tracks": true,
       "task": "scoop_dump_ice",
-      "text": "pour water from yellow cup into gray container"
+      "text": "pour ice cubes from purple scoop into yellow cup"
     },
     {
-      "id": "part4_screw_unscrew_allen_fixture_645",
-      "rgb_url": "static/videos/egodex/part4_screw_unscrew_allen_fixture_645.mp4",
-      "motion_url": "static/data/motion/part4_screw_unscrew_allen_fixture_645.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "screw_unscrew_allen_fixture",
-      "text": "place black metal bracket on black metal plate"
-    },
-    {
-      "id": "part4_screw_unscrew_allen_fixture_754",
-      "rgb_url": "static/videos/egodex/part4_screw_unscrew_allen_fixture_754.mp4",
-      "motion_url": "static/data/motion/part4_screw_unscrew_allen_fixture_754.json",
+      "id": "part4_screw_unscrew_allen_fixture_1005",
+      "rgb_url": "static/videos/egodex/part4_screw_unscrew_allen_fixture_1005.mp4",
+      "motion_url": "static/data/motion/part4_screw_unscrew_allen_fixture_1005.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -329,22 +300,9 @@
       "text": "screw black metal bracket onto black metal base"
     },
     {
-      "id": "part4_screw_unscrew_allen_fixture_755",
-      "rgb_url": "static/videos/egodex/part4_screw_unscrew_allen_fixture_755.mp4",
-      "motion_url": "static/data/motion/part4_screw_unscrew_allen_fixture_755.json",
-      "num_segments": 2,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "screw_unscrew_allen_fixture",
-      "text": "screw Allen key into black metal frame"
-    },
-    {
-      "id": "part4_screw_unscrew_allen_fixture_990",
-      "rgb_url": "static/videos/egodex/part4_screw_unscrew_allen_fixture_990.mp4",
-      "motion_url": "static/data/motion/part4_screw_unscrew_allen_fixture_990.json",
+      "id": "part4_screw_unscrew_allen_fixture_97",
+      "rgb_url": "static/videos/egodex/part4_screw_unscrew_allen_fixture_97.mp4",
+      "motion_url": "static/data/motion/part4_screw_unscrew_allen_fixture_97.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -352,12 +310,12 @@
       ],
       "has_tracks": true,
       "task": "screw_unscrew_allen_fixture",
-      "text": "place black plastic stand on black metal plate"
+      "text": "turn black plastic stand on black square base"
     },
     {
-      "id": "part4_screw_unscrew_allen_fixture_342",
-      "rgb_url": "static/videos/egodex/part4_screw_unscrew_allen_fixture_342.mp4",
-      "motion_url": "static/data/motion/part4_screw_unscrew_allen_fixture_342.json",
+      "id": "part4_screw_unscrew_allen_fixture_678",
+      "rgb_url": "static/videos/egodex/part4_screw_unscrew_allen_fixture_678.mp4",
+      "motion_url": "static/data/motion/part4_screw_unscrew_allen_fixture_678.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -365,51 +323,90 @@
       ],
       "has_tracks": true,
       "task": "screw_unscrew_allen_fixture",
-      "text": "turn black metal bracket with Allen key"
+      "text": "place black plastic bracket on black metal plate"
     },
     {
-      "id": "part5_wash_kitchen_dishes_34",
-      "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_34.mp4",
-      "motion_url": "static/data/motion/part5_wash_kitchen_dishes_34.json",
-      "num_segments": 3,
+      "id": "part4_screw_unscrew_allen_fixture_1011",
+      "rgb_url": "static/videos/egodex/part4_screw_unscrew_allen_fixture_1011.mp4",
+      "motion_url": "static/data/motion/part4_screw_unscrew_allen_fixture_1011.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "screw_unscrew_allen_fixture",
+      "text": "install black plastic bracket on black metal base"
+    },
+    {
+      "id": "part4_screw_unscrew_allen_fixture_246",
+      "rgb_url": "static/videos/egodex/part4_screw_unscrew_allen_fixture_246.mp4",
+      "motion_url": "static/data/motion/part4_screw_unscrew_allen_fixture_246.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "screw_unscrew_allen_fixture",
+      "text": "turn black plastic bracket with Allen key"
+    },
+    {
+      "id": "part5_wash_kitchen_dishes_48",
+      "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_48.mp4",
+      "motion_url": "static/data/motion/part5_wash_kitchen_dishes_48.json",
+      "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
       "task": "wash_kitchen_dishes",
-      "text": "put yellow plastic fork on drying rack"
+      "text": "put red cup on drying rack"
     },
     {
-      "id": "part5_wash_kitchen_dishes_41",
-      "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_41.mp4",
-      "motion_url": "static/data/motion/part5_wash_kitchen_dishes_41.json",
-      "num_segments": 3,
+      "id": "part5_wash_kitchen_dishes_25",
+      "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_25.mp4",
+      "motion_url": "static/data/motion/part5_wash_kitchen_dishes_25.json",
+      "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
+      ],
+      "has_tracks": true,
+      "task": "wash_kitchen_dishes",
+      "text": "wash pot with sponge"
+    },
+    {
+      "id": "part5_wash_kitchen_dishes_15",
+      "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_15.mp4",
+      "motion_url": "static/data/motion/part5_wash_kitchen_dishes_15.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "wash_kitchen_dishes",
+      "text": "move red cup with plastic cutlery in it"
+    },
+    {
+      "id": "part5_wash_kitchen_dishes_46",
+      "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_46.mp4",
+      "motion_url": "static/data/motion/part5_wash_kitchen_dishes_46.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj1"
       ],
       "has_tracks": true,
       "task": "wash_kitchen_dishes",
       "text": "wash plastic cutlery with sponge"
     },
     {
-      "id": "part5_wash_kitchen_dishes_11",
-      "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_11.mp4",
-      "motion_url": "static/data/motion/part5_wash_kitchen_dishes_11.json",
-      "num_segments": 4,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "wash_kitchen_dishes",
-      "text": "wash plastic cutlery with sponge"
-    },
-    {
-      "id": "part5_wash_kitchen_dishes_30",
-      "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_30.mp4",
-      "motion_url": "static/data/motion/part5_wash_kitchen_dishes_30.json",
+      "id": "part5_wash_kitchen_dishes_38",
+      "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_38.mp4",
+      "motion_url": "static/data/motion/part5_wash_kitchen_dishes_38.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -417,85 +414,72 @@
       ],
       "has_tracks": true,
       "task": "wash_kitchen_dishes",
-      "text": "put yellow dishwashing liquid bottle on the sink"
+      "text": "pick up blue cup"
     },
     {
-      "id": "part5_wash_kitchen_dishes_18",
-      "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_18.mp4",
-      "motion_url": "static/data/motion/part5_wash_kitchen_dishes_18.json",
-      "num_segments": 4,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "wash_kitchen_dishes",
-      "text": "wash gray spatula with blue sponge"
-    },
-    {
-      "id": "part5_wash_put_away_dishes_97",
-      "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_97.mp4",
-      "motion_url": "static/data/motion/part5_wash_put_away_dishes_97.json",
-      "num_segments": 3,
+      "id": "test_wash_put_away_dishes_0",
+      "rgb_url": "static/videos/egodex/test_wash_put_away_dishes_0.mp4",
+      "motion_url": "static/data/motion/test_wash_put_away_dishes_0.json",
+      "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
       "task": "wash_put_away_dishes",
-      "text": "take dish from sink"
+      "text": "wash dishes in the sink"
     },
     {
-      "id": "part5_wash_put_away_dishes_89",
-      "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_89.mp4",
-      "motion_url": "static/data/motion/part5_wash_put_away_dishes_89.json",
-      "num_segments": 10,
+      "id": "part5_wash_put_away_dishes_22",
+      "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_22.mp4",
+      "motion_url": "static/data/motion/part5_wash_put_away_dishes_22.json",
+      "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
       "task": "wash_put_away_dishes",
-      "text": "take out red plate from oven"
+      "text": "apply yellow cleaning agent to blue sponge"
     },
     {
-      "id": "part5_wash_put_away_dishes_127",
-      "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_127.mp4",
-      "motion_url": "static/data/motion/part5_wash_put_away_dishes_127.json",
-      "num_segments": 3,
+      "id": "part5_wash_put_away_dishes_87",
+      "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_87.mp4",
+      "motion_url": "static/data/motion/part5_wash_put_away_dishes_87.json",
+      "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
       "task": "wash_put_away_dishes",
-      "text": "take yellow plate from sink"
+      "text": "take out red and yellow plate"
     },
     {
-      "id": "part5_wash_put_away_dishes_10",
-      "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_10.mp4",
-      "motion_url": "static/data/motion/part5_wash_put_away_dishes_10.json",
-      "num_segments": 3,
+      "id": "part5_wash_put_away_dishes_41",
+      "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_41.mp4",
+      "motion_url": "static/data/motion/part5_wash_put_away_dishes_41.json",
+      "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
       "task": "wash_put_away_dishes",
-      "text": "take dish from sink"
+      "text": "turn on tap"
     },
     {
-      "id": "part5_wash_put_away_dishes_6",
-      "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_6.mp4",
-      "motion_url": "static/data/motion/part5_wash_put_away_dishes_6.json",
-      "num_segments": 3,
+      "id": "part5_wash_put_away_dishes_115",
+      "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_115.mp4",
+      "motion_url": "static/data/motion/part5_wash_put_away_dishes_115.json",
+      "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
       "task": "wash_put_away_dishes",
-      "text": "take out red and yellow plate from oven"
+      "text": "take out red and green plate from oven"
     }
   ]
 }

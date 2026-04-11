@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pending Tasks — Motion Review</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -135,6 +136,11 @@ body {
   padding: 12px 16px; display: flex; flex-direction: column; gap: 8px;
   min-height: 240px; overflow-y: auto;
 }
+.motion-chart-wrap {
+  padding: 6px 12px 4px; border-top: 1px solid var(--border);
+  height: 140px; position: relative; background: var(--bg-card);
+}
+.motion-chart-wrap canvas { width: 100% !important; height: 100% !important; }
 
 /* Timeline rows */
 .timeline-row {
@@ -200,12 +206,13 @@ body {
     <div class="masthead-left">
       <h1>Pending Tasks — Motion Review</h1>
       <div class="subtitle">
-        Fresh EgoDex test samples for 6 tasks under review before deciding what to
-        do with them: <code>fidget_magnetic_spinner_rings</code>,
-        <code>insert_remove_airpods</code>, <code>open_close_insert_remove_box</code>,
-        <code>pick_up_and_put_down_case_or_bag</code>, <code>pour</code>,
-        <code>fold_stack_unstack_unfold_cloths</code>. Videos here are all unseen —
-        they were NOT in the old website sample.
+        Fresh EgoDex test samples for 6 tasks under review:
+        <code>fidget_magnetic_spinner_rings</code>, <code>insert_remove_airpods</code>,
+        <code>open_close_insert_remove_box</code>, <code>pick_up_and_put_down_case_or_bag</code>,
+        <code>pour</code>, <code>fold_stack_unstack_unfold_cloths</code>.
+        Each card shows the 2D track overlay, per-object clip ranges from the
+        filter output, and the per-frame 3D-motion magnitude curve (with clip
+        ranges shaded and the threshold line dashed).
       </div>
     </div>
     <div class="masthead-right">
@@ -357,6 +364,7 @@ function renderClips() {
           <div style="color:var(--text-muted);font-size:0.75rem;text-align:center;padding:60px 0;">Scroll to load</div>
         </div>
       </div>
+      <div class="motion-chart-wrap"><canvas id="${id}_chart"></canvas></div>
       <div class="scrub-row">
         <button class="play-btn" id="${id}_playbtn" onclick="togglePlay('${id}')">&#9654;</button>
         <input type="range" id="${id}_scrub" min="0" max="1000" value="0"
@@ -402,8 +410,9 @@ async function loadClip(id, clip) {
     return;
   }
 
-  clipState[id] = { motionData, selectedObject: null, rafHandle: null };
+  clipState[id] = { motionData, selectedObject: null, rafHandle: null, chart: null };
   renderTimelines(id, motionData);
+  buildMotionChart(id, motionData);
 
   // Sync cursor + frame label on timeupdate
   vid.addEventListener('timeupdate', () => {
@@ -414,6 +423,11 @@ async function loadClip(id, clip) {
     const fi = Math.min(Math.round(pct * (T - 1)), T - 1);
     document.getElementById(id + '_frame').textContent = fi + ' / ' + (T - 1);
     updateCursor(id, pct);
+    const st = clipState[id];
+    if (st && st.chart) {
+      st.chart._cursorIndex = fi;
+      st.chart.draw();
+    }
   });
   updateCursor(id, 0);
 
@@ -603,6 +617,109 @@ function updateCursor(id, pct) {
   if (!card) return;
   const cursors = card.querySelectorAll('.cursor-line');
   cursors.forEach(c => { c.style.left = (pct * 100) + '%'; });
+}
+
+function buildMotionChart(id, md) {
+  const mags = md.magnitudes_by_object;
+  if (!mags || Object.keys(mags).length === 0) return;
+  const T = md.num_frames;
+  const labels = Array.from({length: T}, (_, i) => i);
+  const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+
+  const datasets = [];
+  let yMax = 0;
+  for (const [name, vals] of Object.entries(mags)) {
+    const color = colorForObject(name);
+    yMax = Math.max(yMax, ...vals);
+    datasets.push({
+      label: name,
+      data: vals,
+      borderColor: color,
+      borderWidth: 1.6,
+      pointRadius: 0,
+      tension: 0.25,
+      fill: false,
+    });
+  }
+  yMax = Math.max(yMax * 1.15, (md.threshold || 0.02) * 1.8, 0.05);
+
+  const canvas = document.getElementById(id + '_chart');
+  if (!canvas) return;
+  const chart = new Chart(canvas.getContext('2d'), {
+    type: 'line',
+    data: { labels, datasets },
+    options: {
+      responsive: true, maintainAspectRatio: false, animation: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            title: items => `Frame ${items[0].label}`,
+            label: item => `${item.dataset.label}: ${item.parsed.y.toFixed(5)}`,
+          }
+        },
+      },
+      scales: {
+        x: { display: false, grid: { display: false } },
+        y: {
+          title: { display: true, text: '|Δ3D| (m)', color: isDark ? '#777' : '#666', font: { size: 9 } },
+          ticks: { color: isDark ? '#555' : '#999', font: { size: 8 }, maxTicksLimit: 4 },
+          grid: { color: isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.05)' },
+          min: 0, max: yMax,
+        },
+      },
+    },
+    plugins: [{
+      id: 'clipShading',
+      beforeDatasetsDraw(ch) {
+        const ctx = ch.ctx;
+        const yTop = ch.scales.y.top;
+        const yBot = ch.scales.y.bottom;
+        const clips = md.clips_by_object || {};
+        for (const [name, ranges] of Object.entries(clips)) {
+          const color = colorForObject(name).replace('hsl', 'hsla').replace(')', ',0.18)');
+          ctx.save();
+          ctx.fillStyle = color;
+          ranges.forEach(([s, e]) => {
+            const xs = ch.scales.x.getPixelForValue(s);
+            const xe = ch.scales.x.getPixelForValue(e);
+            ctx.fillRect(xs, yTop, xe - xs, yBot - yTop);
+          });
+          ctx.restore();
+        }
+        const thresh = md.threshold;
+        if (thresh != null) {
+          const yT = ch.scales.y.getPixelForValue(thresh);
+          ctx.save();
+          ctx.strokeStyle = 'rgba(255,107,53,0.6)';
+          ctx.setLineDash([6, 4]);
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(ch.scales.x.left, yT);
+          ctx.lineTo(ch.scales.x.right, yT);
+          ctx.stroke();
+          ctx.restore();
+        }
+      },
+      afterDraw(ch) {
+        const ci = ch._cursorIndex;
+        if (ci == null) return;
+        const x = ch.scales.x.getPixelForValue(ci);
+        const ctx = ch.ctx;
+        ctx.save();
+        ctx.beginPath();
+        ctx.moveTo(x, ch.scales.y.top);
+        ctx.lineTo(x, ch.scales.y.bottom);
+        ctx.strokeStyle = 'rgba(255, 60, 60, 0.75)';
+        ctx.lineWidth = 1.5;
+        ctx.setLineDash([4, 3]);
+        ctx.stroke();
+        ctx.restore();
+      }
+    }]
+  });
+  clipState[id].chart = chart;
 }
 
 function toggleObjectSelect(id, name) {
