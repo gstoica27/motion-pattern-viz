@@ -74,6 +74,8 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
     </div>
   </div>
 
+  <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--text-heading);margin-bottom:12px;">Clip-Length Distributions</h2>
+
   <div class="combined">
     <img src="static/img/clip_length_all.png" alt="All datasets — clip length histograms">
   </div>
@@ -84,6 +86,26 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
     <div class="card"><img src="static/img/clip_length_xperience.png" alt="Xperience"></div>
     <div class="card"><img src="static/img/clip_length_droid.png" alt="DROID"></div>
     <div class="card"><img src="static/img/clip_length_molmospaces.png" alt="MolmoSpaces"></div>
+  </div>
+
+  <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--text-heading);margin:28px 0 12px;">3D Coordinate Value Distributions</h2>
+  <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:16px;">
+    X / Y / Z coordinate histograms (density-normalized) from 500 random sampled videos per dataset.
+    Clipped to [1st, 99th] percentile. Stats box shows mean, std, and that percentile range.
+    Note: EgoDex / HD-EPIC / Xperience are in camera-relative frames; DROID tracks are in each camera's
+    own OpenCV frame (meters, +Z forward); MolmoSpaces is PyBullet world frame.
+  </p>
+
+  <div class="combined">
+    <img src="static/img/coord_dist_all.png" alt="All datasets — 3D coordinate distributions">
+  </div>
+
+  <div class="grid">
+    <div class="card"><img src="static/img/coord_dist_egodex.png" alt="EgoDex coords"></div>
+    <div class="card"><img src="static/img/coord_dist_hepic.png" alt="HD-EPIC coords"></div>
+    <div class="card"><img src="static/img/coord_dist_xperience.png" alt="Xperience coords"></div>
+    <div class="card"><img src="static/img/coord_dist_droid.png" alt="DROID coords"></div>
+    <div class="card"><img src="static/img/coord_dist_molmospaces.png" alt="MolmoSpaces coords"></div>
   </div>
 </div>
 
