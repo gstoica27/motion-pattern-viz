@@ -204,21 +204,22 @@ body {
 <div class="page">
   <div class="masthead">
     <div class="masthead-left">
-      <h1>One-Clip Rule — Test Samples</h1>
+      <h1>Special-Rule Tasks — Review</h1>
       <div class="subtitle">
-        Fresh EgoDex test samples for the 9 tasks where the filter collapses
-        each video to a single clip. 6 tasks take the temporally-first clip
-        (boil_serve_egg, fry_bread, scoop_dump_ice, screw_unscrew_allen_fixture,
-        load_dispense_ice, wash_put_away_dishes); 3 tasks take the clip with the
-        highest mean 3D motion (insert_remove_bagging,
-        insert_remove_furniture_bench_cabinet, wash_kitchen_dishes). Clip ranges
-        come directly from <code>egodex_good_v2.json</code>; videos here were not
-        in the old website sample.
+        10 EgoDex tasks that got task-specific handling in the v3 filter:
+        <br>
+        <strong>Temporal-first clip:</strong> boil_serve_egg, fry_bread,
+        load_dispense_ice, wash_put_away_dishes ·
+        <strong>Largest 3D-motion clip:</strong> wash_kitchen_dishes ·
+        <strong>Re-filter @ 0.01:</strong> scoop_dump_ice, pour ·
+        <strong>Whole-video clip:</strong> fidget_magnetic_spinner_rings ·
+        <strong>Caption filter ("use hammer"):</strong> insert_remove_airpods ·
+        <strong>Caption override:</strong> pick_up_and_put_down_case_or_bag.
+        5 fresh samples per task. Clips come straight from <code>egodex_good_v3.json</code>.
       </div>
     </div>
     <div class="masthead-right">
       <a href="index.html">← Main</a>
-      <a href="pending.html">Pending tasks</a>
       <a href="droid.html">DROID</a>
       <a href="molmospaces.html">MolmoSpaces</a>
       <a href="stats.html">Stats</a>

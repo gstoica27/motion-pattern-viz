@@ -1,22 +1,9 @@
 {
   "egodex": [
     {
-      "id": "part1_add_remove_lid_1227",
-      "rgb_url": "static/videos/egodex/part1_add_remove_lid_1227.mp4",
-      "motion_url": "static/data/motion/part1_add_remove_lid_1227.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj1"
-      ],
-      "has_tracks": true,
-      "task": "add_remove_lid",
-      "text": "put white lid on white cup"
-    },
-    {
-      "id": "part1_add_remove_lid_1638",
-      "rgb_url": "static/videos/egodex/part1_add_remove_lid_1638.mp4",
-      "motion_url": "static/data/motion/part1_add_remove_lid_1638.json",
+      "id": "part1_add_remove_lid_561",
+      "rgb_url": "static/videos/egodex/part1_add_remove_lid_561.mp4",
+      "motion_url": "static/data/motion/part1_add_remove_lid_561.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -27,116 +14,417 @@
       "text": "remove white lid from white cup"
     },
     {
-      "id": "part1_add_remove_lid_1104",
-      "rgb_url": "static/videos/egodex/part1_add_remove_lid_1104.mp4",
-      "motion_url": "static/data/motion/part1_add_remove_lid_1104.json",
+      "id": "part1_add_remove_lid_1970",
+      "rgb_url": "static/videos/egodex/part1_add_remove_lid_1970.mp4",
+      "motion_url": "static/data/motion/part1_add_remove_lid_1970.json",
       "num_segments": 2,
-      "num_objects": 2,
+      "num_objects": 1,
       "object_names": [
-        "obj1",
-        "obj2"
+        "obj0"
       ],
       "has_tracks": true,
       "task": "add_remove_lid",
-      "text": "put white lid on white cup"
+      "text": "put white cup with white lid on table"
     },
     {
-      "id": "part1_arrange_topple_dominoes_563",
-      "rgb_url": "static/videos/egodex/part1_arrange_topple_dominoes_563.mp4",
-      "motion_url": "static/data/motion/part1_arrange_topple_dominoes_563.json",
-      "num_segments": 3,
-      "num_objects": 2,
-      "object_names": [
-        "obj0",
-        "obj1"
-      ],
-      "has_tracks": true,
-      "task": "arrange_topple_dominoes",
-      "text": "build white dominoes tower on table"
-    },
-    {
-      "id": "part1_arrange_topple_dominoes_530",
-      "rgb_url": "static/videos/egodex/part1_arrange_topple_dominoes_530.mp4",
-      "motion_url": "static/data/motion/part1_arrange_topple_dominoes_530.json",
-      "num_segments": 5,
+      "id": "part1_add_remove_lid_413",
+      "rgb_url": "static/videos/egodex/part1_add_remove_lid_413.mp4",
+      "motion_url": "static/data/motion/part1_add_remove_lid_413.json",
+      "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "arrange_topple_dominoes",
-      "text": "arrange white dominoes on table"
+      "task": "add_remove_lid",
+      "text": "put white paper cup lid on white paper cup"
     },
     {
-      "id": "part1_arrange_topple_dominoes_241",
-      "rgb_url": "static/videos/egodex/part1_arrange_topple_dominoes_241.mp4",
-      "motion_url": "static/data/motion/part1_arrange_topple_dominoes_241.json",
-      "num_segments": 20,
-      "num_objects": 3,
+      "id": "part2_assemble_disassemble_furniture_bench_chair_4893",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_chair_4893.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_chair_4893.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_chair",
+      "text": "insert white puzzle piece into white puzzle"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_chair_3967",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_chair_3967.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_chair_3967.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_chair",
+      "text": "insert white puzzle piece into white puzzle"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_chair_4514",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_chair_4514.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_chair_4514.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_chair",
+      "text": "place white plastic block on white plastic structure"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_desk_3753",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_desk_3753.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_desk_3753.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_desk",
+      "text": "insert white rectangular object into white stand"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_desk_3585",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_desk_3585.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_desk_3585.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_desk",
+      "text": "insert white plastic bottle into white plastic holder"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_desk_5098",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_desk_5098.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_desk_5098.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_desk",
+      "text": "insert white plastic bottle into white plastic container"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_drawer_3360",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_drawer_3360.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_drawer_3360.json",
+      "num_segments": 6,
+      "num_objects": 5,
       "object_names": [
         "obj0",
         "obj1",
-        "obj2"
+        "obj2",
+        "obj3",
+        "obj4"
       ],
       "has_tracks": true,
-      "task": "arrange_topple_dominoes",
-      "text": "shuffle white dominoes on white table"
+      "task": "assemble_disassemble_furniture_bench_drawer",
+      "text": "close white box"
     },
     {
-      "id": "part2_assemble_disassemble_furniture_bench_square_table_6082",
-      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_square_table_6082.mp4",
-      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_square_table_6082.json",
-      "num_segments": 2,
-      "num_objects": 2,
+      "id": "part2_assemble_disassemble_furniture_bench_drawer_5013",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_drawer_5013.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_drawer_5013.json",
+      "num_segments": 1,
+      "num_objects": 1,
       "object_names": [
-        "obj0",
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_drawer",
+      "text": "insert white square box into white box"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_drawer_3179",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_drawer_3179.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_drawer_3179.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_drawer",
+      "text": "put white box into white box"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_lamp_2698",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_lamp_2698.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_lamp_2698.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_lamp",
+      "text": "insert white ball into white square base"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_lamp_3140",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_lamp_3140.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_lamp_3140.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_lamp",
+      "text": "remove white cup from white stand"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_lamp_1974",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_lamp_1974.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_lamp_1974.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_lamp",
+      "text": "pick up white plastic cup"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_square_table_5383",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_square_table_5383.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_square_table_5383.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
         "obj1"
       ],
       "has_tracks": true,
       "task": "assemble_disassemble_furniture_bench_square_table"
     },
     {
-      "id": "part2_assemble_disassemble_furniture_bench_square_table_3341",
-      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_square_table_3341.mp4",
-      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_square_table_3341.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "assemble_disassemble_furniture_bench_square_table"
-    },
-    {
-      "id": "part2_assemble_disassemble_furniture_bench_square_table_3875",
-      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_square_table_3875.mp4",
-      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_square_table_3875.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "assemble_disassemble_furniture_bench_square_table"
-    },
-    {
-      "id": "extra_assemble_disassemble_jigsaw_puzzle_0",
-      "rgb_url": "static/videos/egodex/extra_assemble_disassemble_jigsaw_puzzle_0.mp4",
-      "motion_url": "static/data/motion/extra_assemble_disassemble_jigsaw_puzzle_0.json",
+      "id": "part2_assemble_disassemble_furniture_bench_square_table_7996",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_square_table_7996.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_square_table_7996.json",
       "num_segments": 2,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "assemble_disassemble_jigsaw_puzzle",
-      "text": "fit puzzle piece into puzzle"
+      "task": "assemble_disassemble_furniture_bench_square_table"
     },
     {
-      "id": "extra_blowdry_hair_63",
-      "rgb_url": "static/videos/egodex/extra_blowdry_hair_63.mp4",
-      "motion_url": "static/data/motion/extra_blowdry_hair_63.json",
+      "id": "part2_assemble_disassemble_furniture_bench_square_table_5160",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_square_table_5160.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_square_table_5160.json",
+      "num_segments": 4,
+      "num_objects": 4,
+      "object_names": [
+        "obj0",
+        "obj1",
+        "obj2",
+        "obj3"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_square_table"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_stool_454",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_stool_454.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_stool_454.json",
       "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_stool",
+      "text": "move white plastic cup into white plastic base"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_stool_6125",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_stool_6125.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_stool_6125.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_stool",
+      "text": "remove white spherical object from white square base"
+    },
+    {
+      "id": "part2_assemble_disassemble_furniture_bench_stool_3120",
+      "rgb_url": "static/videos/egodex/part2_assemble_disassemble_furniture_bench_stool_3120.mp4",
+      "motion_url": "static/data/motion/part2_assemble_disassemble_furniture_bench_stool_3120.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_furniture_bench_stool",
+      "text": "insert white plastic cup into white plastic statue"
+    },
+    {
+      "id": "part1_assemble_disassemble_legos_2250",
+      "rgb_url": "static/videos/egodex/part1_assemble_disassemble_legos_2250.mp4",
+      "motion_url": "static/data/motion/part1_assemble_disassemble_legos_2250.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_legos",
+      "text": "take apart lego structure"
+    },
+    {
+      "id": "part1_assemble_disassemble_legos_334",
+      "rgb_url": "static/videos/egodex/part1_assemble_disassemble_legos_334.mp4",
+      "motion_url": "static/data/motion/part1_assemble_disassemble_legos_334.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_legos",
+      "text": "dismantle lego structure"
+    },
+    {
+      "id": "part1_assemble_disassemble_legos_345",
+      "rgb_url": "static/videos/egodex/part1_assemble_disassemble_legos_345.mp4",
+      "motion_url": "static/data/motion/part1_assemble_disassemble_legos_345.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_disassemble_legos",
+      "text": "take red lego piece from red-yellow lego structure"
+    },
+    {
+      "id": "test_assemble_jenga_0",
+      "rgb_url": "static/videos/egodex/test_assemble_jenga_0.mp4",
+      "motion_url": "static/data/motion/test_assemble_jenga_0.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_jenga",
+      "text": "put wooden block on wooden block"
+    },
+    {
+      "id": "part1_assemble_jenga_126",
+      "rgb_url": "static/videos/egodex/part1_assemble_jenga_126.mp4",
+      "motion_url": "static/data/motion/part1_assemble_jenga_126.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "assemble_jenga",
+      "text": "remove wooden block from wooden block tower"
+    },
+    {
+      "id": "part2_basic_fold_2345",
+      "rgb_url": "static/videos/egodex/part2_basic_fold_2345.mp4",
+      "motion_url": "static/data/motion/part2_basic_fold_2345.json",
+      "num_segments": 4,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "basic_fold",
+      "text": "unfold and fold white t-shirt with orange print on table"
+    },
+    {
+      "id": "part2_basic_fold_847",
+      "rgb_url": "static/videos/egodex/part2_basic_fold_847.mp4",
+      "motion_url": "static/data/motion/part2_basic_fold_847.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "basic_fold",
+      "text": "fold purple fabric on bed"
+    },
+    {
+      "id": "part2_basic_fold_6930",
+      "rgb_url": "static/videos/egodex/part2_basic_fold_6930.mp4",
+      "motion_url": "static/data/motion/part2_basic_fold_6930.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "basic_fold",
+      "text": "fold pink t-shirt on bed"
+    },
+    {
+      "id": "part2_basic_pick_place_16357",
+      "rgb_url": "static/videos/egodex/part2_basic_pick_place_16357.mp4",
+      "motion_url": "static/data/motion/part2_basic_pick_place_16357.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "basic_pick_place",
+      "text": "put glazed donut into white bowl"
+    },
+    {
+      "id": "part2_basic_pick_place_13247",
+      "rgb_url": "static/videos/egodex/part2_basic_pick_place_13247.mp4",
+      "motion_url": "static/data/motion/part2_basic_pick_place_13247.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "basic_pick_place",
+      "text": "move gray toy into blue plate"
+    },
+    {
+      "id": "part2_basic_pick_place_2972",
+      "rgb_url": "static/videos/egodex/part2_basic_pick_place_2972.mp4",
+      "motion_url": "static/data/motion/part2_basic_pick_place_2972.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "basic_pick_place",
+      "text": "put yellow pencil into purple dustpan"
+    },
+    {
+      "id": "extra_blowdry_hair_321",
+      "rgb_url": "static/videos/egodex/extra_blowdry_hair_321.mp4",
+      "motion_url": "static/data/motion/extra_blowdry_hair_321.json",
+      "num_segments": 7,
       "num_objects": 1,
       "object_names": [
         "obj0"
@@ -146,9 +434,22 @@
       "text": "use pink hair dryer to blow hair"
     },
     {
-      "id": "extra_blowdry_hair_43",
-      "rgb_url": "static/videos/egodex/extra_blowdry_hair_43.mp4",
-      "motion_url": "static/data/motion/extra_blowdry_hair_43.json",
+      "id": "extra_blowdry_hair_8",
+      "rgb_url": "static/videos/egodex/extra_blowdry_hair_8.mp4",
+      "motion_url": "static/data/motion/extra_blowdry_hair_8.json",
+      "num_segments": 13,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "blowdry_hair",
+      "text": "blow hair of doll with pink hair dryer"
+    },
+    {
+      "id": "extra_blowdry_hair_9",
+      "rgb_url": "static/videos/egodex/extra_blowdry_hair_9.mp4",
+      "motion_url": "static/data/motion/extra_blowdry_hair_9.json",
       "num_segments": 2,
       "num_objects": 1,
       "object_names": [
@@ -156,90 +457,168 @@
       ],
       "has_tracks": true,
       "task": "blowdry_hair",
-      "text": "use hair dryer to blow hair"
+      "text": "use pink hair dryer to blow hair"
     },
     {
-      "id": "extra_blowdry_hair_77",
-      "rgb_url": "static/videos/egodex/extra_blowdry_hair_77.mp4",
-      "motion_url": "static/data/motion/extra_blowdry_hair_77.json",
+      "id": "part1_boil_serve_egg_301",
+      "rgb_url": "static/videos/egodex/part1_boil_serve_egg_301.mp4",
+      "motion_url": "static/data/motion/part1_boil_serve_egg_301.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "boil_serve_egg",
+      "text": "take out pot, put on stove, turn on heat, take out egg, put in pot, turn off heat, take out bowl, put on stove, take out egg, put in bowl, take out bowl"
+    },
+    {
+      "id": "part1_boil_serve_egg_248",
+      "rgb_url": "static/videos/egodex/part1_boil_serve_egg_248.mp4",
+      "motion_url": "static/data/motion/part1_boil_serve_egg_248.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "boil_serve_egg",
+      "text": "take egg from egg carton"
+    },
+    {
+      "id": "part1_boil_serve_egg_113",
+      "rgb_url": "static/videos/egodex/part1_boil_serve_egg_113.mp4",
+      "motion_url": "static/data/motion/part1_boil_serve_egg_113.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "boil_serve_egg",
+      "text": "take out silver pot, put it on the induction cooker, turn on the induction cooker, take out an egg, put the egg into the pot, turn on the induction cooker, take out a bowl, put the bowl on the induction cooker, take out a spoon, take out the egg, put the egg into the bowl, take out the pot"
+    },
+    {
+      "id": "part1_charge_uncharge_airpods_2294",
+      "rgb_url": "static/videos/egodex/part1_charge_uncharge_airpods_2294.mp4",
+      "motion_url": "static/data/motion/part1_charge_uncharge_airpods_2294.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "charge_uncharge_airpods",
+      "text": "remove white plastic cap from white plastic container"
+    },
+    {
+      "id": "part1_charge_uncharge_airpods_22",
+      "rgb_url": "static/videos/egodex/part1_charge_uncharge_airpods_22.mp4",
+      "motion_url": "static/data/motion/part1_charge_uncharge_airpods_22.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "charge_uncharge_airpods",
+      "text": "unplug white charging cable from white electronic device"
+    },
+    {
+      "id": "part1_charge_uncharge_airpods_1614",
+      "rgb_url": "static/videos/egodex/part1_charge_uncharge_airpods_1614.mp4",
+      "motion_url": "static/data/motion/part1_charge_uncharge_airpods_1614.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "charge_uncharge_airpods",
+      "text": "pick up white wireless mouse"
+    },
+    {
+      "id": "part1_clean_cups_1531",
+      "rgb_url": "static/videos/egodex/part1_clean_cups_1531.mp4",
+      "motion_url": "static/data/motion/part1_clean_cups_1531.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "clean_cups",
+      "text": "put blue cup down"
+    },
+    {
+      "id": "part1_clean_cups_1628",
+      "rgb_url": "static/videos/egodex/part1_clean_cups_1628.mp4",
+      "motion_url": "static/data/motion/part1_clean_cups_1628.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "clean_cups",
+      "text": "rub sponge on cup"
+    },
+    {
+      "id": "part1_clean_cups_928",
+      "rgb_url": "static/videos/egodex/part1_clean_cups_928.mp4",
+      "motion_url": "static/data/motion/part1_clean_cups_928.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "clean_cups",
+      "text": "rub blue sponge on yellow cup"
+    },
+    {
+      "id": "part1_clean_surface_1844",
+      "rgb_url": "static/videos/egodex/part1_clean_surface_1844.mp4",
+      "motion_url": "static/data/motion/part1_clean_surface_1844.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "clean_surface",
+      "text": "clean yellow surface with blue cloth"
+    },
+    {
+      "id": "part1_clean_surface_2471",
+      "rgb_url": "static/videos/egodex/part1_clean_surface_2471.mp4",
+      "motion_url": "static/data/motion/part1_clean_surface_2471.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "clean_surface",
+      "text": "iron orange fabric with ironing board"
+    },
+    {
+      "id": "part1_clean_surface_2436",
+      "rgb_url": "static/videos/egodex/part1_clean_surface_2436.mp4",
+      "motion_url": "static/data/motion/part1_clean_surface_2436.json",
       "num_segments": 4,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "blowdry_hair",
-      "text": "use pink hair dryer to blow the hair of the doll"
+      "task": "clean_surface",
+      "text": "roll gray lint roller on blue fabric"
     },
     {
-      "id": "part1_clip_unclip_papers_101",
-      "rgb_url": "static/videos/egodex/part1_clip_unclip_papers_101.mp4",
-      "motion_url": "static/data/motion/part1_clip_unclip_papers_101.json",
-      "num_segments": 6,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "clip_unclip_papers",
-      "text": "put paper clips on paper"
-    },
-    {
-      "id": "part1_clip_unclip_papers_160",
-      "rgb_url": "static/videos/egodex/part1_clip_unclip_papers_160.mp4",
-      "motion_url": "static/data/motion/part1_clip_unclip_papers_160.json",
-      "num_segments": 3,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "clip_unclip_papers",
-      "text": "fold white paper, put white paper on table, open white and purple box, take out paper clip, put paper clip on white paper, put paper clip on white paper, put paper clip on white paper, put paper clip on white paper, put paper clip on white paper, put paper clip on white paper, put paper clip on white paper, put paper clip on white paper, put paper clip on white paper, put paper clip on white paper, put paper clip on white paper, put paper clip on white paper, put paper clip on white paper, put paper clip on white paper, put paper clip on white paper, put paper"
-    },
-    {
-      "id": "part1_clip_unclip_papers_269",
-      "rgb_url": "static/videos/egodex/part1_clip_unclip_papers_269.mp4",
-      "motion_url": "static/data/motion/part1_clip_unclip_papers_269.json",
-      "num_segments": 5,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "clip_unclip_papers",
-      "text": "put paper clips on paper"
-    },
-    {
-      "id": "part1_color_802",
-      "rgb_url": "static/videos/egodex/part1_color_802.mp4",
-      "motion_url": "static/data/motion/part1_color_802.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "color",
-      "text": "put pink crayon into box"
-    },
-    {
-      "id": "part1_color_425",
-      "rgb_url": "static/videos/egodex/part1_color_425.mp4",
-      "motion_url": "static/data/motion/part1_color_425.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "color",
-      "text": "put black pencil into box"
-    },
-    {
-      "id": "part1_color_67",
-      "rgb_url": "static/videos/egodex/part1_color_67.mp4",
-      "motion_url": "static/data/motion/part1_color_67.json",
+      "id": "part1_clean_tableware_1793",
+      "rgb_url": "static/videos/egodex/part1_clean_tableware_1793.mp4",
+      "motion_url": "static/data/motion/part1_clean_tableware_1793.json",
       "num_segments": 2,
       "num_objects": 2,
       "object_names": [
@@ -247,158 +626,314 @@
         "obj1"
       ],
       "has_tracks": true,
-      "task": "color",
-      "text": "put yellow colored pencil into box"
+      "task": "clean_tableware",
+      "text": "take plastic plates"
     },
     {
-      "id": "part1_deal_gather_cards_0",
-      "rgb_url": "static/videos/egodex/part1_deal_gather_cards_0.mp4",
-      "motion_url": "static/data/motion/part1_deal_gather_cards_0.json",
-      "num_segments": 5,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "deal_gather_cards",
-      "text": "arrange playing cards on table"
-    },
-    {
-      "id": "part1_deal_gather_cards_1118",
-      "rgb_url": "static/videos/egodex/part1_deal_gather_cards_1118.mp4",
-      "motion_url": "static/data/motion/part1_deal_gather_cards_1118.json",
+      "id": "part1_clean_tableware_900",
+      "rgb_url": "static/videos/egodex/part1_clean_tableware_900.mp4",
+      "motion_url": "static/data/motion/part1_clean_tableware_900.json",
       "num_segments": 3,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "deal_gather_cards",
-      "text": "shuffle white card with both hands"
+      "task": "clean_tableware",
+      "text": "wash green plastic fork with blue sponge"
     },
     {
-      "id": "part1_deal_gather_cards_1115",
-      "rgb_url": "static/videos/egodex/part1_deal_gather_cards_1115.mp4",
-      "motion_url": "static/data/motion/part1_deal_gather_cards_1115.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "deal_gather_cards",
-      "text": "shuffle playing cards in deck"
-    },
-    {
-      "id": "part1_declutter_desk_998",
-      "rgb_url": "static/videos/egodex/part1_declutter_desk_998.mp4",
-      "motion_url": "static/data/motion/part1_declutter_desk_998.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "declutter_desk",
-      "text": "pack box with bottle, cup, clothes"
-    },
-    {
-      "id": "part1_declutter_desk_61",
-      "rgb_url": "static/videos/egodex/part1_declutter_desk_61.mp4",
-      "motion_url": "static/data/motion/part1_declutter_desk_61.json",
-      "num_segments": 3,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "declutter_desk",
-      "text": "pack clothes, book, and paper cup into box"
-    },
-    {
-      "id": "part1_declutter_desk_80",
-      "rgb_url": "static/videos/egodex/part1_declutter_desk_80.mp4",
-      "motion_url": "static/data/motion/part1_declutter_desk_80.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "declutter_desk",
-      "text": "pack book, clothes, and cup into box"
-    },
-    {
-      "id": "part3_gather_roll_dice_1039",
-      "rgb_url": "static/videos/egodex/part3_gather_roll_dice_1039.mp4",
-      "motion_url": "static/data/motion/part3_gather_roll_dice_1039.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "gather_roll_dice",
-      "text": "pick up white dice with right hand"
-    },
-    {
-      "id": "part3_gather_roll_dice_419",
-      "rgb_url": "static/videos/egodex/part3_gather_roll_dice_419.mp4",
-      "motion_url": "static/data/motion/part3_gather_roll_dice_419.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "gather_roll_dice",
-      "text": "pick up white dice with right hand"
-    },
-    {
-      "id": "part3_gather_roll_dice_1373",
-      "rgb_url": "static/videos/egodex/part3_gather_roll_dice_1373.mp4",
-      "motion_url": "static/data/motion/part3_gather_roll_dice_1373.json",
-      "num_segments": 4,
+      "id": "part1_clean_tableware_694",
+      "rgb_url": "static/videos/egodex/part1_clean_tableware_694.mp4",
+      "motion_url": "static/data/motion/part1_clean_tableware_694.json",
+      "num_segments": 2,
       "num_objects": 2,
       "object_names": [
         "obj0",
-        "obj2"
+        "obj1"
       ],
       "has_tracks": true,
-      "task": "gather_roll_dice",
-      "text": "pick up white dice with right hand"
+      "task": "clean_tableware",
+      "text": "wash blue plastic plate with blue sponge"
     },
     {
-      "id": "part3_insert_dump_blocks_587",
-      "rgb_url": "static/videos/egodex/part3_insert_dump_blocks_587.mp4",
-      "motion_url": "static/data/motion/part3_insert_dump_blocks_587.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj2"
-      ],
-      "has_tracks": true,
-      "task": "insert_dump_blocks",
-      "text": "place dice on clock"
-    },
-    {
-      "id": "part3_insert_dump_blocks_485",
-      "rgb_url": "static/videos/egodex/part3_insert_dump_blocks_485.mp4",
-      "motion_url": "static/data/motion/part3_insert_dump_blocks_485.json",
+      "id": "part1_color_520",
+      "rgb_url": "static/videos/egodex/part1_color_520.mp4",
+      "motion_url": "static/data/motion/part1_color_520.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "insert_dump_blocks",
-      "text": "flip clock toy over"
+      "task": "color",
+      "text": "put blue colored pencil into box"
     },
     {
-      "id": "part3_insert_dump_blocks_659",
-      "rgb_url": "static/videos/egodex/part3_insert_dump_blocks_659.mp4",
-      "motion_url": "static/data/motion/part3_insert_dump_blocks_659.json",
-      "num_segments": 4,
+      "id": "part1_color_726",
+      "rgb_url": "static/videos/egodex/part1_color_726.mp4",
+      "motion_url": "static/data/motion/part1_color_726.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "color",
+      "text": "pick up red crayon from box"
+    },
+    {
+      "id": "part1_color_590",
+      "rgb_url": "static/videos/egodex/part1_color_590.mp4",
+      "motion_url": "static/data/motion/part1_color_590.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "color",
+      "text": "take pencil from box"
+    },
+    {
+      "id": "part1_dry_hands_232",
+      "rgb_url": "static/videos/egodex/part1_dry_hands_232.mp4",
+      "motion_url": "static/data/motion/part1_dry_hands_232.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "dry_hands",
+      "text": "wipe hands with light blue towel"
+    },
+    {
+      "id": "part1_dry_hands_2425",
+      "rgb_url": "static/videos/egodex/part1_dry_hands_2425.mp4",
+      "motion_url": "static/data/motion/part1_dry_hands_2425.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "dry_hands",
+      "text": "wipe left hand with yellow cloth"
+    },
+    {
+      "id": "part1_dry_hands_120",
+      "rgb_url": "static/videos/egodex/part1_dry_hands_120.mp4",
+      "motion_url": "static/data/motion/part1_dry_hands_120.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "dry_hands",
+      "text": "wipe left hand with green cloth"
+    },
+    {
+      "id": "part1_fidget_magnetic_spinner_rings_884",
+      "rgb_url": "static/videos/egodex/part1_fidget_magnetic_spinner_rings_884.mp4",
+      "motion_url": "static/data/motion/part1_fidget_magnetic_spinner_rings_884.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fidget_magnetic_spinner_rings",
+      "text": "put ring on finger"
+    },
+    {
+      "id": "part1_fidget_magnetic_spinner_rings_561",
+      "rgb_url": "static/videos/egodex/part1_fidget_magnetic_spinner_rings_561.mp4",
+      "motion_url": "static/data/motion/part1_fidget_magnetic_spinner_rings_561.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fidget_magnetic_spinner_rings",
+      "text": "spin black fidget spinner with right hand"
+    },
+    {
+      "id": "part1_fidget_magnetic_spinner_rings_438",
+      "rgb_url": "static/videos/egodex/part1_fidget_magnetic_spinner_rings_438.mp4",
+      "motion_url": "static/data/motion/part1_fidget_magnetic_spinner_rings_438.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fidget_magnetic_spinner_rings",
+      "text": "spin silver fidget spinner on fingers"
+    },
+    {
+      "id": "part1_flip_pages_92",
+      "rgb_url": "static/videos/egodex/part1_flip_pages_92.mp4",
+      "motion_url": "static/data/motion/part1_flip_pages_92.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "flip_pages",
+      "text": "turn page of book with right hand"
+    },
+    {
+      "id": "part1_flip_pages_700",
+      "rgb_url": "static/videos/egodex/part1_flip_pages_700.mp4",
+      "motion_url": "static/data/motion/part1_flip_pages_700.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "flip_pages",
+      "text": "turn page of book"
+    },
+    {
+      "id": "part1_flip_pages_168",
+      "rgb_url": "static/videos/egodex/part1_flip_pages_168.mp4",
+      "motion_url": "static/data/motion/part1_flip_pages_168.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "flip_pages",
+      "text": "flip through pages of book"
+    },
+    {
+      "id": "part2_fold_unfold_paper_origami_12",
+      "rgb_url": "static/videos/egodex/part2_fold_unfold_paper_origami_12.mp4",
+      "motion_url": "static/data/motion/part2_fold_unfold_paper_origami_12.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fold_unfold_paper_origami",
+      "text": "fold white paper on table"
+    },
+    {
+      "id": "part2_fold_unfold_paper_origami_717",
+      "rgb_url": "static/videos/egodex/part2_fold_unfold_paper_origami_717.mp4",
+      "motion_url": "static/data/motion/part2_fold_unfold_paper_origami_717.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fold_unfold_paper_origami",
+      "text": "fold white paper on table"
+    },
+    {
+      "id": "part2_fold_unfold_paper_origami_659",
+      "rgb_url": "static/videos/egodex/part2_fold_unfold_paper_origami_659.mp4",
+      "motion_url": "static/data/motion/part2_fold_unfold_paper_origami_659.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fold_unfold_paper_origami",
+      "text": "fold white paper into paper airplane"
+    },
+    {
+      "id": "part1_fry_bread_0",
+      "rgb_url": "static/videos/egodex/part1_fry_bread_0.mp4",
+      "motion_url": "static/data/motion/part1_fry_bread_0.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fry_bread",
+      "text": "take bread off pan"
+    },
+    {
+      "id": "part1_fry_bread_2",
+      "rgb_url": "static/videos/egodex/part1_fry_bread_2.mp4",
+      "motion_url": "static/data/motion/part1_fry_bread_2.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fry_bread",
+      "text": "take red plate from oven"
+    },
+    {
+      "id": "part1_fry_bread_6",
+      "rgb_url": "static/videos/egodex/part1_fry_bread_6.mp4",
+      "motion_url": "static/data/motion/part1_fry_bread_6.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fry_bread",
+      "text": "pick up yellow bread with metal pan"
+    },
+    {
+      "id": "part1_fry_egg_18",
+      "rgb_url": "static/videos/egodex/part1_fry_egg_18.mp4",
+      "motion_url": "static/data/motion/part1_fry_egg_18.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fry_egg",
+      "text": "take frying pan with eggs"
+    },
+    {
+      "id": "part1_fry_egg_12",
+      "rgb_url": "static/videos/egodex/part1_fry_egg_12.mp4",
+      "motion_url": "static/data/motion/part1_fry_egg_12.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fry_egg",
+      "text": "take frying pan and spatula"
+    },
+    {
+      "id": "part1_fry_egg_5",
+      "rgb_url": "static/videos/egodex/part1_fry_egg_5.mp4",
+      "motion_url": "static/data/motion/part1_fry_egg_5.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "fry_egg",
+      "text": "take fork from bowl"
+    },
+    {
+      "id": "part3_gather_roll_dice_1196",
+      "rgb_url": "static/videos/egodex/part3_gather_roll_dice_1196.mp4",
+      "motion_url": "static/data/motion/part3_gather_roll_dice_1196.json",
+      "num_segments": 6,
       "num_objects": 3,
       "object_names": [
         "obj0",
@@ -406,13 +941,199 @@
         "obj2"
       ],
       "has_tracks": true,
-      "task": "insert_dump_blocks",
-      "text": "place blue star-shaped piece on clock"
+      "task": "gather_roll_dice",
+      "text": "pick up white dice with right hand"
     },
     {
-      "id": "part2_insert_remove_furniture_bench_round_table_3118",
-      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_round_table_3118.mp4",
-      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_round_table_3118.json",
+      "id": "part3_gather_roll_dice_460",
+      "rgb_url": "static/videos/egodex/part3_gather_roll_dice_460.mp4",
+      "motion_url": "static/data/motion/part3_gather_roll_dice_460.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "gather_roll_dice",
+      "text": "group together white dice"
+    },
+    {
+      "id": "part3_gather_roll_dice_1220",
+      "rgb_url": "static/videos/egodex/part3_gather_roll_dice_1220.mp4",
+      "motion_url": "static/data/motion/part3_gather_roll_dice_1220.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "gather_roll_dice",
+      "text": "pick up white dice with right hand"
+    },
+    {
+      "id": "part3_insert_remove_airpods_1328",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_airpods_1328.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_airpods_1328.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_airpods",
+      "text": "use hammer to open lighter"
+    },
+    {
+      "id": "part3_insert_remove_airpods_3060",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_airpods_3060.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_airpods_3060.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_airpods",
+      "text": "use hammer to open bottle cap"
+    },
+    {
+      "id": "part3_insert_remove_airpods_2771",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_airpods_2771.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_airpods_2771.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_airpods",
+      "text": "use hammer to open lighter"
+    },
+    {
+      "id": "part3_insert_remove_bookshelf_819",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_bookshelf_819.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_bookshelf_819.json",
+      "num_segments": 3,
+      "num_objects": 3,
+      "object_names": [
+        "obj2",
+        "obj3",
+        "obj4"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_bookshelf",
+      "text": "put gray book into shelf, put red book into shelf, put green book on table"
+    },
+    {
+      "id": "part3_insert_remove_bookshelf_2834",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_bookshelf_2834.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_bookshelf_2834.json",
+      "num_segments": 4,
+      "num_objects": 2,
+      "object_names": [
+        "obj0",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_bookshelf",
+      "text": "remove white book from shelf"
+    },
+    {
+      "id": "part3_insert_remove_bookshelf_2350",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_bookshelf_2350.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_bookshelf_2350.json",
+      "num_segments": 2,
+      "num_objects": 2,
+      "object_names": [
+        "obj0",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_bookshelf",
+      "text": "put green book into white bookshelf"
+    },
+    {
+      "id": "part3_insert_remove_cups_from_rack_1400",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_cups_from_rack_1400.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_cups_from_rack_1400.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_cups_from_rack",
+      "text": "take green cup from drying rack"
+    },
+    {
+      "id": "part3_insert_remove_cups_from_rack_1586",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_cups_from_rack_1586.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_cups_from_rack_1586.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_cups_from_rack",
+      "text": "take red plastic cup from drying rack"
+    },
+    {
+      "id": "part3_insert_remove_cups_from_rack_1314",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_cups_from_rack_1314.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_cups_from_rack_1314.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_cups_from_rack",
+      "text": "put yellow cup on table"
+    },
+    {
+      "id": "part3_insert_remove_drawer_174",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_drawer_174.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_drawer_174.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_drawer",
+      "text": "put rubber duck into box"
+    },
+    {
+      "id": "part3_insert_remove_drawer_242",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_drawer_242.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_drawer_242.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_drawer",
+      "text": "put yellow toy bone into beige plastic drawer"
+    },
+    {
+      "id": "part3_insert_remove_drawer_1363",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_drawer_1363.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_drawer_1363.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_drawer",
+      "text": "put white toy elephant in beige drawer"
+    },
+    {
+      "id": "part2_insert_remove_furniture_bench_round_table_1598",
+      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_round_table_1598.mp4",
+      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_round_table_1598.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -423,9 +1144,9 @@
       "text": "remove white plastic cross from white plastic base"
     },
     {
-      "id": "part2_insert_remove_furniture_bench_round_table_781",
-      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_round_table_781.mp4",
-      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_round_table_781.json",
+      "id": "part2_insert_remove_furniture_bench_round_table_1206",
+      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_round_table_1206.mp4",
+      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_round_table_1206.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -433,12 +1154,12 @@
       ],
       "has_tracks": true,
       "task": "insert_remove_furniture_bench_round_table",
-      "text": "remove white plastic piece from white plastic base"
+      "text": "insert white plastic cross into white plastic base"
     },
     {
-      "id": "part2_insert_remove_furniture_bench_round_table_1778",
-      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_round_table_1778.mp4",
-      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_round_table_1778.json",
+      "id": "part2_insert_remove_furniture_bench_round_table_3265",
+      "rgb_url": "static/videos/egodex/part2_insert_remove_furniture_bench_round_table_3265.mp4",
+      "motion_url": "static/data/motion/part2_insert_remove_furniture_bench_round_table_3265.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -446,15 +1167,64 @@
       ],
       "has_tracks": true,
       "task": "insert_remove_furniture_bench_round_table",
-      "text": "insert white plastic object into white plastic base"
+      "text": "put white plastic cross on white plastic base"
     },
     {
-      "id": "part3_insert_remove_shirt_in_tube_292",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_shirt_in_tube_292.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_shirt_in_tube_292.json",
-      "num_segments": 5,
-      "num_objects": 2,
+      "id": "part3_insert_remove_plug_socket_4352",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_plug_socket_4352.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_plug_socket_4352.json",
+      "num_segments": 1,
+      "num_objects": 1,
       "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_plug_socket"
+    },
+    {
+      "id": "part3_insert_remove_plug_socket_3793",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_plug_socket_3793.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_plug_socket_3793.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_plug_socket"
+    },
+    {
+      "id": "part3_insert_remove_plug_socket_4498",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_plug_socket_4498.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_plug_socket_4498.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_plug_socket"
+    },
+    {
+      "id": "part3_insert_remove_shirt_in_tube_1721",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_shirt_in_tube_1721.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_shirt_in_tube_1721.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_shirt_in_tube"
+    },
+    {
+      "id": "part3_insert_remove_shirt_in_tube_658",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_shirt_in_tube_658.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_shirt_in_tube_658.json",
+      "num_segments": 9,
+      "num_objects": 3,
+      "object_names": [
+        "obj0",
         "obj1",
         "obj2"
       ],
@@ -462,33 +1232,22 @@
       "task": "insert_remove_shirt_in_tube"
     },
     {
-      "id": "part3_insert_remove_shirt_in_tube_269",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_shirt_in_tube_269.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_shirt_in_tube_269.json",
-      "num_segments": 1,
-      "num_objects": 1,
+      "id": "part3_insert_remove_shirt_in_tube_719",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_shirt_in_tube_719.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_shirt_in_tube_719.json",
+      "num_segments": 18,
+      "num_objects": 2,
       "object_names": [
-        "obj0"
+        "obj0",
+        "obj1"
       ],
       "has_tracks": true,
       "task": "insert_remove_shirt_in_tube"
     },
     {
-      "id": "part3_insert_remove_shirt_in_tube_1021",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_shirt_in_tube_1021.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_shirt_in_tube_1021.json",
-      "num_segments": 4,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "insert_remove_shirt_in_tube"
-    },
-    {
-      "id": "part3_insert_remove_tennis_ball_17",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_tennis_ball_17.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_tennis_ball_17.json",
+      "id": "part3_insert_remove_tennis_ball_1021",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_tennis_ball_1021.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_tennis_ball_1021.json",
       "num_segments": 4,
       "num_objects": 1,
       "object_names": [
@@ -498,33 +1257,48 @@
       "task": "insert_remove_tennis_ball"
     },
     {
-      "id": "part3_insert_remove_tennis_ball_157",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_tennis_ball_157.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_tennis_ball_157.json",
-      "num_segments": 6,
-      "num_objects": 1,
+      "id": "part3_insert_remove_tennis_ball_811",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_tennis_ball_811.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_tennis_ball_811.json",
+      "num_segments": 2,
+      "num_objects": 2,
       "object_names": [
-        "obj0"
+        "obj0",
+        "obj1"
       ],
       "has_tracks": true,
       "task": "insert_remove_tennis_ball"
     },
     {
-      "id": "part3_insert_remove_tennis_ball_1134",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_tennis_ball_1134.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_tennis_ball_1134.json",
-      "num_segments": 4,
-      "num_objects": 1,
+      "id": "part3_insert_remove_tennis_ball_184",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_tennis_ball_184.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_tennis_ball_184.json",
+      "num_segments": 29,
+      "num_objects": 3,
       "object_names": [
-        "obj0"
+        "obj0",
+        "obj1",
+        "obj2"
       ],
       "has_tracks": true,
       "task": "insert_remove_tennis_ball"
     },
     {
-      "id": "part3_insert_remove_usb_3785",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_usb_3785.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_usb_3785.json",
+      "id": "part3_insert_remove_usb_5019",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_usb_5019.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_usb_5019.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_usb"
+    },
+    {
+      "id": "part3_insert_remove_usb_4659",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_usb_4659.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_usb_4659.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -534,180 +1308,88 @@
       "task": "insert_remove_usb"
     },
     {
-      "id": "extra_insert_remove_usb_630",
-      "rgb_url": "static/videos/egodex/extra_insert_remove_usb_630.mp4",
-      "motion_url": "static/data/motion/extra_insert_remove_usb_630.json",
-      "num_segments": 10,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "insert_remove_usb",
-      "text": "comb blonde hair with pink comb"
-    },
-    {
-      "id": "extra_insert_remove_usb_538",
-      "rgb_url": "static/videos/egodex/extra_insert_remove_usb_538.mp4",
-      "motion_url": "static/data/motion/extra_insert_remove_usb_538.json",
+      "id": "part3_insert_remove_usb_142",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_usb_142.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_usb_142.json",
       "num_segments": 2,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "insert_remove_usb",
-      "text": "comb blonde hair of doll with pink comb"
+      "task": "insert_remove_usb"
     },
     {
-      "id": "part3_insert_remove_utensils_3228",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_utensils_3228.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_utensils_3228.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "insert_remove_utensils",
-      "text": "take plastic cutlery from drying rack"
-    },
-    {
-      "id": "part3_insert_remove_utensils_2323",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_utensils_2323.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_utensils_2323.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "insert_remove_utensils",
-      "text": "take plastic cutlery from dish rack"
-    },
-    {
-      "id": "part3_insert_remove_utensils_948",
-      "rgb_url": "static/videos/egodex/part3_insert_remove_utensils_948.mp4",
-      "motion_url": "static/data/motion/part3_insert_remove_utensils_948.json",
-      "num_segments": 3,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "insert_remove_utensils",
-      "text": "put plastic cutlery into dish rack"
-    },
-    {
-      "id": "part3_knead_slime_1409",
-      "rgb_url": "static/videos/egodex/part3_knead_slime_1409.mp4",
-      "motion_url": "static/data/motion/part3_knead_slime_1409.json",
-      "num_segments": 3,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "knead_slime",
-      "text": "stretch light green glittery slime on white table"
-    },
-    {
-      "id": "part3_knead_slime_1222",
-      "rgb_url": "static/videos/egodex/part3_knead_slime_1222.mp4",
-      "motion_url": "static/data/motion/part3_knead_slime_1222.json",
-      "num_segments": 3,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "knead_slime",
-      "text": "stretch light green glittery slime on white table"
-    },
-    {
-      "id": "part3_knead_slime_120",
-      "rgb_url": "static/videos/egodex/part3_knead_slime_120.mp4",
-      "motion_url": "static/data/motion/part3_knead_slime_120.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "knead_slime",
-      "text": "stretch light green slime between hands"
-    },
-    {
-      "id": "extra_knit_scarf_63",
-      "rgb_url": "static/videos/egodex/extra_knit_scarf_63.mp4",
-      "motion_url": "static/data/motion/extra_knit_scarf_63.json",
-      "num_segments": 3,
+      "id": "part3_insert_remove_utensils_2288",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_utensils_2288.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_utensils_2288.json",
+      "num_segments": 6,
       "num_objects": 2,
       "object_names": [
-        "obj1",
-        "obj2"
-      ],
-      "has_tracks": true,
-      "task": "knit_scarf",
-      "text": "knit wool yarn with knitting needles"
-    },
-    {
-      "id": "extra_knit_scarf_15",
-      "rgb_url": "static/videos/egodex/extra_knit_scarf_15.mp4",
-      "motion_url": "static/data/motion/extra_knit_scarf_15.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
+        "obj0",
         "obj1"
       ],
       "has_tracks": true,
-      "task": "knit_scarf",
-      "text": "wrap wool around knitting needle"
+      "task": "insert_remove_utensils",
+      "text": "put plastic cutlery into dish drainer"
     },
     {
-      "id": "extra_knit_scarf_100",
-      "rgb_url": "static/videos/egodex/extra_knit_scarf_100.mp4",
-      "motion_url": "static/data/motion/extra_knit_scarf_100.json",
-      "num_segments": 2,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "knit_scarf",
-      "text": "knit wool yarn with knitting needles"
-    },
-    {
-      "id": "extra_makeup_359",
-      "rgb_url": "static/videos/egodex/extra_makeup_359.mp4",
-      "motion_url": "static/data/motion/extra_makeup_359.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj1"
-      ],
-      "has_tracks": true,
-      "task": "makeup",
-      "text": "move pink plastic toy on bed"
-    },
-    {
-      "id": "extra_makeup_707",
-      "rgb_url": "static/videos/egodex/extra_makeup_707.mp4",
-      "motion_url": "static/data/motion/extra_makeup_707.json",
+      "id": "part3_insert_remove_utensils_3313",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_utensils_3313.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_utensils_3313.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "makeup",
-      "text": "apply brown eyeshadow to doll's eyelid"
+      "task": "insert_remove_utensils",
+      "text": "put plastic forks into dish drainer"
     },
     {
-      "id": "extra_makeup_27",
-      "rgb_url": "static/videos/egodex/extra_makeup_27.mp4",
-      "motion_url": "static/data/motion/extra_makeup_27.json",
-      "num_segments": 4,
+      "id": "part3_insert_remove_utensils_1277",
+      "rgb_url": "static/videos/egodex/part3_insert_remove_utensils_1277.mp4",
+      "motion_url": "static/data/motion/part3_insert_remove_utensils_1277.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "insert_remove_utensils",
+      "text": "take plastic spoons from dish drainer"
+    },
+    {
+      "id": "part3_load_dispense_ice_0",
+      "rgb_url": "static/videos/egodex/part3_load_dispense_ice_0.mp4",
+      "motion_url": "static/data/motion/part3_load_dispense_ice_0.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "load_dispense_ice",
+      "text": "take yellow plastic cup from countertop"
+    },
+    {
+      "id": "part3_lock_unlock_key_148",
+      "rgb_url": "static/videos/egodex/part3_lock_unlock_key_148.mp4",
+      "motion_url": "static/data/motion/part3_lock_unlock_key_148.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "lock_unlock_key",
+      "text": "insert red key into lock"
+    },
+    {
+      "id": "extra_make_sandwich_311",
+      "rgb_url": "static/videos/egodex/extra_make_sandwich_311.mp4",
+      "motion_url": "static/data/motion/extra_make_sandwich_311.json",
+      "num_segments": 10,
       "num_objects": 3,
       "object_names": [
         "obj0",
@@ -715,282 +1397,197 @@
         "obj2"
       ],
       "has_tracks": true,
-      "task": "makeup",
-      "text": "apply red lipstick to the doll's lips"
+      "task": "make_sandwich",
+      "text": "put pink circular toy on bread, put green toy on pink toy, put green toy on bread, put yellow toy on bread, put bread on bread"
     },
     {
-      "id": "extra_play_reversi_1295",
-      "rgb_url": "static/videos/egodex/extra_play_reversi_1295.mp4",
-      "motion_url": "static/data/motion/extra_play_reversi_1295.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj1"
-      ],
-      "has_tracks": true,
-      "task": "play_reversi",
-      "text": "put white round piece on green square board"
-    },
-    {
-      "id": "extra_play_reversi_1277",
-      "rgb_url": "static/videos/egodex/extra_play_reversi_1277.mp4",
-      "motion_url": "static/data/motion/extra_play_reversi_1277.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "play_reversi",
-      "text": "move black circular checker piece on green checkerboard"
-    },
-    {
-      "id": "extra_play_reversi_1218",
-      "rgb_url": "static/videos/egodex/extra_play_reversi_1218.mp4",
-      "motion_url": "static/data/motion/extra_play_reversi_1218.json",
-      "num_segments": 4,
-      "num_objects": 2,
-      "object_names": [
-        "obj1",
-        "obj2"
-      ],
-      "has_tracks": true,
-      "task": "play_reversi",
-      "text": "move white circular pieces on green square board"
-    },
-    {
-      "id": "part4_put_away_set_up_board_game_183",
-      "rgb_url": "static/videos/egodex/part4_put_away_set_up_board_game_183.mp4",
-      "motion_url": "static/data/motion/part4_put_away_set_up_board_game_183.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "put_away_set_up_board_game",
-      "text": "pack black square board into white box"
-    },
-    {
-      "id": "part4_put_away_set_up_board_game_501",
-      "rgb_url": "static/videos/egodex/part4_put_away_set_up_board_game_501.mp4",
-      "motion_url": "static/data/motion/part4_put_away_set_up_board_game_501.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "put_away_set_up_board_game",
-      "text": "pack chess board into box"
-    },
-    {
-      "id": "part4_put_away_set_up_board_game_58",
-      "rgb_url": "static/videos/egodex/part4_put_away_set_up_board_game_58.mp4",
-      "motion_url": "static/data/motion/part4_put_away_set_up_board_game_58.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "put_away_set_up_board_game",
-      "text": "pack chess board and pieces into box"
-    },
-    {
-      "id": "part4_put_in_take_out_glasses_444",
-      "rgb_url": "static/videos/egodex/part4_put_in_take_out_glasses_444.mp4",
-      "motion_url": "static/data/motion/part4_put_in_take_out_glasses_444.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "put_in_take_out_glasses",
-      "text": "put black sunglasses into black wallet"
-    },
-    {
-      "id": "part4_put_in_take_out_glasses_374",
-      "rgb_url": "static/videos/egodex/part4_put_in_take_out_glasses_374.mp4",
-      "motion_url": "static/data/motion/part4_put_in_take_out_glasses_374.json",
-      "num_segments": 4,
-      "num_objects": 2,
-      "object_names": [
-        "obj0",
-        "obj1"
-      ],
-      "has_tracks": true,
-      "task": "put_in_take_out_glasses",
-      "text": "take out eyeglasses from eyeglasses case"
-    },
-    {
-      "id": "part4_put_in_take_out_glasses_344",
-      "rgb_url": "static/videos/egodex/part4_put_in_take_out_glasses_344.mp4",
-      "motion_url": "static/data/motion/part4_put_in_take_out_glasses_344.json",
-      "num_segments": 7,
-      "num_objects": 2,
-      "object_names": [
-        "obj0",
-        "obj1"
-      ],
-      "has_tracks": true,
-      "task": "put_in_take_out_glasses",
-      "text": "put eyeglasses into case"
-    },
-    {
-      "id": "part4_put_toothpaste_on_toothbrush_359",
-      "rgb_url": "static/videos/egodex/part4_put_toothpaste_on_toothbrush_359.mp4",
-      "motion_url": "static/data/motion/part4_put_toothpaste_on_toothbrush_359.json",
+      "id": "extra_make_sandwich_43",
+      "rgb_url": "static/videos/egodex/extra_make_sandwich_43.mp4",
+      "motion_url": "static/data/motion/extra_make_sandwich_43.json",
       "num_segments": 3,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "put_toothpaste_on_toothbrush",
-      "text": "take toothbrush from cup"
+      "task": "make_sandwich",
+      "text": "put pink paper circle on bread"
     },
     {
-      "id": "part4_put_toothpaste_on_toothbrush_1661",
-      "rgb_url": "static/videos/egodex/part4_put_toothpaste_on_toothbrush_1661.mp4",
-      "motion_url": "static/data/motion/part4_put_toothpaste_on_toothbrush_1661.json",
+      "id": "extra_make_sandwich_348",
+      "rgb_url": "static/videos/egodex/extra_make_sandwich_348.mp4",
+      "motion_url": "static/data/motion/extra_make_sandwich_348.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "make_sandwich",
+      "text": "assemble sandwich with bread, lettuce, cheese, ham, and bread"
+    },
+    {
+      "id": "extra_makeup_382",
+      "rgb_url": "static/videos/egodex/extra_makeup_382.mp4",
+      "motion_url": "static/data/motion/extra_makeup_382.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "makeup",
+      "text": "apply black eyeshadow to doll's eye with brush"
+    },
+    {
+      "id": "extra_makeup_826",
+      "rgb_url": "static/videos/egodex/extra_makeup_826.mp4",
+      "motion_url": "static/data/motion/extra_makeup_826.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "makeup",
+      "text": "put pink toy phone on pink and white dress"
+    },
+    {
+      "id": "extra_makeup_918",
+      "rgb_url": "static/videos/egodex/extra_makeup_918.mp4",
+      "motion_url": "static/data/motion/extra_makeup_918.json",
+      "num_segments": 3,
+      "num_objects": 2,
+      "object_names": [
+        "obj1",
+        "obj2"
+      ],
+      "has_tracks": true,
+      "task": "makeup",
+      "text": "put pink toy on the head of the doll"
+    },
+    {
+      "id": "part3_measure_objects_760",
+      "rgb_url": "static/videos/egodex/part3_measure_objects_760.mp4",
+      "motion_url": "static/data/motion/part3_measure_objects_760.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "measure_objects",
+      "text": "measure the length of the electronic organ with a tape measure"
+    },
+    {
+      "id": "part3_measure_objects_0",
+      "rgb_url": "static/videos/egodex/part3_measure_objects_0.mp4",
+      "motion_url": "static/data/motion/part3_measure_objects_0.json",
       "num_segments": 6,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "put_toothpaste_on_toothbrush",
-      "text": "take out toothbrush from cup"
+      "task": "measure_objects",
+      "text": "measure black box with yellow tape"
     },
     {
-      "id": "part4_put_toothpaste_on_toothbrush_1886",
-      "rgb_url": "static/videos/egodex/part4_put_toothpaste_on_toothbrush_1886.mp4",
-      "motion_url": "static/data/motion/part4_put_toothpaste_on_toothbrush_1886.json",
-      "num_segments": 2,
+      "id": "part3_measure_objects_834",
+      "rgb_url": "static/videos/egodex/part3_measure_objects_834.mp4",
+      "motion_url": "static/data/motion/part3_measure_objects_834.json",
+      "num_segments": 4,
       "num_objects": 1,
       "object_names": [
-        "obj1"
+        "obj0"
       ],
       "has_tracks": true,
-      "task": "put_toothpaste_on_toothbrush",
-      "text": "put toothpaste on toothbrush"
+      "task": "measure_objects",
+      "text": "measure black smartphone with yellow tape measure"
     },
     {
-      "id": "part4_set_up_clean_up_chessboard_193",
-      "rgb_url": "static/videos/egodex/part4_set_up_clean_up_chessboard_193.mp4",
-      "motion_url": "static/data/motion/part4_set_up_clean_up_chessboard_193.json",
+      "id": "part3_open_close_insert_remove_case_1816",
+      "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_case_1816.mp4",
+      "motion_url": "static/data/motion/part3_open_close_insert_remove_case_1816.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "set_up_clean_up_chessboard",
-      "text": "take chess pieces out of bag"
+      "task": "open_close_insert_remove_case",
+      "text": "put white rubber duck in black box"
     },
     {
-      "id": "part4_set_up_clean_up_chessboard_218",
-      "rgb_url": "static/videos/egodex/part4_set_up_clean_up_chessboard_218.mp4",
-      "motion_url": "static/data/motion/part4_set_up_clean_up_chessboard_218.json",
+      "id": "part3_open_close_insert_remove_case_753",
+      "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_case_753.mp4",
+      "motion_url": "static/data/motion/part3_open_close_insert_remove_case_753.json",
       "num_segments": 2,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "set_up_clean_up_chessboard",
-      "text": "take plastic bag from table"
+      "task": "open_close_insert_remove_case",
+      "text": "put white rubber duck in black box"
     },
     {
-      "id": "part4_set_up_clean_up_chessboard_84",
-      "rgb_url": "static/videos/egodex/part4_set_up_clean_up_chessboard_84.mp4",
-      "motion_url": "static/data/motion/part4_set_up_clean_up_chessboard_84.json",
-      "num_segments": 5,
+      "id": "part3_open_close_insert_remove_case_798",
+      "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_case_798.mp4",
+      "motion_url": "static/data/motion/part3_open_close_insert_remove_case_798.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "open_close_insert_remove_case",
+      "text": "put white oval pill box into black briefcase"
+    },
+    {
+      "id": "part3_open_close_insert_remove_tupperware_1240",
+      "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_tupperware_1240.mp4",
+      "motion_url": "static/data/motion/part3_open_close_insert_remove_tupperware_1240.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "open_close_insert_remove_tupperware",
+      "text": "put yellow sponge into clear plastic container"
+    },
+    {
+      "id": "part3_open_close_insert_remove_tupperware_434",
+      "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_tupperware_434.mp4",
+      "motion_url": "static/data/motion/part3_open_close_insert_remove_tupperware_434.json",
+      "num_segments": 2,
       "num_objects": 2,
       "object_names": [
         "obj0",
-        "obj2"
+        "obj1"
       ],
       "has_tracks": true,
-      "task": "set_up_clean_up_chessboard",
-      "text": "pick up clear plastic bag, turn over, shake, place brown chess pieces into clear plastic bag, place clear plastic bag on table, rotate chess board, pick up clear plastic bag, place yellow chess pieces into clear plastic bag, place clear plastic bag on table"
+      "task": "open_close_insert_remove_tupperware",
+      "text": "take out rubber duck from box"
     },
     {
-      "id": "part4_setup_cleanup_table_138",
-      "rgb_url": "static/videos/egodex/part4_setup_cleanup_table_138.mp4",
-      "motion_url": "static/data/motion/part4_setup_cleanup_table_138.json",
-      "num_segments": 11,
-      "num_objects": 6,
-      "object_names": [
-        "obj0",
-        "obj1",
-        "obj2",
-        "obj3",
-        "obj4",
-        "obj5"
-      ],
-      "has_tracks": true,
-      "task": "setup_cleanup_table",
-      "text": "unfold red napkin, place blue plastic spoon on napkin, place blue plastic fork on napkin, place blue plastic knife on napkin, place blue plastic cup on napkin, place blue plastic saucer on napkin"
-    },
-    {
-      "id": "part4_setup_cleanup_table_358",
-      "rgb_url": "static/videos/egodex/part4_setup_cleanup_table_358.mp4",
-      "motion_url": "static/data/motion/part4_setup_cleanup_table_358.json",
+      "id": "part3_open_close_insert_remove_tupperware_1297",
+      "rgb_url": "static/videos/egodex/part3_open_close_insert_remove_tupperware_1297.mp4",
+      "motion_url": "static/data/motion/part3_open_close_insert_remove_tupperware_1297.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "setup_cleanup_table",
-      "text": "remove yellow plastic pear from blue plastic plate"
+      "task": "open_close_insert_remove_tupperware",
+      "text": "take sponge from container"
     },
     {
-      "id": "part4_setup_cleanup_table_349",
-      "rgb_url": "static/videos/egodex/part4_setup_cleanup_table_349.mp4",
-      "motion_url": "static/data/motion/part4_setup_cleanup_table_349.json",
-      "num_segments": 2,
-      "num_objects": 1,
-      "object_names": [
-        "obj2"
-      ],
-      "has_tracks": true,
-      "task": "setup_cleanup_table",
-      "text": "remove yellow banana, blue plate, blue cup, blue fork from red tablecloth"
-    },
-    {
-      "id": "extra_sleeve_unsleeve_cards_71",
-      "rgb_url": "static/videos/egodex/extra_sleeve_unsleeve_cards_71.mp4",
-      "motion_url": "static/data/motion/extra_sleeve_unsleeve_cards_71.json",
-      "num_segments": 11,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "sleeve_unsleeve_cards",
-      "text": "separate trading cards from red card sleeves"
-    },
-    {
-      "id": "extra_sleeve_unsleeve_cards_47",
-      "rgb_url": "static/videos/egodex/extra_sleeve_unsleeve_cards_47.mp4",
-      "motion_url": "static/data/motion/extra_sleeve_unsleeve_cards_47.json",
-      "num_segments": 10,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "sleeve_unsleeve_cards",
-      "text": "sort trading cards by color and material on white table"
-    },
-    {
-      "id": "part4_sleeve_unsleeve_cards_310",
-      "rgb_url": "static/videos/egodex/part4_sleeve_unsleeve_cards_310.mp4",
-      "motion_url": "static/data/motion/part4_sleeve_unsleeve_cards_310.json",
+      "id": "part3_paint_clean_brush_531",
+      "rgb_url": "static/videos/egodex/part3_paint_clean_brush_531.mp4",
+      "motion_url": "static/data/motion/part3_paint_clean_brush_531.json",
       "num_segments": 14,
       "num_objects": 2,
       "object_names": [
@@ -998,8 +1595,500 @@
         "obj1"
       ],
       "has_tracks": true,
-      "task": "sleeve_unsleeve_cards",
-      "text": "separate trading card from deck, place on table"
+      "task": "paint_clean_brush",
+      "text": "dip blue paintbrush into water in cup"
+    },
+    {
+      "id": "part3_paint_clean_brush_1665",
+      "rgb_url": "static/videos/egodex/part3_paint_clean_brush_1665.mp4",
+      "motion_url": "static/data/motion/part3_paint_clean_brush_1665.json",
+      "num_segments": 5,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "paint_clean_brush",
+      "text": "color on paper with paintbrush"
+    },
+    {
+      "id": "part3_paint_clean_brush_1534",
+      "rgb_url": "static/videos/egodex/part3_paint_clean_brush_1534.mp4",
+      "motion_url": "static/data/motion/part3_paint_clean_brush_1534.json",
+      "num_segments": 7,
+      "num_objects": 3,
+      "object_names": [
+        "obj0",
+        "obj1",
+        "obj2"
+      ],
+      "has_tracks": true,
+      "task": "paint_clean_brush",
+      "text": "put down white pen on black plastic palette"
+    },
+    {
+      "id": "part3_peel_place_sticker_911",
+      "rgb_url": "static/videos/egodex/part3_peel_place_sticker_911.mp4",
+      "motion_url": "static/data/motion/part3_peel_place_sticker_911.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "peel_place_sticker",
+      "text": "use needle to poke butterfly on book"
+    },
+    {
+      "id": "part3_peel_place_sticker_90",
+      "rgb_url": "static/videos/egodex/part3_peel_place_sticker_90.mp4",
+      "motion_url": "static/data/motion/part3_peel_place_sticker_90.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "peel_place_sticker",
+      "text": "cut pink paper with scissors"
+    },
+    {
+      "id": "part3_peel_place_sticker_946",
+      "rgb_url": "static/videos/egodex/part3_peel_place_sticker_946.mp4",
+      "motion_url": "static/data/motion/part3_peel_place_sticker_946.json",
+      "num_segments": 2,
+      "num_objects": 2,
+      "object_names": [
+        "obj0",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "peel_place_sticker",
+      "text": "pick up blue paper cutout, place on butterfly illustration"
+    },
+    {
+      "id": "part4_pick_place_food_2887",
+      "rgb_url": "static/videos/egodex/part4_pick_place_food_2887.mp4",
+      "motion_url": "static/data/motion/part4_pick_place_food_2887.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "pick_place_food",
+      "text": "take yellow banana from basket"
+    },
+    {
+      "id": "part4_pick_place_food_3869",
+      "rgb_url": "static/videos/egodex/part4_pick_place_food_3869.mp4",
+      "motion_url": "static/data/motion/part4_pick_place_food_3869.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "pick_place_food",
+      "text": "put red apple on plate"
+    },
+    {
+      "id": "part4_pick_place_food_1533",
+      "rgb_url": "static/videos/egodex/part4_pick_place_food_1533.mp4",
+      "motion_url": "static/data/motion/part4_pick_place_food_1533.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "pick_place_food",
+      "text": "pick up toy burger from basket"
+    },
+    {
+      "id": "part3_pick_up_and_put_down_case_or_bag_809",
+      "rgb_url": "static/videos/egodex/part3_pick_up_and_put_down_case_or_bag_809.mp4",
+      "motion_url": "static/data/motion/part3_pick_up_and_put_down_case_or_bag_809.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "pick_up_and_put_down_case_or_bag",
+      "text": "pick up and put down case or bag"
+    },
+    {
+      "id": "part3_pick_up_and_put_down_case_or_bag_796",
+      "rgb_url": "static/videos/egodex/part3_pick_up_and_put_down_case_or_bag_796.mp4",
+      "motion_url": "static/data/motion/part3_pick_up_and_put_down_case_or_bag_796.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "pick_up_and_put_down_case_or_bag",
+      "text": "pick up and put down case or bag"
+    },
+    {
+      "id": "part3_pick_up_and_put_down_case_or_bag_450",
+      "rgb_url": "static/videos/egodex/part3_pick_up_and_put_down_case_or_bag_450.mp4",
+      "motion_url": "static/data/motion/part3_pick_up_and_put_down_case_or_bag_450.json",
+      "num_segments": 4,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "pick_up_and_put_down_case_or_bag",
+      "text": "pick up and put down case or bag"
+    },
+    {
+      "id": "part4_play_mancala_1610",
+      "rgb_url": "static/videos/egodex/part4_play_mancala_1610.mp4",
+      "motion_url": "static/data/motion/part4_play_mancala_1610.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "play_mancala",
+      "text": "place marbles into slots"
+    },
+    {
+      "id": "part4_play_mancala_1825",
+      "rgb_url": "static/videos/egodex/part4_play_mancala_1825.mp4",
+      "motion_url": "static/data/motion/part4_play_mancala_1825.json",
+      "num_segments": 7,
+      "num_objects": 2,
+      "object_names": [
+        "obj0",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "play_mancala",
+      "text": "move marbles in marble run"
+    },
+    {
+      "id": "part4_play_mancala_559",
+      "rgb_url": "static/videos/egodex/part4_play_mancala_559.mp4",
+      "motion_url": "static/data/motion/part4_play_mancala_559.json",
+      "num_segments": 14,
+      "num_objects": 2,
+      "object_names": [
+        "obj0",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "play_mancala",
+      "text": "place marbles into holes on wooden board"
+    },
+    {
+      "id": "part3_play_piano_3483",
+      "rgb_url": "static/videos/egodex/part3_play_piano_3483.mp4",
+      "motion_url": "static/data/motion/part3_play_piano_3483.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "play_piano",
+      "text": "play black and white piano keyboard"
+    },
+    {
+      "id": "part3_play_piano_2447",
+      "rgb_url": "static/videos/egodex/part3_play_piano_2447.mp4",
+      "motion_url": "static/data/motion/part3_play_piano_2447.json",
+      "num_segments": 2,
+      "num_objects": 2,
+      "object_names": [
+        "obj0",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "play_piano",
+      "text": "press piano key with finger"
+    },
+    {
+      "id": "part3_play_piano_2324",
+      "rgb_url": "static/videos/egodex/part3_play_piano_2324.mp4",
+      "motion_url": "static/data/motion/part3_play_piano_2324.json",
+      "num_segments": 2,
+      "num_objects": 2,
+      "object_names": [
+        "obj0",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "play_piano",
+      "text": "play black and white piano keyboard"
+    },
+    {
+      "id": "part4_play_reset_connect_four_1611",
+      "rgb_url": "static/videos/egodex/part4_play_reset_connect_four_1611.mp4",
+      "motion_url": "static/data/motion/part4_play_reset_connect_four_1611.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj2"
+      ],
+      "has_tracks": true,
+      "task": "play_reset_connect_four",
+      "text": "insert yellow plastic disc into blue plastic game board"
+    },
+    {
+      "id": "part4_play_reset_connect_four_623",
+      "rgb_url": "static/videos/egodex/part4_play_reset_connect_four_623.mp4",
+      "motion_url": "static/data/motion/part4_play_reset_connect_four_623.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "play_reset_connect_four",
+      "text": "move red and yellow plastic chips to the side of the blue plastic game board"
+    },
+    {
+      "id": "part4_play_reset_connect_four_778",
+      "rgb_url": "static/videos/egodex/part4_play_reset_connect_four_778.mp4",
+      "motion_url": "static/data/motion/part4_play_reset_connect_four_778.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj2"
+      ],
+      "has_tracks": true,
+      "task": "play_reset_connect_four",
+      "text": "put yellow circular game piece into blue plastic game board"
+    },
+    {
+      "id": "extra_play_reversi_1318",
+      "rgb_url": "static/videos/egodex/extra_play_reversi_1318.mp4",
+      "motion_url": "static/data/motion/extra_play_reversi_1318.json",
+      "num_segments": 6,
+      "num_objects": 3,
+      "object_names": [
+        "obj0",
+        "obj1",
+        "obj2"
+      ],
+      "has_tracks": true,
+      "task": "play_reversi",
+      "text": "put white circular piece on green square board"
+    },
+    {
+      "id": "extra_play_reversi_1135",
+      "rgb_url": "static/videos/egodex/extra_play_reversi_1135.mp4",
+      "motion_url": "static/data/motion/extra_play_reversi_1135.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "play_reversi",
+      "text": "remove black circular piece from green square board"
+    },
+    {
+      "id": "extra_play_reversi_1095",
+      "rgb_url": "static/videos/egodex/extra_play_reversi_1095.mp4",
+      "motion_url": "static/data/motion/extra_play_reversi_1095.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "play_reversi",
+      "text": "put black circular piece on green square board"
+    },
+    {
+      "id": "part4_pour_1744",
+      "rgb_url": "static/videos/egodex/part4_pour_1744.mp4",
+      "motion_url": "static/data/motion/part4_pour_1744.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "pour",
+      "text": "pour juice from bottle into cup"
+    },
+    {
+      "id": "part4_pour_2002",
+      "rgb_url": "static/videos/egodex/part4_pour_2002.mp4",
+      "motion_url": "static/data/motion/part4_pour_2002.json",
+      "num_segments": 3,
+      "num_objects": 2,
+      "object_names": [
+        "obj0",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "pour",
+      "text": "pour juice from brown glass bottle into black cup"
+    },
+    {
+      "id": "part4_pour_2401",
+      "rgb_url": "static/videos/egodex/part4_pour_2401.mp4",
+      "motion_url": "static/data/motion/part4_pour_2401.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "pour",
+      "text": "pour juice from bottle into cup"
+    },
+    {
+      "id": "part4_rake_smooth_zen_garden_1218",
+      "rgb_url": "static/videos/egodex/part4_rake_smooth_zen_garden_1218.mp4",
+      "motion_url": "static/data/motion/part4_rake_smooth_zen_garden_1218.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "rake_smooth_zen_garden",
+      "text": "move white stone with yellow tool on sand surface"
+    },
+    {
+      "id": "part4_rake_smooth_zen_garden_1043",
+      "rgb_url": "static/videos/egodex/part4_rake_smooth_zen_garden_1043.mp4",
+      "motion_url": "static/data/motion/part4_rake_smooth_zen_garden_1043.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "rake_smooth_zen_garden",
+      "text": "move yellow miniature golf club on white sand in black circular dish"
+    },
+    {
+      "id": "part4_rake_smooth_zen_garden_100",
+      "rgb_url": "static/videos/egodex/part4_rake_smooth_zen_garden_100.mp4",
+      "motion_url": "static/data/motion/part4_rake_smooth_zen_garden_100.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "rake_smooth_zen_garden",
+      "text": "move yellow bamboo rake over white sand in black-rimmed container"
+    },
+    {
+      "id": "part4_roll_ball_963",
+      "rgb_url": "static/videos/egodex/part4_roll_ball_963.mp4",
+      "motion_url": "static/data/motion/part4_roll_ball_963.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "roll_ball",
+      "text": "roll orange ball on green surface"
+    },
+    {
+      "id": "part4_roll_ball_937",
+      "rgb_url": "static/videos/egodex/part4_roll_ball_937.mp4",
+      "motion_url": "static/data/motion/part4_roll_ball_937.json",
+      "num_segments": 7,
+      "num_objects": 2,
+      "object_names": [
+        "obj0",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "roll_ball",
+      "text": "roll red ball on green surface"
+    },
+    {
+      "id": "part4_roll_ball_847",
+      "rgb_url": "static/videos/egodex/part4_roll_ball_847.mp4",
+      "motion_url": "static/data/motion/part4_roll_ball_847.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "roll_ball",
+      "text": "roll yellow tennis ball on green surface"
+    },
+    {
+      "id": "part4_scoop_dump_ice_4492",
+      "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_4492.mp4",
+      "motion_url": "static/data/motion/part4_scoop_dump_ice_4492.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "scoop_dump_ice",
+      "text": "pour water from yellow cup into gray container"
+    },
+    {
+      "id": "part4_scoop_dump_ice_5656",
+      "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_5656.mp4",
+      "motion_url": "static/data/motion/part4_scoop_dump_ice_5656.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "scoop_dump_ice",
+      "text": "pick up purple plastic shovel"
+    },
+    {
+      "id": "part4_scoop_dump_ice_4144",
+      "rgb_url": "static/videos/egodex/part4_scoop_dump_ice_4144.mp4",
+      "motion_url": "static/data/motion/part4_scoop_dump_ice_4144.json",
+      "num_segments": 4,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "scoop_dump_ice",
+      "text": "scoop ice cubes with purple shovel"
+    },
+    {
+      "id": "part4_slot_batteries_837",
+      "rgb_url": "static/videos/egodex/part4_slot_batteries_837.mp4",
+      "motion_url": "static/data/motion/part4_slot_batteries_837.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "slot_batteries",
+      "text": "remove battery from black plastic remote control"
+    },
+    {
+      "id": "part4_slot_batteries_956",
+      "rgb_url": "static/videos/egodex/part4_slot_batteries_956.mp4",
+      "motion_url": "static/data/motion/part4_slot_batteries_956.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "slot_batteries",
+      "text": "put battery in remote"
     },
     {
       "id": "part4_slot_batteries_670",
@@ -1015,87 +2104,9 @@
       "text": "insert battery into remote"
     },
     {
-      "id": "part4_slot_batteries_113",
-      "rgb_url": "static/videos/egodex/part4_slot_batteries_113.mp4",
-      "motion_url": "static/data/motion/part4_slot_batteries_113.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "slot_batteries",
-      "text": "take out battery from battery cover"
-    },
-    {
-      "id": "part4_slot_batteries_1084",
-      "rgb_url": "static/videos/egodex/part4_slot_batteries_1084.mp4",
-      "motion_url": "static/data/motion/part4_slot_batteries_1084.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "slot_batteries",
-      "text": "put battery in remote"
-    },
-    {
-      "id": "part4_sort_beads_10",
-      "rgb_url": "static/videos/egodex/part4_sort_beads_10.mp4",
-      "motion_url": "static/data/motion/part4_sort_beads_10.json",
-      "num_segments": 30,
-      "num_objects": 24,
-      "object_names": [
-        "obj0",
-        "obj4",
-        "obj6",
-        "obj8",
-        "obj10",
-        "obj12",
-        "obj14",
-        "obj16",
-        "obj17",
-        "obj19",
-        "obj21",
-        "obj24",
-        "obj26",
-        "obj28",
-        "obj30",
-        "obj32",
-        "obj34",
-        "obj37",
-        "obj39",
-        "obj41",
-        "obj43",
-        "obj45",
-        "obj47",
-        "obj49"
-      ],
-      "has_tracks": true,
-      "task": "sort_beads",
-      "text": "separate dice by color"
-    },
-    {
-      "id": "part4_sort_beads_1001",
-      "rgb_url": "static/videos/egodex/part4_sort_beads_1001.mp4",
-      "motion_url": "static/data/motion/part4_sort_beads_1001.json",
-      "num_segments": 6,
-      "num_objects": 4,
-      "object_names": [
-        "obj17",
-        "obj18",
-        "obj19",
-        "obj20"
-      ],
-      "has_tracks": true,
-      "task": "sort_beads",
-      "text": "separate dice by color"
-    },
-    {
-      "id": "part5_stack_6666",
-      "rgb_url": "static/videos/egodex/part5_stack_6666.mp4",
-      "motion_url": "static/data/motion/part5_stack_6666.json",
+      "id": "part5_stack_7289",
+      "rgb_url": "static/videos/egodex/part5_stack_7289.mp4",
+      "motion_url": "static/data/motion/part5_stack_7289.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -1103,12 +2114,12 @@
       ],
       "has_tracks": true,
       "task": "stack",
-      "text": "put white and red toy on bed"
+      "text": "put rubber duck on box"
     },
     {
-      "id": "part5_stack_6237",
-      "rgb_url": "static/videos/egodex/part5_stack_6237.mp4",
-      "motion_url": "static/data/motion/part5_stack_6237.json",
+      "id": "part5_stack_2832",
+      "rgb_url": "static/videos/egodex/part5_stack_2832.mp4",
+      "motion_url": "static/data/motion/part5_stack_2832.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -1116,12 +2127,12 @@
       ],
       "has_tracks": true,
       "task": "stack",
-      "text": "put white lid into brown box"
+      "text": "put candy on box"
     },
     {
-      "id": "part5_stack_5806",
-      "rgb_url": "static/videos/egodex/part5_stack_5806.mp4",
-      "motion_url": "static/data/motion/part5_stack_5806.json",
+      "id": "part5_stack_7411",
+      "rgb_url": "static/videos/egodex/part5_stack_7411.mp4",
+      "motion_url": "static/data/motion/part5_stack_7411.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
@@ -1129,75 +2140,210 @@
       ],
       "has_tracks": true,
       "task": "stack",
-      "text": "put ornament on box"
+      "text": "put candy on box"
     },
     {
-      "id": "extra_stack_unstack_tetra_board_1020",
-      "rgb_url": "static/videos/egodex/extra_stack_unstack_tetra_board_1020.mp4",
-      "motion_url": "static/data/motion/extra_stack_unstack_tetra_board_1020.json",
-      "num_segments": 4,
+      "id": "part5_stack_remove_jenga_1549",
+      "rgb_url": "static/videos/egodex/part5_stack_remove_jenga_1549.mp4",
+      "motion_url": "static/data/motion/part5_stack_remove_jenga_1549.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "stack_remove_jenga",
+      "text": "place wooden block on stack"
+    },
+    {
+      "id": "part5_stack_remove_jenga_1605",
+      "rgb_url": "static/videos/egodex/part5_stack_remove_jenga_1605.mp4",
+      "motion_url": "static/data/motion/part5_stack_remove_jenga_1605.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "stack_remove_jenga",
+      "text": "remove light brown wooden block from stack"
+    },
+    {
+      "id": "part5_stack_remove_jenga_1122",
+      "rgb_url": "static/videos/egodex/part5_stack_remove_jenga_1122.mp4",
+      "motion_url": "static/data/motion/part5_stack_remove_jenga_1122.json",
+      "num_segments": 2,
       "num_objects": 2,
       "object_names": [
         "obj0",
         "obj1"
       ],
       "has_tracks": true,
-      "task": "stack_unstack_tetra_board",
-      "text": "remove puzzle piece from puzzle"
+      "task": "stack_remove_jenga",
+      "text": "place rectangular wooden block on top of other rectangular wooden blocks"
     },
     {
-      "id": "extra_stack_unstack_tetra_board_181",
-      "rgb_url": "static/videos/egodex/extra_stack_unstack_tetra_board_181.mp4",
-      "motion_url": "static/data/motion/extra_stack_unstack_tetra_board_181.json",
-      "num_segments": 10,
-      "num_objects": 3,
-      "object_names": [
-        "obj0",
-        "obj1",
-        "obj2"
-      ],
-      "has_tracks": true,
-      "task": "stack_unstack_tetra_board",
-      "text": "place green plastic piece on white plastic base"
-    },
-    {
-      "id": "extra_stack_unstack_tetra_board_1001",
-      "rgb_url": "static/videos/egodex/extra_stack_unstack_tetra_board_1001.mp4",
-      "motion_url": "static/data/motion/extra_stack_unstack_tetra_board_1001.json",
+      "id": "part5_stack_unstack_bowls_2153",
+      "rgb_url": "static/videos/egodex/part5_stack_unstack_bowls_2153.mp4",
+      "motion_url": "static/data/motion/part5_stack_unstack_bowls_2153.json",
       "num_segments": 2,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "stack_unstack_tetra_board",
-      "text": "insert green plastic puzzle piece into puzzle"
+      "task": "stack_unstack_bowls",
+      "text": "stack light blue ceramic bowl into dark green ceramic bowl"
     },
     {
-      "id": "extra_stamp_paper_118",
-      "rgb_url": "static/videos/egodex/extra_stamp_paper_118.mp4",
-      "motion_url": "static/data/motion/extra_stamp_paper_118.json",
+      "id": "part5_stack_unstack_bowls_540",
+      "rgb_url": "static/videos/egodex/part5_stack_unstack_bowls_540.mp4",
+      "motion_url": "static/data/motion/part5_stack_unstack_bowls_540.json",
+      "num_segments": 3,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "stack_unstack_bowls",
+      "text": "nest bowls together"
+    },
+    {
+      "id": "part5_stack_unstack_bowls_921",
+      "rgb_url": "static/videos/egodex/part5_stack_unstack_bowls_921.mp4",
+      "motion_url": "static/data/motion/part5_stack_unstack_bowls_921.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "stack_unstack_bowls",
+      "text": "take orange bowl from stack of bowls"
+    },
+    {
+      "id": "part5_stack_unstack_cups_1139",
+      "rgb_url": "static/videos/egodex/part5_stack_unstack_cups_1139.mp4",
+      "motion_url": "static/data/motion/part5_stack_unstack_cups_1139.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "stack_unstack_cups",
+      "text": "stack brown plastic cup into another brown plastic cup"
+    },
+    {
+      "id": "part5_stack_unstack_cups_88",
+      "rgb_url": "static/videos/egodex/part5_stack_unstack_cups_88.mp4",
+      "motion_url": "static/data/motion/part5_stack_unstack_cups_88.json",
+      "num_segments": 2,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "stack_unstack_cups",
+      "text": "stack white paper cup on white paper cup"
+    },
+    {
+      "id": "part5_stack_unstack_cups_495",
+      "rgb_url": "static/videos/egodex/part5_stack_unstack_cups_495.mp4",
+      "motion_url": "static/data/motion/part5_stack_unstack_cups_495.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "stamp_paper",
-      "text": "stamp on paper with rubber stamp"
+      "task": "stack_unstack_cups",
+      "text": "stack white paper cup into another white paper cup"
     },
     {
-      "id": "test_staple_paper_0",
-      "rgb_url": "static/videos/egodex/test_staple_paper_0.mp4",
-      "motion_url": "static/data/motion/test_staple_paper_0.json",
-      "num_segments": 4,
+      "id": "part5_stack_unstack_plates_195",
+      "rgb_url": "static/videos/egodex/part5_stack_unstack_plates_195.mp4",
+      "motion_url": "static/data/motion/part5_stack_unstack_plates_195.json",
+      "num_segments": 2,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "staple_paper",
-      "text": "tear off white paper"
+      "task": "stack_unstack_plates",
+      "text": "pick up red plastic plate"
+    },
+    {
+      "id": "part5_stack_unstack_plates_2986",
+      "rgb_url": "static/videos/egodex/part5_stack_unstack_plates_2986.mp4",
+      "motion_url": "static/data/motion/part5_stack_unstack_plates_2986.json",
+      "num_segments": 2,
+      "num_objects": 2,
+      "object_names": [
+        "obj0",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "stack_unstack_plates",
+      "text": "stack green plate, yellow plate, and blue plate together"
+    },
+    {
+      "id": "part5_stack_unstack_plates_5129",
+      "rgb_url": "static/videos/egodex/part5_stack_unstack_plates_5129.mp4",
+      "motion_url": "static/data/motion/part5_stack_unstack_plates_5129.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "stack_unstack_plates",
+      "text": "move yellow circular plate"
+    },
+    {
+      "id": "extra_stack_unstack_tetra_board_1038",
+      "rgb_url": "static/videos/egodex/extra_stack_unstack_tetra_board_1038.mp4",
+      "motion_url": "static/data/motion/extra_stack_unstack_tetra_board_1038.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "stack_unstack_tetra_board",
+      "text": "remove yellow puzzle piece from puzzle"
+    },
+    {
+      "id": "extra_stack_unstack_tetra_board_1209",
+      "rgb_url": "static/videos/egodex/extra_stack_unstack_tetra_board_1209.mp4",
+      "motion_url": "static/data/motion/extra_stack_unstack_tetra_board_1209.json",
+      "num_segments": 17,
+      "num_objects": 4,
+      "object_names": [
+        "obj0",
+        "obj2",
+        "obj3",
+        "obj4"
+      ],
+      "has_tracks": true,
+      "task": "stack_unstack_tetra_board",
+      "text": "place green plastic puzzle piece into white plastic puzzle board, place yellow plastic puzzle piece into white plastic puzzle board, place red plastic puzzle piece into white plastic puzzle board, place blue plastic puzzle piece into white plastic puzzle board, place yellow plastic puzzle piece into white plastic puzzle board, place red plastic puzzle piece into white plastic puzzle board, place yellow plastic puzzle piece into white plastic puzzle board, place red plastic puzzle piece into white plastic puzzle board, place yellow plastic puzzle piece into white plastic puzzle board, place red plastic puzzle piece into white plastic puzzle board, place yellow plastic puzzle piece into white plastic puzzle board, place red plastic puzzle piece into white"
+    },
+    {
+      "id": "extra_stack_unstack_tetra_board_1169",
+      "rgb_url": "static/videos/egodex/extra_stack_unstack_tetra_board_1169.mp4",
+      "motion_url": "static/data/motion/extra_stack_unstack_tetra_board_1169.json",
+      "num_segments": 7,
+      "num_objects": 4,
+      "object_names": [
+        "obj0",
+        "obj1",
+        "obj2",
+        "obj3"
+      ],
+      "has_tracks": true,
+      "task": "stack_unstack_tetra_board",
+      "text": "place green plastic puzzle piece on stand, place blue plastic puzzle piece on stand, place yellow plastic puzzle piece on stand, place red plastic puzzle piece on stand, place green plastic puzzle piece on stand, place blue plastic puzzle piece on stand, place yellow plastic puzzle piece on stand, place red plastic puzzle piece on stand, place green plastic puzzle piece on stand, place blue plastic puzzle piece on stand, place yellow plastic puzzle piece on stand, place red plastic puzzle piece on stand, place green plastic puzzle piece on stand, place blue plastic puzzle piece on stand, place yellow plastic puzzle piece on stand, place red plastic puzzle piece on stand"
     },
     {
       "id": "part4_stock_unstock_fridge_0",
@@ -1228,74 +2374,9 @@
       "text": "put green grapes and red apple into cupboard"
     },
     {
-      "id": "part5_thread_unthread_bead_necklace_2940",
-      "rgb_url": "static/videos/egodex/part5_thread_unthread_bead_necklace_2940.mp4",
-      "motion_url": "static/data/motion/part5_thread_unthread_bead_necklace_2940.json",
-      "num_segments": 2,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "thread_unthread_bead_necklace",
-      "text": "put black bead on string"
-    },
-    {
-      "id": "part5_thread_unthread_bead_necklace_2122",
-      "rgb_url": "static/videos/egodex/part5_thread_unthread_bead_necklace_2122.mp4",
-      "motion_url": "static/data/motion/part5_thread_unthread_bead_necklace_2122.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "thread_unthread_bead_necklace",
-      "text": "put colorful bead on pencil"
-    },
-    {
-      "id": "part5_thread_unthread_bead_necklace_2670",
-      "rgb_url": "static/videos/egodex/part5_thread_unthread_bead_necklace_2670.mp4",
-      "motion_url": "static/data/motion/part5_thread_unthread_bead_necklace_2670.json",
-      "num_segments": 2,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "thread_unthread_bead_necklace",
-      "text": "put purple bead on purple string"
-    },
-    {
-      "id": "part5_throw_and_catch_ball_1299",
-      "rgb_url": "static/videos/egodex/part5_throw_and_catch_ball_1299.mp4",
-      "motion_url": "static/data/motion/part5_throw_and_catch_ball_1299.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "throw_and_catch_ball",
-      "text": "throw yellow tennis ball between hands"
-    },
-    {
-      "id": "part5_throw_and_catch_ball_1263",
-      "rgb_url": "static/videos/egodex/part5_throw_and_catch_ball_1263.mp4",
-      "motion_url": "static/data/motion/part5_throw_and_catch_ball_1263.json",
-      "num_segments": 7,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "throw_and_catch_ball",
-      "text": "catch yellow tennis ball with right hand"
-    },
-    {
-      "id": "part5_throw_and_catch_ball_1103",
-      "rgb_url": "static/videos/egodex/part5_throw_and_catch_ball_1103.mp4",
-      "motion_url": "static/data/motion/part5_throw_and_catch_ball_1103.json",
+      "id": "part5_throw_and_catch_ball_1252",
+      "rgb_url": "static/videos/egodex/part5_throw_and_catch_ball_1252.mp4",
+      "motion_url": "static/data/motion/part5_throw_and_catch_ball_1252.json",
       "num_segments": 2,
       "num_objects": 1,
       "object_names": [
@@ -1303,26 +2384,52 @@
       ],
       "has_tracks": true,
       "task": "throw_and_catch_ball",
-      "text": "throw orange ball between hands"
+      "text": "bounce yellow tennis ball on bed"
     },
     {
-      "id": "test_throw_collect_objects_0",
-      "rgb_url": "static/videos/egodex/test_throw_collect_objects_0.mp4",
-      "motion_url": "static/data/motion/test_throw_collect_objects_0.json",
+      "id": "part5_throw_and_catch_ball_1184",
+      "rgb_url": "static/videos/egodex/part5_throw_and_catch_ball_1184.mp4",
+      "motion_url": "static/data/motion/part5_throw_and_catch_ball_1184.json",
+      "num_segments": 4,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "throw_and_catch_ball",
+      "text": "bounce yellow ball on table"
+    },
+    {
+      "id": "part5_throw_and_catch_ball_1313",
+      "rgb_url": "static/videos/egodex/part5_throw_and_catch_ball_1313.mp4",
+      "motion_url": "static/data/motion/part5_throw_and_catch_ball_1313.json",
       "num_segments": 2,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "throw_collect_objects",
-      "text": "pick up yellow ball"
+      "task": "throw_and_catch_ball",
+      "text": "bounce yellow tennis ball on left palm"
     },
     {
-      "id": "part5_throw_collect_objects_0",
-      "rgb_url": "static/videos/egodex/part5_throw_collect_objects_0.mp4",
-      "motion_url": "static/data/motion/part5_throw_collect_objects_0.json",
-      "num_segments": 10,
+      "id": "part5_type_keyboard_1047",
+      "rgb_url": "static/videos/egodex/part5_type_keyboard_1047.mp4",
+      "motion_url": "static/data/motion/part5_type_keyboard_1047.json",
+      "num_segments": 6,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "type_keyboard",
+      "text": "type on black keyboard with left hand"
+    },
+    {
+      "id": "part5_use_chopsticks_0",
+      "rgb_url": "static/videos/egodex/part5_use_chopsticks_0.mp4",
+      "motion_url": "static/data/motion/part5_use_chopsticks_0.json",
+      "num_segments": 25,
       "num_objects": 3,
       "object_names": [
         "obj0",
@@ -1330,13 +2437,208 @@
         "obj2"
       ],
       "has_tracks": true,
-      "task": "throw_collect_objects",
-      "text": "remove red marker from box"
+      "task": "use_chopsticks",
+      "text": "use chopsticks to transfer ice cubes from pink bowl to yellow bowl"
     },
     {
-      "id": "part5_tie_untie_rubberband_2198",
-      "rgb_url": "static/videos/egodex/part5_tie_untie_rubberband_2198.mp4",
-      "motion_url": "static/data/motion/part5_tie_untie_rubberband_2198.json",
+      "id": "part5_use_rubiks_cube_667",
+      "rgb_url": "static/videos/egodex/part5_use_rubiks_cube_667.mp4",
+      "motion_url": "static/data/motion/part5_use_rubiks_cube_667.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "use_rubiks_cube",
+      "text": "turn rubik's cube clockwise with both hands"
+    },
+    {
+      "id": "part5_use_rubiks_cube_5495",
+      "rgb_url": "static/videos/egodex/part5_use_rubiks_cube_5495.mp4",
+      "motion_url": "static/data/motion/part5_use_rubiks_cube_5495.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "use_rubiks_cube",
+      "text": "turn rubik's cube clockwise with both hands"
+    },
+    {
+      "id": "part5_use_rubiks_cube_670",
+      "rgb_url": "static/videos/egodex/part5_use_rubiks_cube_670.mp4",
+      "motion_url": "static/data/motion/part5_use_rubiks_cube_670.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "use_rubiks_cube",
+      "text": "turn rubik's cube clockwise with right hand"
+    },
+    {
+      "id": "part5_vertical_pick_place_51",
+      "rgb_url": "static/videos/egodex/part5_vertical_pick_place_51.mp4",
+      "motion_url": "static/data/motion/part5_vertical_pick_place_51.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "vertical_pick_place",
+      "text": "put white box with red stripe into clear plastic container"
+    },
+    {
+      "id": "part5_vertical_pick_place_12646",
+      "rgb_url": "static/videos/egodex/part5_vertical_pick_place_12646.mp4",
+      "motion_url": "static/data/motion/part5_vertical_pick_place_12646.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "vertical_pick_place",
+      "text": "put pink clay cube into container"
+    },
+    {
+      "id": "part5_vertical_pick_place_13796",
+      "rgb_url": "static/videos/egodex/part5_vertical_pick_place_13796.mp4",
+      "motion_url": "static/data/motion/part5_vertical_pick_place_13796.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "vertical_pick_place",
+      "text": "put green toy frog into clear plastic container"
+    },
+    {
+      "id": "part5_wash_kitchen_dishes_9",
+      "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_9.mp4",
+      "motion_url": "static/data/motion/part5_wash_kitchen_dishes_9.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "wash_kitchen_dishes",
+      "text": "wash spatula and tongs with blue sponge"
+    },
+    {
+      "id": "part5_wash_kitchen_dishes_24",
+      "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_24.mp4",
+      "motion_url": "static/data/motion/part5_wash_kitchen_dishes_24.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "wash_kitchen_dishes",
+      "text": "wash gray plastic spatula with blue sponge"
+    },
+    {
+      "id": "part5_wash_kitchen_dishes_31",
+      "rgb_url": "static/videos/egodex/part5_wash_kitchen_dishes_31.mp4",
+      "motion_url": "static/data/motion/part5_wash_kitchen_dishes_31.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "wash_kitchen_dishes",
+      "text": "put down lid"
+    },
+    {
+      "id": "part5_wash_put_away_dishes_127",
+      "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_127.mp4",
+      "motion_url": "static/data/motion/part5_wash_put_away_dishes_127.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "wash_put_away_dishes",
+      "text": "take yellow plate from sink"
+    },
+    {
+      "id": "part5_wash_put_away_dishes_10",
+      "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_10.mp4",
+      "motion_url": "static/data/motion/part5_wash_put_away_dishes_10.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "wash_put_away_dishes",
+      "text": "take dish from sink"
+    },
+    {
+      "id": "part5_wash_put_away_dishes_66",
+      "rgb_url": "static/videos/egodex/part5_wash_put_away_dishes_66.mp4",
+      "motion_url": "static/data/motion/part5_wash_put_away_dishes_66.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "wash_put_away_dishes",
+      "text": "take dish from sink"
+    },
+    {
+      "id": "part5_wipe_kitchen_surfaces_352",
+      "rgb_url": "static/videos/egodex/part5_wipe_kitchen_surfaces_352.mp4",
+      "motion_url": "static/data/motion/part5_wipe_kitchen_surfaces_352.json",
+      "num_segments": 13,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "wipe_kitchen_surfaces",
+      "text": "wipe surface with blue cloth"
+    },
+    {
+      "id": "part5_wipe_kitchen_surfaces_337",
+      "rgb_url": "static/videos/egodex/part5_wipe_kitchen_surfaces_337.mp4",
+      "motion_url": "static/data/motion/part5_wipe_kitchen_surfaces_337.json",
+      "num_segments": 24,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "wipe_kitchen_surfaces",
+      "text": "wipe black induction stove with blue cloth"
+    },
+    {
+      "id": "part5_wipe_kitchen_surfaces_8",
+      "rgb_url": "static/videos/egodex/part5_wipe_kitchen_surfaces_8.mp4",
+      "motion_url": "static/data/motion/part5_wipe_kitchen_surfaces_8.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "wipe_kitchen_surfaces",
+      "text": "wipe microwave door with cloth"
+    },
+    {
+      "id": "part5_wipe_screen_333",
+      "rgb_url": "static/videos/egodex/part5_wipe_screen_333.mp4",
+      "motion_url": "static/data/motion/part5_wipe_screen_333.json",
       "num_segments": 2,
       "num_objects": 2,
       "object_names": [
@@ -1344,80 +2646,66 @@
         "obj1"
       ],
       "has_tracks": true,
-      "task": "tie_untie_rubberband",
-      "text": "remove rubber band from pen"
+      "task": "wipe_screen",
+      "text": "wipe smartphone screen with white cloth"
     },
     {
-      "id": "part5_tie_untie_rubberband_1914",
-      "rgb_url": "static/videos/egodex/part5_tie_untie_rubberband_1914.mp4",
-      "motion_url": "static/data/motion/part5_tie_untie_rubberband_1914.json",
-      "num_segments": 10,
-      "num_objects": 3,
+      "id": "part5_wipe_screen_1295",
+      "rgb_url": "static/videos/egodex/part5_wipe_screen_1295.mp4",
+      "motion_url": "static/data/motion/part5_wipe_screen_1295.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "wipe_screen",
+      "text": "wipe smartphone screen with rag"
+    },
+    {
+      "id": "part5_wipe_screen_1375",
+      "rgb_url": "static/videos/egodex/part5_wipe_screen_1375.mp4",
+      "motion_url": "static/data/motion/part5_wipe_screen_1375.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "wipe_screen",
+      "text": "wipe smartphone screen with yellow cloth"
+    },
+    {
+      "id": "part5_write_1517",
+      "rgb_url": "static/videos/egodex/part5_write_1517.mp4",
+      "motion_url": "static/data/motion/part5_write_1517.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "write",
+      "text": "remove cap from blue marker"
+    },
+    {
+      "id": "part5_write_267",
+      "rgb_url": "static/videos/egodex/part5_write_267.mp4",
+      "motion_url": "static/data/motion/part5_write_267.json",
+      "num_segments": 5,
+      "num_objects": 2,
       "object_names": [
         "obj0",
-        "obj1",
-        "obj2"
+        "obj1"
       ],
       "has_tracks": true,
-      "task": "tie_untie_rubberband",
-      "text": "put rubber band on deck of cards"
+      "task": "write",
+      "text": "sign white paper with black pen"
     },
     {
-      "id": "part5_tie_untie_rubberband_1759",
-      "rgb_url": "static/videos/egodex/part5_tie_untie_rubberband_1759.mp4",
-      "motion_url": "static/data/motion/part5_tie_untie_rubberband_1759.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "tie_untie_rubberband",
-      "text": "wrap rubber band around marker"
-    },
-    {
-      "id": "part5_wrap_unwrap_food_862",
-      "rgb_url": "static/videos/egodex/part5_wrap_unwrap_food_862.mp4",
-      "motion_url": "static/data/motion/part5_wrap_unwrap_food_862.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "wrap_unwrap_food",
-      "text": "wrap donut with plastic wrap"
-    },
-    {
-      "id": "part5_wrap_unwrap_food_891",
-      "rgb_url": "static/videos/egodex/part5_wrap_unwrap_food_891.mp4",
-      "motion_url": "static/data/motion/part5_wrap_unwrap_food_891.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "wrap_unwrap_food",
-      "text": "tear open cellophane wrapper of toy burger"
-    },
-    {
-      "id": "part5_wrap_unwrap_food_837",
-      "rgb_url": "static/videos/egodex/part5_wrap_unwrap_food_837.mp4",
-      "motion_url": "static/data/motion/part5_wrap_unwrap_food_837.json",
-      "num_segments": 1,
-      "num_objects": 1,
-      "object_names": [
-        "obj0"
-      ],
-      "has_tracks": true,
-      "task": "wrap_unwrap_food",
-      "text": "wrap clear plastic around donut"
-    },
-    {
-      "id": "part5_write_763",
-      "rgb_url": "static/videos/egodex/part5_write_763.mp4",
-      "motion_url": "static/data/motion/part5_write_763.json",
+      "id": "part5_write_1079",
+      "rgb_url": "static/videos/egodex/part5_write_1079.mp4",
+      "motion_url": "static/data/motion/part5_write_1079.json",
       "num_segments": 2,
       "num_objects": 1,
       "object_names": [
@@ -1425,33 +2713,74 @@
       ],
       "has_tracks": true,
       "task": "write",
-      "text": "put black pen on yellow table"
+      "text": "pick up green marker"
     },
     {
-      "id": "part5_write_62",
-      "rgb_url": "static/videos/egodex/part5_write_62.mp4",
-      "motion_url": "static/data/motion/part5_write_62.json",
+      "id": "part5_zip_unzip_bag_1445",
+      "rgb_url": "static/videos/egodex/part5_zip_unzip_bag_1445.mp4",
+      "motion_url": "static/data/motion/part5_zip_unzip_bag_1445.json",
       "num_segments": 2,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "write",
-      "text": "write on white paper with yellow pencil"
+      "task": "zip_unzip_bag",
+      "text": "put brown box into plastic bag"
     },
     {
-      "id": "part5_write_965",
-      "rgb_url": "static/videos/egodex/part5_write_965.mp4",
-      "motion_url": "static/data/motion/part5_write_965.json",
+      "id": "part5_zip_unzip_bag_1023",
+      "rgb_url": "static/videos/egodex/part5_zip_unzip_bag_1023.mp4",
+      "motion_url": "static/data/motion/part5_zip_unzip_bag_1023.json",
       "num_segments": 1,
       "num_objects": 1,
       "object_names": [
         "obj0"
       ],
       "has_tracks": true,
-      "task": "write",
-      "text": "write with yellow pencil on paper"
+      "task": "zip_unzip_bag",
+      "text": "put pink donut and red dice into plastic bag"
+    },
+    {
+      "id": "part5_zip_unzip_bag_1004",
+      "rgb_url": "static/videos/egodex/part5_zip_unzip_bag_1004.mp4",
+      "motion_url": "static/data/motion/part5_zip_unzip_bag_1004.json",
+      "num_segments": 2,
+      "num_objects": 2,
+      "object_names": [
+        "obj0",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "zip_unzip_bag",
+      "text": "take out yellow rubber duck from plastic bag"
+    },
+    {
+      "id": "test_zip_unzip_case_9",
+      "rgb_url": "static/videos/egodex/test_zip_unzip_case_9.mp4",
+      "motion_url": "static/data/motion/test_zip_unzip_case_9.json",
+      "num_segments": 1,
+      "num_objects": 1,
+      "object_names": [
+        "obj0"
+      ],
+      "has_tracks": true,
+      "task": "zip_unzip_case",
+      "text": "open black case"
+    },
+    {
+      "id": "part5_zip_unzip_case_740",
+      "rgb_url": "static/videos/egodex/part5_zip_unzip_case_740.mp4",
+      "motion_url": "static/data/motion/part5_zip_unzip_case_740.json",
+      "num_segments": 2,
+      "num_objects": 2,
+      "object_names": [
+        "obj0",
+        "obj1"
+      ],
+      "has_tracks": true,
+      "task": "zip_unzip_case",
+      "text": "open black oval case"
     }
   ],
   "hdepic": [
