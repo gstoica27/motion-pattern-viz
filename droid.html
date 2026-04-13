@@ -196,7 +196,7 @@ async function init() {
     const section = document.createElement('div');
     section.className = 'cat-section';
     section.id = 'cat_' + slug(cat);
-    const totalClips = scenes.reduce((s, sc) => s + (sc.cam1.num_segments || 0) + (sc.cam2.num_segments || 0), 0);
+    const totalClips = scenes.reduce((s, sc) => s + (sc.cam1 ? sc.cam1.num_segments || 0 : 0) + (sc.cam2 ? sc.cam2.num_segments || 0 : 0), 0);
     section.innerHTML = `<div class="cat-title">${escapeHtml(cat)}<span class="count">${scenes.length} scenes · ${totalClips} total clips</span></div>`;
 
     scenes.forEach((scene, i) => {
@@ -214,7 +214,7 @@ async function init() {
     entries.forEach(e => {
       if (e.isIntersecting) {
         const cardId = e.target.id;
-        if (!cardState[cardId + '_cam1']) {
+        if (!cardState[cardId + '_cam1'] && !cardState[cardId + '_cam2']) {
           // Find matching scene and start loading
           for (const [cat, scenes] of Object.entries(manifest.categories)) {
             scenes.forEach((scene, i) => {
