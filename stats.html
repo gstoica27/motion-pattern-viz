@@ -107,6 +107,26 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
     <div class="card"><img src="static/img/coord_dist_droid.png" alt="DROID coords"></div>
     <div class="card"><img src="static/img/coord_dist_molmospaces.png" alt="MolmoSpaces coords"></div>
   </div>
+
+  <h2 style="font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--text-heading);margin:28px 0 12px;">In-Clip Frame-to-Frame Delta Distributions</h2>
+  <p style="font-size:0.82rem;color:var(--text-secondary);margin-bottom:16px;">
+    ΔX / ΔY / ΔZ distributions of <code>points_3d[t] - points_3d[t-1]</code>,
+    computed <strong>only within selected clips</strong> (not across entire videos).
+    500 random sampled videos per dataset. Shared axis limits across all datasets.
+    These show the per-frame velocity distribution in 3D space for the filtered motion clips.
+  </p>
+
+  <div class="combined">
+    <img src="static/img/delta_dist_all.png" alt="All datasets — delta coordinate distributions">
+  </div>
+
+  <div class="grid">
+    <div class="card"><img src="static/img/delta_dist_egodex.png" alt="EgoDex deltas"></div>
+    <div class="card"><img src="static/img/delta_dist_hepic.png" alt="HD-EPIC deltas"></div>
+    <div class="card"><img src="static/img/delta_dist_xperience.png" alt="Xperience deltas"></div>
+    <div class="card"><img src="static/img/delta_dist_droid.png" alt="DROID deltas"></div>
+    <div class="card"><img src="static/img/delta_dist_molmospaces.png" alt="MolmoSpaces deltas"></div>
+  </div>
 </div>
 
 <script>
