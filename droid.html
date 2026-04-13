@@ -232,14 +232,18 @@ async function init() {
 }
 
 function renderSceneCard(id, scene) {
+  const hasCam1 = scene.cam1 != null;
+  const hasCam2 = scene.cam2 != null;
+  const bothCams = hasCam1 && hasCam2;
+  const camCount = (hasCam1 ? 1 : 0) + (hasCam2 ? 1 : 0);
   return `
     <div class="scene-header">
       <span class="caption">${escapeHtml(scene.caption)}</span>
-      <span class="uuid">${escapeHtml(scene.uuid)}</span>
+      <span class="uuid">${escapeHtml(scene.uuid)}${camCount === 1 ? ' (1 cam survived)' : ''}</span>
     </div>
-    <div class="two-cams">
-      ${renderCamCol(id + '_cam1', scene.cam1, 'cam1')}
-      ${renderCamCol(id + '_cam2', scene.cam2, 'cam2')}
+    <div class="two-cams" ${!bothCams ? 'style="grid-template-columns:1fr;"' : ''}>
+      ${hasCam1 ? renderCamCol(id + '_cam1', scene.cam1, 'cam1') : ''}
+      ${hasCam2 ? renderCamCol(id + '_cam2', scene.cam2, 'cam2') : ''}
     </div>
   `;
 }
@@ -269,8 +273,8 @@ function renderCamCol(camId, camInfo, label) {
 }
 
 async function loadScene(sceneId, scene) {
-  await loadCam(sceneId + '_cam1', scene.cam1);
-  await loadCam(sceneId + '_cam2', scene.cam2);
+  if (scene.cam1) await loadCam(sceneId + '_cam1', scene.cam1);
+  if (scene.cam2) await loadCam(sceneId + '_cam2', scene.cam2);
 }
 
 async function loadCam(camId, camInfo) {
