@@ -132,12 +132,12 @@ body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--tex
       <div class="subtitle">
         5 random DROID scenes per task category. Each scene shows <strong>both exterior cameras</strong>
         independently, each with its own 2D track overlay (16 subsampled points from the smoothed
-        consensus-gated tracks) and per-object motion-clip timeline. The 3D filter (threshold=0.02,
-        top-20% trimmed, min clip=0.5s) is run separately per camera because each camera file lives
-        in its own OpenCV optical frame (ext1 and ext2 are <em>not</em> in a shared coord system).
-        DROID also adds a 2D-projection post-filter: each surviving clip must have mean 2D delta
-        > 10 px across its frames, which rejects clips where the 3D motion happens almost entirely
-        along the camera's optical axis.
+        consensus-gated tracks) and per-object motion-clip timeline. Three-stage filter per camera:
+        (1) 3D motion segments at threshold=0.02, top-20% trimmed, min clip=0.5s;
+        (2) 2D pixel post-filter: mean 2D delta > 10 px;
+        (3) early-clip filter: drop entire camera-entry if any clip starts before frame 10
+        (unreliable camera initialization). Each camera is independent (ext1 and ext2 are
+        <em>not</em> in a shared coord system).
       </div>
     </div>
     <div class="masthead-right">
