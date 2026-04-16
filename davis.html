@@ -182,11 +182,15 @@ async function loadClip(id) {
   vid.addEventListener('loadedmetadata', () => { vid.play(); });
 
   // Fetch motion data
+  document.getElementById(id + '_load').textContent = 'Loading…';
   let md;
   try {
     md = await (await fetch(clip.motion_url)).json();
     st.motionData = md;
-  } catch(e) { return; }
+  } catch(e) {
+    document.getElementById(id + '_load').textContent = 'Load failed';
+    return;
+  }
 
   document.getElementById(id + '_load').style.display = 'none';
 
@@ -196,8 +200,8 @@ async function loadClip(id) {
   buildTimelines(id, md);
   // Start 2D track overlay
   start2DOverlay(id, md, vid);
-  // Init 3D viewer
-  init3DViewer(id, md);
+  // Init 3D viewer (wrapped — WebGL context limits may cause silent failures)
+  try { init3DViewer(id, md); } catch(e) { console.warn('3D viewer failed for', id, e); }
 
   vid.addEventListener('timeupdate', () => {
     if (!vid.duration) return;
@@ -317,11 +321,29 @@ function hsvPaletteRGB(n){
     out.push({r:r+m,g:g+m,b:b+m});}return out;
 }
 
+// Track active WebGL contexts and dispose oldest when limit reached
+const MAX_WEBGL = 8;
+const activeViewers = [];  // [{id, renderer}]
+
 function init3DViewer(id, md){
   if(!md.objects_3d || !Object.keys(md.objects_3d).length) return;
   const canvasEl = document.getElementById(id+'_3dcanvas');
   const box = document.getElementById(id+'_3d');
-  const renderer = new THREE.WebGLRenderer({canvas:canvasEl, antialias:true});
+
+  // Dispose oldest WebGL context if at limit
+  while (activeViewers.length >= MAX_WEBGL) {
+    const old = activeViewers.shift();
+    try { old.renderer.dispose(); old.renderer.forceContextLoss(); } catch(e) {}
+  }
+
+  let renderer;
+  try {
+    renderer = new THREE.WebGLRenderer({canvas:canvasEl, antialias:true});
+  } catch(e) {
+    console.warn('WebGL init failed for', id);
+    return;
+  }
+  activeViewers.push({id, renderer});
   renderer.setClearColor(0x0d0d0d);
   const scene = new THREE.Scene();
   const camera = new THREE.PerspectiveCamera(50,1,0.01,500);
