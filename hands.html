@@ -410,22 +410,27 @@ function init3DViewer(id, md){
   function draw3DFrame(fi){
     while(dynGroup.children.length) dynGroup.remove(dynGroup.children[0]);
     for(const[name,od] of objEntries){
-      const N=od.N, T=od.T, data=od.pts3d;
+      const N=od.N, T=od.T, data=od.pts3d, vis=od.vis3d;
       const colors=hsvPaletteRGB(N);
       const trailStart=Math.max(0,fi-TRAIL);
       for(let n=0;n<N;n++){
         let seg=[];
         for(let t=trailStart;t<=Math.min(fi,T-1);t++){
-          const idx=n*T+t, p=data[idx];
+          const idx=n*T+t;
+          // Skip invisible points (vis3d is false → point was NaN/padded to 0)
+          if(vis && !vis[idx]){if(seg.length>=6){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(seg,3));dynGroup.add(new THREE.Line(g,new THREE.LineBasicMaterial({color:new THREE.Color(colors[n].r,colors[n].g,colors[n].b)})));}seg=[];continue;}
+          const p=data[idx];
           if(!p||!isFinite(p[0])){if(seg.length>=6){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(seg,3));dynGroup.add(new THREE.Line(g,new THREE.LineBasicMaterial({color:new THREE.Color(colors[n].r,colors[n].g,colors[n].b)})));}seg=[];continue;}
           seg.push(p[0],-p[1],-p[2]);
         }
         if(seg.length>=6){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(seg,3));dynGroup.add(new THREE.Line(g,new THREE.LineBasicMaterial({color:new THREE.Color(colors[n].r,colors[n].g,colors[n].b)})));}
       }
-      // Current frame dots
+      // Current frame dots — only for visible points
       const ptP=[],ptC=[];
       for(let n=0;n<N;n++){
-        const idx=n*T+Math.min(fi,T-1),p=data[idx];
+        const idx=n*T+Math.min(fi,T-1);
+        if(vis && !vis[idx]) continue;
+        const p=data[idx];
         if(!p||!isFinite(p[0]))continue;
         ptP.push(p[0],-p[1],-p[2]);ptC.push(colors[n].r,colors[n].g,colors[n].b);
       }
