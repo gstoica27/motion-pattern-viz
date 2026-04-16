@@ -4,214 +4,86 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hand Tracks — EgoDex + Xperience</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { font-size: 16px; scroll-behavior: smooth; }
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 :root {
-  --bg: #111; --bg-card: #161616; --bg-header: #1a1a1a; --bg-body: #0d0d0d;
-  --border: #222; --border-hover: #444;
-  --text: #d4d4d4; --text-heading: #f0f0f0; --text-secondary: #777; --text-muted: #555;
-  --tab-active: #f0f0f0; --tab-inactive: #666;
-  --track-bg: #1a1a1a; --cursor: #ff3c3c;
-  --scrollbar-track: #1a1a1a; --scrollbar-thumb: #333;
+  --bg:#111; --bg-card:#161616; --bg-header:#1a1a1a;
+  --border:#222; --border-hover:#444;
+  --text:#d4d4d4; --text-heading:#f0f0f0; --text-secondary:#777; --text-muted:#555;
+  --track-bg:#1a1a1a; --cursor:#ff3c3c;
 }
 [data-theme="light"] {
-  --bg: #f5f5f0; --bg-card: #ffffff; --bg-header: #f0efe8; --bg-body: #eeeee8;
-  --border: #ddd; --border-hover: #bbb;
-  --text: #333; --text-heading: #111; --text-secondary: #666; --text-muted: #999;
-  --tab-active: #111; --tab-inactive: #999;
-  --track-bg: #efefe8; --cursor: #c23030;
-  --scrollbar-track: #e8e8e8; --scrollbar-thumb: #ccc;
+  --bg:#f5f5f0; --bg-card:#fff; --bg-header:#f0efe8;
+  --border:#ddd; --border-hover:#bbb;
+  --text:#333; --text-heading:#111; --text-secondary:#666; --text-muted:#999;
+  --track-bg:#efefe8; --cursor:#c23030;
 }
-body {
-  font-family: 'Inter', -apple-system, sans-serif;
-  background: var(--bg); color: var(--text);
-  line-height: 1.6; -webkit-font-smoothing: antialiased;
-  transition: background 0.25s, color 0.25s;
+body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); line-height:1.6; }
+.page { max-width:1500px; margin:0 auto; padding:0 24px; }
+.masthead { padding:30px 0 16px; border-bottom:1px solid var(--border); margin-bottom:20px;
+  display:flex; align-items:flex-start; justify-content:space-between; gap:20px; }
+.masthead h1 { font-family:'Playfair Display',serif; font-size:2rem; color:var(--text-heading); }
+.masthead .subtitle { font-size:0.85rem; color:var(--text-secondary); margin-top:4px; max-width:1000px; }
+.masthead-right { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+.masthead-right a, .theme-toggle {
+  color:var(--text-secondary); font-size:0.78rem; text-decoration:none;
+  border:1px solid var(--border); padding:5px 12px; border-radius:20px;
+  background:var(--bg-card); cursor:pointer; font-family:inherit;
 }
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--scrollbar-track); }
-::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
+.masthead-right a:hover, .theme-toggle:hover { color:var(--text); border-color:var(--border-hover); }
+.clip-list { display:flex; flex-direction:column; gap:16px; padding-bottom:40px; }
+.clip-card { background:var(--bg-card); border:1px solid var(--border); border-radius:10px; overflow:hidden; }
+.clip-header { padding:10px 14px; border-bottom:1px solid var(--border);
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; }
+.clip-header .title { font-weight:600; font-size:0.85rem; color:var(--text-heading); }
+.clip-header .desc { font-size:0.72rem; color:var(--text-muted); width:100%; margin-top:2px; }
+.clip-header .meta { font-size:0.68rem; color:var(--text-muted); font-family:monospace; display:flex; gap:12px; }
+.clip-header .seg-badge { background:#4a9eff; color:#fff; padding:1px 7px; border-radius:10px; font-size:0.65rem; font-weight:600; }
 
-.page { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+/* Layout: video left, 3D right */
+.clip-content { display:grid; grid-template-columns:1fr 1fr; gap:0; min-height:300px; }
+.clip-video-panel { position:relative; background:#000; border-right:1px solid var(--border); }
+.video-wrap { position:relative; width:100%; height:100%; display:flex; align-items:center; justify-content:center; }
+.video-wrap video { width:100%; height:100%; object-fit:contain; display:block; }
+.video-wrap canvas.overlay { position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; }
+.viewer-3d { width:100%; height:300px; position:relative; background:#0d0d0d; }
+.viewer-3d canvas { width:100%!important; height:100%!important; display:block; }
+.loading-msg { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); color:var(--text-muted); font-size:0.8rem; }
 
-.theme-toggle {
-  background: var(--bg-card); border: 1px solid var(--border);
-  color: var(--text-secondary); border-radius: 20px;
-  padding: 6px 14px; font-size: 0.72rem; font-family: inherit;
-  cursor: pointer; transition: all 0.15s;
-}
-.theme-toggle:hover { border-color: var(--border-hover); color: var(--text); }
+.motion-chart-wrap { padding:6px 12px 4px; border-top:1px solid var(--border); height:140px; position:relative; }
+.motion-chart-wrap canvas { width:100%!important; height:100%!important; }
 
-.masthead {
-  padding: 30px 0 16px; border-bottom: 1px solid var(--border);
-  margin-bottom: 20px; display: flex; align-items: flex-start; justify-content: space-between; gap: 20px;
-}
-.masthead-left { flex: 1; }
-.masthead h1 {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 2rem; font-weight: 700; color: var(--text-heading); letter-spacing: -0.02em;
-}
-.masthead .subtitle { font-size: 0.85rem; color: var(--text-secondary); margin-top: 4px; font-weight: 300; max-width: 900px; }
-.masthead-right { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-.masthead-right a {
-  color: var(--text-secondary); font-size: 0.78rem; text-decoration: none;
-  border: 1px solid var(--border); padding: 5px 12px; border-radius: 20px;
-  transition: all 0.15s;
-}
-.masthead-right a:hover { color: var(--text); border-color: var(--border-hover); }
+.timeline-panel { padding:10px 14px; }
+.timeline-row { display:flex; flex-direction:column; gap:4px; padding:4px 6px; }
+.timeline-label { font-size:0.7rem; font-weight:500; color:var(--text-heading);
+  display:flex; justify-content:space-between; }
+.timeline-label .obj-name { font-family:monospace; }
+.timeline-label .obj-clips { font-size:0.62rem; color:var(--text-muted); font-family:monospace; }
+.timeline-bar { position:relative; height:20px; background:var(--track-bg); border-radius:3px; border:1px solid var(--border); overflow:hidden; }
+.clip-range { position:absolute; top:0; bottom:0; opacity:0.85; cursor:pointer; }
+.cursor-line { position:absolute; top:-2px; bottom:-2px; width:2px; background:var(--cursor); z-index:10; pointer-events:none; }
 
-/* Tabs */
-.tabs { display: flex; gap: 0; border-bottom: 1px solid var(--border); margin-bottom: 20px; }
-.tab {
-  padding: 10px 20px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em;
-  text-transform: uppercase; color: var(--tab-inactive); cursor: pointer;
-  border-bottom: 2px solid transparent; transition: color 0.15s, border-color 0.15s; user-select: none;
-}
-.tab:hover { color: var(--text); }
-.tab.active { color: var(--tab-active); border-bottom-color: var(--tab-active); }
-.tab .count { font-size: 0.65rem; color: var(--text-muted); margin-left: 6px; font-weight: 400; }
-.tab.active .count { color: var(--text-secondary); }
+.scrub-row { display:flex; align-items:center; gap:8px; padding:6px 14px; border-top:1px solid var(--border); }
+.play-btn { background:none; border:1px solid var(--border); color:var(--text); padding:2px 9px; border-radius:4px; cursor:pointer; font-size:0.75rem; font-family:inherit; }
+.scrub-row input[type=range] { flex:1; }
+.frame-label { font-size:0.66rem; color:var(--text-muted); min-width:66px; text-align:right; font-family:monospace; }
 
-/* Controls */
-.controls {
-  display: flex; gap: 12px; align-items: center; margin-bottom: 16px; flex-wrap: wrap;
-}
-.controls label { font-size: 0.78rem; color: var(--text-secondary); }
-.controls select {
-  background: var(--bg-card); border: 1px solid var(--border); color: var(--text);
-  padding: 5px 10px; border-radius: 6px; font-size: 0.78rem; font-family: inherit;
-}
-.controls select:focus { outline: none; border-color: var(--border-hover); }
-
-.stats-bar {
-  font-size: 0.72rem; color: var(--text-muted); margin-left: auto;
-}
-
-/* Clip cards */
-.clip-list { display: flex; flex-direction: column; gap: 16px; padding-bottom: 40px; }
-
-.clip-card {
-  background: var(--bg-card); border: 1px solid var(--border); border-radius: 10px;
-  overflow: hidden; transition: border-color 0.15s;
-}
-.clip-card:hover { border-color: var(--border-hover); }
-
-.clip-header {
-  padding: 10px 14px; border-bottom: 1px solid var(--border);
-  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;
-}
-.clip-header .title { font-weight: 600; font-size: 0.85rem; color: var(--text-heading); }
-.clip-header .task { font-size: 0.72rem; color: var(--text-secondary); margin-left: 8px; }
-.clip-header .desc { font-size: 0.72rem; color: var(--text-muted); width: 100%; margin-top: 2px; }
-.clip-header .meta {
-  font-size: 0.68rem; color: var(--text-muted); font-family: 'SF Mono', monospace;
-  display: flex; gap: 12px;
-}
-.clip-header .meta .seg-badge {
-  background: #4a9eff; color: #fff; padding: 1px 7px; border-radius: 10px;
-  font-size: 0.65rem; font-weight: 600;
-}
-
-/* Content: video left, timelines right */
-.clip-content {
-  display: grid; grid-template-columns: minmax(280px, 1fr) 1.6fr; gap: 0;
-  min-height: 240px;
-}
-.clip-video-panel {
-  position: relative; background: #000; display: flex; align-items: center; justify-content: center;
-  border-right: 1px solid var(--border);
-}
-.video-wrap { position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
-.video-wrap video {
-  width: 100%; height: 100%; object-fit: contain; display: block;
-}
-.video-wrap canvas {
-  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-  pointer-events: none;
-}
-.clip-timelines-panel {
-  padding: 12px 16px; display: flex; flex-direction: column; gap: 8px;
-  min-height: 240px; overflow-y: auto;
-}
-.motion-chart-wrap {
-  padding: 6px 12px 4px; border-top: 1px solid var(--border);
-  height: 140px; position: relative; background: var(--bg-card);
-}
-.motion-chart-wrap canvas { width: 100% !important; height: 100% !important; }
-
-/* Timeline rows */
-.timeline-row {
-  display: flex; flex-direction: column; gap: 4px;
-  padding: 6px 8px; border-radius: 6px; cursor: pointer;
-  transition: background 0.15s;
-}
-.timeline-row:hover { background: var(--bg-header); }
-.timeline-row.selected { background: var(--bg-header); outline: 1px solid var(--border-hover); }
-.timeline-row.dimmed { opacity: 0.45; }
-.timeline-label {
-  font-size: 0.72rem; font-weight: 500; color: var(--text-heading);
-  display: flex; justify-content: space-between; align-items: center;
-}
-.timeline-label .obj-name { font-family: 'SF Mono', monospace; }
-.timeline-label .obj-clips {
-  font-size: 0.65rem; color: var(--text-muted); font-family: monospace;
-}
-.timeline-bar {
-  position: relative; height: 22px;
-  background: var(--track-bg); border-radius: 3px;
-  border: 1px solid var(--border);
-  overflow: hidden;
-}
-.clip-range {
-  position: absolute; top: 0; bottom: 0;
-  border-radius: 1px; opacity: 0.85;
-  transition: opacity 0.15s;
-}
-.clip-range:hover { opacity: 1; cursor: pointer; }
-.cursor-line {
-  position: absolute; top: -2px; bottom: -2px; width: 2px;
-  background: var(--cursor); z-index: 10; pointer-events: none;
-}
-.frame-ticks {
-  font-size: 0.6rem; color: var(--text-muted); font-family: monospace;
-  display: flex; justify-content: space-between; padding: 0 2px;
-}
-
-/* Scrubber row */
-.scrub-row {
-  display: flex; align-items: center; gap: 8px; padding: 8px 14px;
-  border-top: 1px solid var(--border);
-}
-.play-btn {
-  background: none; border: 1px solid var(--border); color: var(--text);
-  padding: 3px 10px; border-radius: 4px; cursor: pointer; font-size: 0.78rem;
-  font-family: inherit; min-width: 36px; text-align: center;
-}
-.play-btn:hover { border-color: var(--border-hover); }
-.scrub-row input[type=range] { flex: 1; }
-.frame-label { font-size: 0.68rem; color: var(--text-muted); min-width: 70px; text-align: right; font-family: monospace; }
-
-@media (max-width: 900px) {
-  .clip-content { grid-template-columns: 1fr; }
-  .clip-video-panel { border-right: none; border-bottom: 1px solid var(--border); min-height: 200px; }
-}
+@media(max-width:1000px) { .clip-content { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
 <div class="page">
   <div class="masthead">
-    <div class="masthead-left">
+    <div>
       <h1>Hand Tracks — EgoDex + Xperience</h1>
       <div class="subtitle">
-        Left-hand and right-hand 3D point tracks from EgoDex
-        (<code>final_hand_tracks/</code>) and Xperience
-        (<code>object_tracks/left_hand.npz</code> / <code>right_hand.npz</code>).
-        30 random EgoDex + 20 random Xperience samples. Each card shows the
-        video with per-hand 2D track overlay, motion-magnitude chart, and
-        clip-range timelines.
+        Left-hand and right-hand 3D point tracks. 30 random EgoDex samples
+        (with frame-0 point cloud) + 20 Xperience samples. Each card shows video with
+        per-hand 2D overlay (left), interactive 3D viewer with animated hand tracks (right),
+        plus motion-magnitude chart and clip-range timelines.
       </div>
     </div>
     <div class="masthead-right">
@@ -222,545 +94,353 @@ body {
       <button class="theme-toggle" onclick="toggleTheme()">Toggle theme</button>
     </div>
   </div>
-
-  <div class="tabs" id="tabs"></div>
-
-  <div class="controls">
-    <label>Group / task:</label>
-    <select id="taskFilter"><option value="">All</option></select>
-    <label>Sort:</label>
-    <select id="sortSelect">
-      <option value="segs_desc">Clips (most first)</option>
-      <option value="objs_desc">Objects (most first)</option>
-      <option value="name_asc">Name (A-Z)</option>
-    </select>
-    <span class="stats-bar" id="statsBar"></span>
-  </div>
-
   <div class="clip-list" id="clipList"></div>
 </div>
 
 <script>
-let manifest = null;
-let activeDataset = '';
-const clipState = {};  // {id: {motionData, selectedObject, rafHandle}}
 const TRAIL_LEN = 16;
+const cardState = {};
 
-// ── Object color palette (stable hash → hue) ──
-function colorForObject(name) {
-  let h = 0;
-  for (let i = 0; i < name.length; i++) {
-    h = (h * 31 + name.charCodeAt(i)) & 0xffffffff;
-  }
-  const hue = ((h % 360) + 360) % 360;
-  return `hsl(${hue}, 65%, 58%)`;
-}
-
-// ── Theme ──
 function toggleTheme() {
-  const t = document.documentElement.getAttribute('data-theme') === 'light' ? '' : 'light';
+  const t = document.documentElement.getAttribute('data-theme')==='light'?'':'light';
   document.documentElement.setAttribute('data-theme', t);
   localStorage.setItem('motion-theme', t);
 }
-(function() { const t = localStorage.getItem('motion-theme'); if (t) document.documentElement.setAttribute('data-theme', t); })();
+(function(){ const t=localStorage.getItem('motion-theme'); if(t) document.documentElement.setAttribute('data-theme',t); })();
 
-// ── Init ──
+function colorForObject(name) {
+  let h=0; for(let i=0;i<name.length;i++) h=(h*31+name.charCodeAt(i))&0xffffffff;
+  return `hsl(${((h%360)+360)%360},65%,58%)`;
+}
+function escapeHtml(s) { return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
 async function init() {
   const resp = await fetch('static/data/motion/hands/manifest.json');
-  manifest = await resp.json();
-
-  const tabsEl = document.getElementById('tabs');
-  const datasets = Object.keys(manifest);
-  datasets.forEach(ds => {
-    const tab = document.createElement('div');
-    tab.className = 'tab';
-    tab.dataset.ds = ds;
-    const n = manifest[ds].length;
-    const totalClips = manifest[ds].reduce((s, c) => s + (c.num_segments || 0), 0);
-    tab.innerHTML = `${ds} <span class="count">${n} videos / ${totalClips} clips</span>`;
-    tab.onclick = () => switchDataset(ds);
-    tabsEl.appendChild(tab);
-  });
-
-  activeDataset = datasets[0] || '';
-  switchDataset(activeDataset);
-}
-
-function switchDataset(ds) {
-  activeDataset = ds;
-  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.ds === ds));
-
-  const tf = document.getElementById('taskFilter');
-  tf.innerHTML = '<option value="">All</option>';
-  const tasks = [...new Set(manifest[ds].map(c => c.task || c.participant || c.label || ''))]
-    .filter(Boolean).sort();
-  tasks.forEach(t => {
-    const o = document.createElement('option');
-    o.value = t; o.textContent = t.replace(/_/g, ' ');
-    tf.appendChild(o);
-  });
-
-  renderClips();
-}
-
-function getFilteredSortedClips() {
-  let clips = manifest[activeDataset] || [];
-  const taskVal = document.getElementById('taskFilter').value;
-  if (taskVal) {
-    clips = clips.filter(c => (c.task || c.participant || c.label || '') === taskVal);
-  }
-
-  const sort = document.getElementById('sortSelect').value;
-  clips = clips.slice();
-  switch(sort) {
-    case 'segs_desc': clips.sort((a,b) => (b.num_segments||0) - (a.num_segments||0)); break;
-    case 'objs_desc': clips.sort((a,b) => (b.num_objects||0) - (a.num_objects||0)); break;
-    case 'name_asc': clips.sort((a,b) => a.id.localeCompare(b.id)); break;
-  }
-  return clips;
-}
-
-function renderClips() {
-  const clips = getFilteredSortedClips();
+  const m = await resp.json();
+  const clips = m.hands || [];
   const container = document.getElementById('clipList');
-  container.innerHTML = '';
-
-  const totalSegs = clips.reduce((s,c) => s + (c.num_segments||0), 0);
-  const totalObjs = clips.reduce((s,c) => s + (c.num_objects||0), 0);
-  document.getElementById('statsBar').textContent =
-    `${clips.length} videos | ${totalSegs} clips | ${totalObjs} total objects`;
 
   clips.forEach((clip, idx) => {
-    const id = 'c_' + idx;
+    const id = 'd_' + idx;
     const card = document.createElement('div');
     card.className = 'clip-card';
     card.id = id;
-
-    const taskLabel = (clip.task || clip.participant || clip.label || '').replace(/_/g, ' ');
-    const shortId = clip.id.replace(/^(part\d+_|test_)/, '').replace(/__/g, '/').slice(-60);
-
     card.innerHTML = `
       <div class="clip-header">
-        <div style="display:flex;align-items:baseline;flex-wrap:wrap;gap:4px;">
-          <span class="title">${shortId}</span>
-          <span class="task">${taskLabel}</span>
+        <div>
+          <span class="title">${escapeHtml(clip.id)}</span>
+          <span style="font-size:0.72rem;color:var(--text-secondary);margin-left:8px;">${clip.object_names.join(', ')}</span>
         </div>
         <div class="meta">
-          <span class="seg-badge">${clip.num_segments} clips</span>
-          <span>${clip.num_objects} object${clip.num_objects===1?'':'s'}</span>
+          <span>${clip.num_frames}f</span>
+          <span class="seg-badge">${clip.num_clips} clips</span>
         </div>
-        ${clip.text ? `<div class="desc">${clip.text}</div>` : ''}
+        ${clip.text ? `<div class="desc">${escapeHtml(clip.text)}</div>` : ''}
       </div>
       <div class="clip-content">
         <div class="clip-video-panel">
           <div class="video-wrap">
             <video id="${id}_vid" muted loop playsinline preload="none"></video>
-            <canvas id="${id}_canvas"></canvas>
+            <canvas class="overlay" id="${id}_canvas"></canvas>
           </div>
         </div>
-        <div class="clip-timelines-panel" id="${id}_timelines">
-          <div style="color:var(--text-muted);font-size:0.75rem;text-align:center;padding:60px 0;">Scroll to load</div>
+        <div class="viewer-3d" id="${id}_3d">
+          <canvas id="${id}_3dcanvas"></canvas>
+          <span class="loading-msg" id="${id}_load">Scroll to load</span>
         </div>
       </div>
       <div class="motion-chart-wrap"><canvas id="${id}_chart"></canvas></div>
+      <div class="timeline-panel" id="${id}_timelines"></div>
       <div class="scrub-row">
-        <button class="play-btn" id="${id}_playbtn" onclick="togglePlay('${id}')">&#9654;</button>
-        <input type="range" id="${id}_scrub" min="0" max="1000" value="0"
-               oninput="scrubTo('${id}', this.value)">
-        <span class="frame-label" id="${id}_frame">0 / 0</span>
+        <button class="play-btn" onclick="togglePlay('${id}')">▶</button>
+        <input type="range" id="${id}_scrub" min="0" max="1000" value="0" oninput="scrubTo('${id}',this.value)">
+        <span class="frame-label" id="${id}_frame">0/0</span>
       </div>
     `;
     container.appendChild(card);
+    cardState[id] = { clip, loaded: false };
   });
 
-  // Lazy load
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        loadClip(entry.target.id, clips[parseInt(entry.target.id.split('_')[1])]);
-        observer.unobserve(entry.target);
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting && cardState[e.target.id] && !cardState[e.target.id].loaded) {
+        cardState[e.target.id].loaded = true;
+        loadClip(e.target.id);
       }
     });
-  }, { rootMargin: '300px' });
-
-  clips.forEach((_, idx) => {
-    const el = document.getElementById('c_' + idx);
-    if (el) observer.observe(el);
-  });
+  }, { rootMargin: '400px' });
+  clips.forEach((_, idx) => obs.observe(document.getElementById('d_' + idx)));
 }
 
-async function loadClip(id, clip) {
+async function loadClip(id) {
+  const st = cardState[id];
+  const clip = st.clip;
+
+  // Video
   const vid = document.getElementById(id + '_vid');
   vid.src = clip.rgb_url;
   vid.load();
-  vid.addEventListener('loadedmetadata', () => {
-    vid.play();
-    document.getElementById(id + '_playbtn').innerHTML = '&#9646;&#9646;';
-  });
+  vid.addEventListener('loadedmetadata', () => { vid.play(); });
 
-  let motionData = null;
+  // Fetch motion data
+  document.getElementById(id + '_load').textContent = 'Loading…';
+  let md;
   try {
-    const resp = await fetch(clip.motion_url);
-    motionData = await resp.json();
+    md = await (await fetch(clip.motion_url)).json();
+    st.motionData = md;
   } catch(e) {
-    document.getElementById(id + '_timelines').innerHTML =
-      `<div style="color:#c55;font-size:0.75rem;">Failed to load motion data</div>`;
+    document.getElementById(id + '_load').textContent = 'Load failed';
     return;
   }
 
-  clipState[id] = { motionData, selectedObject: null, rafHandle: null, chart: null };
-  renderTimelines(id, motionData);
-  buildMotionChart(id, motionData);
+  document.getElementById(id + '_load').style.display = 'none';
 
-  // Sync cursor + frame label on timeupdate
+  // Build motion chart
+  buildMotionChart(id, md);
+  // Build timelines
+  buildTimelines(id, md);
+  // Start 2D track overlay
+  start2DOverlay(id, md, vid);
+  // Init 3D viewer (wrapped — WebGL context limits may cause silent failures)
+  try { init3DViewer(id, md); } catch(e) { console.warn('3D viewer failed for', id, e); }
+
   vid.addEventListener('timeupdate', () => {
     if (!vid.duration) return;
     const pct = vid.currentTime / vid.duration;
     document.getElementById(id + '_scrub').value = Math.round(pct * 1000);
-    const T = motionData.num_frames;
-    const fi = Math.min(Math.round(pct * (T - 1)), T - 1);
-    document.getElementById(id + '_frame').textContent = fi + ' / ' + (T - 1);
-    updateCursor(id, pct);
-    const st = clipState[id];
-    if (st && st.chart) {
-      st.chart._cursorIndex = fi;
-      st.chart.draw();
-    }
-  });
-  updateCursor(id, 0);
-
-  // Start canvas rAF loop once video metadata is ready
-  vid.addEventListener('loadedmetadata', () => {
-    startTrackLoop(id);
-  });
-  // In case metadata is already loaded (cached video)
-  if (vid.readyState >= 1) startTrackLoop(id);
-}
-
-function startTrackLoop(id) {
-  const st = clipState[id];
-  if (!st || !st.motionData) return;
-  if (st.rafHandle) return;  // already running
-  const md = st.motionData;
-  if (!md.tracks_by_object || Object.keys(md.tracks_by_object).length === 0) {
-    return;  // no 2D tracks (hepic) — no overlay
-  }
-  const vid = document.getElementById(id + '_vid');
-  const canvas = document.getElementById(id + '_canvas');
-  const ctx = canvas.getContext('2d');
-
-  function draw() {
-    if (!document.body.contains(vid)) { st.rafHandle = null; return; }
-    if (!vid.duration || !md.img_dim) {
-      st.rafHandle = requestAnimationFrame(draw);
-      return;
-    }
-    // Size canvas to match displayed video area
-    const rect = vid.getBoundingClientRect();
-    const dpr = window.devicePixelRatio || 1;
-    const cssW = Math.max(1, Math.floor(rect.width));
-    const cssH = Math.max(1, Math.floor(rect.height));
-    if (canvas.width !== cssW * dpr || canvas.height !== cssH * dpr) {
-      canvas.width = cssW * dpr;
-      canvas.height = cssH * dpr;
-      canvas.style.width = cssW + 'px';
-      canvas.style.height = cssH + 'px';
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    }
-
-    // Compute "letterboxed" fit rectangle of video inside its container
-    // video uses object-fit: contain → match that
-    const [imgH, imgW] = md.img_dim;
-    const containerAspect = cssW / cssH;
-    const videoAspect = imgW / imgH;
-    let vidW, vidH, vidX, vidY;
-    if (containerAspect > videoAspect) {
-      vidH = cssH;
-      vidW = cssH * videoAspect;
-    } else {
-      vidW = cssW;
-      vidH = cssW / videoAspect;
-    }
-    vidX = (cssW - vidW) / 2;
-    vidY = (cssH - vidH) / 2;
-
-    ctx.clearRect(0, 0, cssW, cssH);
-
     const T = md.num_frames;
-    const fi = Math.min(Math.round((vid.currentTime / vid.duration) * (T - 1)), T - 1);
-    const trailStart = Math.max(0, fi - TRAIL_LEN);
-
-    const objNames = Object.keys(md.tracks_by_object);
-    const selectedObj = st.selectedObject;  // null = show all
-    const anySelected = selectedObj != null;
-
-    objNames.forEach(name => {
-      if (anySelected && name !== selectedObj) return;
-      const color = colorForObject(name);
-      const tdata = md.tracks_by_object[name];
-      const tracks = tdata.tracks;        // [P][T][2]
-      const vis = tdata.visibility;       // [P][T]
-      const P = tracks.length;
-
-      for (let p = 0; p < P; p++) {
-        // Draw trail (pt[0]=x in pixels, pt[1]=y in pixels; img_dim is [H,W])
-        ctx.strokeStyle = color;
-        ctx.lineWidth = 1.5;
-        ctx.beginPath();
-        let started = false;
-        for (let t = trailStart; t <= fi; t++) {
-          if (!vis[p][t]) { started = false; continue; }
-          const pt = tracks[p][t];
-          if (pt[0] == null) { started = false; continue; }
-          const x = vidX + (pt[0] / imgW) * vidW;
-          const y = vidY + (pt[1] / imgH) * vidH;
-          if (!started) { ctx.moveTo(x, y); started = true; }
-          else ctx.lineTo(x, y);
-        }
-        ctx.stroke();
-
-        // Draw current dot
-        if (vis[p][fi]) {
-          const pt = tracks[p][fi];
-          if (pt[0] != null) {
-            const x = vidX + (pt[0] / imgW) * vidW;
-            const y = vidY + (pt[1] / imgH) * vidH;
-            ctx.fillStyle = color;
-            ctx.beginPath();
-            ctx.arc(x, y, 3, 0, Math.PI * 2);
-            ctx.fill();
-          }
-        }
-      }
-    });
-
-    st.rafHandle = requestAnimationFrame(draw);
-  }
-  st.rafHandle = requestAnimationFrame(draw);
-}
-
-function renderTimelines(id, motionData) {
-  const panel = document.getElementById(id + '_timelines');
-  panel.innerHTML = '';
-  const T = motionData.num_frames;
-  const objs = motionData.clips_by_object || {};
-
-  const objNames = Object.keys(objs);
-  if (objNames.length === 0) {
-    panel.innerHTML = '<div style="color:var(--text-muted);font-size:0.75rem;">No motion clips</div>';
-    return;
-  }
-
-  objNames.forEach(name => {
-    const clips = objs[name] || [];
-    const color = colorForObject(name);
-
-    const row = document.createElement('div');
-    row.className = 'timeline-row';
-    row.dataset.object = name;
-    row.onclick = (e) => {
-      // Don't let clicks on clip ranges trigger row selection
-      if (e.target.classList.contains('clip-range')) return;
-      toggleObjectSelect(id, name);
-    };
-
-    // Label
-    const label = document.createElement('div');
-    label.className = 'timeline-label';
-    const totalFrames = clips.reduce((s, [a, b]) => s + (b - a + 1), 0);
-    label.innerHTML = `
-      <span class="obj-name" style="color:${color};">■ ${escapeHtml(name)}</span>
-      <span class="obj-clips">${clips.length} clip${clips.length===1?'':'s'} · ${totalFrames} frames</span>
-    `;
-    row.appendChild(label);
-
-    // Bar
-    const bar = document.createElement('div');
-    bar.className = 'timeline-bar';
-    clips.forEach(([s, e]) => {
-      const range = document.createElement('div');
-      range.className = 'clip-range';
-      const left = (s / Math.max(T - 1, 1)) * 100;
-      const width = ((e - s + 1) / Math.max(T, 1)) * 100;
-      range.style.left = left + '%';
-      range.style.width = width + '%';
-      range.style.background = color;
-      range.title = `Frames ${s}–${e} (${e - s + 1} frames)`;
-      range.onclick = () => {
-        const vid = document.getElementById(id + '_vid');
-        if (vid.duration) vid.currentTime = (s / Math.max(T - 1, 1)) * vid.duration;
-      };
-      bar.appendChild(range);
-    });
-    const cursor = document.createElement('div');
-    cursor.className = 'cursor-line';
-    cursor.id = id + '_cursor_' + escapeCssId(name);
-    cursor.style.left = '0%';
-    bar.appendChild(cursor);
-    row.appendChild(bar);
-
-    panel.appendChild(row);
+    const fi = Math.min(Math.round(pct * (T - 1)), T - 1);
+    document.getElementById(id + '_frame').textContent = fi + '/' + (T - 1);
+    // Update timeline cursors
+    const card = document.getElementById(id);
+    card.querySelectorAll('.cursor-line').forEach(c => c.style.left = (pct*100)+'%');
+    // Update chart cursor
+    if (st.chart) { st.chart._cursorIndex = fi; st.chart.draw(); }
+    // Update 3D viewer frame
+    if (st.draw3DFrame) st.draw3DFrame(fi);
   });
-
-  // Frame-range legend (shared)
-  const ticks = document.createElement('div');
-  ticks.className = 'frame-ticks';
-  ticks.innerHTML = `<span>0</span><span>${Math.floor(T/2)}</span><span>${T-1}</span>`;
-  panel.appendChild(ticks);
 }
 
-function updateCursor(id, pct) {
-  // Update all cursor-lines inside this card
-  const card = document.getElementById(id);
-  if (!card) return;
-  const cursors = card.querySelectorAll('.cursor-line');
-  cursors.forEach(c => { c.style.left = (pct * 100) + '%'; });
-}
-
+// ── Motion chart (same as other pages) ──
 function buildMotionChart(id, md) {
   const mags = md.magnitudes_by_object;
-  if (!mags || Object.keys(mags).length === 0) return;
+  if (!mags || !Object.keys(mags).length) return;
   const T = md.num_frames;
-  const labels = Array.from({length: T}, (_, i) => i);
-  const isDark = document.documentElement.getAttribute('data-theme') !== 'light';
-
+  const labels = Array.from({length:T},(_,i)=>i);
+  const isDark = document.documentElement.getAttribute('data-theme')!=='light';
   const datasets = [];
   let yMax = 0;
   for (const [name, vals] of Object.entries(mags)) {
     const color = colorForObject(name);
     yMax = Math.max(yMax, ...vals);
-    datasets.push({
-      label: name,
-      data: vals,
-      borderColor: color,
-      borderWidth: 1.6,
-      pointRadius: 0,
-      tension: 0.25,
-      fill: false,
-    });
+    datasets.push({ label:name, data:vals, borderColor:color, borderWidth:1.6, pointRadius:0, tension:0.25, fill:false });
   }
-  yMax = Math.max(yMax * 1.15, (md.threshold || 0.02) * 1.8, 0.05);
-
-  const canvas = document.getElementById(id + '_chart');
-  if (!canvas) return;
+  yMax = Math.max(yMax*1.15, (md.threshold||0.02)*1.8, 0.05);
+  const canvas = document.getElementById(id+'_chart');
   const chart = new Chart(canvas.getContext('2d'), {
-    type: 'line',
-    data: { labels, datasets },
-    options: {
-      responsive: true, maintainAspectRatio: false, animation: false,
-      interaction: { mode: 'index', intersect: false },
-      plugins: {
-        legend: { display: false },
-        tooltip: {
-          callbacks: {
-            title: items => `Frame ${items[0].label}`,
-            label: item => `${item.dataset.label}: ${item.parsed.y.toFixed(5)}`,
-          }
-        },
-      },
-      scales: {
-        x: { display: false, grid: { display: false } },
-        y: {
-          title: { display: true, text: '|Δ3D| (m)', color: isDark ? '#777' : '#666', font: { size: 9 } },
-          ticks: { color: isDark ? '#555' : '#999', font: { size: 8 }, maxTicksLimit: 4 },
-          grid: { color: isDark ? 'rgba(255,255,255,0.04)' : 'rgba(0,0,0,0.05)' },
-          min: 0, max: yMax,
-        },
-      },
+    type:'line', data:{labels, datasets},
+    options:{
+      responsive:true, maintainAspectRatio:false, animation:false,
+      interaction:{mode:'index',intersect:false},
+      plugins:{legend:{display:false}},
+      scales:{
+        x:{display:false}, y:{min:0,max:yMax,
+          ticks:{color:isDark?'#555':'#999',font:{size:8},maxTicksLimit:4},
+          grid:{color:isDark?'rgba(255,255,255,0.04)':'rgba(0,0,0,0.05)'}},
+      }
     },
-    plugins: [{
-      id: 'clipShading',
-      beforeDatasetsDraw(ch) {
-        const ctx = ch.ctx;
-        const yTop = ch.scales.y.top;
-        const yBot = ch.scales.y.bottom;
-        const clips = md.clips_by_object || {};
-        for (const [name, ranges] of Object.entries(clips)) {
-          const color = colorForObject(name).replace('hsl', 'hsla').replace(')', ',0.18)');
-          ctx.save();
-          ctx.fillStyle = color;
-          ranges.forEach(([s, e]) => {
-            const xs = ch.scales.x.getPixelForValue(s);
-            const xe = ch.scales.x.getPixelForValue(e);
-            ctx.fillRect(xs, yTop, xe - xs, yBot - yTop);
-          });
+    plugins:[{
+      id:'shade',
+      beforeDatasetsDraw(ch){
+        const ctx=ch.ctx, yT=ch.scales.y.top, yB=ch.scales.y.bottom;
+        for(const[name,ranges]of Object.entries(md.clips_by_object||{})){
+          ctx.save(); ctx.fillStyle=colorForObject(name).replace('hsl','hsla').replace(')',',0.18)');
+          ranges.forEach(([s,e])=>{const xs=ch.scales.x.getPixelForValue(s),xe=ch.scales.x.getPixelForValue(e);ctx.fillRect(xs,yT,xe-xs,yB-yT);});
           ctx.restore();
         }
-        const thresh = md.threshold;
-        if (thresh != null) {
-          const yT = ch.scales.y.getPixelForValue(thresh);
-          ctx.save();
-          ctx.strokeStyle = 'rgba(255,107,53,0.6)';
-          ctx.setLineDash([6, 4]);
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(ch.scales.x.left, yT);
-          ctx.lineTo(ch.scales.x.right, yT);
-          ctx.stroke();
-          ctx.restore();
-        }
+        if(md.threshold!=null){const yL=ch.scales.y.getPixelForValue(md.threshold);ctx.save();ctx.strokeStyle='rgba(255,107,53,0.6)';ctx.setLineDash([6,4]);ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(ch.scales.x.left,yL);ctx.lineTo(ch.scales.x.right,yL);ctx.stroke();ctx.restore();}
       },
-      afterDraw(ch) {
-        const ci = ch._cursorIndex;
-        if (ci == null) return;
-        const x = ch.scales.x.getPixelForValue(ci);
-        const ctx = ch.ctx;
-        ctx.save();
-        ctx.beginPath();
-        ctx.moveTo(x, ch.scales.y.top);
-        ctx.lineTo(x, ch.scales.y.bottom);
-        ctx.strokeStyle = 'rgba(255, 60, 60, 0.75)';
-        ctx.lineWidth = 1.5;
-        ctx.setLineDash([4, 3]);
-        ctx.stroke();
-        ctx.restore();
+      afterDraw(ch){
+        const ci=ch._cursorIndex; if(ci==null)return;
+        const x=ch.scales.x.getPixelForValue(ci),ctx=ch.ctx;
+        ctx.save();ctx.beginPath();ctx.moveTo(x,ch.scales.y.top);ctx.lineTo(x,ch.scales.y.bottom);
+        ctx.strokeStyle='rgba(255,60,60,0.75)';ctx.lineWidth=1.5;ctx.setLineDash([4,3]);ctx.stroke();ctx.restore();
       }
     }]
   });
-  clipState[id].chart = chart;
+  cardState[id].chart = chart;
 }
 
-function toggleObjectSelect(id, name) {
-  const st = clipState[id];
-  if (!st) return;
-  st.selectedObject = (st.selectedObject === name) ? null : name;
-  const card = document.getElementById(id);
-  if (!card) return;
-  card.querySelectorAll('.timeline-row').forEach(row => {
-    const rowName = row.dataset.object;
-    row.classList.remove('selected', 'dimmed');
-    if (st.selectedObject == null) return;
-    if (rowName === st.selectedObject) row.classList.add('selected');
-    else row.classList.add('dimmed');
-  });
-}
-
-function escapeHtml(s) {
-  return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-}
-function escapeCssId(s) {
-  return s.replace(/[^a-zA-Z0-9_-]/g, '_');
-}
-
-// ── Playback ──
-function togglePlay(id) {
-  const vid = document.getElementById(id + '_vid');
-  const btn = document.getElementById(id + '_playbtn');
-  if (vid.paused) {
-    vid.play();
-    btn.innerHTML = '&#9646;&#9646;';
-  } else {
-    vid.pause();
-    btn.innerHTML = '&#9654;';
+// ── Timelines ──
+function buildTimelines(id, md) {
+  const panel = document.getElementById(id+'_timelines');
+  const T = md.num_frames;
+  const clips = md.clips_by_object||{};
+  for(const[name,ranges]of Object.entries(clips)){
+    const color=colorForObject(name);
+    const totalF=ranges.reduce((s,[a,b])=>s+(b-a+1),0);
+    const row=document.createElement('div'); row.className='timeline-row';
+    row.innerHTML=`<div class="timeline-label"><span class="obj-name" style="color:${color}">■ ${escapeHtml(name)}</span><span class="obj-clips">${ranges.length} clip${ranges.length===1?'':'s'} · ${totalF}f</span></div>
+      <div class="timeline-bar">${ranges.map(([s,e])=>`<div class="clip-range" style="left:${s/(T-1)*100}%;width:${(e-s+1)/T*100}%;background:${color};"></div>`).join('')}<div class="cursor-line"></div></div>`;
+    panel.appendChild(row);
   }
 }
-function scrubTo(id, val) {
-  const vid = document.getElementById(id + '_vid');
-  if (vid.duration) vid.currentTime = (val / 1000) * vid.duration;
+
+// ── 2D track overlay (same as other pages) ──
+function start2DOverlay(id, md, vid) {
+  if(!md.tracks_by_object || !Object.keys(md.tracks_by_object).length) return;
+  const canvas = document.getElementById(id+'_canvas');
+  const ctx = canvas.getContext('2d');
+  const [imgH,imgW] = md.img_dim;
+  function draw(){
+    if(!document.body.contains(vid)){return;}
+    if(!vid.duration){requestAnimationFrame(draw);return;}
+    const rect=vid.getBoundingClientRect(),dpr=window.devicePixelRatio||1;
+    const cssW=Math.max(1,Math.floor(rect.width)),cssH=Math.max(1,Math.floor(rect.height));
+    if(canvas.width!==cssW*dpr||canvas.height!==cssH*dpr){canvas.width=cssW*dpr;canvas.height=cssH*dpr;canvas.style.width=cssW+'px';canvas.style.height=cssH+'px';ctx.setTransform(dpr,0,0,dpr,0,0);}
+    const asp=cssW/cssH,vasp=imgW/imgH;
+    let vw,vh,vx,vy;if(asp>vasp){vh=cssH;vw=cssH*vasp;}else{vw=cssW;vh=cssW/vasp;}vx=(cssW-vw)/2;vy=(cssH-vh)/2;
+    ctx.clearRect(0,0,cssW,cssH);
+    const T=md.num_frames,fi=Math.min(Math.round((vid.currentTime/vid.duration)*(T-1)),T-1),ts=Math.max(0,fi-TRAIL_LEN);
+    for(const[name,td]of Object.entries(md.tracks_by_object)){
+      const color=colorForObject(name),tracks=td.tracks,vis=td.visibility,P=tracks.length;
+      for(let p=0;p<P;p++){
+        ctx.strokeStyle=color;ctx.lineWidth=1.5;ctx.beginPath();let started=false;
+        for(let t=ts;t<=fi;t++){if(!vis[p][t])continue;const pt=tracks[p][t];if(pt[0]==null)continue;const x=vx+(pt[0]/imgW)*vw,y=vy+(pt[1]/imgH)*vh;if(!started){ctx.moveTo(x,y);started=true;}else ctx.lineTo(x,y);}ctx.stroke();
+        if(vis[p][fi]){const pt=tracks[p][fi];if(pt[0]!=null){const x=vx+(pt[0]/imgW)*vw,y=vy+(pt[1]/imgH)*vh;ctx.fillStyle=color;ctx.beginPath();ctx.arc(x,y,3,0,Math.PI*2);ctx.fill();}}
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+  requestAnimationFrame(draw);
 }
 
-document.getElementById('taskFilter').addEventListener('change', renderClips);
-document.getElementById('sortSelect').addEventListener('change', renderClips);
+// ── Three.js 3D viewer ──
+function hsvPaletteRGB(n){
+  const out=[];for(let i=0;i<n;i++){const h=(i*137.508)%360,s=0.7,v=0.9,c=v*s,x=c*(1-Math.abs((h/60)%2-1)),m=v-c;
+    let r,g,b;if(h<60){r=c;g=x;b=0;}else if(h<120){r=x;g=c;b=0;}else if(h<180){r=0;g=c;b=x;}else if(h<240){r=0;g=x;b=c;}else if(h<300){r=x;g=0;b=c;}else{r=c;g=0;b=x;}
+    out.push({r:r+m,g:g+m,b:b+m});}return out;
+}
+
+// Track active WebGL contexts and dispose oldest when limit reached
+const MAX_WEBGL = 8;
+const activeViewers = [];  // [{id, renderer}]
+
+function init3DViewer(id, md){
+  if(!md.objects_3d || !Object.keys(md.objects_3d).length) return;
+  const canvasEl = document.getElementById(id+'_3dcanvas');
+  const box = document.getElementById(id+'_3d');
+
+  // Dispose oldest WebGL context if at limit
+  while (activeViewers.length >= MAX_WEBGL) {
+    const old = activeViewers.shift();
+    try { old.renderer.dispose(); old.renderer.forceContextLoss(); } catch(e) {}
+  }
+
+  let renderer;
+  try {
+    renderer = new THREE.WebGLRenderer({canvas:canvasEl, antialias:true});
+  } catch(e) {
+    console.warn('WebGL init failed for', id);
+    return;
+  }
+  activeViewers.push({id, renderer});
+  renderer.setClearColor(0x0d0d0d);
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(50,1,0.01,500);
+
+  // Point cloud
+  if(md.pc_xyz && md.pc_colors){
+    const xyz=md.pc_xyz, cols=md.pc_colors, N=xyz.length;
+    const pos=new Float32Array(N*3), col=new Float32Array(N*3);
+    for(let i=0;i<N;i++){pos[i*3]=xyz[i][0];pos[i*3+1]=-xyz[i][1];pos[i*3+2]=-xyz[i][2];col[i*3]=cols[i][0]/255;col[i*3+1]=cols[i][1]/255;col[i*3+2]=cols[i][2]/255;}
+    const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.setAttribute('color',new THREE.Float32BufferAttribute(col,3));
+    scene.add(new THREE.Points(g,new THREE.PointsMaterial({vertexColors:true,size:0.008,sizeAttenuation:true,transparent:true,opacity:0.5})));
+  }
+
+  // Compute bounding box from all track points
+  let allPts=[];
+  for(const[name,od]of Object.entries(md.objects_3d)){
+    const N=od.N, T=od.T, data=od.pts3d;
+    for(let i=0;i<data.length;i++){const p=data[i];if(isFinite(p[0]))allPts.push([p[0],-p[1],-p[2]]);}
+  }
+  if(!allPts.length) return;
+  const xs=allPts.map(p=>p[0]).sort((a,b)=>a-b), ys=allPts.map(p=>p[1]).sort((a,b)=>a-b), zs=allPts.map(p=>p[2]).sort((a,b)=>a-b);
+  const xmin=xs[Math.floor(xs.length*0.01)],xmax=xs[Math.floor(xs.length*0.99)];
+  const ymin=ys[Math.floor(ys.length*0.01)],ymax=ys[Math.floor(ys.length*0.99)];
+  const zmin=zs[Math.floor(zs.length*0.01)],zmax=zs[Math.floor(zs.length*0.99)];
+  const cx=(xmin+xmax)/2,cy=(ymin+ymax)/2,cz=(zmin+zmax)/2;
+  const interval=Math.max(xmax-xmin,ymax-ymin,zmax-zmin,0.1);
+
+  // Camera
+  let camYaw=Math.PI*0.25, camPitch=0.3, camDist=interval*1.5;
+  const target=new THREE.Vector3(cx,cy,cz);
+  function updateCam(){
+    camera.position.set(target.x+camDist*Math.sin(camYaw)*Math.cos(camPitch),target.y+camDist*Math.sin(camPitch),target.z+camDist*Math.cos(camYaw)*Math.cos(camPitch));
+    camera.lookAt(target);
+    renderScene();
+  }
+
+  // Mouse controls
+  let isDragging=false, prevMouse={x:0,y:0};
+  canvasEl.addEventListener('mousedown',e=>{isDragging=true;prevMouse={x:e.clientX,y:e.clientY};});
+  canvasEl.addEventListener('contextmenu',e=>e.preventDefault());
+  window.addEventListener('mouseup',()=>isDragging=false);
+  canvasEl.addEventListener('mousemove',e=>{if(!isDragging)return;camYaw-=(e.clientX-prevMouse.x)*0.005;camPitch-=(e.clientY-prevMouse.y)*0.005;camPitch=Math.max(-Math.PI/2+0.1,Math.min(Math.PI/2-0.1,camPitch));prevMouse={x:e.clientX,y:e.clientY};updateCam();});
+  canvasEl.addEventListener('wheel',e=>{camDist=Math.max(0.3,Math.min(30,camDist+e.deltaY*0.01));updateCam();e.preventDefault();},{passive:false});
+
+  // Grid
+  const grid=new THREE.GridHelper(interval*2.4,20,0x333333,0x222222);
+  grid.position.set(cx,ys[0],cz);scene.add(grid);
+
+  // Dynamic group for tracks
+  const dynGroup = new THREE.Group();
+  dynGroup.name = 'tracks';
+  scene.add(dynGroup);
+
+  function renderScene(){
+    const w=box.clientWidth,h=box.clientHeight;if(!w||!h)return;
+    renderer.setSize(w,h);camera.aspect=w/h;camera.updateProjectionMatrix();
+    renderer.render(scene,camera);
+  }
+
+  // Draw tracks for a given frame index
+  const objEntries = Object.entries(md.objects_3d);
+  const TRAIL = 12;
+  function draw3DFrame(fi){
+    while(dynGroup.children.length) dynGroup.remove(dynGroup.children[0]);
+    for(const[name,od] of objEntries){
+      const N=od.N, T=od.T, data=od.pts3d;
+      const colors=hsvPaletteRGB(N);
+      const trailStart=Math.max(0,fi-TRAIL);
+      for(let n=0;n<N;n++){
+        let seg=[];
+        for(let t=trailStart;t<=Math.min(fi,T-1);t++){
+          const idx=n*T+t, p=data[idx];
+          if(!p||!isFinite(p[0])){if(seg.length>=6){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(seg,3));dynGroup.add(new THREE.Line(g,new THREE.LineBasicMaterial({color:new THREE.Color(colors[n].r,colors[n].g,colors[n].b)})));}seg=[];continue;}
+          seg.push(p[0],-p[1],-p[2]);
+        }
+        if(seg.length>=6){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(seg,3));dynGroup.add(new THREE.Line(g,new THREE.LineBasicMaterial({color:new THREE.Color(colors[n].r,colors[n].g,colors[n].b)})));}
+      }
+      // Current frame dots
+      const ptP=[],ptC=[];
+      for(let n=0;n<N;n++){
+        const idx=n*T+Math.min(fi,T-1),p=data[idx];
+        if(!p||!isFinite(p[0]))continue;
+        ptP.push(p[0],-p[1],-p[2]);ptC.push(colors[n].r,colors[n].g,colors[n].b);
+      }
+      if(ptP.length){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(ptP,3));g.setAttribute('color',new THREE.Float32BufferAttribute(ptC,3));dynGroup.add(new THREE.Points(g,new THREE.PointsMaterial({vertexColors:true,size:0.015,sizeAttenuation:true})));}
+    }
+    renderScene();
+  }
+
+  cardState[id].draw3DFrame = draw3DFrame;
+  updateCam();
+  draw3DFrame(0);
+}
+
+function togglePlay(id){const v=document.getElementById(id+'_vid');if(v.paused)v.play();else v.pause();}
+function scrubTo(id,val){const v=document.getElementById(id+'_vid');if(v.duration)v.currentTime=(val/1000)*v.duration;}
 
 init();
 </script>
