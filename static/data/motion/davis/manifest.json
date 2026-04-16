@@ -1,0 +1,1286 @@
+{
+  "davis": [
+    {
+      "id": "bear",
+      "text": "a brown bear walks to the left",
+      "object_names": [
+        "brown_bear"
+      ],
+      "num_objects": 1,
+      "num_frames": 82,
+      "num_clips": 0,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/bear.mp4",
+      "motion_url": "static/data/motion/davis/bear.json"
+    },
+    {
+      "id": "bike-packing",
+      "text": "a person rotates the bike and inspects it carefully",
+      "object_names": [
+        "bike",
+        "human"
+      ],
+      "num_objects": 2,
+      "num_frames": 69,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/bike-packing.mp4",
+      "motion_url": "static/data/motion/davis/bike-packing.json"
+    },
+    {
+      "id": "blackswan",
+      "text": "a black swan swims to the right",
+      "object_names": [
+        "black_swan"
+      ],
+      "num_objects": 1,
+      "num_frames": 50,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/blackswan.mp4",
+      "motion_url": "static/data/motion/davis/blackswan.json"
+    },
+    {
+      "id": "bmx-bumps",
+      "text": "a bike rider rides a bmx bike on a dirt track",
+      "object_names": [
+        "bike_rider",
+        "bmx_bike"
+      ],
+      "num_objects": 2,
+      "num_frames": 90,
+      "num_clips": 5,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/bmx-bumps.mp4",
+      "motion_url": "static/data/motion/davis/bmx-bumps.json"
+    },
+    {
+      "id": "bmx-trees",
+      "text": "a bike rider rides the bike along the road",
+      "object_names": [
+        "bike_rider",
+        "bmx_bike"
+      ],
+      "num_objects": 2,
+      "num_frames": 80,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/bmx-trees.mp4",
+      "motion_url": "static/data/motion/davis/bmx-trees.json"
+    },
+    {
+      "id": "boat",
+      "text": "a boat sails to the left along the river",
+      "object_names": [
+        "boat"
+      ],
+      "num_objects": 1,
+      "num_frames": 75,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/boat.mp4",
+      "motion_url": "static/data/motion/davis/boat.json"
+    },
+    {
+      "id": "boxing-fisheye",
+      "text": "two boxers compete in a boxing game with a referee on the side",
+      "object_names": [
+        "boxer_0",
+        "boxer_1",
+        "referee"
+      ],
+      "num_objects": 3,
+      "num_frames": 87,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/boxing-fisheye.mp4",
+      "motion_url": "static/data/motion/davis/boxing-fisheye.json"
+    },
+    {
+      "id": "breakdance",
+      "text": "a dancer performs breakdancing in front of a crowd",
+      "object_names": [
+        "dancer"
+      ],
+      "num_objects": 1,
+      "num_frames": 84,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/breakdance.mp4",
+      "motion_url": "static/data/motion/davis/breakdance.json"
+    },
+    {
+      "id": "breakdance-flare",
+      "text": "a breakdancer performs flares",
+      "object_names": [
+        "dancer"
+      ],
+      "num_objects": 1,
+      "num_frames": 71,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/breakdance-flare.mp4",
+      "motion_url": "static/data/motion/davis/breakdance-flare.json"
+    },
+    {
+      "id": "bus",
+      "text": "a bus goes to the right along the road",
+      "object_names": [
+        "bus"
+      ],
+      "num_objects": 1,
+      "num_frames": 80,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/bus.mp4",
+      "motion_url": "static/data/motion/davis/bus.json"
+    },
+    {
+      "id": "camel",
+      "text": "a camel walks to the right and then walks back",
+      "object_names": [
+        "camal"
+      ],
+      "num_objects": 1,
+      "num_frames": 90,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/camel.mp4",
+      "motion_url": "static/data/motion/davis/camel.json"
+    },
+    {
+      "id": "car-roundabout",
+      "text": "a dark gray car drives through a roundabout",
+      "object_names": [
+        "dark_grey_car"
+      ],
+      "num_objects": 1,
+      "num_frames": 75,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/car-roundabout.mp4",
+      "motion_url": "static/data/motion/davis/car-roundabout.json"
+    },
+    {
+      "id": "car-shadow",
+      "text": "a silver car drive to the left",
+      "object_names": [
+        "silver_car"
+      ],
+      "num_objects": 1,
+      "num_frames": 40,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/car-shadow.mp4",
+      "motion_url": "static/data/motion/davis/car-shadow.json"
+    },
+    {
+      "id": "car-turn",
+      "text": "a silver car follows the road and slowly turns to the right",
+      "object_names": [
+        "silver_car"
+      ],
+      "num_objects": 1,
+      "num_frames": 80,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/car-turn.mp4",
+      "motion_url": "static/data/motion/davis/car-turn.json"
+    },
+    {
+      "id": "cat-girl",
+      "text": "a girl holds a cat and smiles",
+      "object_names": [
+        "cat",
+        "girl"
+      ],
+      "num_objects": 2,
+      "num_frames": 89,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/cat-girl.mp4",
+      "motion_url": "static/data/motion/davis/cat-girl.json"
+    },
+    {
+      "id": "classic-car",
+      "text": "a classic car drives to the left",
+      "object_names": [
+        "classic_car",
+        "driver",
+        "passenger"
+      ],
+      "num_objects": 3,
+      "num_frames": 63,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/classic-car.mp4",
+      "motion_url": "static/data/motion/davis/classic-car.json"
+    },
+    {
+      "id": "color-run",
+      "text": "a person sprays color in a running race",
+      "object_names": [
+        "human_0",
+        "human_1",
+        "human_hand"
+      ],
+      "num_objects": 3,
+      "num_frames": 84,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/color-run.mp4",
+      "motion_url": "static/data/motion/davis/color-run.json"
+    },
+    {
+      "id": "cows",
+      "text": "a cow walks slowly forward",
+      "object_names": [
+        "cow"
+      ],
+      "num_objects": 1,
+      "num_frames": 104,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/cows.mp4",
+      "motion_url": "static/data/motion/davis/cows.json"
+    },
+    {
+      "id": "crossing",
+      "text": "two persons crosses the road while a car drives in the opposite direction in the back",
+      "object_names": [
+        "man",
+        "van",
+        "woman"
+      ],
+      "num_objects": 3,
+      "num_frames": 52,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/crossing.mp4",
+      "motion_url": "static/data/motion/davis/crossing.json"
+    },
+    {
+      "id": "dance-jump",
+      "text": "the dancer jumps",
+      "object_names": [
+        "dancing_woman"
+      ],
+      "num_objects": 1,
+      "num_frames": 60,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/dance-jump.mp4",
+      "motion_url": "static/data/motion/davis/dance-jump.json"
+    },
+    {
+      "id": "dance-twirl",
+      "text": "the dancer performs a twirl.",
+      "object_names": [
+        "dancing_woman"
+      ],
+      "num_objects": 1,
+      "num_frames": 90,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/dance-twirl.mp4",
+      "motion_url": "static/data/motion/davis/dance-twirl.json"
+    },
+    {
+      "id": "dancing",
+      "text": "three persons dance in front of the crowd",
+      "object_names": [
+        "dacing_man_1",
+        "dancing_man_0",
+        "dancing_woman"
+      ],
+      "num_objects": 3,
+      "num_frames": 62,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/dancing.mp4",
+      "motion_url": "static/data/motion/davis/dancing.json"
+    },
+    {
+      "id": "disc-jockey",
+      "text": "two persons extend their arms",
+      "object_names": [
+        "man_0",
+        "man_1",
+        "mask"
+      ],
+      "num_objects": 3,
+      "num_frames": 76,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/disc-jockey.mp4",
+      "motion_url": "static/data/motion/davis/disc-jockey.json"
+    },
+    {
+      "id": "dog",
+      "text": "a dog walks on the yellow grass",
+      "object_names": [
+        "dog"
+      ],
+      "num_objects": 1,
+      "num_frames": 60,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/dog.mp4",
+      "motion_url": "static/data/motion/davis/dog.json"
+    },
+    {
+      "id": "dog-agility",
+      "text": "the dog jumps and weaves between poles",
+      "object_names": [
+        "dog"
+      ],
+      "num_objects": 1,
+      "num_frames": 25,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/dog-agility.mp4",
+      "motion_url": "static/data/motion/davis/dog-agility.json"
+    },
+    {
+      "id": "dog-gooses",
+      "text": "the dog chases the 4 geese",
+      "object_names": [
+        "dog",
+        "goose_0",
+        "goose_1",
+        "goose_2",
+        "goose_3"
+      ],
+      "num_objects": 5,
+      "num_frames": 86,
+      "num_clips": 5,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/dog-gooses.mp4",
+      "motion_url": "static/data/motion/davis/dog-gooses.json"
+    },
+    {
+      "id": "dogs-jump",
+      "text": "two dogs jump for treat around a person",
+      "object_names": [
+        "dog_0",
+        "dog_1",
+        "human"
+      ],
+      "num_objects": 3,
+      "num_frames": 66,
+      "num_clips": 4,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/dogs-jump.mp4",
+      "motion_url": "static/data/motion/davis/dogs-jump.json"
+    },
+    {
+      "id": "dogs-scale",
+      "text": "put a dog on the weight",
+      "object_names": [
+        "dog_0",
+        "dog_1",
+        "human_hand",
+        "weight"
+      ],
+      "num_objects": 4,
+      "num_frames": 83,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/dogs-scale.mp4",
+      "motion_url": "static/data/motion/davis/dogs-scale.json"
+    },
+    {
+      "id": "drift-chicane",
+      "text": "a racing car drifts through the chicane",
+      "object_names": [
+        "racing_car"
+      ],
+      "num_objects": 1,
+      "num_frames": 52,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/drift-chicane.mp4",
+      "motion_url": "static/data/motion/davis/drift-chicane.json"
+    },
+    {
+      "id": "drift-straight",
+      "text": "a racing car drifts on a straight track",
+      "object_names": [
+        "racing_car"
+      ],
+      "num_objects": 1,
+      "num_frames": 50,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/drift-straight.mp4",
+      "motion_url": "static/data/motion/davis/drift-straight.json"
+    },
+    {
+      "id": "drift-turn",
+      "text": "a racing car drifts around a turn",
+      "object_names": [
+        "racing_car"
+      ],
+      "num_objects": 1,
+      "num_frames": 64,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/drift-turn.mp4",
+      "motion_url": "static/data/motion/davis/drift-turn.json"
+    },
+    {
+      "id": "drone",
+      "text": "the drone falls to the ground. then one person picks it up",
+      "object_names": [
+        "controller",
+        "drone",
+        "man_0"
+      ],
+      "num_objects": 3,
+      "num_frames": 91,
+      "num_clips": 4,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/drone.mp4",
+      "motion_url": "static/data/motion/davis/drone.json"
+    },
+    {
+      "id": "elephant",
+      "text": "an elephant slowly walks",
+      "object_names": [
+        "elephant"
+      ],
+      "num_objects": 1,
+      "num_frames": 80,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/elephant.mp4",
+      "motion_url": "static/data/motion/davis/elephant.json"
+    },
+    {
+      "id": "flamingo",
+      "text": "a flamingo dips its beak into the water while walking to the right",
+      "object_names": [
+        "flamingo"
+      ],
+      "num_objects": 1,
+      "num_frames": 80,
+      "num_clips": 0,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/flamingo.mp4",
+      "motion_url": "static/data/motion/davis/flamingo.json"
+    },
+    {
+      "id": "goat",
+      "text": "a goat walks along the cliff",
+      "object_names": [
+        "goat"
+      ],
+      "num_objects": 1,
+      "num_frames": 90,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/goat.mp4",
+      "motion_url": "static/data/motion/davis/goat.json"
+    },
+    {
+      "id": "gold-fish",
+      "text": "several fishes swims in the water",
+      "object_names": [
+        "fish_0",
+        "fish_1",
+        "fish_2",
+        "fish_3",
+        "fish_4"
+      ],
+      "num_objects": 5,
+      "num_frames": 78,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/gold-fish.mp4",
+      "motion_url": "static/data/motion/davis/gold-fish.json"
+    },
+    {
+      "id": "hike",
+      "text": "a person is hiking and walks to the right",
+      "object_names": [
+        "hiker"
+      ],
+      "num_objects": 1,
+      "num_frames": 80,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/hike.mp4",
+      "motion_url": "static/data/motion/davis/hike.json"
+    },
+    {
+      "id": "hockey",
+      "text": "a hockey player prepares and shoots",
+      "object_names": [
+        "hockey",
+        "hockey_player",
+        "hockey_stick"
+      ],
+      "num_objects": 3,
+      "num_frames": 75,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/hockey.mp4",
+      "motion_url": "static/data/motion/davis/hockey.json"
+    },
+    {
+      "id": "horsejump-high",
+      "text": "a rider on a horse jumps over a high obstacle",
+      "object_names": [
+        "horse",
+        "horse_rider"
+      ],
+      "num_objects": 2,
+      "num_frames": 50,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/horsejump-high.mp4",
+      "motion_url": "static/data/motion/davis/horsejump-high.json"
+    },
+    {
+      "id": "horsejump-low",
+      "text": "a rider on a horse jumps over a low obstacle",
+      "object_names": [
+        "horse",
+        "horse_rider"
+      ],
+      "num_objects": 2,
+      "num_frames": 60,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/horsejump-low.mp4",
+      "motion_url": "static/data/motion/davis/horsejump-low.json"
+    },
+    {
+      "id": "india",
+      "text": "women with Indian costume walk on the street",
+      "object_names": [
+        "woman_0",
+        "woman_1",
+        "woman_2"
+      ],
+      "num_objects": 3,
+      "num_frames": 81,
+      "num_clips": 4,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/india.mp4",
+      "motion_url": "static/data/motion/davis/india.json"
+    },
+    {
+      "id": "judo",
+      "text": "a judo master flips another practitioner over",
+      "object_names": [
+        "judomaster_0",
+        "judomaster_1"
+      ],
+      "num_objects": 2,
+      "num_frames": 34,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/judo.mp4",
+      "motion_url": "static/data/motion/davis/judo.json"
+    },
+    {
+      "id": "kid-football",
+      "text": "a kid kicks soccer",
+      "object_names": [
+        "soccer",
+        "soccer_player"
+      ],
+      "num_objects": 2,
+      "num_frames": 68,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/kid-football.mp4",
+      "motion_url": "static/data/motion/davis/kid-football.json"
+    },
+    {
+      "id": "kite-surf",
+      "text": "a kite surfer surfs to the right",
+      "object_names": [
+        "kite_string",
+        "surfer",
+        "surfing_board"
+      ],
+      "num_objects": 3,
+      "num_frames": 50,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/kite-surf.mp4",
+      "motion_url": "static/data/motion/davis/kite-surf.json"
+    },
+    {
+      "id": "kite-walk",
+      "text": "the surfer backs up",
+      "object_names": [
+        "kite_string",
+        "surfer",
+        "surfing_board"
+      ],
+      "num_objects": 3,
+      "num_frames": 80,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/kite-walk.mp4",
+      "motion_url": "static/data/motion/davis/kite-walk.json"
+    },
+    {
+      "id": "koala",
+      "text": "a koala moves onto a branch and holds onto it",
+      "object_names": [
+        "koala"
+      ],
+      "num_objects": 1,
+      "num_frames": 100,
+      "num_clips": 0,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/koala.mp4",
+      "motion_url": "static/data/motion/davis/koala.json"
+    },
+    {
+      "id": "lab-coat",
+      "text": "three women students in lab coat standing looks at the camera",
+      "object_names": [
+        "object_0",
+        "object_1",
+        "woman_0",
+        "woman_1",
+        "woman_2"
+      ],
+      "num_objects": 5,
+      "num_frames": 47,
+      "num_clips": 5,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/lab-coat.mp4",
+      "motion_url": "static/data/motion/davis/lab-coat.json"
+    },
+    {
+      "id": "lady-running",
+      "text": "an old lady runs forward holding a note",
+      "object_names": [
+        "paper",
+        "woman"
+      ],
+      "num_objects": 2,
+      "num_frames": 65,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/lady-running.mp4",
+      "motion_url": "static/data/motion/davis/lady-running.json"
+    },
+    {
+      "id": "libby",
+      "text": "a dog walks to the right on grass",
+      "object_names": [
+        "dog"
+      ],
+      "num_objects": 1,
+      "num_frames": 49,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/libby.mp4",
+      "motion_url": "static/data/motion/davis/libby.json"
+    },
+    {
+      "id": "lindy-hop",
+      "text": "several groups of dancers dance in the ball room",
+      "object_names": [
+        "dancer_0",
+        "dancer_1",
+        "dancer_2",
+        "dancer_3",
+        "dancer_4",
+        "dancer_5",
+        "dancer_6",
+        "dancer_7"
+      ],
+      "num_objects": 8,
+      "num_frames": 73,
+      "num_clips": 10,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/lindy-hop.mp4",
+      "motion_url": "static/data/motion/davis/lindy-hop.json"
+    },
+    {
+      "id": "loading",
+      "text": "a man moves a tv box to the cart",
+      "object_names": [
+        "box",
+        "human_0",
+        "human_1"
+      ],
+      "num_objects": 3,
+      "num_frames": 50,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/loading.mp4",
+      "motion_url": "static/data/motion/davis/loading.json"
+    },
+    {
+      "id": "longboard",
+      "text": "a man rides a skateboard and waves while a cyclist approaches from the opposite direction",
+      "object_names": [
+        "backpack",
+        "bike",
+        "bike_rider",
+        "skateboard",
+        "skater"
+      ],
+      "num_objects": 5,
+      "num_frames": 52,
+      "num_clips": 5,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/longboard.mp4",
+      "motion_url": "static/data/motion/davis/longboard.json"
+    },
+    {
+      "id": "lucia",
+      "text": "a lady walks to the right",
+      "object_names": [
+        "woman"
+      ],
+      "num_objects": 1,
+      "num_frames": 70,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/lucia.mp4",
+      "motion_url": "static/data/motion/davis/lucia.json"
+    },
+    {
+      "id": "mallard-fly",
+      "text": "a mallard starts to fly",
+      "object_names": [
+        "mallard"
+      ],
+      "num_objects": 1,
+      "num_frames": 70,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/mallard-fly.mp4",
+      "motion_url": "static/data/motion/davis/mallard-fly.json"
+    },
+    {
+      "id": "mallard-water",
+      "text": "a mallard swims in the water",
+      "object_names": [
+        "mallard"
+      ],
+      "num_objects": 1,
+      "num_frames": 80,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/mallard-water.mp4",
+      "motion_url": "static/data/motion/davis/mallard-water.json"
+    },
+    {
+      "id": "mbike-trick",
+      "text": "a motorbike rider performs a burnout, spinning the tire and producing smoke",
+      "object_names": [
+        "mbike",
+        "mbike_rider"
+      ],
+      "num_objects": 2,
+      "num_frames": 79,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/mbike-trick.mp4",
+      "motion_url": "static/data/motion/davis/mbike-trick.json"
+    },
+    {
+      "id": "miami-surf",
+      "text": "several surfers surf in the ocean",
+      "object_names": [
+        "surfer_0",
+        "surfer_1",
+        "surfing_board_0",
+        "surfing_board_1"
+      ],
+      "num_objects": 4,
+      "num_frames": 70,
+      "num_clips": 4,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/miami-surf.mp4",
+      "motion_url": "static/data/motion/davis/miami-surf.json"
+    },
+    {
+      "id": "motocross-bumps",
+      "text": "a motorbike rider on a motorbike jumps through the bumps",
+      "object_names": [
+        "mbike",
+        "mbike_rider"
+      ],
+      "num_objects": 2,
+      "num_frames": 60,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/motocross-bumps.mp4",
+      "motion_url": "static/data/motion/davis/motocross-bumps.json"
+    },
+    {
+      "id": "motocross-jump",
+      "text": "a motorbike rider on a motorbike jumps through the bumps",
+      "object_names": [
+        "mbike",
+        "mbike_rider"
+      ],
+      "num_objects": 2,
+      "num_frames": 40,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/motocross-jump.mp4",
+      "motion_url": "static/data/motion/davis/motocross-jump.json"
+    },
+    {
+      "id": "motorbike",
+      "text": "a motorbike with two passengers drives to the right",
+      "object_names": [
+        "mbike",
+        "mbike_passenger",
+        "mbike_rider"
+      ],
+      "num_objects": 3,
+      "num_frames": 43,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/motorbike.mp4",
+      "motion_url": "static/data/motion/davis/motorbike.json"
+    },
+    {
+      "id": "night-race",
+      "text": "two racing cars race against each other",
+      "object_names": [
+        "racing_car_0",
+        "racing_car_1"
+      ],
+      "num_objects": 2,
+      "num_frames": 46,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/night-race.mp4",
+      "motion_url": "static/data/motion/davis/night-race.json"
+    },
+    {
+      "id": "paragliding",
+      "text": "a paraglider flys",
+      "object_names": [
+        "glider",
+        "paraglider"
+      ],
+      "num_objects": 2,
+      "num_frames": 70,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/paragliding.mp4",
+      "motion_url": "static/data/motion/davis/paragliding.json"
+    },
+    {
+      "id": "paragliding-launch",
+      "text": "a paraglider runs forward and launch the paragliding",
+      "object_names": [
+        "bag",
+        "glider_string",
+        "paraglider"
+      ],
+      "num_objects": 3,
+      "num_frames": 80,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/paragliding-launch.mp4",
+      "motion_url": "static/data/motion/davis/paragliding-launch.json"
+    },
+    {
+      "id": "parkour",
+      "text": "a person is doing parkour",
+      "object_names": [
+        "man"
+      ],
+      "num_objects": 1,
+      "num_frames": 100,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/parkour.mp4",
+      "motion_url": "static/data/motion/davis/parkour.json"
+    },
+    {
+      "id": "pigs",
+      "text": "little pigs walks to the big pig",
+      "object_names": [
+        "pig_0",
+        "pig_1",
+        "pig_2"
+      ],
+      "num_objects": 3,
+      "num_frames": 79,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/pigs.mp4",
+      "motion_url": "static/data/motion/davis/pigs.json"
+    },
+    {
+      "id": "planes-water",
+      "text": "airplane slowly moves forward",
+      "object_names": [
+        "plane_0",
+        "plane_1"
+      ],
+      "num_objects": 2,
+      "num_frames": 38,
+      "num_clips": 0,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/planes-water.mp4",
+      "motion_url": "static/data/motion/davis/planes-water.json"
+    },
+    {
+      "id": "rallye",
+      "text": "a rally car drives forward",
+      "object_names": [
+        "rally_car"
+      ],
+      "num_objects": 1,
+      "num_frames": 50,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/rallye.mp4",
+      "motion_url": "static/data/motion/davis/rallye.json"
+    },
+    {
+      "id": "rhino",
+      "text": "a rhino walks to the left",
+      "object_names": [
+        "rhino"
+      ],
+      "num_objects": 1,
+      "num_frames": 90,
+      "num_clips": 0,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/rhino.mp4",
+      "motion_url": "static/data/motion/davis/rhino.json"
+    },
+    {
+      "id": "rollerblade",
+      "text": "a rollerblader rumps",
+      "object_names": [
+        "rollerblader"
+      ],
+      "num_objects": 1,
+      "num_frames": 35,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/rollerblade.mp4",
+      "motion_url": "static/data/motion/davis/rollerblade.json"
+    },
+    {
+      "id": "schoolgirls",
+      "text": "a girl moves to the right while others stand",
+      "object_names": [
+        "bag_0",
+        "bag_1",
+        "bag_2",
+        "schoolgirl_0",
+        "schoolgirl_1",
+        "schoolgirl_2",
+        "schoolgirl_3"
+      ],
+      "num_objects": 7,
+      "num_frames": 80,
+      "num_clips": 7,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/schoolgirls.mp4",
+      "motion_url": "static/data/motion/davis/schoolgirls.json"
+    },
+    {
+      "id": "scooter-black",
+      "text": "a rider rides the scooter to the left",
+      "object_names": [
+        "scooter",
+        "scooter_rider"
+      ],
+      "num_objects": 2,
+      "num_frames": 43,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/scooter-black.mp4",
+      "motion_url": "static/data/motion/davis/scooter-black.json"
+    },
+    {
+      "id": "scooter-board",
+      "text": "a person sits on a cart and drives it",
+      "object_names": [
+        "cart",
+        "human"
+      ],
+      "num_objects": 2,
+      "num_frames": 91,
+      "num_clips": 4,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/scooter-board.mp4",
+      "motion_url": "static/data/motion/davis/scooter-board.json"
+    },
+    {
+      "id": "scooter-gray",
+      "text": "a rider rides the scooter to the left",
+      "object_names": [
+        "scooter",
+        "scooter_rider"
+      ],
+      "num_objects": 2,
+      "num_frames": 75,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/scooter-gray.mp4",
+      "motion_url": "static/data/motion/davis/scooter-gray.json"
+    },
+    {
+      "id": "sheep",
+      "text": "several sheeps walk",
+      "object_names": [
+        "sheep_0",
+        "sheep_1",
+        "sheep_2",
+        "sheep_3",
+        "sheep_4"
+      ],
+      "num_objects": 5,
+      "num_frames": 68,
+      "num_clips": 5,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/sheep.mp4",
+      "motion_url": "static/data/motion/davis/sheep.json"
+    },
+    {
+      "id": "shooting",
+      "text": "a soldier slides down the rope while shooting",
+      "object_names": [
+        "gun",
+        "rope",
+        "soldier"
+      ],
+      "num_objects": 3,
+      "num_frames": 40,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/shooting.mp4",
+      "motion_url": "static/data/motion/davis/shooting.json"
+    },
+    {
+      "id": "skate-park",
+      "text": "a skater skates in a skate park",
+      "object_names": [
+        "skateboard",
+        "skater"
+      ],
+      "num_objects": 2,
+      "num_frames": 80,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/skate-park.mp4",
+      "motion_url": "static/data/motion/davis/skate-park.json"
+    },
+    {
+      "id": "snowboard",
+      "text": "a snowboarder does a flip",
+      "object_names": [
+        "snowboard",
+        "snowboarder"
+      ],
+      "num_objects": 2,
+      "num_frames": 66,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/snowboard.mp4",
+      "motion_url": "static/data/motion/davis/snowboard.json"
+    },
+    {
+      "id": "soapbox",
+      "text": "two drivers drive a self-made cart through a bump",
+      "object_names": [
+        "cart",
+        "drive_1",
+        "driver_0"
+      ],
+      "num_objects": 3,
+      "num_frames": 99,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/soapbox.mp4",
+      "motion_url": "static/data/motion/davis/soapbox.json"
+    },
+    {
+      "id": "soccerball",
+      "text": "a soccer rolls from right to left",
+      "object_names": [
+        "soccer"
+      ],
+      "num_objects": 1,
+      "num_frames": 48,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/soccerball.mp4",
+      "motion_url": "static/data/motion/davis/soccerball.json"
+    },
+    {
+      "id": "stroller",
+      "text": "a person moves the stroller to the right",
+      "object_names": [
+        "human",
+        "stroller"
+      ],
+      "num_objects": 2,
+      "num_frames": 91,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/stroller.mp4",
+      "motion_url": "static/data/motion/davis/stroller.json"
+    },
+    {
+      "id": "stunt",
+      "text": "a person slides down the skate park on a scooter",
+      "object_names": [
+        "human",
+        "scooter"
+      ],
+      "num_objects": 2,
+      "num_frames": 71,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/stunt.mp4",
+      "motion_url": "static/data/motion/davis/stunt.json"
+    },
+    {
+      "id": "surf",
+      "text": "a person surfs to the right",
+      "object_names": [
+        "surfer",
+        "surfing_board",
+        "surfing_wing"
+      ],
+      "num_objects": 3,
+      "num_frames": 55,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/surf.mp4",
+      "motion_url": "static/data/motion/davis/surf.json"
+    },
+    {
+      "id": "swing",
+      "text": "a lady swings on a swing",
+      "object_names": [
+        "human",
+        "rope",
+        "swing"
+      ],
+      "num_objects": 3,
+      "num_frames": 60,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/swing.mp4",
+      "motion_url": "static/data/motion/davis/swing.json"
+    },
+    {
+      "id": "tennis",
+      "text": "a tennis player does a forehand hit",
+      "object_names": [
+        "tennis_ball",
+        "tennis_player",
+        "tennis_racket"
+      ],
+      "num_objects": 3,
+      "num_frames": 70,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/tennis.mp4",
+      "motion_url": "static/data/motion/davis/tennis.json"
+    },
+    {
+      "id": "tractor-sand",
+      "text": "a tractor drives around an obstacle on sand",
+      "object_names": [
+        "driver",
+        "tractor",
+        "tractor_wagon"
+      ],
+      "num_objects": 3,
+      "num_frames": 76,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/tractor-sand.mp4",
+      "motion_url": "static/data/motion/davis/tractor-sand.json"
+    },
+    {
+      "id": "train",
+      "text": "a toy train turns left along the track",
+      "object_names": [
+        "train_0",
+        "train_1",
+        "train_2",
+        "train_3"
+      ],
+      "num_objects": 4,
+      "num_frames": 80,
+      "num_clips": 4,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/train.mp4",
+      "motion_url": "static/data/motion/davis/train.json"
+    },
+    {
+      "id": "tuk-tuk",
+      "text": "three persons sit on a car",
+      "object_names": [
+        "human_0",
+        "human_1",
+        "human_2"
+      ],
+      "num_objects": 3,
+      "num_frames": 59,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/tuk-tuk.mp4",
+      "motion_url": "static/data/motion/davis/tuk-tuk.json"
+    },
+    {
+      "id": "upside-down",
+      "text": "two persons ride on a rollercoaster",
+      "object_names": [
+        "human_0",
+        "human_1"
+      ],
+      "num_objects": 2,
+      "num_frames": 65,
+      "num_clips": 2,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/upside-down.mp4",
+      "motion_url": "static/data/motion/davis/upside-down.json"
+    },
+    {
+      "id": "varanus-cage",
+      "text": "a varanus crawls on the branch",
+      "object_names": [
+        "varanus"
+      ],
+      "num_objects": 1,
+      "num_frames": 67,
+      "num_clips": 1,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/varanus-cage.mp4",
+      "motion_url": "static/data/motion/davis/varanus-cage.json"
+    },
+    {
+      "id": "walking",
+      "text": "two persons walk down the street",
+      "object_names": [
+        "man",
+        "woman"
+      ],
+      "num_objects": 2,
+      "num_frames": 72,
+      "num_clips": 3,
+      "has_pc": true,
+      "rgb_url": "static/videos/davis/walking.mp4",
+      "motion_url": "static/data/motion/davis/walking.json"
+    }
+  ]
+}

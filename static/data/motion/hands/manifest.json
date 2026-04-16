@@ -1,0 +1,594 @@
+{
+  "hands": [
+    {
+      "id": "part2_basic_pick_place_17503",
+      "dataset": "egodex",
+      "text": "put black plastic router on black plastic tray",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 2,
+      "rgb_url": "static/videos/hands/part2_basic_pick_place_17503.mp4",
+      "motion_url": "static/data/motion/hands/part2_basic_pick_place_17503.json"
+    },
+    {
+      "id": "part5_stack_unstack_bowls_794",
+      "dataset": "egodex",
+      "text": "nest bowls together",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/part5_stack_unstack_bowls_794.mp4",
+      "motion_url": "static/data/motion/hands/part5_stack_unstack_bowls_794.json"
+    },
+    {
+      "id": "part1_dry_hands_3374",
+      "dataset": "egodex",
+      "text": "wipe left hand with yellow cloth",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 4,
+      "rgb_url": "static/videos/hands/part1_dry_hands_3374.mp4",
+      "motion_url": "static/data/motion/hands/part1_dry_hands_3374.json"
+    },
+    {
+      "id": "part2_basic_pick_place_3298",
+      "dataset": "egodex",
+      "text": "pick up yellow donut",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/part2_basic_pick_place_3298.mp4",
+      "motion_url": "static/data/motion/hands/part2_basic_pick_place_3298.json"
+    },
+    {
+      "id": "part1_clean_tableware_473",
+      "dataset": "egodex",
+      "text": "wipe red plastic knife with blue cloth",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 0,
+      "rgb_url": "static/videos/hands/part1_clean_tableware_473.mp4",
+      "motion_url": "static/data/motion/hands/part1_clean_tableware_473.json"
+    },
+    {
+      "id": "part5_vertical_pick_place_13530",
+      "dataset": "egodex",
+      "text": "put yellow rectangular object into clear plastic container",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 0,
+      "rgb_url": "static/videos/hands/part5_vertical_pick_place_13530.mp4",
+      "motion_url": "static/data/motion/hands/part5_vertical_pick_place_13530.json"
+    },
+    {
+      "id": "part4_scoop_dump_ice_4691",
+      "dataset": "egodex",
+      "text": "put yellow cup into clear plastic container",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 0,
+      "rgb_url": "static/videos/hands/part4_scoop_dump_ice_4691.mp4",
+      "motion_url": "static/data/motion/hands/part4_scoop_dump_ice_4691.json"
+    },
+    {
+      "id": "part5_vertical_pick_place_1071",
+      "dataset": "egodex",
+      "text": "put white ceramic object into container",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/part5_vertical_pick_place_1071.mp4",
+      "motion_url": "static/data/motion/hands/part5_vertical_pick_place_1071.json"
+    },
+    {
+      "id": "part2_basic_pick_place_15519",
+      "dataset": "egodex",
+      "text": "pick up yellow toy from yellow plate",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 0,
+      "rgb_url": "static/videos/hands/part2_basic_pick_place_15519.mp4",
+      "motion_url": "static/data/motion/hands/part2_basic_pick_place_15519.json"
+    },
+    {
+      "id": "part2_basic_pick_place_3535",
+      "dataset": "egodex",
+      "text": "move blue plastic brick to the right",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/part2_basic_pick_place_3535.mp4",
+      "motion_url": "static/data/motion/hands/part2_basic_pick_place_3535.json"
+    },
+    {
+      "id": "part4_pick_place_food_3549",
+      "dataset": "egodex",
+      "text": "put red fruit into basket",
+      "object_names": [
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/part4_pick_place_food_3549.mp4",
+      "motion_url": "static/data/motion/hands/part4_pick_place_food_3549.json"
+    },
+    {
+      "id": "part2_insert_remove_furniture_bench_round_table_4122",
+      "dataset": "egodex",
+      "text": "put white plastic cross on white plastic base",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 0,
+      "rgb_url": "static/videos/hands/part2_insert_remove_furniture_bench_round_table_4122.mp4",
+      "motion_url": "static/data/motion/hands/part2_insert_remove_furniture_bench_round_table_4122.json"
+    },
+    {
+      "id": "part1_dry_hands_3713",
+      "dataset": "egodex",
+      "text": "fold green towel",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 8,
+      "rgb_url": "static/videos/hands/part1_dry_hands_3713.mp4",
+      "motion_url": "static/data/motion/hands/part1_dry_hands_3713.json"
+    },
+    {
+      "id": "part1_clean_surface_4108",
+      "dataset": "egodex",
+      "text": "iron blue t-shirt with ironing board",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 7,
+      "rgb_url": "static/videos/hands/part1_clean_surface_4108.mp4",
+      "motion_url": "static/data/motion/hands/part1_clean_surface_4108.json"
+    },
+    {
+      "id": "part2_basic_pick_place_10403",
+      "dataset": "egodex",
+      "text": "put gray spatula on gray square plate",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 2,
+      "rgb_url": "static/videos/hands/part2_basic_pick_place_10403.mp4",
+      "motion_url": "static/data/motion/hands/part2_basic_pick_place_10403.json"
+    },
+    {
+      "id": "part1_clean_surface_2871",
+      "dataset": "egodex",
+      "text": "spray cleaning agent on cloth",
+      "object_names": [
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/part1_clean_surface_2871.mp4",
+      "motion_url": "static/data/motion/hands/part1_clean_surface_2871.json"
+    },
+    {
+      "id": "part2_basic_pick_place_13571",
+      "dataset": "egodex",
+      "text": "put yellow toy bread into green bowl",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 2,
+      "rgb_url": "static/videos/hands/part2_basic_pick_place_13571.mp4",
+      "motion_url": "static/data/motion/hands/part2_basic_pick_place_13571.json"
+    },
+    {
+      "id": "part5_stack_unstack_plates_2097",
+      "dataset": "egodex",
+      "text": "stack red and blue plates together",
+      "object_names": [
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/part5_stack_unstack_plates_2097.mp4",
+      "motion_url": "static/data/motion/hands/part5_stack_unstack_plates_2097.json"
+    },
+    {
+      "id": "part1_assemble_disassemble_legos_1019",
+      "dataset": "egodex",
+      "text": "stack red plastic pieces on yellow plastic piece",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/part1_assemble_disassemble_legos_1019.mp4",
+      "motion_url": "static/data/motion/hands/part1_assemble_disassemble_legos_1019.json"
+    },
+    {
+      "id": "part5_vertical_pick_place_3722",
+      "dataset": "egodex",
+      "text": "put white rabbit in container",
+      "object_names": [
+        "right_hand"
+      ],
+      "num_clips": 0,
+      "rgb_url": "static/videos/hands/part5_vertical_pick_place_3722.mp4",
+      "motion_url": "static/data/motion/hands/part5_vertical_pick_place_3722.json"
+    },
+    {
+      "id": "part1_dry_hands_45",
+      "dataset": "egodex",
+      "text": "wipe hands with light blue rag",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 0,
+      "rgb_url": "static/videos/hands/part1_dry_hands_45.mp4",
+      "motion_url": "static/data/motion/hands/part1_dry_hands_45.json"
+    },
+    {
+      "id": "part3_peel_place_sticker_794",
+      "dataset": "egodex",
+      "text": "pick up puzzle piece, place puzzle piece on puzzle",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 2,
+      "rgb_url": "static/videos/hands/part3_peel_place_sticker_794.mp4",
+      "motion_url": "static/data/motion/hands/part3_peel_place_sticker_794.json"
+    },
+    {
+      "id": "part5_stack_unstack_cups_954",
+      "dataset": "egodex",
+      "text": "stack white paper cup into white paper cup",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 0,
+      "rgb_url": "static/videos/hands/part5_stack_unstack_cups_954.mp4",
+      "motion_url": "static/data/motion/hands/part5_stack_unstack_cups_954.json"
+    },
+    {
+      "id": "part1_clean_surface_4243",
+      "dataset": "egodex",
+      "text": "iron orange fabric with lint roller",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 2,
+      "rgb_url": "static/videos/hands/part1_clean_surface_4243.mp4",
+      "motion_url": "static/data/motion/hands/part1_clean_surface_4243.json"
+    },
+    {
+      "id": "part3_insert_remove_cups_from_rack_396",
+      "dataset": "egodex",
+      "text": "put down cups in drying rack",
+      "object_names": [
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/part3_insert_remove_cups_from_rack_396.mp4",
+      "motion_url": "static/data/motion/hands/part3_insert_remove_cups_from_rack_396.json"
+    },
+    {
+      "id": "part3_insert_remove_utensils_1137",
+      "dataset": "egodex",
+      "text": "take plastic cutlery from dish rack",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 3,
+      "rgb_url": "static/videos/hands/part3_insert_remove_utensils_1137.mp4",
+      "motion_url": "static/data/motion/hands/part3_insert_remove_utensils_1137.json"
+    },
+    {
+      "id": "part2_basic_pick_place_17011",
+      "dataset": "egodex",
+      "text": "pick up red toy from gray container",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 4,
+      "rgb_url": "static/videos/hands/part2_basic_pick_place_17011.mp4",
+      "motion_url": "static/data/motion/hands/part2_basic_pick_place_17011.json"
+    },
+    {
+      "id": "part4_scoop_dump_ice_4756",
+      "dataset": "egodex",
+      "text": "scoop ice cubes with purple scoop",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/part4_scoop_dump_ice_4756.mp4",
+      "motion_url": "static/data/motion/hands/part4_scoop_dump_ice_4756.json"
+    },
+    {
+      "id": "part4_play_mancala_47",
+      "dataset": "egodex",
+      "text": "move marbles in wooden tray",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 3,
+      "rgb_url": "static/videos/hands/part4_play_mancala_47.mp4",
+      "motion_url": "static/data/motion/hands/part4_play_mancala_47.json"
+    },
+    {
+      "id": "part2_basic_pick_place_17060",
+      "dataset": "egodex",
+      "text": "put green dice on blue plate",
+      "object_names": [
+        "right_hand"
+      ],
+      "num_clips": 0,
+      "rgb_url": "static/videos/hands/part2_basic_pick_place_17060.mp4",
+      "motion_url": "static/data/motion/hands/part2_basic_pick_place_17060.json"
+    },
+    {
+      "id": "155e0c50-ed28-41f5-bfeb-a72da346da6a__ep5__clip_002_sort_beads_by_color",
+      "dataset": "xperience",
+      "text": "Sort beads by color \u2014 The person continues to pick through the pile of assorted beads, identifying specific colors and moving them toward the central sorting area.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/155e0c50-ed28-41f5-bfeb-a72da346da6a__ep5__clip_002_sort_beads_by_color.mp4",
+      "motion_url": "static/data/motion/hands/155e0c50-ed28-41f5-bfeb-a72da346da6a__ep5__clip_002_sort_beads_by_color.json"
+    },
+    {
+      "id": "bcfd39aa-2ade-423e-afd9-a3dfb64abf1a__ep11__clip_000_sort_and_place_puzzle_pieces",
+      "dataset": "xperience",
+      "text": "Sort and place puzzle pieces \u2014 The person uses both hands to scan, pick up, and manipulate individual jigsaw pieces on the table surface, attempting to find matching connections.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/bcfd39aa-2ade-423e-afd9-a3dfb64abf1a__ep11__clip_000_sort_and_place_puzzle_pieces.mp4",
+      "motion_url": "static/data/motion/hands/bcfd39aa-2ade-423e-afd9-a3dfb64abf1a__ep11__clip_000_sort_and_place_puzzle_pieces.json"
+    },
+    {
+      "id": "3a020e9b-9fb1-4300-b56d-263e268899ff__ep4__clip_020_remove_empty_wooden_crate",
+      "dataset": "xperience",
+      "text": "Remove empty wooden crate \u2014 The user picks up and removes an empty wooden crate from the display shelf to make space for restocking.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/3a020e9b-9fb1-4300-b56d-263e268899ff__ep4__clip_020_remove_empty_wooden_crate.mp4",
+      "motion_url": "static/data/motion/hands/3a020e9b-9fb1-4300-b56d-263e268899ff__ep4__clip_020_remove_empty_wooden_crate.json"
+    },
+    {
+      "id": "cd7fc4d2-fc80-448d-acf9-b9c005660a84__ep4__clip_008_handle_blue_material_strips",
+      "dataset": "xperience",
+      "text": "Handle blue material strips \u2014 The user puts down the scissors and manually manipulates the cut strips of blue material with their hands.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/cd7fc4d2-fc80-448d-acf9-b9c005660a84__ep4__clip_008_handle_blue_material_strips.mp4",
+      "motion_url": "static/data/motion/hands/cd7fc4d2-fc80-448d-acf9-b9c005660a84__ep4__clip_008_handle_blue_material_strips.json"
+    },
+    {
+      "id": "bb37ad4e-5737-41da-8abc-d26fc3538a2c__ep9__clip_011_place_reference_image",
+      "dataset": "xperience",
+      "text": "Place reference image \u2014 The user places the Eiffel Tower reference image into the puzzle box lid.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/bb37ad4e-5737-41da-8abc-d26fc3538a2c__ep9__clip_011_place_reference_image.mp4",
+      "motion_url": "static/data/motion/hands/bb37ad4e-5737-41da-8abc-d26fc3538a2c__ep9__clip_011_place_reference_image.json"
+    },
+    {
+      "id": "84cb2653-6589-4a19-b2e0-74ac2604a104__ep22__clip_019_align_ruler",
+      "dataset": "xperience",
+      "text": "Align ruler \u2014 The user adjusts the position of the metal ruler on the cardboard sheet to prepare for a cut or mark.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/84cb2653-6589-4a19-b2e0-74ac2604a104__ep22__clip_019_align_ruler.mp4",
+      "motion_url": "static/data/motion/hands/84cb2653-6589-4a19-b2e0-74ac2604a104__ep22__clip_019_align_ruler.json"
+    },
+    {
+      "id": "53e64c93-8947-403e-ab35-3428c431aee8__ep24__clip_012_place_origami_star_on_phone",
+      "dataset": "xperience",
+      "text": "Place origami star on phone \u2014 The user places the selected origami star onto the surface of the phone held in their left hand. The person's hands are precisely positioning a single small origami star onto the surface of a smartphone placed on the table.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 6,
+      "rgb_url": "static/videos/hands/53e64c93-8947-403e-ab35-3428c431aee8__ep24__clip_012_place_origami_star_on_phone.mp4",
+      "motion_url": "static/data/motion/hands/53e64c93-8947-403e-ab35-3428c431aee8__ep24__clip_012_place_origami_star_on_phone.json"
+    },
+    {
+      "id": "f101aa7c-92d8-4c00-b9bf-5bab75bf814a__ep10__clip_004_place_scissors_down",
+      "dataset": "xperience",
+      "text": "Place scissors down \u2014 After finishing the cut, the user moves the scissors to the side on the table surface.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 2,
+      "rgb_url": "static/videos/hands/f101aa7c-92d8-4c00-b9bf-5bab75bf814a__ep10__clip_004_place_scissors_down.mp4",
+      "motion_url": "static/data/motion/hands/f101aa7c-92d8-4c00-b9bf-5bab75bf814a__ep10__clip_004_place_scissors_down.json"
+    },
+    {
+      "id": "37ee5802-66fb-4893-9173-fe97fe0e2000__ep46__clip_012_fold_paper_strip",
+      "dataset": "xperience",
+      "text": "Fold paper strip \u2014 The user is actively folding a yellow paper strip to shape it into a star.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/37ee5802-66fb-4893-9173-fe97fe0e2000__ep46__clip_012_fold_paper_strip.mp4",
+      "motion_url": "static/data/motion/hands/37ee5802-66fb-4893-9173-fe97fe0e2000__ep46__clip_012_fold_paper_strip.json"
+    },
+    {
+      "id": "832369c5-8fca-4591-940a-7a7a28206de2__ep41__clip_000_pick_up_puzzle_piece",
+      "dataset": "xperience",
+      "text": "Pick up puzzle piece \u2014 The person reaches for and picks up a single jigsaw puzzle piece from the table.",
+      "object_names": [
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/832369c5-8fca-4591-940a-7a7a28206de2__ep41__clip_000_pick_up_puzzle_piece.mp4",
+      "motion_url": "static/data/motion/hands/832369c5-8fca-4591-940a-7a7a28206de2__ep41__clip_000_pick_up_puzzle_piece.json"
+    },
+    {
+      "id": "fb539c97-e72e-4b26-972c-574844ddbbfd__ep25__clip_010_join_puzzle_pieces",
+      "dataset": "xperience",
+      "text": "Join puzzle pieces \u2014 The user picks up a puzzle piece and carefully connects it to an existing group of pieces on the table.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 4,
+      "rgb_url": "static/videos/hands/fb539c97-e72e-4b26-972c-574844ddbbfd__ep25__clip_010_join_puzzle_pieces.mp4",
+      "motion_url": "static/data/motion/hands/fb539c97-e72e-4b26-972c-574844ddbbfd__ep25__clip_010_join_puzzle_pieces.json"
+    },
+    {
+      "id": "e750ac55-e8d8-4040-9609-98176f1a8096__ep15__clip_009_manipulate_bracelet_wire",
+      "dataset": "xperience",
+      "text": "Manipulate bracelet wire \u2014 The user holds and adjusts a purple wire strip between their fingers while preparing for the next step of the bracelet assembly.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 1,
+      "rgb_url": "static/videos/hands/e750ac55-e8d8-4040-9609-98176f1a8096__ep15__clip_009_manipulate_bracelet_wire.mp4",
+      "motion_url": "static/data/motion/hands/e750ac55-e8d8-4040-9609-98176f1a8096__ep15__clip_009_manipulate_bracelet_wire.json"
+    },
+    {
+      "id": "81e9362f-fd63-4aec-92fa-1f489d6ac025__ep8__clip_009_hold_utility_knife",
+      "dataset": "xperience",
+      "text": "Hold utility knife \u2014 The user holds the utility knife in their right hand, poised above the cardboard to prepare for cutting. The user holds the utility knife and makes a score along one of the previously marked lines on the cardboard, using the other hand to stabilize the sheet.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 8,
+      "rgb_url": "static/videos/hands/81e9362f-fd63-4aec-92fa-1f489d6ac025__ep8__clip_009_hold_utility_knife.mp4",
+      "motion_url": "static/data/motion/hands/81e9362f-fd63-4aec-92fa-1f489d6ac025__ep8__clip_009_hold_utility_knife.json"
+    },
+    {
+      "id": "a05573f2-2a24-4161-80cd-3fa8d83d63d4__ep7__clip_018_separate_orange_segment",
+      "dataset": "xperience",
+      "text": "Separate orange segment \u2014 The user holds a paper quilling strip in one hand and uses the other hand to pull a piece away from the orange.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 2,
+      "rgb_url": "static/videos/hands/a05573f2-2a24-4161-80cd-3fa8d83d63d4__ep7__clip_018_separate_orange_segment.mp4",
+      "motion_url": "static/data/motion/hands/a05573f2-2a24-4161-80cd-3fa8d83d63d4__ep7__clip_018_separate_orange_segment.json"
+    },
+    {
+      "id": "bdfae17b-1e56-4cc5-a4dc-f4fad8369aed__ep9__clip_012_gathering_light_blue_objects",
+      "dataset": "xperience",
+      "text": "Gathering light blue objects \u2014 The hand moves across the table to collect a cluster of light blue star-shaped objects.",
+      "object_names": [
+        "right_hand"
+      ],
+      "num_clips": 3,
+      "rgb_url": "static/videos/hands/bdfae17b-1e56-4cc5-a4dc-f4fad8369aed__ep9__clip_012_gathering_light_blue_objects.mp4",
+      "motion_url": "static/data/motion/hands/bdfae17b-1e56-4cc5-a4dc-f4fad8369aed__ep9__clip_012_gathering_light_blue_objects.json"
+    },
+    {
+      "id": "813ffbb3-d64e-4df7-8ffe-57c4fe2c76a8__ep10__clip_026_manipulate_puzzle_pieces",
+      "dataset": "xperience",
+      "text": "Manipulate puzzle pieces \u2014 The person moves their hands across the puzzle surface, adjusting and searching for specific pieces to connect.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 3,
+      "rgb_url": "static/videos/hands/813ffbb3-d64e-4df7-8ffe-57c4fe2c76a8__ep10__clip_026_manipulate_puzzle_pieces.mp4",
+      "motion_url": "static/data/motion/hands/813ffbb3-d64e-4df7-8ffe-57c4fe2c76a8__ep10__clip_026_manipulate_puzzle_pieces.json"
+    },
+    {
+      "id": "2017b7a8-a707-4754-94ae-9a7bfb11f665__ep10__clip_014_adjust_position_on_table",
+      "dataset": "xperience",
+      "text": "Adjust position on table \u2014 The hand rests on the table surface after moving the ruler slightly.",
+      "object_names": [
+        "left_hand"
+      ],
+      "num_clips": 2,
+      "rgb_url": "static/videos/hands/2017b7a8-a707-4754-94ae-9a7bfb11f665__ep10__clip_014_adjust_position_on_table.mp4",
+      "motion_url": "static/data/motion/hands/2017b7a8-a707-4754-94ae-9a7bfb11f665__ep10__clip_014_adjust_position_on_table.json"
+    },
+    {
+      "id": "cb2d1708-fc25-4fff-82c1-633ce9cb59a0__ep12__clip_015_manipulate_paper_piece",
+      "dataset": "xperience",
+      "text": "Manipulate paper piece \u2014 The user holds a small paper piece between their fingers, performing fine motor adjustments to shape or position it. The user holds a small piece of purple paper between their fingers, performing delicate adjustments and folding motions.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 2,
+      "rgb_url": "static/videos/hands/cb2d1708-fc25-4fff-82c1-633ce9cb59a0__ep12__clip_015_manipulate_paper_piece.mp4",
+      "motion_url": "static/data/motion/hands/cb2d1708-fc25-4fff-82c1-633ce9cb59a0__ep12__clip_015_manipulate_paper_piece.json"
+    },
+    {
+      "id": "ffb68065-8250-450d-9273-58f837bbfa8c__ep24__clip_008_insert_card_into_mailbox",
+      "dataset": "xperience",
+      "text": "Insert card into mailbox \u2014 The user is placing a card or paper object into the slot of the red mailbox.",
+      "object_names": [
+        "right_hand"
+      ],
+      "num_clips": 2,
+      "rgb_url": "static/videos/hands/ffb68065-8250-450d-9273-58f837bbfa8c__ep24__clip_008_insert_card_into_mailbox.mp4",
+      "motion_url": "static/data/motion/hands/ffb68065-8250-450d-9273-58f837bbfa8c__ep24__clip_008_insert_card_into_mailbox.json"
+    },
+    {
+      "id": "61e1a696-2c13-496b-8301-e9618bb01e84__ep22__clip_001_manipulate_paper_strip",
+      "dataset": "xperience",
+      "text": "Manipulate paper strip \u2014 The person holds and adjusts a yellow paper strip with their fingers, preparing it for coiling.",
+      "object_names": [
+        "left_hand",
+        "right_hand"
+      ],
+      "num_clips": 4,
+      "rgb_url": "static/videos/hands/61e1a696-2c13-496b-8301-e9618bb01e84__ep22__clip_001_manipulate_paper_strip.mp4",
+      "motion_url": "static/data/motion/hands/61e1a696-2c13-496b-8301-e9618bb01e84__ep22__clip_001_manipulate_paper_strip.json"
+    }
+  ]
+}

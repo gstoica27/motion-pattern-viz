@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Motion Pattern Filter — Clip Review</title>
+<title>Hand Tracks — EgoDex + Xperience</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -204,20 +204,20 @@ body {
 <div class="page">
   <div class="masthead">
     <div class="masthead-left">
-      <h1>Motion Pattern Filter — Clip Review</h1>
+      <h1>Hand Tracks — EgoDex + Xperience</h1>
       <div class="subtitle">
-        Final filtered dataset. EgoDex: 74 tasks surviving the v3 task-level
-        rules (40 tasks removed outright, 10 under special-reprocess rules —
-        see the one-clip subpage). 3 fresh samples per task. Clip ranges come
-        directly from <code>egodex_good_v3.json</code>, never recomputed.
+        Left-hand and right-hand 3D point tracks from EgoDex
+        (<code>final_hand_tracks/</code>) and Xperience
+        (<code>object_tracks/left_hand.npz</code> / <code>right_hand.npz</code>).
+        30 random EgoDex + 20 random Xperience samples. Each card shows the
+        video with per-hand 2D track overlay, motion-magnitude chart, and
+        clip-range timelines.
       </div>
     </div>
     <div class="masthead-right">
-      <a href="one-clip.html">Special-rule tasks</a>
-      <a href="hands.html">Hand tracks</a>
+      <a href="index.html">← Main</a>
       <a href="davis.html">DAVIS</a>
       <a href="droid.html">DROID</a>
-      <a href="molmospaces.html">MolmoSpaces</a>
       <a href="stats.html">Stats</a>
       <button class="theme-toggle" onclick="toggleTheme()">Toggle theme</button>
     </div>
@@ -266,7 +266,7 @@ function toggleTheme() {
 
 // ── Init ──
 async function init() {
-  const resp = await fetch('static/data/motion/motion_manifest.json');
+  const resp = await fetch('static/data/motion/hands/manifest.json');
   manifest = await resp.json();
 
   const tabsEl = document.getElementById('tabs');
